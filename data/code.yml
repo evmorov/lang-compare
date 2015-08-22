@@ -1,0 +1,166 @@
+String:
+  Create:
+    ruby: string_create.rb
+  Concatenation and interpolation:
+    ruby: string_concat.rb
+  Remove part:
+    ruby: string_remove.rb
+  Replace:
+    ruby: string_replace.rb
+  Split:
+    ruby: string_split.rb
+  Remove leading and trailing whitespace:
+    ruby: string_remove_whistespace.rb
+  Compare:
+    ruby: string_compare.rb
+  Regex:
+    ruby: string_regex.rb
+  Mutable:
+    ruby: string_mutable.rb
+Number:
+  Compare:
+    ruby: number_compare.rb
+  Random:
+    ruby: number_random.rb
+Type:
+  Get type of object:
+    ruby: type_get_type.rb
+  Int to Float:
+    ruby: type_int_to_float.rb
+  Int to String:
+    ruby: type_int_to_string.rb
+  String to Int:
+    ruby: type_string_to_int.rb
+  String?:
+    ruby: type_is_string.rb
+  Null?:
+    ruby: type_is_null.rb
+  False?:
+    ruby: type_is_false.rb
+Array:
+  Create:
+    ruby: array_create.rb
+  Create populated:
+    ruby: array_create_populated.rb
+  With different types:
+    ruby: array_with_different_types.rb
+  Include?:
+    ruby: array_is_include.rb
+  Iterate:
+    ruby: array_iterate.rb
+  Get first, last element:
+    ruby: array_get_first_and_last.rb
+  Find:
+    ruby: array_find.rb
+  Select (find all):
+    ruby: array_select.rb
+  Map, collect (change all):
+    ruby: array_map.rb
+  Concatenation:
+    ruby: array_concat.rb
+  Sort:
+    ruby: array_sort.rb
+  Multidimensional:
+    ruby: array_multi.rb
+  Size:
+    ruby: array_size.rb
+Hash:
+  Create:
+    ruby: hash_create.rb
+  Create populated:
+    ruby: hash_create_populated.rb
+  Iterate:
+    ruby: hash_iterate.rb
+  Include?:
+    ruby: hash_is_include.rb
+  Get value:
+    ruby: hash_get_value.rb
+Other structure:
+  Boolean:
+    ruby: other_structure_boolean.rb
+  Constant:
+    ruby: other_structure_constant.rb
+  Enum:
+    ruby: other_structure_enum.rb
+  Struct:
+    ruby: other_structure_struct.rb
+Conditional:
+  If:
+    ruby: conditional_if.rb
+  If/else:
+    ruby: conditional_if_else.rb
+  And/Or:
+    ruby: conditional_and_or.rb
+  Switch:
+    ruby: conditional_switch.rb
+  Ternary:
+    ruby: conditional_ternary.rb
+  If assign:
+    ruby: conditional_if_assign.rb
+Loop:
+  For:
+    ruby: loop_for.rb
+  While:
+    ruby: loop_while.rb
+Math:
+  Max/Min:
+    ruby: math_max_min.rb
+  Sqrt:
+    ruby: math_sqrt.rb
+Error handling:
+  Try/catch/finally:
+    ruby: error_try_catch.rb
+  Throw exception:
+    ruby: error_throw.rb
+  Assert:
+    ruby: error_assert.rb
+File:
+  Read:
+    ruby: file_read.rb
+  Write:
+    ruby: file_write.rb
+  Pwd:
+    ruby: file_pwd.rb
+  File path:
+    ruby: file_path.rb
+Method:
+  Declare:
+    ruby: method_declare.rb
+  Multiple arguments:
+    ruby: method_multi_arg.rb
+  Default value for argument:
+    ruby: method_default_value.rb
+  Return:
+    ruby: method_return.rb
+  Closure:
+    ruby: method_closure.rb
+  Passing closure:
+    ruby: method_passing_closure.rb
+  Initialize in runtime:
+    ruby: method_init_in_runtime.rb
+Class:
+  Declare:
+    ruby: class_declare.rb
+  Constructor:
+    ruby: class_constructor.rb
+  Class method:
+    ruby: class_class_method.rb
+  Private method:
+    ruby: class_private_method.rb
+  Field:
+    ruby: class_field.rb
+  Get/set:
+    ruby: class_get_set.rb
+  Inheritance:
+    ruby: class_inheritance.rb
+  Mixin:
+    ruby: class_mixin.rb
+Other:
+  Import another file:
+    ruby: other_import_file.rb
+  Destructuring assignment:
+    ruby: other_destructing_assignment.rb
+  Date:
+    ruby: other_date.rb
+  Time:
+    ruby: other_time.rb

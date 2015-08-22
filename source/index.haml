@@ -1,0 +1,20 @@
+%h1 Language compare
+
+.container-fluid
+
+  .row
+    .col-md-6
+      %h2 Ruby
+    .col-md-6
+      %h2 Coffeescript
+
+  - data.code.each do |section|
+    %h3= section.first
+
+    - section.last.each do |header, code|
+      %h4= header
+      .row
+        .col-md-6
+          = code_file(code.ruby)
+        .col-md-6
+          = code_file(code.coffeescript)

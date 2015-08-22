@@ -1,0 +1,26 @@
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'vagrant/**/*'
+    - 'bin/**/*'
+  RunRailsCops: true
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/Documentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false

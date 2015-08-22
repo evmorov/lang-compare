@@ -1,0 +1,2 @@
+p ' eh? '.strip
+# "eh?"
