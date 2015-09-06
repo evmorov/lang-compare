@@ -1,5 +1,5 @@
-arr = %w(first second)
+arr = %w(one two)
 p arr.first
-# "first"
+# "one"
 p arr.last
-# "second"
+# "two"

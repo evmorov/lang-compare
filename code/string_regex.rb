@@ -1,2 +1,4 @@
-p 'apple' =~ /^b/ # nil
-p 'apple' =~ /^a/ # 0
+p 'apple' =~ /^b/
+# nil
+p 'apple' =~ /^a/
+# 0

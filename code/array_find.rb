@@ -1,2 +1,3 @@
-p [1, 5, 10, 20].find(&:even?)
+arr = [1, 5, 10, 20]
+p arr.find(&:even?)
 # 10

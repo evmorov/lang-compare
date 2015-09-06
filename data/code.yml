@@ -1,166 +1,251 @@
 String:
   Create:
     ruby: string_create.rb
+    coffeescript: string-create.coffee
   Concatenation and interpolation:
     ruby: string_concat.rb
+    coffeescript: string-concat.coffee
   Remove part:
     ruby: string_remove.rb
+    coffeescript: string-remove.coffee
   Replace:
     ruby: string_replace.rb
+    coffeescript: string-replace.coffee
   Split:
     ruby: string_split.rb
+    coffeescript: string-split.coffee
   Remove leading and trailing whitespace:
     ruby: string_remove_whistespace.rb
+    coffeescript: string-remove-whistespace.coffee
   Compare:
     ruby: string_compare.rb
+    coffeescript: string-compare.coffee
   Regex:
     ruby: string_regex.rb
-  Mutable:
-    ruby: string_mutable.rb
+    coffeescript: string-regex.coffee
 Number:
   Compare:
     ruby: number_compare.rb
+    coffeescript: number-compare.coffee
   Random:
     ruby: number_random.rb
+    coffeescript: number-random.coffee
 Type:
   Get type of object:
     ruby: type_get_type.rb
+    coffeescript: type-get-type.coffee
   Int to Float:
     ruby: type_int_to_float.rb
+    coffeescript: type-int-to-float.coffee
   Int to String:
     ruby: type_int_to_string.rb
+    coffeescript: type-int-to-string.coffee
   String to Int:
     ruby: type_string_to_int.rb
+    coffeescript: type-string-to-int.coffee
   String?:
     ruby: type_is_string.rb
+    coffeescript: type-is-string.coffee
   Null?:
     ruby: type_is_null.rb
+    coffeescript: type-is-null.coffee
   False?:
     ruby: type_is_false.rb
+    coffeescript: type-is-false.coffee
 Array:
   Create:
     ruby: array_create.rb
+    coffeescript: array-create.coffee
   Create populated:
     ruby: array_create_populated.rb
+    coffeescript: array-create-populated.coffee
   With different types:
     ruby: array_with_different_types.rb
+    coffeescript: array-with-different-types.coffee
   Include?:
     ruby: array_is_include.rb
+    coffeescript: array-is-include.coffee
   Iterate:
     ruby: array_iterate.rb
+    coffeescript: array-iterate.coffee
+  Iterate with index:
+    ruby: array_iterate_with_index.rb
+    coffeescript: array-iterate-with-index.coffee
   Get first, last element:
     ruby: array_get_first_and_last.rb
-  Find:
+    coffeescript: array-get-first-and-last.coffee
+  Find first:
     ruby: array_find.rb
+    coffeescript: array-find.coffee
   Select (find all):
     ruby: array_select.rb
-  Map, collect (change all):
+    coffeescript: array-select.coffee
+  Map (change all):
     ruby: array_map.rb
+    coffeescript: array-map.coffee
   Concatenation:
     ruby: array_concat.rb
+    coffeescript: array-concat.coffee
   Sort:
     ruby: array_sort.rb
+    coffeescript: array-sort.coffee
   Multidimensional:
     ruby: array_multi.rb
+    coffeescript: array-multi.coffee
   Size:
     ruby: array_size.rb
+    coffeescript: array-size.coffee
+  Count:
+    ruby: array_count.rb
 Hash:
   Create:
     ruby: hash_create.rb
+    coffeescript: hash-create.coffee
   Create populated:
     ruby: hash_create_populated.rb
+    coffeescript: hash-create-populated.coffee
   Iterate:
     ruby: hash_iterate.rb
+    coffeescript: hash-iterate.coffee
   Include?:
     ruby: hash_is_include.rb
+    coffeescript: hash-is-include.coffee
   Get value:
     ruby: hash_get_value.rb
+    coffeescript: hash-get-value.coffee
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
+    coffeescript: other-structure-boolean.coffee
   Constant:
     ruby: other_structure_constant.rb
+    coffeescript: other-structure-constant.coffee
   Enum:
     ruby: other_structure_enum.rb
+    coffeescript: other-structure-enum.coffee
   Struct:
     ruby: other_structure_struct.rb
+    coffeescript: other-structure-struct.coffee
 Conditional:
   If:
     ruby: conditional_if.rb
+    coffeescript: conditional-if.coffee
   If/else:
     ruby: conditional_if_else.rb
+    coffeescript: conditional-if-else.coffee
   And/Or:
     ruby: conditional_and_or.rb
+    coffeescript: conditional-and-or.coffee
   Switch:
     ruby: conditional_switch.rb
+    coffeescript: conditional-switch.coffee
+  Switch this or that:
+    ruby: conditional_switch_this_or_that.rb
   Ternary:
     ruby: conditional_ternary.rb
+    coffeescript: conditional-ternary.coffee
+  One line if chain:
+    ruby: conditional_one_line_if_chain.rb
   If assign:
     ruby: conditional_if_assign.rb
+    coffeescript: conditional-if-assign.coffee
 Loop:
   For:
     ruby: loop_for.rb
+    coffeescript: loop-for.coffee
   While:
     ruby: loop_while.rb
+    coffeescript: loop-while.coffee
 Math:
   Max/Min:
     ruby: math_max_min.rb
+    coffeescript: math-max-min.coffee
   Sqrt:
     ruby: math_sqrt.rb
+    coffeescript: math-sqrt.coffee
 Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
+    coffeescript: error-try-catch.coffee
   Throw exception:
     ruby: error_throw.rb
+    coffeescript: error-throw.coffee
   Assert:
     ruby: error_assert.rb
+    coffeescript: error-assert.coffee
 File:
   Read:
     ruby: file_read.rb
+    coffeescript: file-read.coffee
   Write:
     ruby: file_write.rb
+    coffeescript: file-write.coffee
   Pwd:
     ruby: file_pwd.rb
+    coffeescript: file-pwd.coffee
   File path:
     ruby: file_path.rb
+    coffeescript: file-path.coffee
 Method:
   Declare:
     ruby: method_declare.rb
+    coffeescript: method-declare.coffee
   Multiple arguments:
     ruby: method_multi_arg.rb
+    coffeescript: method-multi-arg.coffee
   Default value for argument:
     ruby: method_default_value.rb
+    coffeescript: method-default-value.coffee
   Return:
     ruby: method_return.rb
+    coffeescript: method-return.coffee
   Closure:
     ruby: method_closure.rb
+    coffeescript: method-closure.coffee
   Passing closure:
     ruby: method_passing_closure.rb
+    coffeescript: method-passing-closure.coffee
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
+    coffeescript: method-init-in-runtime.coffee
+  Alias:
+    ruby: method_alias.rb
+    coffeescript: method-alias.coffee
 Class:
   Declare:
     ruby: class_declare.rb
+    coffeescript: class-declare.coffee
   Constructor:
     ruby: class_constructor.rb
+    coffeescript: class-constructor.coffee
   Class method:
     ruby: class_class_method.rb
+    coffeescript: class-class-method.coffee
   Private method:
     ruby: class_private_method.rb
+    coffeescript: class-private-method.coffee
   Field:
     ruby: class_field.rb
+    coffeescript: class-field.coffee
   Get/set:
     ruby: class_get_set.rb
+    coffeescript: class-get-set.coffee
   Inheritance:
     ruby: class_inheritance.rb
+    coffeescript: class-inheritance.coffee
   Mixin:
     ruby: class_mixin.rb
+    coffeescript: class-mixin.coffee
 Other:
   Import another file:
     ruby: other_import_file.rb
+    coffeescript: other-import-file.coffee
   Destructuring assignment:
     ruby: other_destructing_assignment.rb
+    coffeescript: other-destructing-assignment.coffee
   Date:
     ruby: other_date.rb
+    coffeescript: other-date.coffee
   Time:
     ruby: other_time.rb
+    coffeescript: other-time.coffee

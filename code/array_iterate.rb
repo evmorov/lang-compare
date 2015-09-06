@@ -1,6 +1,5 @@
-[1, 2, 3].each do |num|
+[1, 2].each do |num|
   p num
 end
 # 1
 # 2
-# 3

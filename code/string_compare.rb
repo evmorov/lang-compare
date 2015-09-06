@@ -1,1 +1,2 @@
-p 'string'.eql? 'string' # true
+p 'string'.eql? 'string'
+# true

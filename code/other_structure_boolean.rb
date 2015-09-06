@@ -1,3 +1,3 @@
-ruby_is_the_best = true
-p 'I know this' if ruby_is_the_best
-# "I know this"
+try_it = true
+p 'Garlic gum is not funny' if try_it
+# "Garlic gum is not funny"
