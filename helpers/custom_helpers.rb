@@ -15,6 +15,6 @@ module CustomHelpers
   end
 
   def header_to_id(header)
-    header.tr(' ', '_').downcase
+    header.tr(' /,', '_').tr('()?', '').downcase
   end
 end

@@ -140,7 +140,7 @@ Conditional:
   Switch:
     ruby: conditional_switch.rb
     coffeescript: conditional-switch.coffee
-  Switch_as_else_if:
+  Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     coffeescript: conditional-switch-as-else-if.coffee
   Ternary:

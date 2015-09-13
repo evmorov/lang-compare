@@ -1,16 +1,18 @@
 @charset "utf-8";
-@import 'superhero.min';
+@import 'superhero-bootstrap-theme.min';
 @import "bootstrap-sprockets";
 .highlight {
   font-size: 0.8em;
 }
 h1 {
   padding-left: 10px;
+  a:hover {
+    text-decoration: none;
+  }
 }
 #top-link-block {
   &.affix-top {
     position: absolute;
-    bottom: -82px;
     left: 10px;
   }
   &.affix {

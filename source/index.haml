@@ -1,20 +1,35 @@
-%h1#top Language compare
+%h1
+  %a{href: '', title: 'Ruby <> CoffeeScript'}
+    Ruby <> CoffeeScript
 
 .container-fluid
-  %ul
-    - data.code.each do |section|
-      %li
-        %a{href: header_to_id("##{section.first}"), title: section.first}= section.first
-        %ul
-          - section.last.each do |header, code|
-            %li
-              %a{href: header_to_id("##{section.first}_#{header}"), title: header}= header
+  .row
+    .col-md-6
+      %ul.list-unstyled
+        - data.code.each_with_index do |section, index|
+          = next if index + 1 >= data.code.size / 2
+          %li
+            %a.scroll{href: header_to_id("##{section.first}"), title: section.first}= section.first
+            %ul
+              - section.last.each do |header, code|
+                %li
+                  %a.scroll{href: header_to_id("##{section.first}_#{header}"), title: header}= header
+    .col-md-6
+      %ul.list-unstyled
+        - data.code.each_with_index do |section, index|
+          = next if index + 1 < data.code.size / 2
+          %li
+            %a.scroll{href: header_to_id("##{section.first}"), title: section.first}= section.first
+            %ul
+              - section.last.each do |header, code|
+                %li
+                  %a.scroll{href: header_to_id("##{section.first}_#{header}"), title: header}= header
 
   .row
     .col-md-6
       %h2 Ruby
     .col-md-6
-      %h2 Coffeescript
+      %h2 CoffeeScript
 
   - data.code.each do |section|
     %h3{id: header_to_id(section.first)}= section.first
@@ -27,7 +42,9 @@
         .col-md-6
           = code_file(code.coffeescript)
 
+%br
+%br
+
 %span#top-link-block
-  %a.well.well-sm{href: ''}
-    %i.glyphicon.glyphicon-chevron-up
-    Back to Top
+  %a.scrollTop.well.well-sm{href: '#top'}
+    Top
