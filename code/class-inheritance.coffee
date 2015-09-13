@@ -3,8 +3,8 @@ class Animal
     console.log "I'm walking"
 
 class Dog extends Animal
-  sign: ->
+  sing: ->
     console.log 'Bark!'
 
-(new Dog).sign()
+(new Dog).sing()
 # "Bark!"

@@ -5,10 +5,10 @@ class Animal
 end
 
 class Dog < Animal
-  def sign
+  def sing
     p 'Bark!'
   end
 end
 
-Dog.new.sign
+Dog.new.sing
 # "Bark!"
