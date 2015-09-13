@@ -14,7 +14,3 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'middleman-syntax'
 gem 'middleman-deploy'
-
-group :development do
-  gem 'ruby-enum', git: 'git://github.com/dblock/ruby-enum'
-end
