@@ -179,6 +179,9 @@ Error handling:
   With a message:
     ruby: error_with_a_message.rb
     coffeescript: error-with-a-message.coffee
+  Method:
+    ruby: error_method.rb
+    coffeescript: no.coffee
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
