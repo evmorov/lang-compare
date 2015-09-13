@@ -1,6 +1,21 @@
 @charset "utf-8";
-@import "bootstrap";
+@import 'superhero.min';
 @import "bootstrap-sprockets";
 .highlight {
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+h1 {
+  padding-left: 10px;
+}
+#top-link-block {
+  &.affix-top {
+    position: absolute;
+    bottom: -82px;
+    left: 10px;
+  }
+  &.affix {
+    position: fixed;
+    bottom: 18px;
+    left: 10px;
+  }
 }

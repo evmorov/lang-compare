@@ -1,6 +1,14 @@
-%h1 Language compare
+%h1#top Language compare
 
 .container-fluid
+  %ul
+    - data.code.each do |section|
+      %li
+        %a{href: header_to_id("##{section.first}"), title: section.first}= section.first
+        %ul
+          - section.last.each do |header, code|
+            %li
+              %a{href: header_to_id("##{section.first}_#{header}"), title: header}= header
 
   .row
     .col-md-6
@@ -9,12 +17,17 @@
       %h2 Coffeescript
 
   - data.code.each do |section|
-    %h3= section.first
+    %h3{id: header_to_id(section.first)}= section.first
 
     - section.last.each do |header, code|
-      %h4= header
+      %h4{id: header_to_id("#{section.first}_#{header}")}= header
       .row
         .col-md-6
           = code_file(code.ruby)
         .col-md-6
           = code_file(code.coffeescript)
+
+%span#top-link-block
+  %a.well.well-sm{href: ''}
+    %i.glyphicon.glyphicon-chevron-up
+    Back to Top

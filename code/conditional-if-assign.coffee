@@ -3,6 +3,5 @@ if true
   'a'
 else
   'b'
-end
-p result
-# "a"
+console.log result
+# a

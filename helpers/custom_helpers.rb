@@ -13,4 +13,8 @@ module CustomHelpers
       File.read "#{Dir.pwd}/code/#{filename}" rescue return 'No way to do that'
     end
   end
+
+  def header_to_id(header)
+    header.tr(' ', '_').downcase
+  end
 end

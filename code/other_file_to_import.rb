@@ -1,3 +1,5 @@
-def hey
-  p 'I am imported!'
+class Import
+  def initialize
+    p 'I am imported!'
+  end
 end

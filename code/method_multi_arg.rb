@@ -1,5 +1,5 @@
-def join_party(yes, *names)
-  p names if yes
+def sweets(buy, *brands)
+  p brands if buy
 end
-join_party true, 'Alex', 'Kolya', 'Ann'
-# ["Alex", "Kolya", "Ann"]
+sweets true, 'snickers', 'twix', 'bounty'
+# ["snickers", "twix", "bounty"]

@@ -97,6 +97,7 @@ Array:
     coffeescript: array-size.coffee
   Count:
     ruby: array_count.rb
+    coffeescript: array-count.coffee
 Hash:
   Create:
     ruby: hash_create.rb
@@ -120,12 +121,12 @@ Other structure:
   Constant:
     ruby: other_structure_constant.rb
     coffeescript: other-structure-constant.coffee
-  Enum:
-    ruby: other_structure_enum.rb
-    coffeescript: other-structure-enum.coffee
+  Contsant list:
+    ruby: other_structure_constant_list.rb
+    coffeescript: other-structure-constant-list.coffee
   Struct:
     ruby: other_structure_struct.rb
-    coffeescript: other-structure-struct.coffee
+    coffeescript: no.coffee
 Conditional:
   If:
     ruby: conditional_if.rb
@@ -139,13 +140,12 @@ Conditional:
   Switch:
     ruby: conditional_switch.rb
     coffeescript: conditional-switch.coffee
-  Switch this or that:
-    ruby: conditional_switch_this_or_that.rb
+  Switch_as_else_if:
+    ruby: conditional_switch_as_else_if.rb
+    coffeescript: conditional-switch-as-else-if.coffee
   Ternary:
     ruby: conditional_ternary.rb
     coffeescript: conditional-ternary.coffee
-  One line if chain:
-    ruby: conditional_one_line_if_chain.rb
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
@@ -156,6 +156,12 @@ Loop:
   While:
     ruby: loop_while.rb
     coffeescript: loop-while.coffee
+  Until:
+    ruby: loop_until.rb
+    coffeescript: loop-until.coffee
+  Return array:
+    ruby: loop_return_array.rb
+    coffeescript: loop-return-array.coffee
 Math:
   Max/Min:
     ruby: math_max_min.rb
@@ -170,9 +176,6 @@ Error handling:
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
-  Assert:
-    ruby: error_assert.rb
-    coffeescript: error-assert.coffee
 File:
   Read:
     ruby: file_read.rb
@@ -189,7 +192,7 @@ File:
 Method:
   Declare:
     ruby: method_declare.rb
-    coffeescript: method-declare.coffee
+    coffeescript: no.coffee
   Multiple arguments:
     ruby: method_multi_arg.rb
     coffeescript: method-multi-arg.coffee

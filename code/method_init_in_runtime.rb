@@ -1,7 +1,7 @@
 class ProccessElements
   def self.element(el_name)
     define_method "#{el_name}_element" do |content|
-      p "<#{el_name}>#{content}</#{el_name}>"
+      "<#{el_name}>#{content}</#{el_name}>"
     end
   end
 end
@@ -11,5 +11,5 @@ class HtmlELements < ProccessElements
   element :span
 end
 
-HtmlELements.new.div_element('hello')
+p HtmlELements.new.div_element('hello')
 # "<div>hello</div>"
