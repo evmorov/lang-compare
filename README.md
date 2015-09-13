@@ -1,5 +1,3 @@
-# Compare syntax of programming languages
+# Compare syntax of Ruby and CoffeeScript
 
-Now available Ruby and CoffeeScript
-
-http://evmorov.github.io/lang-compare
+Side by side with executable examples.
