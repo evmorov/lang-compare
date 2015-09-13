@@ -149,6 +149,9 @@ Conditional:
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
+  Assign this or that:
+    ruby: conditional_assign_this_or_that.rb
+    coffeescript: conditional-assign-this-or-that.coffee
 Loop:
   For:
     ruby: loop_for.rb
@@ -173,6 +176,9 @@ Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
     coffeescript: error-try-catch.coffee
+  With a message:
+    ruby: error_with_a_message.rb
+    coffeescript: error-with-a-message.coffee
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
@@ -192,7 +198,7 @@ File:
 Method:
   Declare:
     ruby: method_declare.rb
-    coffeescript: no.coffee
+    coffeescript: method-declare.coffee
   Multiple arguments:
     ruby: method_multi_arg.rb
     coffeescript: method-multi-arg.coffee
@@ -240,6 +246,12 @@ Class:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
 Other:
+  Assign value if not exist:
+    ruby: other_assign_value_if_not_exist.rb
+    coffeescript: other-assign-value-if-not-exists.coffee
+  Safe navigation:
+    ruby: other_safe_navigation.rb
+    coffeescript: other-safe-navigation.coffee
   Import another file:
     ruby: other_import_file.rb
     coffeescript: other-import-file.coffee

@@ -17,7 +17,7 @@ $('a.scrollTop').click(function(event) {
   var href = $.attr(this, 'href');
   $root.animate({
     scrollTop: $(href).offset().top
-  }, 500, function() {
+  }, 400, function() {
     window.location.hash = '';
   });
   return false;
@@ -28,7 +28,7 @@ $('a.scroll').click(function(event) {
   var href = $.attr(this, 'href');
   $root.animate({
     scrollTop: $(href).offset().top
-  }, 500, function() {
+  }, 400, function() {
     window.location.hash = href;
   });
   return false;

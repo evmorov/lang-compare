@@ -4,5 +4,6 @@ class Science
     PI.eql? number
   end
 end
+
 p Science.pi? 3.141592653589793
 # true
