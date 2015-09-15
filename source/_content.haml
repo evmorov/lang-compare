@@ -1,0 +1,10 @@
+%ul.list-unstyled
+  - data.code.each_with_index do |section, index|
+    = next unless filter.call(index + 1, data.code.size / 2)
+    %li.content
+      %strong
+        %a.scroll.section{href: header_to_id("##{section.first}"), title: section.first}= section.first
+      %ul
+        - section.last.each do |header, code|
+          %li
+            %a.scroll{href: header_to_id("##{section.first}_#{header}"), title: header}= header
