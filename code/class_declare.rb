@@ -3,5 +3,6 @@ class Animal
     p "I'm walking"
   end
 end
+
 Animal.new.walk
 # "I'm walking"

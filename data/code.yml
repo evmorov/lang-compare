@@ -253,7 +253,7 @@ Other:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
   Safe navigation:
-    ruby: other_safe_navigation.rb
+    ruby: no.rb
     coffeescript: other-safe-navigation.coffee
   Import another file:
     ruby: other_import_file.rb

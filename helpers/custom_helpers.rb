@@ -10,7 +10,7 @@ module CustomHelpers
 
     file_extension = CODE_EXTENSION[(File.extname filename).delete('.')]
     code(file_extension) do
-      File.read "#{Dir.pwd}/code/#{filename}" rescue return 'No way to do that'
+      File.read "#{Dir.pwd}/code/#{filename}" rescue return 'No easy way to do that'
     end
   end
 
