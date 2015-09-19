@@ -3,5 +3,6 @@ class Animal
     p 'Om nom nom'
   end
 end
+
 Animal.feed
 # "Om nom nom"
