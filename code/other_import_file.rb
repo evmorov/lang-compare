@@ -5,6 +5,6 @@
 #   end
 # end
 
-require_relative('other_file_to_import')
+require_relative 'other_file_to_import'
 Import.new
 # "I am imported!"
