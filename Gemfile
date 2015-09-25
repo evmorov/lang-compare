@@ -10,7 +10,7 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
-gem 'bootstrap-sass'
-gem 'jquery-middleman'
-gem 'middleman-syntax'
-gem 'middleman-deploy'
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'jquery-middleman', '~> 3.1.2'
+gem 'middleman-syntax', '~> 2.0.0'
+gem 'middleman-deploy', '~> 1.0.0'
