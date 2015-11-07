@@ -29,7 +29,7 @@ Go to http://localhost:4567
 
 Feel free to add or modify any examples.
 
-1. Fork it ( https://github.com/Evmorov/ruby-coffeescript/fork )
+1. Fork it ( https://github.com/evmorov/ruby-coffeescript/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
