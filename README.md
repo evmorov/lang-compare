@@ -11,19 +11,13 @@ Created with:
 
 ## Developing
 
-Clone the application:
-
-    $ git clone $app_repo
-
 Install dependencies:
 
     $ bundle
 
-Run the app in localhost:
+Run the app in localhost (http://localhost:4567):
 
     $ bundle exec middleman
-
-Go to http://localhost:4567
 
 ## Contributing
 
