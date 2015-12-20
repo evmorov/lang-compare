@@ -9,7 +9,7 @@ Created with:
 * [Bootstrap](http://getbootstrap.com)
 * [Superhero theme](https://bootswatch.com/superhero)
 
-## Installation
+## Developing
 
 Clone the application:
 
