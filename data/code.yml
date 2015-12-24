@@ -108,6 +108,9 @@ Array:
   Count:
     ruby: array_count.rb
     coffeescript: array-count.coffee
+  Reduce:
+    ruby: array_reduce.rb
+    coffeescript: array-reduce.coffee
 Hash:
   Create:
     ruby: hash_create.rb
