@@ -1,5 +1,7 @@
 nil_var = nil
-p 'Null' unless nil_var
-# "Null"
+
+p "It's null" unless nil_var
+# "It's null"
+
 p nil_var.nil?
 # true

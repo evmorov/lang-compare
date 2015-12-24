@@ -30,6 +30,13 @@ Number:
   Random:
     ruby: number_random.rb
     coffeescript: number-random.coffee
+Range:
+  Create:
+    ruby: range_create.rb
+    coffeescript: range-create.coffee
+  Step:
+    ruby: range_step.rb
+    coffeescript: range-step.coffee
 Type:
   Get type of object:
     ruby: type_get_type.rb
@@ -49,6 +56,9 @@ Type:
   Null?:
     ruby: type_is_null.rb
     coffeescript: type-is-null.coffee
+  True?:
+    ruby: type_is_true.rb
+    coffeescript: type-is-true.coffee
   False?:
     ruby: type_is_false.rb
     coffeescript: type-is-false.coffee
@@ -156,6 +166,9 @@ Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
+  Times:
+    ruby: loop_times.rb
+    coffeescript: loop-times.coffee
   While:
     ruby: loop_while.rb
     coffeescript: loop-while.coffee
@@ -165,6 +178,12 @@ Loop:
   Return array:
     ruby: loop_return_array.rb
     coffeescript: loop-return-array.coffee
+  Break:
+    ruby: loop_break.rb
+    coffeescript: loop-break.coffee
+  Next/Continue:
+    ruby: loop_next.rb
+    coffeescript: loop-next.coffee
 Math:
   Max/Min:
     ruby: math_max_min.rb

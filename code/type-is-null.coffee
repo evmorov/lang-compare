@@ -1,5 +1,7 @@
 null_var = null
-console.log 'Null' unless null_var
-# Null
+
+console.log "It's null" unless null_var
+# It's null
+
 console.log null_var?
-# true
+# false
