@@ -53,15 +53,9 @@ Type:
   String?:
     ruby: type_is_string.rb
     coffeescript: type-is-string.coffee
-  Null?:
-    ruby: type_is_null.rb
-    coffeescript: type-is-null.coffee
-  True?:
-    ruby: type_is_true.rb
-    coffeescript: type-is-true.coffee
-  False?:
-    ruby: type_is_false.rb
-    coffeescript: type-is-false.coffee
+  Null/True/False?:
+    ruby: type_null_true_false.rb
+    coffeescript: type-null-true-false.coffee
 Array:
   Create:
     ruby: array_create.rb
