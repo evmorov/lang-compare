@@ -9,7 +9,7 @@ Created with:
 * [Bootstrap](http://getbootstrap.com)
 * [Superhero theme](https://bootswatch.com/superhero)
 
-## Developing
+## How to
 
 Install dependencies:
 
@@ -18,6 +18,11 @@ Install dependencies:
 Run the app in localhost (http://localhost:4567):
 
     $ bundle exec middleman
+
+To add an example:
+
+1. Modify data/code.yml
+2. Add files to code/ folder
 
 ## Contributing
 
