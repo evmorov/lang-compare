@@ -1,7 +1,7 @@
 class Science
   include Math
   def self.pi?(number)
-    PI.eql? number
+    PI == number
   end
 end
 

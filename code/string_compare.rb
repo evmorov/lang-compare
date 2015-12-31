@@ -1,4 +1,4 @@
-p 'string'.eql? 'string'
+p 'string' == 'string'
 # true
 p 'string' != 'string'
 # false

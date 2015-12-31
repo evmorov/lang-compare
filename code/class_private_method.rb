@@ -6,7 +6,7 @@ class Animal
   private
 
   def smell(food)
-    food.eql? 'meat'
+    food == 'meat'
   end
 end
 
