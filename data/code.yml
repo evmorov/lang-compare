@@ -230,9 +230,12 @@ Method:
   Closure:
     ruby: method_closure.rb
     coffeescript: method-closure.coffee
-  Passing closure:
-    ruby: method_passing_closure.rb
-    coffeescript: method-passing-closure.coffee
+  Block passing:
+    ruby: method_block_passing.rb
+    coffeescript: method-block-passing.coffee
+  Block binding:
+    ruby: method_block_binding.rb
+    coffeescript: method-block-binding.coffee
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     coffeescript: method-init-in-runtime.coffee
