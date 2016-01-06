@@ -4,6 +4,7 @@ hsh = {
   null_var: null
   zero_var: 0
   empty_var: ''
+  undefined_var: undefined
 }
 for key, value of hsh
   console.log "#{key}:"
@@ -29,3 +30,7 @@ for key, value of hsh
 # empty_var:
 # False
 # Empty
+#
+# undefined_var:
+# False
+# Null

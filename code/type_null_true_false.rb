@@ -13,6 +13,7 @@ hsh.each do |key, value|
   puts 'Empty' if value.empty? rescue ''
   puts ''
 end
+
 # true_var:
 # True
 #
