@@ -30,6 +30,9 @@ Number:
   Random:
     ruby: number_random.rb
     coffeescript: number-random.coffee
+  Float:
+    ruby: number_float.rb
+    coffeescript: number-float.coffee
 Range:
   Create:
     ruby: range_create.rb
