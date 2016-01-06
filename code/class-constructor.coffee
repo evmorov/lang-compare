@@ -4,5 +4,5 @@ class Animal
   walk: ->
     console.log "My name is #{@name} and I'm walking"
 
-(new Animal 'Kelya').walk()
+new Animal('Kelya').walk()
 # My name is Kelya and I'm walking

@@ -5,5 +5,5 @@ class Animal
   smell = (food) ->
     food is 'meat'
 
-(new Animal).eat('meat')
+new Animal().eat('meat')
 # Om nom nom

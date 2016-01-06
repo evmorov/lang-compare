@@ -249,6 +249,9 @@ Class:
   Constructor:
     ruby: class_constructor.rb
     coffeescript: class-constructor.coffee
+  Method call:
+    ruby: class_method_call.rb
+    coffeescript: class-method-call.coffee
   Class method:
     ruby: class_class_method.rb
     coffeescript: class-class-method.coffee
