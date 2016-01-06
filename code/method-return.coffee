@@ -8,3 +8,7 @@ divide = (a, b) ->
   a / b
 console.log divide 0, 10
 # 0
+
+defaultValue = ->
+console.log defaultValue()
+# undefined

@@ -10,3 +10,8 @@ def divide(a, b)
 end
 p divide 0, 10
 # 0
+
+def default_value
+end
+p default_value
+# nil
