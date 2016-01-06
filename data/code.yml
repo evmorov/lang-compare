@@ -258,6 +258,9 @@ Class:
   Private method:
     ruby: class_private_method.rb
     coffeescript: class-private-method.coffee
+  Private method, access instance variable:
+    ruby: class_private_method_access_instance_var.rb
+    coffeescript: no.coffee
   Field:
     ruby: class_field.rb
     coffeescript: class-field.coffee
