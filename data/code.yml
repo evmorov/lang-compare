@@ -108,7 +108,7 @@ Array:
   Reduce:
     ruby: array_reduce.rb
     coffeescript: array-reduce.coffee
-Hash:
+Hash (map):
   Create:
     ruby: hash_create.rb
     coffeescript: hash-create.coffee
@@ -124,6 +124,9 @@ Hash:
   Get value:
     ruby: hash_get_value.rb
     coffeescript: hash-get-value.coffee
+  Size:
+    ruby: hash_size.rb
+    coffeescript: hash-size.coffee
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
