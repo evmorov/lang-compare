@@ -1,3 +1,3 @@
 angry = false
-console.log 'Hello' if not angry
-# Hello
+console.log 'smile!' if not angry
+# smile!
