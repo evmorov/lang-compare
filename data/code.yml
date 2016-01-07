@@ -213,7 +213,7 @@ File:
   Write:
     ruby: file_write.rb
     coffeescript: file-write.coffee
-  Get working directory:
+  Get working dir path:
     ruby: file_get_working_dir.rb
     coffeescript: file-get-working-dir.coffee
   File path:
