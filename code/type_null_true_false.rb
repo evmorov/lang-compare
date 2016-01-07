@@ -1,62 +1,62 @@
-values = {
-  string_var: 'str',
-  arr_var: [1, 2, 3],
-  num_var: 5,
-  true_var: true,
-  false_var: false,
-  null_var: nil,
-  zero_var: 0,
-  empty_var: '',
-  empty_arr: []
-}
-
 def if_value(values)
-  puts 'if value:'
+  puts '"if value":'
   values.each { |k, v| puts "#{k} - #{v ? 'true' : 'false'}" }
+  puts ''
 end
 
 def nil_value(values)
-  puts 'if value.nil?'
+  puts '"if value.nil?":'
   values.each { |k, v| puts "#{k} - #{v.nil? ? 'true' : 'false'}" }
+  puts ''
 end
 
 def empty_value(values)
-  puts 'if value.empty?'
+  puts '"if value.empty?":'
   values.each do |k, v|
     puts "#{k} - #{v.empty? ? 'true' : 'false'}" if v.respond_to? :empty?
   end
 end
 
+values = {
+  "'string'": 'string',
+  "''": '',
+  '[1, 2, 3]': [1, 2, 3],
+  '[]': [],
+  '5': 5,
+  '0': 0,
+  true: true,
+  false: false,
+  nil: nil
+}
+
 if_value(values)
-puts ''
 nil_value(values)
-puts ''
 empty_value(values)
 
-# if value:
-# string_var - true
-# arr_var - true
-# num_var - true
-# true_var - true
-# false_var - false
-# null_var - false
-# zero_var - true
-# empty_var - true
-# empty_arr - true
+# "if value":
+# 'string' - true
+# '' - true
+# [1, 2, 3] - true
+# [] - true
+# 5 - true
+# 0 - true
+# true - true
+# false - false
+# nil - false
 #
-# if value.nil?
-# string_var - false
-# arr_var - false
-# num_var - false
-# true_var - false
-# false_var - false
-# null_var - true
-# zero_var - false
-# empty_var - false
-# empty_arr - false
+# "if value.nil?":
+# 'string' - false
+# '' - false
+# [1, 2, 3] - false
+# [] - false
+# 5 - false
+# 0 - false
+# true - false
+# false - false
+# nil - true
 #
-# if value.empty?
-# string_var - false
-# arr_var - false
-# empty_var - true
-# empty_arr - true
+# "if value.empty?":
+# 'string' - false
+# '' - true
+# [1, 2, 3] - false
+# [] - true
