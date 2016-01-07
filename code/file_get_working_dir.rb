@@ -1,2 +1,2 @@
 p Dir.getwd
-# "/Users/evmorov/projects/coffeescript-koans"
+# "/Users/evmorov/projects/ruby-coffeescript"

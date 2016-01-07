@@ -1,2 +1,2 @@
 console.log process.cwd()
-# /Users/evmorov/projects/coffeescript-koans
+# /Users/evmorov/projects/ruby-coffeescript
