@@ -33,13 +33,6 @@ Number:
   Float:
     ruby: number_float.rb
     coffeescript: number-float.coffee
-Range:
-  Create:
-    ruby: range_create.rb
-    coffeescript: range-create.coffee
-  Step:
-    ruby: range_step.rb
-    coffeescript: range-step.coffee
 Type:
   Get type of object:
     ruby: type_get_type.rb
@@ -169,6 +162,9 @@ Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
+  For with step:
+    ruby: loop_for_with_step.rb
+    coffeescript: loop-for-with-step.coffee
   Times:
     ruby: loop_times.rb
     coffeescript: loop-times.coffee
