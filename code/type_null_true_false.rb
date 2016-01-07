@@ -1,32 +1,46 @@
 hsh = {
+  string_var: 'str',
+  arr_var: [1, 2, 3],
+  num_var: 5,
   true_var: true,
   false_var: false,
   null_var: nil,
   zero_var: 0,
-  empty_var: ''
+  empty_var: '',
+  empty_arr: []
 }
 hsh.each do |key, value|
   puts "#{key}:"
-  puts 'True' if value
-  puts 'False' unless value
-  puts 'Null' if value.nil?
-  puts 'Empty' if value.empty? rescue ''
+  puts 'if value' if value
+  puts 'if value.nil?' if value.nil?
+  puts 'if value.empty?' if value.empty? rescue ''
   puts ''
 end
 
+# string_var:
+# if value
+#
+# arr_var:
+# if value
+#
+# num_var:
+# if value
+#
 # true_var:
-# True
+# if value
 #
 # false_var:
-# False
 #
 # null_var:
-# False
-# Null
+# if value.nil?
 #
 # zero_var:
-# True
+# if value
 #
 # empty_var:
-# True
-# Empty
+# if value
+# if value.empty?
+#
+# empty_arr:
+# if value
+# if value.empty?

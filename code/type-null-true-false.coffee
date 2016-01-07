@@ -1,36 +1,55 @@
 hsh = {
-  true_var: true
-  false_var: false
-  null_var: null
-  zero_var: 0
-  empty_var: ''
-  undefined_var: undefined
+  stringVar: 'str'
+  arrVar: [1, 2, 3]
+  numVar: 5
+  trueVar: true
+  falseVar: false
+  nullVar: null
+  zeroVar: 0
+  emptyVar: ''
+  emptyArr: []
+  undefinedVar: undefined
 }
 for key, value of hsh
   console.log "#{key}:"
-  console.log 'True' if value
-  console.log 'False' unless value
-  console.log 'Null' unless value? # (? == not_null?)
-  console.log 'Empty' if value is ''
+  console.log 'if value' if value
+  console.log 'if value?' if value?
+  console.log "if value is ''" if value is ''
+  try console.log 'if value.length' if value.length
   console.log ''
 
-# true_var:
-# True
+# stringVar:
+# if value
+# if value?
+# if value.length
 #
-# false_var:
-# False
+# arrVar:
+# if value
+# if value?
+# if value.length
 #
-# null_var:
-# False
-# Null
+# numVar:
+# if value
+# if value?
 #
-# zero_var:
-# False
+# trueVar:
+# if value
+# if value?
 #
-# empty_var:
-# False
-# Empty
+# falseVar:
+# if value?
 #
-# undefined_var:
-# False
-# Null
+# nullVar:
+#
+# zeroVar:
+# if value?
+#
+# emptyVar:
+# if value?
+# if value is ''
+#
+# emptyArr:
+# if value
+# if value?
+#
+# undefinedVar:
