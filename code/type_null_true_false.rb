@@ -1,4 +1,4 @@
-hsh = {
+values = {
   string_var: 'str',
   arr_var: [1, 2, 3],
   num_var: 5,
@@ -9,38 +9,54 @@ hsh = {
   empty_var: '',
   empty_arr: []
 }
-hsh.each do |key, value|
-  puts "#{key}:"
-  puts 'if value' if value
-  puts 'if value.nil?' if value.nil?
-  puts 'if value.empty?' if value.empty? rescue ''
-  puts ''
+
+def if_value(values)
+  puts 'if value:'
+  values.each { |k, v| puts "#{k} - #{v ? 'true' : 'false'}" }
 end
 
-# string_var:
-# if value
+def nil_value(values)
+  puts 'if value.nil?'
+  values.each { |k, v| puts "#{k} - #{v.nil? ? 'true' : 'false'}" }
+end
+
+def empty_value(values)
+  puts 'if value.empty?'
+  values.each do |k, v|
+    puts "#{k} - #{v.empty? ? 'true' : 'false'}" if v.respond_to? :empty?
+  end
+end
+
+if_value(values)
+puts ''
+nil_value(values)
+puts ''
+empty_value(values)
+
+# if value:
+# string_var - true
+# arr_var - true
+# num_var - true
+# true_var - true
+# false_var - false
+# null_var - false
+# zero_var - true
+# empty_var - true
+# empty_arr - true
 #
-# arr_var:
-# if value
-#
-# num_var:
-# if value
-#
-# true_var:
-# if value
-#
-# false_var:
-#
-# null_var:
 # if value.nil?
+# string_var - false
+# arr_var - false
+# num_var - false
+# true_var - false
+# false_var - false
+# null_var - true
+# zero_var - false
+# empty_var - false
+# empty_arr - false
 #
-# zero_var:
-# if value
-#
-# empty_var:
-# if value
 # if value.empty?
-#
-# empty_arr:
-# if value
-# if value.empty?
+# string_var - false
+# arr_var - false
+# empty_var - true
+# empty_arr - true
