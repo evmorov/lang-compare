@@ -41,10 +41,10 @@ empty_value(values)
 length_value(values)
 
 # "if value":
-# 0 - false <---!
+# 0 - false
 # 5 - true
 # 'string' - true
-# '' - false <---!
+# '' - false
 # [1, 2, 3] - true
 # [] - true
 # true - true
@@ -60,7 +60,7 @@ length_value(values)
 # [1, 2, 3] - true
 # [] - true
 # true - true
-# false - true <---!
+# false - true
 # null - false
 # undefined - false
 #
