@@ -1,9 +1,22 @@
-class Science
-  include Math
-  def self.pi?(number)
-    PI == number
+module Moving
+  def walk
+    p "#{self.class.name} is walking"
   end
 end
 
-p Science.pi? 3.141592653589793
-# true
+module Interacting
+  def talk
+    p "#{self.class.name} is talking"
+  end
+end
+
+class Human
+  include Moving
+  include Interacting
+end
+
+human = Human.new
+human.walk
+# "Human is walking"
+human.talk
+# "Human is talking"

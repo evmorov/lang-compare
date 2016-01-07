@@ -1,17 +1,20 @@
 class Module
-  @include: (obj) ->
-    for key, value of obj when key not in ['extended','included']
-      @::[key] = value
-    obj.included?.apply(@)
-    @
+  @include: (obj) -> @::[key] = value for key, value of obj
 
-class MathCustom
-  PI: 3.141592653589793
+class Actions
+  walk: ->
+    console.log "#{@constructor.name} is walking"
 
-class Foo extends Module
-  @include MathCustom::
-  isPI: (number) ->
-    @PI is number
+class Interacting
+  talk: ->
+    console.log "#{@constructor.name} is talking"
 
-console.log (new Foo).isPI 3.141592653589793
-# true
+class Human extends Module
+  @include Actions::
+  @include Interacting::
+
+human = new Human
+human.walk()
+# Human is walking
+human.talk()
+# Human is talking
