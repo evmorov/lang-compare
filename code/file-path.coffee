@@ -1,2 +1,2 @@
-console.log __dirname
-# /Users/evmorov/projects/language-compare/code
+console.log __filename
+# /Users/evmorov/projects/ruby-coffeescript/code/file-path.coffee

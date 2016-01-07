@@ -1,2 +1,2 @@
-p File.expand_path(File.dirname(__FILE__))
-# "/Users/evmorov/projects/language-compare/code"
+p __FILE__
+# "/Users/evmorov/projects/ruby-coffeescript/code/file_path.rb"

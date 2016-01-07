@@ -219,6 +219,9 @@ File:
   File path:
     ruby: file_path.rb
     coffeescript: file-path.coffee
+  Dir path:
+    ruby: file_dir_path.rb
+    coffeescript: file-dir-path.coffee
 Method:
   Declare:
     ruby: method_declare.rb
