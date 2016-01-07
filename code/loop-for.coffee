@@ -1,5 +1,5 @@
-for time in [0..2]
-  console.log "#{time + 1}. Hi"
+for i in [1..3]
+  console.log "#{i}. Hi"
 # 1. Hi
 # 2. Hi
 # 3. Hi

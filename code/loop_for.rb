@@ -1,5 +1,5 @@
-3.times do |time|
-  p "#{time + 1}. Hi"
+(1..3).each do |i|
+  p "#{i}. Hi"
 end
 # "1. Hi"
 # "2. Hi"
