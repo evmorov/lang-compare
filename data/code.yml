@@ -279,6 +279,9 @@ Class:
   Mixin:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
+  Has method?:
+    ruby: class_has_method.rb
+    coffeescript: class-has-method.coffee
 Other:
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
@@ -298,3 +301,6 @@ Other:
   Time:
     ruby: other_time.rb
     coffeescript: other-time.coffee
+  Not:
+    ruby: other_not.rb
+    coffeescript: other-not.coffee
