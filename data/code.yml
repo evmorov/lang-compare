@@ -210,9 +210,9 @@ File:
   Write:
     ruby: file_write.rb
     coffeescript: file-write.coffee
-  Pwd:
-    ruby: file_pwd.rb
-    coffeescript: file-pwd.coffee
+  Get working directory:
+    ruby: file_get_working_dir.rb
+    coffeescript: file-get-working-dir.coffee
   File path:
     ruby: file_path.rb
     coffeescript: file-path.coffee
