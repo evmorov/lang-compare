@@ -162,7 +162,7 @@ Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
-  For with step:
+  For with a step:
     ruby: loop_for_with_step.rb
     coffeescript: loop-for-with-step.coffee
   Times:
