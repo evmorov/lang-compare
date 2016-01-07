@@ -101,6 +101,9 @@ Array:
   Reduce:
     ruby: array_reduce.rb
     coffeescript: array-reduce.coffee
+  Index of element:
+    ruby: array_index_of_element.rb
+    coffeescript: array-index-of-element.coffee
 Hash (map):
   Create:
     ruby: hash_create.rb
