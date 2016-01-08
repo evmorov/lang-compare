@@ -1,22 +1,22 @@
-if_value = (values) ->
+ifValue = (values) ->
   console.log '"if value":'
   for k, v of values
     console.log "#{k} - #{if v then 'true' else 'false'}"
   console.log ''
 
-question_value = (values) ->
+questionValue = (values) ->
   console.log '"if value?":'
   for k, v of values
     console.log "#{k} - #{if v? then 'true' else 'false'}"
   console.log ''
 
-empty_value = (values) ->
+emptyValue = (values) ->
   console.log '"if value is \'\'":'
   for k, v of values
     console.log "#{k} - #{if v is '' then 'true' else 'false'}"
   console.log ''
 
-length_value = (values) ->
+lengthValue = (values) ->
   console.log '"if value.length":'
   for k, v of values
     try console.log "#{k} - #{if v.length then 'true' else 'false'}"
@@ -35,10 +35,10 @@ values = {
   undefined: undefined
 }
 
-if_value(values)
-question_value(values)
-empty_value(values)
-length_value(values)
+ifValue(values)
+questionValue(values)
+emptyValue(values)
+lengthValue(values)
 
 # "if value":
 # 0 - false
