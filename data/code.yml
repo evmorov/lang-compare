@@ -225,6 +225,9 @@ File:
   Dir path:
     ruby: file_dir_path.rb
     coffeescript: file-dir-path.coffee
+  Parent dir path:
+    ruby: file_parent_dir_path.rb
+    coffeescript: file-parent-dir-path.coffee
 Method:
   Declare:
     ruby: method_declare.rb
