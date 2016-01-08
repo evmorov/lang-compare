@@ -2,9 +2,12 @@ String:
   Create:
     ruby: string_create.rb
     coffeescript: string-create.coffee
-  Concatenation and interpolation:
+  Concatenation:
     ruby: string_concat.rb
     coffeescript: string-concat.coffee
+  Interpolation:
+    ruby: string_interpolation.rb
+    coffeescript: string-interpolation.coffee
   Remove part:
     ruby: string_remove.rb
     coffeescript: string-remove.coffee
