@@ -315,3 +315,7 @@ Other:
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
+Project information:
+  Language version:
+    ruby: project_lang_version.rb
+    coffeescript: project-lang-version.coffee
