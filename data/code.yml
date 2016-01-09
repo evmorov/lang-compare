@@ -161,9 +161,6 @@ Conditional:
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
-  Assign this or that:
-    ruby: conditional_assign_this_or_that.rb
-    coffeescript: conditional-assign-this-or-that.coffee
 Loop:
   For:
     ruby: loop_for.rb
@@ -315,3 +312,6 @@ Other:
   Not:
     ruby: other_not.rb
     coffeescript: other-not.coffee
+  Assign this or that:
+    ruby: conditional_assign_this_or_that.rb
+    coffeescript: conditional-assign-this-or-that.coffee
