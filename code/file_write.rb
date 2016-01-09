@@ -1,2 +1,2 @@
-file_path = File.expand_path('output.txt', File.dirname(__FILE__))
+file_path = File.join(File.dirname(__FILE__), 'output.txt')
 File.write(file_path, 'Some glorious content')

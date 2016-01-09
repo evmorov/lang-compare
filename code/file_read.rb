@@ -1,3 +1,3 @@
-file_path = File.expand_path('file.txt', File.dirname(__FILE__))
+file_path = File.join(File.dirname(__FILE__), 'file.txt')
 p File.read(file_path)
 # "Hello!\n"

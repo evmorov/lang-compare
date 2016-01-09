@@ -228,6 +228,9 @@ File:
   Parent dir path:
     ruby: file_parent_dir_path.rb
     coffeescript: file-parent-dir-path.coffee
+  Sister dir path:
+    ruby: file_sister_dir_path.rb
+    coffeescript: file-sister-dir-path.coffee
 Method:
   Declare:
     ruby: method_declare.rb
