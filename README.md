@@ -1,6 +1,6 @@
 # Compare syntax of Ruby and CoffeeScript
 
-The web app provides side by side examples of syntax difference between Ruby and CoffeeScript. You can use it as a stylesheet or as a learning material to learn one of them through another.
+The web app provides side by side examples of syntax difference between Ruby and CoffeeScript. You can use it as a cheatsheet or as a learning material to learn one of them through another.
 
 All examples are executable. You can copy and launch them without changes. It helps to understand what the code is doing without any difficulties.
 
