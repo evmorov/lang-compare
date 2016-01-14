@@ -29,3 +29,23 @@ end
 
 activate :syntax
 set :haml, ugly: true
+
+languages = ['Ruby', 'CoffeeScript', 'JavaScript']
+languages.each do |left|
+  (languages - [left]).each do |right|
+    proxy(
+      "#{left.downcase}-#{right.downcase}.html",
+      '/template.html',
+      locals: {
+        left: left,
+        right: right,
+        languages: languages
+      }
+    )
+  end
+end
+proxy 'index.html', '/template.html', locals: {
+  left: 'Ruby',
+  right: 'CoffeeScript',
+  languages: languages
+}

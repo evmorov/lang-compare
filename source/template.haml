@@ -1,8 +1,15 @@
 %h1
-  %a{href: '', title: 'Ruby <> CoffeeScript'}
-    Ruby <> CoffeeScript
+  %a{href: '/', title: 'Language compare'}
+    Language compare
 
 .container-fluid
+  .row
+    .col-md-12
+      - languages.each do |left|
+        - (languages - [left]).each do |right|
+          .page-link
+            = link_to "#{left} <> #{right}", "#{left.downcase}-#{right.downcase}.html"
+
   .row
     .col-md-6
       = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index < hash_size } })
@@ -11,9 +18,9 @@
 
   .row
     .col-md-6
-      %h2 Ruby
+      %h2 #{left}
     .col-md-6
-      %h2 CoffeeScript
+      %h2 #{right}
 
   - data.code.each do |section|
     %h3{id: header_to_id(section.first)}= section.first
@@ -21,9 +28,9 @@
       %h4{id: header_to_id("#{section.first}_#{header}")}= header
       .row
         .col-md-6
-          = code_file(code.ruby)
+          = code_file(code.send(left.downcase))
         .col-md-6
-          = code_file(code.coffeescript)
+          = code_file(code.send(right.downcase))
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}
