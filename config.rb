@@ -30,6 +30,6 @@ end
 activate :syntax
 set :haml, ugly: true
 
-proxy 'index.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }
-proxy 'ruby-coffeescript.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }
-proxy 'coffeescript-ruby.html', '/template.html', locals: { lang1: 'CoffeeScript', lang2: 'Ruby' }
+proxy 'index.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }, ignore: true
+proxy 'ruby-coffeescript.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }, ignore: true
+proxy 'coffeescript-ruby.html', '/template.html', locals: { lang1: 'CoffeeScript', lang2: 'Ruby' }, ignore: true
