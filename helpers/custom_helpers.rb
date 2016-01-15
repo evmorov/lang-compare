@@ -7,7 +7,6 @@ module CustomHelpers
 
   def code_file(filename)
     return 'Not available' unless filename
-
     file_extension = CODE_EXTENSION[(File.extname filename).delete('.')]
     code(file_extension) do
       File.read File.join(Dir.pwd, 'code', filename) rescue return 'No easy way to do that'
