@@ -5,10 +5,10 @@
 .container-fluid
   .row
     .col-md-12
-      - languages.each do |left|
-        - (languages - [left]).each do |right|
-          .page-link
-            = link_to "#{left} <> #{right}", "#{left.downcase}-#{right.downcase}.html"
+      .page-link
+        = link_to 'Ruby <> CoffeeScript', "ruby-coffeescript.html"
+      .page-link
+        = link_to 'CoffeeScript <> Ruby', "coffeescript-ruby.html"
 
   .row
     .col-md-6
@@ -18,9 +18,9 @@
 
   .row
     .col-md-6
-      %h2 #{left}
+      %h2 #{lang1}
     .col-md-6
-      %h2 #{right}
+      %h2 #{lang2}
 
   - data.code.each do |section|
     %h3{id: header_to_id(section.first)}= section.first
@@ -28,9 +28,9 @@
       %h4{id: header_to_id("#{section.first}_#{header}")}= header
       .row
         .col-md-6
-          = code_file(code.send(left.downcase))
+          = code_file(code.send(lang1.downcase))
         .col-md-6
-          = code_file(code.send(right.downcase))
+          = code_file(code.send(lang2.downcase))
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}
