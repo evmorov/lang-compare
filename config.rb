@@ -30,6 +30,22 @@ end
 activate :syntax
 set :haml, ugly: true
 
-proxy 'index.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }, ignore: true
-proxy 'ruby-coffeescript.html', '/template.html', locals: { lang1: 'Ruby', lang2: 'CoffeeScript' }, ignore: true
-proxy 'coffeescript-ruby.html', '/template.html', locals: { lang1: 'CoffeeScript', lang2: 'Ruby' }, ignore: true
+[
+  { page: 'index.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
+  { page: 'ruby-coffeescript.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
+  { page: 'coffeescript-ruby.html', lang1: 'CoffeeScript', lang2: 'Ruby' },
+  { page: 'ruby-java.html', lang1: 'Ruby', lang2: 'Java' },
+  { page: 'java-ruby.html', lang1: 'Java', lang2: 'Ruby' },
+  { page: 'coffeescript-java.html', lang1: 'CoffeeScript', lang2: 'Java' },
+  { page: 'java-coffeescript.html', lang1: 'Java', lang2: 'CoffeeScript' }
+].each do |language_set|
+  proxy(
+    language_set[:page],
+    '/template.html',
+    locals: {
+      lang1: language_set[:lang1],
+      lang2: language_set[:lang2]
+    },
+    ignore: true
+  )
+end
