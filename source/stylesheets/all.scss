@@ -4,16 +4,21 @@
 .highlight {
   font-size: 0.8em;
 }
-h1 {
+.page-header1 {
   padding-left: 10px;
   a:hover {
     text-decoration: none;
   }
 }
-h3 {
+.page-header2 {
+  padding-left: 10px;
+  font-size: 24px;
+  color: #df691a;
+}
+.compare-header3 {
   padding-bottom: 10px;
 }
-h4 {
+.compare-header4 {
   padding-bottom: 5px;
 }
 #top-link-block {
@@ -32,4 +37,7 @@ li.content {
 }
 #footer {
   margin: 20px;
+}
+.lang-block {
+  margin: 20px 0;
 }
