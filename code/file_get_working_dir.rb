@@ -1,2 +1,2 @@
 p Dir.getwd
-# "/Users/evmorov/projects/ruby-coffeescript"
+# "/Users/evmorov/projects/lang-compare"

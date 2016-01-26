@@ -10,5 +10,5 @@ class Dog < Animal
   end
 end
 
-Dog.new.sing
-# "Bark!"
+Dog.new.walk
+# "I'm walking"

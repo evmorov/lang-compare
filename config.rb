@@ -30,21 +30,23 @@ end
 activate :syntax
 set :haml, ugly: true
 
-[
-  { page: 'index.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
+compare_pages = [
   { page: 'ruby-coffeescript.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
   { page: 'coffeescript-ruby.html', lang1: 'CoffeeScript', lang2: 'Ruby' },
   { page: 'ruby-java.html', lang1: 'Ruby', lang2: 'Java' },
   { page: 'java-ruby.html', lang1: 'Java', lang2: 'Ruby' },
   { page: 'coffeescript-java.html', lang1: 'CoffeeScript', lang2: 'Java' },
   { page: 'java-coffeescript.html', lang1: 'Java', lang2: 'CoffeeScript' }
-].each do |language_set|
+]
+index_page = [{ page: 'index.html', lang1: 'Ruby', lang2: 'CoffeeScript' }]
+(compare_pages + index_page).each do |compare_page|
   proxy(
-    language_set[:page],
+    compare_page[:page],
     '/template.html',
     locals: {
-      lang1: language_set[:lang1],
-      lang2: language_set[:lang2]
+      compare_pages: compare_pages,
+      current_lang1: compare_page[:lang1],
+      current_lang2: compare_page[:lang2]
     },
     ignore: true
   )

@@ -1,4 +1,5 @@
-p [5, 10].min
-# 5
-p [4, 7].max
-# 7
+arr = [1, 2, 3]
+p arr.min
+p arr.max
+# 1
+# 3

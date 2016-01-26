@@ -1,6 +1,6 @@
 module Colors
-  RED = 'red'
-  GREEN = 'green'
+  RED = '#FF0000'
+  GREEN = '#00FF00'
 end
 p Colors::GREEN
-# "green"
+# "#00FF00"

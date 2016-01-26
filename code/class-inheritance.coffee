@@ -6,5 +6,5 @@ class Dog extends Animal
   sing: ->
     console.log 'Bark!'
 
-(new Dog).sing()
-# "Bark!"
+new Dog().walk()
+# I'm walking
