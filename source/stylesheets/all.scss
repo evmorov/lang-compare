@@ -1,35 +1,46 @@
 @charset "utf-8";
-@import 'superhero-bootstrap-theme.min';
 @import "bootstrap-sprockets";
+@import "bootstrap";
+
 .highlight {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
-h1 {
-  padding-left: 10px;
+
+.page-header1 {
   a:hover {
     text-decoration: none;
   }
 }
-h3 {
+
+.compare-header3 {
   padding-bottom: 10px;
 }
-h4 {
+
+.compare-header4 {
   padding-bottom: 5px;
 }
+
 #top-link-block {
   &.affix-top {
     position: absolute;
     right: 10px;
   }
+
   &.affix {
     position: fixed;
     bottom: 18px;
     right: 10px;
   }
 }
+
 li.content {
   margin-top: 10px;
 }
+
+.language-list {
+  margin-left: -15px;
+}
+
 #footer {
   margin: 20px;
 }

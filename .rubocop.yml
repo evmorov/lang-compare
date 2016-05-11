@@ -5,7 +5,6 @@ AllCops:
     - 'config/**/*'
     - 'vagrant/**/*'
     - 'bin/**/*'
-  RunRailsCops: true
 
 Metrics/LineLength:
   Max: 100

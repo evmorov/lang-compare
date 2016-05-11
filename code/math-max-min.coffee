@@ -1,4 +1,5 @@
-console.log Math.min.apply(@, [5, 10])
-# 5
-console.log Math.max.apply(@, [4, 7])
-# 7
+arr = [1, 2, 3]
+console.log Math.min.apply(@, arr)
+console.log Math.max.apply(@, arr)
+# 1
+# 3

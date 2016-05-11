@@ -1,14 +1,16 @@
-%h1
-  %a{href: '/', title: 'Language compare'}
-    Language compare
-
 .container-fluid
-  .row
-    .col-md-12
-      .page-link
-        = link_to 'Ruby <> CoffeeScript', "ruby-coffeescript.html"
-      .page-link
-        = link_to 'CoffeeScript <> Ruby', "coffeescript-ruby.html"
+  %h1.page-header1
+    %a{href: '/', title: 'Language compare'}
+      Language compare
+
+  .dropdown
+    %button.btn.btn-link.btn-lg.language-list.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+      = "#{current_lang1} <> #{current_lang2}"
+      %span.caret
+    %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+      - compare_pages.each do |compare_page|
+        %li
+          = link_to "#{compare_page[:lang1]} <> #{compare_page[:lang2]}", compare_page[:page]
 
   .row
     .col-md-6
@@ -18,19 +20,19 @@
 
   .row
     .col-md-6
-      %h2 #{lang1}
+      %h2.compare-header2 #{current_lang1}
     .col-md-6
-      %h2 #{lang2}
+      %h2.compare-header2 #{current_lang2}
 
   - data.code.each do |section|
-    %h3{id: header_to_id(section.first)}= section.first
+    %h3.compare-header3{id: header_to_id(section.first)}= section.first
     - section.last.each do |header, code|
-      %h4{id: header_to_id("#{section.first}_#{header}")}= header
+      %h4.compare-header4{id: header_to_id("#{section.first}_#{header}")}= header
       .row
         .col-md-6
-          = code_file(code.send(lang1.downcase))
+          = code_file(code.send(current_lang1.downcase))
         .col-md-6
-          = code_file(code.send(lang2.downcase))
+          = code_file(code.send(current_lang2.downcase))
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}

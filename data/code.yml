@@ -2,320 +2,422 @@ String:
   Create:
     ruby: string_create.rb
     coffeescript: string-create.coffee
+    java: StringCreate.java
   Concatenation:
     ruby: string_concat.rb
     coffeescript: string-concat.coffee
+    java: StringConcat.java
   Interpolation:
     ruby: string_interpolation.rb
     coffeescript: string-interpolation.coffee
+    java: no.java
   Remove part:
     ruby: string_remove.rb
     coffeescript: string-remove.coffee
+    java: StringRemove.java
   Replace:
     ruby: string_replace.rb
     coffeescript: string-replace.coffee
+    java: StringReplace.java
   Split:
     ruby: string_split.rb
     coffeescript: string-split.coffee
+    java: StringSplit.java
   Remove leading and trailing whitespace:
     ruby: string_remove_whistespace.rb
     coffeescript: string-remove-whistespace.coffee
+    java: StringRemoveWhitespace.java
   Compare:
     ruby: string_compare.rb
     coffeescript: string-compare.coffee
+    java: StringCompare.java
   Regex:
     ruby: string_regex.rb
     coffeescript: string-regex.coffee
+    java: StringRegex.java
 Number:
   Compare:
     ruby: number_compare.rb
     coffeescript: number-compare.coffee
+    java: NumberCompare.java
   Random:
     ruby: number_random.rb
     coffeescript: number-random.coffee
+    java: NumberRandom.java
   Float:
     ruby: number_float.rb
     coffeescript: number-float.coffee
+    java: NumberFloat.java
 Type:
   Get type of object:
     ruby: type_get_type.rb
     coffeescript: type-get-type.coffee
+    java: TypeGetType.java
   Int to Float:
     ruby: type_int_to_float.rb
     coffeescript: type-int-to-float.coffee
+    java: TypeIntToFloat.java
   Int to String:
     ruby: type_int_to_string.rb
     coffeescript: type-int-to-string.coffee
+    java: TypeIntToString.java
   String to Int:
     ruby: type_string_to_int.rb
     coffeescript: type-string-to-int.coffee
+    java: TypeStringToInt.java
   String?:
     ruby: type_is_string.rb
     coffeescript: type-is-string.coffee
+    java: TypeIsString.java
   Null/True/False?:
     ruby: type_null_true_false.rb
     coffeescript: type-null-true-false.coffee
+    java: no.java
 Array:
   Create:
     ruby: array_create.rb
     coffeescript: array-create.coffee
+    java: ArrayCreate.java
   Create populated:
     ruby: array_create_populated.rb
     coffeescript: array-create-populated.coffee
+    java: ArrayCreatePopulated.java
   With different types:
     ruby: array_with_different_types.rb
     coffeescript: array-with-different-types.coffee
+    java: ArrayDifferentTypes.java
   Include?:
     ruby: array_is_include.rb
     coffeescript: array-is-include.coffee
+    java: ArrayIsInclude.java
   Iterate:
     ruby: array_iterate.rb
     coffeescript: array-iterate.coffee
+    java: ArrayIterate.java
   Iterate with index:
     ruby: array_iterate_with_index.rb
     coffeescript: array-iterate-with-index.coffee
+    java: ArrayIterateWithIndex.java
   Get first, last element:
     ruby: array_get_first_and_last.rb
     coffeescript: array-get-first-and-last.coffee
+    java: ArrayGetFirstAndLast.java
   Find first:
     ruby: array_find.rb
     coffeescript: array-find.coffee
+    java: ArrayFind.java
   Select (find all):
     ruby: array_select.rb
     coffeescript: array-select.coffee
+    java: ArraySelect.java
   Map (change all):
     ruby: array_map.rb
     coffeescript: array-map.coffee
+    java: ArrayMap.java
   Concatenation:
     ruby: array_concat.rb
     coffeescript: array-concat.coffee
+    java: ArrayConcat.java
   Sort:
     ruby: array_sort.rb
     coffeescript: array-sort.coffee
+    java: ArraySort.java
   Multidimensional:
     ruby: array_multi.rb
     coffeescript: array-multi.coffee
+    java: ArrayMulti.java
   Size:
     ruby: array_size.rb
     coffeescript: array-size.coffee
+    java: ArraySize.java
   Count:
     ruby: array_count.rb
     coffeescript: array-count.coffee
+    java: ArrayCount.java
   Reduce:
     ruby: array_reduce.rb
     coffeescript: array-reduce.coffee
+    java: ArrayReduce.java
   Index of element:
     ruby: array_index_of_element.rb
     coffeescript: array-index-of-element.coffee
+    java: ArrayIndexOfElement.java
 Hash (map):
   Create:
     ruby: hash_create.rb
     coffeescript: hash-create.coffee
+    java: HashCreate.java
   Create populated:
     ruby: hash_create_populated.rb
     coffeescript: hash-create-populated.coffee
+    java: HashCreatePopulated.java
   Iterate:
     ruby: hash_iterate.rb
     coffeescript: hash-iterate.coffee
+    java: HashIterate.java
   Include?:
     ruby: hash_is_include.rb
     coffeescript: hash-is-include.coffee
+    java: HashIsInclude.java
   Get value:
     ruby: hash_get_value.rb
     coffeescript: hash-get-value.coffee
+    java: HashGetValue.java
   Size:
     ruby: hash_size.rb
     coffeescript: hash-size.coffee
+    java: HashSize.java
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
     coffeescript: other-structure-boolean.coffee
+    java: OtherStructureBoolean.java
   Constant:
     ruby: other_structure_constant.rb
     coffeescript: other-structure-constant.coffee
-  Contsant list:
+    java: OtherStructureConstant.java
+  Constant list:
     ruby: other_structure_constant_list.rb
     coffeescript: other-structure-constant-list.coffee
+    java: OtherStructureConstantList.java
   Struct:
     ruby: other_structure_struct.rb
     coffeescript: no.coffee
+    java: no.java
 Conditional:
   If:
     ruby: conditional_if.rb
     coffeescript: conditional-if.coffee
+    java: ConditionalIf.java
   If/else:
     ruby: conditional_if_else.rb
     coffeescript: conditional-if-else.coffee
+    java: ConditionalIfElse.java
   And/Or:
     ruby: conditional_and_or.rb
     coffeescript: conditional-and-or.coffee
+    java: ConditionalAndOr.java
   Switch:
     ruby: conditional_switch.rb
     coffeescript: conditional-switch.coffee
+    java: ConditionalSwitch.java
   Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     coffeescript: conditional-switch-as-else-if.coffee
+    java: no.java
   Ternary:
     ruby: conditional_ternary.rb
     coffeescript: conditional-ternary.coffee
+    java: ConditionalTernary.java
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
+    java: no.java
 Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
+    java: LoopFor.java
   For with a step:
     ruby: loop_for_with_step.rb
     coffeescript: loop-for-with-step.coffee
+    java: LoopForWithStep.java
   Times:
     ruby: loop_times.rb
     coffeescript: loop-times.coffee
+    java: LoopTimes.java
   While:
     ruby: loop_while.rb
     coffeescript: loop-while.coffee
+    java: LoopWhile.java
   Until:
     ruby: loop_until.rb
     coffeescript: loop-until.coffee
+    java: LoopUntil.java
   Return array:
     ruby: loop_return_array.rb
     coffeescript: loop-return-array.coffee
+    java: no.java
   Break:
     ruby: loop_break.rb
     coffeescript: loop-break.coffee
+    java: LoopBreak.java
   Next/Continue:
     ruby: loop_next.rb
     coffeescript: loop-next.coffee
+    java: LoopNext.java
 Math:
   Max/Min:
     ruby: math_max_min.rb
     coffeescript: math-max-min.coffee
+    java: MathMaxMin.java
   Sqrt:
     ruby: math_sqrt.rb
     coffeescript: math-sqrt.coffee
+    java: MathSqrt.java
 Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
     coffeescript: error-try-catch.coffee
+    java: ErrorTryCatch.java
   With a message:
     ruby: error_with_a_message.rb
     coffeescript: error-with-a-message.coffee
+    java: ErrorWithAMessage.java
   Method:
     ruby: error_method.rb
     coffeescript: no.coffee
+    java: no.java
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
+    java: ErrorThrow.java
 File:
   Read:
     ruby: file_read.rb
     coffeescript: file-read.coffee
+    java: FileRead.java
   Write:
     ruby: file_write.rb
     coffeescript: file-write.coffee
+    java: FileWrite.java
   Get working dir path:
     ruby: file_get_working_dir.rb
     coffeescript: file-get-working-dir.coffee
+    java: FileGetWorkingDir.java
   File path:
     ruby: file_path.rb
     coffeescript: file-path.coffee
+    java: FilePath.java
   Dir path:
     ruby: file_dir_path.rb
     coffeescript: file-dir-path.coffee
+    java: FileDirPath.java
   Parent dir path:
     ruby: file_parent_dir_path.rb
     coffeescript: file-parent-dir-path.coffee
+    java: FileParentDirPath.java
   Sister dir path:
     ruby: file_sister_dir_path.rb
     coffeescript: file-sister-dir-path.coffee
+    java: FileSisterDirPath.java
 Method:
   Declare:
     ruby: method_declare.rb
     coffeescript: method-declare.coffee
+    java: MethodDeclare.java
   Multiple arguments:
     ruby: method_multi_arg.rb
     coffeescript: method-multi-arg.coffee
+    java: MethodMultiArg.java
   Default value for argument:
     ruby: method_default_value.rb
     coffeescript: method-default-value.coffee
+    java: no.java
   Return:
     ruby: method_return.rb
     coffeescript: method-return.coffee
+    java: MethodReturn.java
   Closure:
     ruby: method_closure.rb
     coffeescript: method-closure.coffee
+    java: no.java
   Block passing:
     ruby: method_block_passing.rb
     coffeescript: method-block-passing.coffee
+    java: no.java
   Block binding:
     ruby: method_block_binding.rb
     coffeescript: method-block-binding.coffee
+    java: no.java
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     coffeescript: method-init-in-runtime.coffee
+    java: no.java
   Alias:
     ruby: method_alias.rb
     coffeescript: method-alias.coffee
+    java: no.java
 Class:
   Declare:
     ruby: class_declare.rb
     coffeescript: class-declare.coffee
+    java: ClassDeclare.java
   Constructor:
     ruby: class_constructor.rb
     coffeescript: class-constructor.coffee
+    java: ClassConstructor.java
   Method call:
     ruby: class_method_call.rb
     coffeescript: class-method-call.coffee
+    java: ClassMethodCall.java
   Class method:
     ruby: class_class_method.rb
     coffeescript: class-class-method.coffee
+    java: ClassClassMethod.java
   Private method:
     ruby: class_private_method.rb
     coffeescript: class-private-method.coffee
+    java: ClassPrivateMethod.java
   Private method, access instance variable:
     ruby: class_private_method_access_instance_var.rb
     coffeescript: no.coffee
+    java: ClassPrivateMethodAccessInstance.java
   Field:
     ruby: class_field.rb
     coffeescript: class-field.coffee
+    java: ClassField.java
   Get/set:
     ruby: class_get_set.rb
     coffeescript: class-get-set.coffee
+    java: ClassGetSet.java
   Inheritance:
     ruby: class_inheritance.rb
     coffeescript: class-inheritance.coffee
+    java: ClassInheritance.java
   Mixin:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
+    java: no.java
   Has method?:
     ruby: class_has_method.rb
     coffeescript: class-has-method.coffee
+    java: ClassHasMethod.java
 Other:
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
+    java: no.java
   Safe navigation:
     ruby: no.rb
     coffeescript: other-safe-navigation.coffee
+    java: no.java
   Import another file:
     ruby: other_import_file.rb
     coffeescript: other-import-file.coffee
+    java: OtherImportFile.java
   Destructuring assignment:
     ruby: other_destructing_assignment.rb
     coffeescript: other-destructing-assignment.coffee
+    java: no.java
   Date:
     ruby: other_date.rb
     coffeescript: other-date.coffee
+    java: OtherDate.java
   Time:
     ruby: other_time.rb
     coffeescript: other-time.coffee
+    java: OtherTime.java
   Not:
     ruby: other_not.rb
     coffeescript: other-not.coffee
+    java: OtherNot.java
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
+    java: no.java
 Project information:
   Language version:
     ruby: project_lang_version.rb
     coffeescript: project-lang-version.coffee
+    java: ProjectLangVersion.java
