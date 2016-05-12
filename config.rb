@@ -7,6 +7,8 @@ activate :directory_indexes
 
 set :relative_links, true
 
+set :site_url, '/'
+
 configure :build do
   # Any files you want to ignore:
   # ignore '/admin/*'
@@ -22,6 +24,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+
+  set :site_url, '/lang-compare'
 end
 
 activate :deploy do |deploy|
