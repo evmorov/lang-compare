@@ -36,24 +36,21 @@ end
 activate :syntax
 set :haml, ugly: true
 
-compare_pages = [
-  { url: 'ruby-coffeescript.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
-  { url: 'ruby-java.html', lang1: 'Ruby', lang2: 'Java' },
-  { url: 'coffeescript-ruby.html', lang1: 'CoffeeScript', lang2: 'Ruby' },
-  { url: 'coffeescript-java.html', lang1: 'CoffeeScript', lang2: 'Java' },
-  { url: 'java-ruby.html', lang1: 'Java', lang2: 'Ruby' },
-  { url: 'java-coffeescript.html', lang1: 'Java', lang2: 'CoffeeScript' }
-]
-index_page = [{ url: 'index.html', lang1: 'Ruby', lang2: 'CoffeeScript' }]
-(compare_pages + index_page).each do |compare_page|
-  proxy(
-    compare_page[:url],
-    '/template.html',
-    locals: {
-      compare_pages: compare_pages,
-      current_lang1: compare_page[:lang1],
-      current_lang2: compare_page[:lang2]
-    },
-    ignore: true
-  )
+def template_proxy(url, lang1, lang2)
+  proxy(url, '/template.html', locals: { lang1: lang1, lang2: lang2 }, ignore: true)
 end
+
+lang_list = [
+  %w(Ruby CoffeeScript),
+  %w(Ruby Java),
+  %w(CoffeeScript Ruby),
+  %w(CoffeeScript Java),
+  %w(Java Ruby),
+  %w(Java CoffeeScript)
+]
+set :lang_list, lang_list
+lang_list.each do |lang_pair|
+  url = "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"
+  template_proxy url, lang_pair[0], lang_pair[1]
+end
+template_proxy'index.html', 'Ruby', 'CoffeeScript'
