@@ -1,7 +1,6 @@
 .container-fluid
   %h1.page-header1
-    %a{href: '/', title: 'Language compare'}
-      Language compare
+    = link_to 'Language compare', '/'
 
   .dropdown
     %button.btn.btn-link.btn-lg.language-list.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
