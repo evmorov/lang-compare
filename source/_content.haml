@@ -3,8 +3,8 @@
     = next unless filter.call(index, data.code.size / 2)
     %li.content
       %strong
-        %a.scroll.section{href: header_to_id("##{section.first}"), title: section.first}= section.first
+        %a.scroll.section{href: sanitize("##{section.first}"), title: section.first}= section.first
       %ul
         - section.last.each do |header, code|
           %li
-            %a.scroll{href: header_to_id("##{section.first}_#{header}"), title: header}= header
+            %a.scroll{href: sanitize("##{section.first}_#{header}"), title: header}= header

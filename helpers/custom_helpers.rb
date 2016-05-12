@@ -13,7 +13,7 @@ module CustomHelpers
     end
   end
 
-  def header_to_id(header)
-    header.tr(' /,', '_').tr('()?', '').downcase
+  def sanitize(str)
+    str.tr(' /,', '_').tr('()?', '').downcase
   end
 end

@@ -24,9 +24,14 @@
       %h2.compare-header2 #{lang2}
 
   - data.code.each do |section|
-    %h3.compare-header3{id: header_to_id(section.first)}= section.first
+    %h3.compare-header3{id: sanitize(section.first)}= section.first
     - section.last.each do |header, code|
-      %h4.compare-header4{id: header_to_id("#{section.first}_#{header}")}= header
+      %h4.compare-header4
+        = header
+        %small
+          - bookmark = sanitize("#{section.first}_#{header}")
+          %a{href: "##{bookmark}", id: bookmark}
+            %i.glyphicon.glyphicon-link
       .row
         .col-md-6
           = code_file(code.send(lang1.downcase))
