@@ -30,7 +30,7 @@
         = header
         %small
           - bookmark = sanitize("#{section.first}_#{header}")
-          %a{href: "##{bookmark}", id: bookmark}
+          %a.link-unstyled{href: "##{bookmark}", id: bookmark}
             %i.glyphicon.glyphicon-link
       .row
         .col-md-6
