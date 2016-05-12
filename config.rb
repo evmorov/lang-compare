@@ -53,4 +53,4 @@ lang_list.each do |lang_pair|
   url = "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"
   template_proxy url, lang_pair[0], lang_pair[1]
 end
-template_proxy'index.html', 'Ruby', 'CoffeeScript'
+template_proxy 'index.html', 'Ruby', 'CoffeeScript'
