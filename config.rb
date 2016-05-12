@@ -4,6 +4,7 @@ set :images_dir, 'images'
 
 # Turn this on if you want to make your url's prettier, without the .html
 activate :directory_indexes
+set :relative_links, true
 
 configure :build do
   # Any files you want to ignore:
