@@ -38,10 +38,10 @@ set :haml, ugly: true
 
 compare_pages = [
   { page: 'ruby-coffeescript.html', lang1: 'Ruby', lang2: 'CoffeeScript' },
-  { page: 'coffeescript-ruby.html', lang1: 'CoffeeScript', lang2: 'Ruby' },
   { page: 'ruby-java.html', lang1: 'Ruby', lang2: 'Java' },
-  { page: 'java-ruby.html', lang1: 'Java', lang2: 'Ruby' },
+  { page: 'coffeescript-ruby.html', lang1: 'CoffeeScript', lang2: 'Ruby' },
   { page: 'coffeescript-java.html', lang1: 'CoffeeScript', lang2: 'Java' },
+  { page: 'java-ruby.html', lang1: 'Java', lang2: 'Ruby' },
   { page: 'java-coffeescript.html', lang1: 'Java', lang2: 'CoffeeScript' }
 ]
 index_page = [{ page: 'index.html', lang1: 'Ruby', lang2: 'CoffeeScript' }]
