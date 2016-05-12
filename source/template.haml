@@ -9,7 +9,7 @@
     %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
       - compare_pages.each do |compare_page|
         %li
-          = link_to "#{compare_page[:lang1]} <> #{compare_page[:lang2]}", compare_page[:page]
+          = link_to "#{compare_page[:lang1]} <> #{compare_page[:lang2]}", compare_page[:url]
 
   .row
     .col-md-6
