@@ -5,6 +5,8 @@ set :images_dir, 'images'
 # Turn this on if you want to make your url's prettier, without the .html
 activate :directory_indexes
 
+set :relative_links, true
+
 configure :build do
   # Any files you want to ignore:
   # ignore '/admin/*'
@@ -20,8 +22,6 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
-
-  set :http_prefix, '/lang-compare'
 end
 
 activate :deploy do |deploy|
