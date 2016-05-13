@@ -25,7 +25,10 @@
 
   - data.code.each do |section|
     %h3.compare-header3{id: sanitize(section.first)}= section.first
-    - section.last.each do |header, code|
+    - section.last.each do |header, langs_to_filenames|
+      - code1 = code_from_file langs_to_filenames[lang1.downcase] rescue nil
+      - code2 = code_from_file langs_to_filenames[lang2.downcase] rescue nil
+      - next if code1.nil? && code2.nil?
       %h4.compare-header4
         = header
         %small
@@ -33,10 +36,11 @@
           %a.link-unstyled{href: "##{bookmark}", id: bookmark}
             %i.glyphicon.glyphicon-link
       .row
+        - no_message = 'No easy way to do that'
         .col-md-6
-          = code_file(code.send(lang1.downcase))
+          = code1 || no_message
         .col-md-6
-          = code_file(code.send(lang2.downcase))
+          = code2 || no_message
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}

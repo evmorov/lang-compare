@@ -5,6 +5,6 @@
       %strong
         %a.scroll.section{href: sanitize("##{section.first}"), title: section.first}= section.first
       %ul
-        - section.last.each do |header, code|
+        - section.last.each do |header, langs_to_filenames|
           %li
             %a.scroll{href: sanitize("##{section.first}_#{header}"), title: header}= header
