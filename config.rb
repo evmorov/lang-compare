@@ -1,6 +1,7 @@
 activate :directory_indexes
 activate :sprockets
 activate :syntax
+set :relative_links, true
 set :haml, ugly: true
 
 configure :build do
