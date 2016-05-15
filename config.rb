@@ -1,43 +1,27 @@
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-
-# Turn this on if you want to make your url's prettier, without the .html
 activate :directory_indexes
-
-set :relative_links, true
-
-set :site_url, '/'
-
-configure :build do
-  # Any files you want to ignore:
-  # ignore '/admin/*'
-
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
-  activate :asset_hash
-
-  # Use relative URLs
-  activate :relative_assets
-
-  set :site_url, '/lang-compare'
-end
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true
-end
-
+activate :sprockets
 activate :syntax
 set :haml, ugly: true
 
-def template_proxy(url, lang1, lang2)
-  proxy(url, '/template.html', locals: { lang1: lang1, lang2: lang2 }, ignore: true)
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :relative_assets
+  config[:site_url] = '/lang-compare'
+end
+
+configure :development do
+  config[:site_url] = '/'
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+end
+
+def template_proxy(url, lang1, lang2, lang_list)
+  proxy(url, 'template', locals: { lang1: lang1, lang2: lang2, lang_list: lang_list }, ignore: true)
 end
 
 lang_list = [
@@ -48,9 +32,8 @@ lang_list = [
   %w(Java Ruby),
   %w(Java CoffeeScript)
 ]
-set :lang_list, lang_list
 lang_list.each do |lang_pair|
   url = "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"
-  template_proxy url, lang_pair[0], lang_pair[1]
+  template_proxy url, lang_pair[0], lang_pair[1], lang_list
 end
-template_proxy 'index.html', 'Ruby', 'CoffeeScript'
+template_proxy 'index.html', 'Ruby', 'CoffeeScript', lang_list
