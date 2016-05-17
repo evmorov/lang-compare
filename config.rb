@@ -18,7 +18,6 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.build_before = true
 end
 
 def template_proxy(url, lang1, lang2, lang_list)
