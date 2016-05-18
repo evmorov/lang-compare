@@ -6,5 +6,8 @@
         %a.scroll.section{href: sanitize("##{section.first}"), title: section.first}= section.first
       %ul
         - section.last.each do |header, langs_to_filenames|
+          - filename1 = langs_to_filenames[lang1.downcase]
+          - filename2 = langs_to_filenames[lang2.downcase]
+          - next unless one_file_exist?(filename1, filename2)
           %li
             %a.scroll{href: sanitize("##{section.first}_#{header}"), title: header}= header

@@ -3,16 +3,23 @@ module CustomHelpers
     'coffee' => 'coffeescript',
     'rb' => 'ruby',
     'java' => 'java'
-  }
+  }.freeze
 
   def code_from_file(filename)
+    return unless filename
     file_extension = CODE_EXTENSION[(File.extname filename).delete('.')]
     code(file_extension) do
-      File.read File.join(Dir.pwd, 'code', filename)
+      File.read File.join(Dir.pwd, 'code', filename) rescue return
     end
   end
 
   def sanitize(str)
     str.tr(' /,', '_').tr('()?', '').downcase
+  end
+
+  def one_file_exist?(filename1, filename2)
+    file1 = filename1 && (File.exist? File.join(Dir.pwd, 'code', filename1))
+    file2 = filename2 && (File.exist? File.join(Dir.pwd, 'code', filename2))
+    file1 || file2
   end
 end

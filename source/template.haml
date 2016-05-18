@@ -13,9 +13,9 @@
 
   .row
     .col-md-6
-      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index < hash_size } })
+      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index < hash_size }, lang1: lang1, lang2: lang2 })
     .col-md-6
-      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index >= hash_size } })
+      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index >= hash_size }, lang1: lang1, lang2: lang2 })
 
   .row
     .col-md-6
@@ -26,9 +26,11 @@
   - data.code.each do |section|
     %h3.compare-header3{id: sanitize(section.first)}= section.first
     - section.last.each do |header, langs_to_filenames|
-      - code1 = code_from_file langs_to_filenames[lang1.downcase] rescue nil
-      - code2 = code_from_file langs_to_filenames[lang2.downcase] rescue nil
-      - next if code1.nil? && code2.nil?
+      - filename1 = langs_to_filenames[lang1.downcase]
+      - filename2 = langs_to_filenames[lang2.downcase]
+      - next unless one_file_exist?(filename1, filename2)
+      - code1 = code_from_file(filename1)
+      - code2 = code_from_file(filename2)
       %h4.compare-header4
         = header
         %small
