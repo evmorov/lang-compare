@@ -24,11 +24,12 @@
       %h2.compare-header2 #{lang2}
 
   - data.code.each do |section|
+    - next if section_empty?(section, lang1, lang2)
     %h3.compare-header3{id: sanitize(section.first)}= section.first
-    - section.last.each do |header, langs_to_filenames|
-      - filename1 = langs_to_filenames[lang1.downcase]
-      - filename2 = langs_to_filenames[lang2.downcase]
-      - next unless one_file_exist?(filename1, filename2)
+    - section.last.each do |header, filenames|
+      - filename1 = filenames[lang1.downcase]
+      - filename2 = filenames[lang2.downcase]
+      - next if no_files?(filename1, filename2)
       - code1 = code_from_file(filename1)
       - code2 = code_from_file(filename2)
       %h4.compare-header4
