@@ -7,8 +7,8 @@ class Person
 
   greet: ->
     Action.say -> "My name is #{@name}!"
-    # My name is undefined!
+    
     Action.say => "My name is #{@name}!"
-    # My name is Alex!
+    
 
 new Person('Alex').greet()

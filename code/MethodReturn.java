@@ -11,5 +11,3 @@ class MethodReturn {
     return a / b;
   }
 }
-// 0
-// 2

@@ -1,8 +1,4 @@
-p 9 / 2
-# 4
-p 9 / 2.0
-# 4.5
-p (9 / 2.0).floor
-# 4
-p (9 / 2.0).round
-# 5
+puts 9 / 2
+puts 9 / 2.0
+puts (9 / 2.0).floor
+puts (9 / 2.0).round

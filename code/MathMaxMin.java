@@ -7,5 +7,3 @@ class MathMaxMin {
     System.out.println(Collections.max(arr));
   }
 }
-// 1
-// 3

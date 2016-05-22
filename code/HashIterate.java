@@ -12,7 +12,3 @@ class HashIterate {
     }
   }
 }
-// fontFamily
-// Arial
-// fontSize
-// 10

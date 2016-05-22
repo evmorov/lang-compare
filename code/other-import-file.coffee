@@ -6,4 +6,3 @@
 
 Import = require './other-file-to-import'
 new Import()
-# I am imported!

@@ -7,4 +7,3 @@ class Address
 
 zip = (new Winner).address?.zipcode
 console.log "We can't send the prize to a winner" unless zip
-# We can't send the prize to a winner

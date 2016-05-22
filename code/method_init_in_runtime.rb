@@ -11,5 +11,4 @@ class HtmlELements < ProccessElements
   element :span
 end
 
-p HtmlELements.new.div_element('hello')
-# "<div>hello</div>"
+puts HtmlELements.new.div_element('hello')

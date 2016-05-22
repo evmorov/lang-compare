@@ -4,4 +4,3 @@ class StringReplace {
     System.out.println(s.replaceAll("work", "rest"));
   }
 }
-// You should rest

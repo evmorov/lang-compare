@@ -6,4 +6,3 @@ class Animal
     food is 'meat'
 
 new Animal().eat('meat')
-# Om nom nom

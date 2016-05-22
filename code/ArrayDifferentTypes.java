@@ -5,4 +5,3 @@ class ArrayDifferentTypes {
     System.out.println(Arrays.asList("first", 1));
   }
 }
-// [first, 1]

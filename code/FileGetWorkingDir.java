@@ -3,4 +3,3 @@ class FileGetWorkingDir {
     System.out.println(System.getProperty("user.dir"));
   }
 }
-// /Users/evmorov/projects/lang-compare

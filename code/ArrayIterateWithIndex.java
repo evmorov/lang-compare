@@ -9,7 +9,3 @@ class ArrayIterateWithIndex {
     }
   }
 }
-// one
-// 0
-// two
-// 1

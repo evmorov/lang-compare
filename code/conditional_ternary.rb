@@ -1,2 +1,1 @@
-p false ? 'no' : 'yes'
-# "yes"
+puts false ? 'no' : 'yes'

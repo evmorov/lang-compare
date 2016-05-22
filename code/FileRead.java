@@ -17,6 +17,3 @@ class FileRead {
     System.out.println(content);
   }
 }
-// Hello
-// World
-//

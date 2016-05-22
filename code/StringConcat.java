@@ -3,4 +3,3 @@ class StringConcat {
     System.out.println("Don't worry," + " be happy");
   }
 }
-// Don't worry, be happy

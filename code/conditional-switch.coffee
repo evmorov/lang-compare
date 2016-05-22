@@ -5,4 +5,3 @@ switch foo
   when 'And' then console.log 'case in one line'
   else
     console.log "You gave me '#{foo}'"
-# You gave me 'Hello!'

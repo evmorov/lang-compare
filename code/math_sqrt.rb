@@ -1,2 +1,1 @@
-p Math.sqrt(9)
-# 3.0
+puts Math.sqrt(9)

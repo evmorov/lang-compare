@@ -1,4 +1,2 @@
-p 'hi'.class
-# String
-p 1.class
-# Fixnum
+puts 'hi'.class
+puts 1.class

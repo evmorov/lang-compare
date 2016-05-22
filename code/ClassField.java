@@ -17,4 +17,3 @@ class ClassField {
     animal.play();
   }
 }
-// I'm playing with a ball

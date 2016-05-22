@@ -9,4 +9,3 @@ class HashIsInclude {
     System.out.println(options.containsKey("fontSize"));
   }
 }
-// true

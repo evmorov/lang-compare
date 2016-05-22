@@ -1,2 +1,1 @@
-p 'I like beer'.split
-# ["I", "like", "beer"]
+puts 'I like beer'.split

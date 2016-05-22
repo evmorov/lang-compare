@@ -7,5 +7,3 @@ class ArrayIterate {
     }
   }
 }
-// 1
-// 2

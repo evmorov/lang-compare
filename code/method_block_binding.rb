@@ -1,7 +1,7 @@
 class Action
   def self.say(&sentence)
     @name = 'Ann'
-    p sentence.call
+    puts sentence.call
   end
 end
 
@@ -12,7 +12,6 @@ class Person
 
   def greet
     Action.say { "My name is #{@name}!" }
-    # "My name is Alex!"
   end
 end
 

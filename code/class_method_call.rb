@@ -2,21 +2,18 @@ class Animal
   def walk
     bark
     guard
-    p "I'm walking"
+    puts "I'm walking"
   end
 
   def bark
-    p 'Wuf!'
+    puts 'Wuf!'
   end
 
   private
 
   def guard
-    p 'WUUUF!'
+    puts 'WUUUF!'
   end
 end
 
 Animal.new.walk
-# "Wuf!"
-# "WUUUF!"
-# "I'm walking"

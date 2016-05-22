@@ -3,4 +3,3 @@ class TypeIntToFloat {
     System.out.println((float) 10);
   }
 }
-// 10.0

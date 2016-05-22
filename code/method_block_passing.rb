@@ -5,8 +5,8 @@ def my_select(arr)
   end
   selected
 end
-p my_select [1, 5, 10] { |x| x < 6 }
-# [1, 5]
+puts my_select [1, 5, 10] { |x| x < 6 }
+
 
 def my_select(arr, &filter)
   selected = []
@@ -15,5 +15,4 @@ def my_select(arr, &filter)
   end
   selected
 end
-p my_select [1, 5, 10] { |x| x < 6 }
-# [1, 5]
+puts my_select [1, 5, 10] { |x| x < 6 }

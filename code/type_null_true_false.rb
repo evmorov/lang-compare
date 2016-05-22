@@ -32,31 +32,3 @@ values = {
 if_value(values)
 nil_value(values)
 empty_value(values)
-
-# "if value":
-# 'string' - true
-# '' - true
-# [1, 2, 3] - true
-# [] - true
-# 5 - true
-# 0 - true
-# true - true
-# false - false
-# nil - false
-#
-# "if value.nil?":
-# 'string' - false
-# '' - false
-# [1, 2, 3] - false
-# [] - false
-# 5 - false
-# 0 - false
-# true - false
-# false - false
-# nil - true
-#
-# "if value.empty?":
-# 'string' - false
-# '' - true
-# [1, 2, 3] - false
-# [] - true

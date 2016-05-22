@@ -1,6 +1,5 @@
 if true
-  p 'work'
+  puts 'work'
 else
-  p 'sleep'
+  puts 'sleep'
 end
-# "work"

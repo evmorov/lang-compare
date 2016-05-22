@@ -6,4 +6,3 @@ grade = switch
   when score < 90 then 'B'
   else 'A'
 console.log grade
-# C

@@ -9,4 +9,3 @@ class ArrayConcat {
     System.out.println(concated);
   }
 }
-// [1, 2, 3, 4]

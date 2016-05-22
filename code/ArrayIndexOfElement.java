@@ -6,4 +6,3 @@ class ArrayIndexOfElement {
     System.out.println(arr.indexOf("c"));
   }
 }
-// 2

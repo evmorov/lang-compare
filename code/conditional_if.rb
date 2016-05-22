@@ -1,2 +1,1 @@
-p 'Hello' if true
-# 'Hello'
+puts 'Hello' if true

@@ -7,4 +7,3 @@ class ErrorThrow {
     }
   }
 }
-// An error!

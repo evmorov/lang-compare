@@ -8,4 +8,3 @@ class ArrayReduce {
     System.out.println(sum);
   }
 }
-// 6

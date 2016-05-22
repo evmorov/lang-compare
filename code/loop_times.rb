@@ -1,6 +1,3 @@
 3.times do
-  p 'Hi'
+  puts 'Hi'
 end
-# "Hi"
-# "Hi"
-# "Hi"

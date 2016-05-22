@@ -1,2 +1,1 @@
-p "Don't worry," + ' be happy'
-# "Don't worry, be happy"
+puts "Don't worry," + ' be happy'

@@ -7,9 +7,8 @@ class Animal
   private
 
   def greet
-    p "Hello! My name is #{@name}"
+    puts "Hello! My name is #{@name}"
   end
 end
 
 Animal.new('Kelya')
-# "Hello! My name is Kelya"

@@ -4,5 +4,5 @@ if true
 else
   'b'
 end
-p result
-# "a"
+puts result
+

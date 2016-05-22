@@ -42,8 +42,10 @@
         - no_message = 'No easy way to do that'
         .col-md-6
           = code1 || no_message
+          .text-muted= simple_format output_file(filename1)
         .col-md-6
           = code2 || no_message
+          .text-muted= simple_format output_file(filename2)
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}

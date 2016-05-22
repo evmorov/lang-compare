@@ -6,4 +6,3 @@ class ArrayCreatePopulated {
     System.out.println(arr);
   }
 }
-// [first, second]

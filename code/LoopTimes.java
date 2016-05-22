@@ -4,6 +4,3 @@ class LoopTimes {
       System.out.println("Hi");
   }
 }
-// Hi
-// Hi
-// Hi

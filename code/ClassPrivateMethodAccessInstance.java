@@ -16,4 +16,3 @@ class ClassPrivateMethodAccessInstance {
     new Animal("Kelya");
   }
 }
-// Hello! My name is Kelya

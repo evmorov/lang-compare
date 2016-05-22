@@ -4,4 +4,3 @@ class Animal
 animal = new Animal
 animal.name = 'Kelya'
 console.log animal.name
-# "Kelya"

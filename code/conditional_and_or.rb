@@ -1,3 +1,2 @@
-p 'no' if true && false
-p 'yes' if true || false
-# "yes"
+puts 'no' if true && false
+puts 'yes' if true || false

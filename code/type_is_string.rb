@@ -1,2 +1,1 @@
-p '10'.is_a? String
-# true
+puts '10'.is_a? String

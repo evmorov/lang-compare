@@ -1,7 +1,5 @@
 square = -> (x) { x * x }
-p [2, 3].map(&square)
-# [4, 9]
+puts [2, 3].map(&square)
 
-greeting = -> { p 'Hello World!' }
+greeting = -> { puts 'Hello World!' }
 greeting.call
-# "Hello World!"

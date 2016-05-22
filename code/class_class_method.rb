@@ -1,8 +1,7 @@
 class Animal
   def self.feed
-    p 'Om nom nom'
+    puts 'Om nom nom'
   end
 end
 
 Animal.feed
-# "Om nom nom"

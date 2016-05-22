@@ -8,4 +8,3 @@ class HashCreate {
     System.out.println(options);
   }
 }
-// {fontFamily=Arial, fontSize=10}

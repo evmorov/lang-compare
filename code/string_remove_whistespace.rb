@@ -1,2 +1,1 @@
-p ' eh? '.strip
-# "eh?"
+puts ' eh? '.strip

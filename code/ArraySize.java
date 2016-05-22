@@ -6,4 +6,3 @@ class ArraySize {
     System.out.println(arr.size());
   }
 }
-// 3

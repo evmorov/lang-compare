@@ -4,6 +4,3 @@ class LoopForWithStep {
       System.out.println(i);
   }
 }
-// 0
-// 2
-// 4

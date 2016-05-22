@@ -18,4 +18,3 @@ class OtherStructureConstantList {
     System.out.println(Color.GREEN);
   }
 }
-// #00FF00

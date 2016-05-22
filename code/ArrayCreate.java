@@ -8,4 +8,3 @@ class ArrayCreate {
     System.out.println(arr);
   }
 }
-// [first, second]

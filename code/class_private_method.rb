@@ -1,6 +1,6 @@
 class Animal
   def eat(food)
-    p 'Om nom nom' if smell(food)
+    puts 'Om nom nom' if smell(food)
   end
 
   private
@@ -11,4 +11,3 @@ class Animal
 end
 
 Animal.new.eat('meat')
-# "Om nom nom"

@@ -1,2 +1,1 @@
-p Time.now
-# 2015-08-21 22:30:26 +0300
+puts Time.now

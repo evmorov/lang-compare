@@ -4,5 +4,4 @@ end
 
 animal = Animal.new
 animal.name = 'Kelya'
-p animal.name
-# "Kelya"
+puts animal.name

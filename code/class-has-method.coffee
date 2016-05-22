@@ -4,4 +4,3 @@ class Animal
 
 animal = new Animal
 console.log 'walk' of animal
-# true

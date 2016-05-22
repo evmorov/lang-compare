@@ -19,4 +19,3 @@ class ClassHasMethod {
     System.out.println(hasMethod);
   }
 }
-// true

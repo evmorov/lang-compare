@@ -3,4 +3,3 @@ Colors = Object.freeze(
   GREEN: '#00FF00'
 )
 console.log Colors.GREEN
-# #00FF00

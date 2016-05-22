@@ -1,6 +1,6 @@
 // OtherFileToImport.java
-// class Import {
-//   public Import() {
+// class OtherFileToImport {
+//   public OtherFileToImport() {
 //     System.out.println("I am imported!");
 //   }
 // }
@@ -10,4 +10,3 @@ class OtherImportFile {
     new OtherFileToImport();
   }
 }
-// I am imported!

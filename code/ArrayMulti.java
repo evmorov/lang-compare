@@ -8,4 +8,3 @@ class ArrayMulti {
     System.out.println(arr.get(1).get(1));
   }
 }
-// forth

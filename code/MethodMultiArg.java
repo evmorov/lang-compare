@@ -10,4 +10,3 @@ class MethodMultiArg {
       System.out.println(Arrays.toString(brands));
   }
 }
-// [snickers, twix, bounty]

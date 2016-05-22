@@ -9,4 +9,4 @@ class ClassDeclare {
     new Animal().walk();
   }
 }
-// I'm walking
+

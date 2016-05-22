@@ -5,4 +5,3 @@ class NumberRandom {
     System.out.println(ThreadLocalRandom.current().nextInt(1, 2 + 1));
   }
 }
-// 1 or 2

@@ -1,6 +1,5 @@
 begin
   fail 'An error!'
 rescue => e
-  p e.message
+  puts e.message
 end
-# "An error!"

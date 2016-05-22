@@ -19,6 +19,3 @@ class ClassMethodCall {
     new Animal().walk();
   }
 }
-// Wuf!
-// WUUUF!
-// I'm walking

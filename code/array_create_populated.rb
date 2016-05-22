@@ -1,3 +1,2 @@
 arr = %w(first second)
-p arr
-# ["first", "second"]
+puts arr

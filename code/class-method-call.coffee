@@ -11,6 +11,3 @@ class Animal
     console.log 'WUUUF!'
 
 new Animal().walk()
-# Wuf!
-# WUUUF!
-# I'm walking

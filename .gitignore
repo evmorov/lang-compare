@@ -5,3 +5,5 @@
 .DS_Store
 /code/*.class
 /middleman.log
+/code/*.out
+/tags

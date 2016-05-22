@@ -9,4 +9,3 @@ class HashSize {
     System.out.println(options.size());
   }
 }
-// 2

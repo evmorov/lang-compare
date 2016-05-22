@@ -4,4 +4,3 @@ if true
 else
   'b'
 console.log result
-# a

@@ -7,5 +7,3 @@ class LoopBreak {
     }
   }
 }
-// 1. Hi
-// 2. Hi

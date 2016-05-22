@@ -17,4 +17,3 @@ class ClassGetSet {
     System.out.println(animal.getName());
   }
 }
-// Kelya

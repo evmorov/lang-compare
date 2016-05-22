@@ -9,5 +9,3 @@ class ErrorTryCatch {
     }
   }
 }
-// Can't divide
-// But that's ok

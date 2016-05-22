@@ -4,6 +4,3 @@ class LoopFor {
       System.out.println(i + ". Hi");
   }
 }
-// 1. Hi
-// 2. Hi
-// 3. Hi

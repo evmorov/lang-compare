@@ -4,4 +4,3 @@ class StringCreate {
     System.out.println(greeting);
   }
 }
-// Hello World!

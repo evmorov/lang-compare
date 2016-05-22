@@ -5,4 +5,3 @@ class ArrayIsInclude {
     System.out.println(Arrays.asList(1, 2).contains(1));
   }
 }
-// true

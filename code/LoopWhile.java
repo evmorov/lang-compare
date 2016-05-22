@@ -6,4 +6,3 @@ class LoopWhile {
     System.out.println(i);
   }
 }
-// 3

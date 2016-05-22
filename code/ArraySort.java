@@ -7,4 +7,3 @@ class ArraySort {
     System.out.println(arr);
   }
 }
-// [1, 2, 3, 4]

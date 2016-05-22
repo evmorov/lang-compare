@@ -6,4 +6,3 @@ class ConditionalAndOr {
       System.out.println("yes");
   }
 }
-// yes

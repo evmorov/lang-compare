@@ -1,6 +1,3 @@
 (0..4).step(2) do |i|
-  p i
+  puts i
 end
-# 0
-# 2
-# 4

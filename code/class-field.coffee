@@ -7,4 +7,3 @@ class Animal
 animal = new Animal
 animal.take('a ball')
 animal.play()
-# I'm playing with a ball

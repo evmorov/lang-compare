@@ -7,4 +7,3 @@ class MethodDeclare {
     System.out.println("How are you?");
   }
 }
-// How are you?

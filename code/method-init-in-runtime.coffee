@@ -8,4 +8,3 @@ class HtmlELements extends ProccessElements
   @element 'span'
 
 console.log (new HtmlELements).div('hello')
-# <div>hello</div>

@@ -5,4 +5,3 @@ class OtherStructureBoolean {
       System.out.println("Garlic gum is not funny");
   }
 }
-// Garlic gum is not funny

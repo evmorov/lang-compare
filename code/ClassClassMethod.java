@@ -9,4 +9,3 @@ class ClassClassMethod {
     Animal.feed();
   }
 }
-// Om nom nom

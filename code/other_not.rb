@@ -1,3 +1,2 @@
 angry = false
-p 'smile!' if !angry
-# "smile!"
+puts 'smile!' if !angry

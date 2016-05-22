@@ -1,17 +1,14 @@
 def multiple(a, b)
   a * b
 end
-p multiple(2, 3)
-# 6
+puts multiple(2, 3)
 
 def divide(a, b)
   return 0 if a == 0
   a / b
 end
-p divide 0, 10
-# 0
+puts divide 0, 10
 
 def default_value
 end
-p default_value
-# nil
+puts default_value

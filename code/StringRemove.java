@@ -4,4 +4,3 @@ class StringRemove {
     System.out.println(s.replaceAll("not ", ""));
   }
 }
-// This is funny! I am like him!

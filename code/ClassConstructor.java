@@ -15,4 +15,4 @@ class ClassConstructor {
     new Animal("Kelya").walk();
   }
 }
-// My name is Kelya and I'm walking
+

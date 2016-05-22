@@ -7,4 +7,3 @@ class OtherDate {
     System.out.println(date);
   }
 }
-// 2016-05-12

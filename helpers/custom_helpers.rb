@@ -13,6 +13,11 @@ module CustomHelpers
     end
   end
 
+  def output_file(filename)
+    return unless filename
+    File.read File.join(Dir.pwd, 'code', "#{filename}.out") rescue return
+  end
+
   def sanitize(str)
     str.tr(' /,', '_').tr('()?', '').downcase
   end

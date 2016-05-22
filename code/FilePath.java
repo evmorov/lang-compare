@@ -6,4 +6,3 @@ class FilePath {
     System.out.println(location.getFile() + "FilePath.class");
   }
 }
-// /private/tmp/FilePath.class

@@ -10,4 +10,3 @@ class ArrayCount {
     System.out.println(count);
   }
 }
-// 2

@@ -1,4 +1,2 @@
-p 'string' == 'string'
-# true
-p 'string' != 'string'
-# false
+puts 'string' == 'string'
+puts 'string' != 'string'

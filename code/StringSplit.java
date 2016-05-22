@@ -7,4 +7,3 @@ class StringSplit {
     System.out.println(Arrays.toString(arr));
   }
 }
-// [I, like, beer]

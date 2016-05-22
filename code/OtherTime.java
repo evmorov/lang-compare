@@ -7,4 +7,3 @@ class OtherTime {
     System.out.println(time);
   }
 }
-// 5/12/16 12:35 AM

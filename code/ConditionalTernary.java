@@ -4,4 +4,3 @@ class ConditionalTernary {
     System.out.println(s);
   }
 }
-// yes

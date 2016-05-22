@@ -1,2 +1,1 @@
-p rand(1..2)
-# 1 or 2
+puts rand(1..2)

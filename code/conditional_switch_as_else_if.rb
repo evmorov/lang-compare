@@ -6,5 +6,4 @@ grade = case
         when score < 90 then 'B'
         else 'A'
         end
-p grade
-# "C"
+puts grade

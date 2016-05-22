@@ -15,6 +15,4 @@ class Human extends Module
 
 human = new Human
 human.walk()
-# Human is walking
 human.talk()
-# Human is talking

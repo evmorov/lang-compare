@@ -1,6 +1,5 @@
 begin
   1 / 0
 rescue => e
-  p e.message
+  puts e.message
 end
-# "divided by 0"

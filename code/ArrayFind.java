@@ -13,4 +13,3 @@ class ArrayFind {
     System.out.println(first);
   }
 }
-// 10

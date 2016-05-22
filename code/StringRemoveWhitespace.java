@@ -3,4 +3,3 @@ class StringRemoveWhitespace {
     System.out.println(" eh? ".trim());
   }
 }
-// eh?

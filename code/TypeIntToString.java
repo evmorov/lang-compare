@@ -3,4 +3,3 @@ class TypeIntToString {
     System.out.println(Integer.toString(10));
   }
 }
-// 10

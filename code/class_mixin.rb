@@ -1,12 +1,12 @@
 module Moving
   def walk
-    p "#{self.class.name} is walking"
+    puts "#{self.class.name} is walking"
   end
 end
 
 module Interacting
   def talk
-    p "#{self.class.name} is talking"
+    puts "#{self.class.name} is talking"
   end
 end
 
@@ -17,6 +17,4 @@ end
 
 human = Human.new
 human.walk
-# "Human is walking"
 human.talk
-# "Human is talking"

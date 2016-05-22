@@ -3,4 +3,3 @@ class TypeIsString {
     System.out.println("10" instanceof String);
   }
 }
-// true

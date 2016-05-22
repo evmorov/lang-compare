@@ -15,4 +15,3 @@ class ClassInheritance {
     new Dog().walk();
   }
 }
-// I'm walking

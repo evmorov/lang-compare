@@ -7,5 +7,3 @@ class LoopNext {
     }
   }
 }
-// 1. Hi
-// 2. Hi

@@ -1,2 +1,1 @@
-p [1, 2, 3].size # or length
-# 3
+puts [1, 2, 3].size 

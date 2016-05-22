@@ -10,4 +10,3 @@ class ArraySelect {
     System.out.println(all);
   }
 }
-// [10, 20]

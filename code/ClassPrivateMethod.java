@@ -14,4 +14,3 @@ class ClassPrivateMethod {
     new Animal().eat("meat");
   }
 }
-// Om nom nom

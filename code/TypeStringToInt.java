@@ -3,4 +3,3 @@ class TypeStringToInt {
     System.out.println(Integer.parseInt("10"));
   }
 }
-// 10

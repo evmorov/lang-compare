@@ -4,4 +4,3 @@ class Greetings
   hi: @::hey
 
 (new Greetings).hi()
-# How are you?

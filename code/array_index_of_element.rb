@@ -1,2 +1,1 @@
-p ['a', 'b', 'c'].index('c')
-# 2
+puts ['a', 'b', 'c'].index('c')

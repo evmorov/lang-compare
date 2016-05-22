@@ -9,4 +9,3 @@ class HashGetValue {
     System.out.println(options.get("fontSize"));
   }
 }
-// 10

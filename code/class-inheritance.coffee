@@ -7,4 +7,3 @@ class Dog extends Animal
     console.log 'Bark!'
 
 new Dog().walk()
-# I'm walking

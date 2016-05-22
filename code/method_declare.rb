@@ -1,5 +1,4 @@
 def hey
-  p 'How are you?'
+  puts 'How are you?'
 end
 hey
-# "How are you?"

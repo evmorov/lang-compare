@@ -9,4 +9,3 @@ class HashCreatePopulated {
     System.out.println(options);
   }
 }
-// {fontFamily=Arial, fontSize=10}

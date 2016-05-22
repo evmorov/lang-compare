@@ -1,2 +1,1 @@
-p [1, 2].include? 1
-# true
+puts [1, 2].include? 1

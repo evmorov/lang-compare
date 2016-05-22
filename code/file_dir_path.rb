@@ -1,2 +1,1 @@
-p File.dirname(__FILE__)
-# "/Users/evmorov/projects/ruby-coffeescript/code"
+puts File.dirname(__FILE__)

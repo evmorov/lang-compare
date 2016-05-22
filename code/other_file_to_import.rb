@@ -1,5 +1,5 @@
 class Import
   def initialize
-    p 'I am imported!'
+    puts 'I am imported!'
   end
 end

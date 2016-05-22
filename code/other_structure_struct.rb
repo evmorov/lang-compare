@@ -3,5 +3,5 @@ Customer = Struct.new(:name, :address) do
     "Hello #{name}!"
   end
 end
-p Customer.new('Dave', '123 Main').greeting
-# "Hello Dave!"
+puts Customer.new('Dave', '123 Main').greeting
+

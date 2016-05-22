@@ -9,4 +9,3 @@ class ArrayMap {
     System.out.println(mapped);
   }
 }
-// [2, 10, 20, 40]
