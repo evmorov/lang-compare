@@ -1,4 +1,4 @@
-class Animal {
+class AnimalE {
   private String name;
 
   public void setName(String name) {
@@ -12,7 +12,7 @@ class Animal {
 
 class ClassGetSet {
   public static void main(String[] args) {
-    Animal animal = new Animal();
+    AnimalE animal = new AnimalE();
     animal.setName("Kelya");
     System.out.println(animal.getName());
   }

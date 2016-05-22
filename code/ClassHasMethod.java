@@ -1,6 +1,6 @@
 import java.lang.reflect.*;
 
-class Animal {
+class AnimalF {
   public void walk() {
     System.out.println("I'm walking");
   }
@@ -8,7 +8,7 @@ class Animal {
 
 class ClassHasMethod {
   public static void main(String[] args) {
-    Animal animal = new Animal();
+    AnimalF animal = new AnimalF();
     boolean hasMethod = false;
     for (Method m : animal.getClass().getMethods()) {
       if (m.getName().equals("walk")) {

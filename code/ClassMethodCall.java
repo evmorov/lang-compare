@@ -1,4 +1,4 @@
-class Animal {
+class AnimalH {
   public void walk() {
     bark();
     guard();
@@ -16,6 +16,6 @@ class Animal {
 
 class ClassMethodCall {
   public static void main(String[] args) {
-    new Animal().walk();
+    new AnimalH().walk();
   }
 }

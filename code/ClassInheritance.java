@@ -1,10 +1,10 @@
-class Animal {
+class AnimalG {
   public void walk() {
     System.out.println("I'm walking");
   }
 }
 
-class Dog extends Animal {
+class Dog extends AnimalG {
   public void sing() {
     System.out.println("Bark!");
   }
