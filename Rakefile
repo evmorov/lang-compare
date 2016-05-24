@@ -3,7 +3,6 @@ require 'open3'
 CODE_DIR = File.join(File.dirname(__FILE__), 'code')
 
 task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript] do
-  execute_java
 end
 
 task :execute_java do
