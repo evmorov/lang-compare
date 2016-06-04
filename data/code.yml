@@ -142,6 +142,10 @@ Array:
     ruby: array_index_of_element.rb
     coffeescript: array-index-of-element.coffee
     java: ArrayIndexOfElement.java
+  Delete element:
+    ruby: array_delete_element.rb
+    coffeescript: array-delete-element.coffee
+    java: ArrayDeleteElement.java
 Hash (map):
   Create:
     ruby: hash_create.rb
@@ -167,10 +171,6 @@ Hash (map):
     ruby: hash_size.rb
     coffeescript: hash-size.coffee
     java: HashSize.java
-  Delete element:
-    ruby: array_delete_element.rb
-    coffeescript: array-delete-element.coffee
-    java: ArrayDeleteElement.java
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
