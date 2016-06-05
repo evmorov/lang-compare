@@ -197,6 +197,10 @@ Conditional:
     ruby: conditional_if.rb
     coffeescript: conditional-if.coffee
     java: ConditionalIf.java
+  Unless:
+    ruby: conditional_unless.rb
+    coffeescript: conditional-unless.coffee
+    java: ConditionalUnless.java
   If/else:
     ruby: conditional_if_else.rb
     coffeescript: conditional-if-else.coffee
