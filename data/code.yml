@@ -36,6 +36,10 @@ String:
     coffeescript: string-regex.coffee
     java: StringRegex.java
 Number:
+  Increment:
+    ruby: number_increment.rb
+    coffeescript: number-increment.coffee
+    java: NumberIncrement.java
   Compare:
     ruby: number_compare.rb
     coffeescript: number-compare.coffee
