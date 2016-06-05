@@ -392,6 +392,10 @@ Class:
     coffeescript: class-has-method.coffee
     java: ClassHasMethod.java
 Other:
+  Comment:
+    ruby: other_comment.rb
+    coffeescript: other-comment.coffee
+    java: OtherComment.java
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
