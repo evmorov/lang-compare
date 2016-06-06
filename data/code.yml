@@ -150,6 +150,10 @@ Array:
     ruby: array_delete_element.rb
     coffeescript: array-delete-element.coffee
     java: ArrayDeleteElement.java
+  Unique:
+    ruby: array_unique.rb
+    coffeescript: array-unique.coffee
+    java: ArrayUnique.java
 Hash (map):
   Create populated:
     ruby: hash_create_populated.rb
