@@ -78,14 +78,14 @@ Type:
     coffeescript: type-null-true-false.coffee
     java: TypeNullTrueFalse.java
 Array:
-  Create:
-    ruby: array_create.rb
-    coffeescript: array-create.coffee
-    java: ArrayCreate.java
   Create populated:
     ruby: array_create_populated.rb
     coffeescript: array-create-populated.coffee
     java: ArrayCreatePopulated.java
+  Add:
+    ruby: array_add.rb
+    coffeescript: array-add.coffee
+    java: ArrayAdd.java
   With different types:
     ruby: array_with_different_types.rb
     coffeescript: array-with-different-types.coffee
@@ -151,14 +151,14 @@ Array:
     coffeescript: array-delete-element.coffee
     java: ArrayDeleteElement.java
 Hash (map):
-  Create:
-    ruby: hash_create.rb
-    coffeescript: hash-create.coffee
-    java: HashCreate.java
   Create populated:
     ruby: hash_create_populated.rb
     coffeescript: hash-create-populated.coffee
     java: HashCreatePopulated.java
+  Add:
+    ruby: hash_add.rb
+    coffeescript: hash-add.coffee
+    java: HashAdd.java
   Iterate:
     ruby: hash_iterate.rb
     coffeescript: hash-iterate.coffee
