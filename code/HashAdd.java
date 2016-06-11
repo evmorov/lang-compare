@@ -1,6 +1,6 @@
 import java.util.*;
 
-class HashCreate {
+class HashAdd {
   public static void main(String[] args) {
     Map<String, String> options = new HashMap<String, String>();
     options.put("fontSize", "10");
