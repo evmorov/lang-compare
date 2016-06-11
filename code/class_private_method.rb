@@ -1,11 +1,11 @@
 class Animal
   def eat(food)
-    puts 'Om nom nom' if smell(food)
+    puts 'Om nom nom' if meat? food
   end
 
   private
 
-  def smell(food)
+  def meat?(food)
     food == 'meat'
   end
 end

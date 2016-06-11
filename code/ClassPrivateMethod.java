@@ -1,10 +1,10 @@
 class AnimalI {
   public void eat(String food) {
-    if (smell(food))
+    if (isMeat(food))
       System.out.println("Om nom nom");
   }
 
-  private boolean smell(String food) {
+  private boolean isMeat(String food) {
     return food.equals("meat");
   }
 }
