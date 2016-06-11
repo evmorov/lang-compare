@@ -5,4 +5,3 @@ class NumberIncrement {
     System.out.println(i);
   }
 }
-
