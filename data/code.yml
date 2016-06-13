@@ -436,8 +436,8 @@ Other:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
     java: no.java
-Project information:
-  Language version:
-    ruby: project_lang_version.rb
-    coffeescript: project-lang-version.coffee
-    java: ProjectLangVersion.java
+  Run command:
+    ruby: other_run_command.rb
+    coffeescript: other-run-command.coffee
+    java: OtherRunCommand.java
+
