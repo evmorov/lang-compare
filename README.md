@@ -2,13 +2,13 @@
 
 The web app provides side by side examples of syntax difference between progamming languages. You can use it as a cheatsheet or as a learning material to learn one of them through another.
 
-All examples are executable. You can copy and launch them without changes. It helps to understand what the code is doing without any difficulties.
+All examples are executable. You can copy and launch them without changes. It helps to understand what the code is doing without difficulty.
 
 Created with:
 * [Middleman](https://middlemanapp.com)
 * [Bootstrap](http://getbootstrap.com)
 
-## How to
+## Development
 
 Install dependencies:
 
