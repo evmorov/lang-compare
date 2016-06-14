@@ -16,11 +16,11 @@ All languages:
 
 Java:
 * 2 spaces is used to make the code more concise
-* The examples are for Java 7. Java 8 has many nice features but sadly it's unavailable for Android
+* The examples are for Java 7. Java 8 has many features but sadly it's unavailable for Android
 
 ## What's next
 
-Add more languages: Python, Kotlin, JavaScript (and any more)! It would be nice to compare:
+Add more languages: Python, Kotlin, JavaScript (and any more)!
 * Ruby - Python
 * Java - Kotlin
 * JavaScript - CoffeeScript
