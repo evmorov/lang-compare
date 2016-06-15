@@ -6,12 +6,12 @@ class OtherRunCommand {
     ProcessBuilder ps = new ProcessBuilder("java", "-version");
     ps.redirectErrorStream(true);
     Process pr = ps.start();
-    BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-    String line;
-    while ((line = in.readLine()) != null)
-      result += line + "\n";
-    pr.waitFor();
-    in.close();
+    try (BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()))) {
+    	String line;
+    	while ((line = in.readLine()) != null)
+    		result += line + "\n";
+    	pr.waitFor();
+    }
     System.out.println(result);
   }
 }
