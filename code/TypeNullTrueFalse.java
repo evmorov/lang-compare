@@ -8,7 +8,7 @@ class TypeNullTrueFalse {
     String shouldBeNull = null;
     System.out.println(shouldBeNull == null);
 
-    List<String> arr = new ArrayList<String>();
+    List<String> arr = new ArrayList<>();
     System.out.println(arr.isEmpty());
   }
 }
