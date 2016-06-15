@@ -1,6 +1,7 @@
+import java.util.stream.IntStream;
+
 class LoopFor {
   public static void main(String[] args) {
-    for (int i = 1; i <= 3; i++)
-      System.out.println(i + ". Hi");
+    IntStream.range(1, 3+1).sequential().mapToObj(i -> i + ". Hi").forEach(System.out::println);
   }
 }

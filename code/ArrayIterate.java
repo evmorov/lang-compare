@@ -1,9 +1,7 @@
-import java.util.*;
+import java.util.Arrays;
 
 class ArrayIterate {
   public static void main(String[] args) {
-    for (int num : Arrays.asList(1, 2)) {
-      System.out.println(num);
-    }
+    Arrays.asList(1, 2).stream().sequential().forEach(System.out::println);
   }
 }

@@ -1,18 +1,12 @@
 import java.io.*;
+import java.util.stream.Collectors;
 
 class FileRead {
   public static void main(String[] args) throws IOException {
     String filePath = System.getProperty("user.dir") + "/code/file.txt";
     String content;
     try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-      StringBuilder sb = new StringBuilder();
-      String line = br.readLine();
-      while (line != null) {
-        sb.append(line);
-        sb.append(System.lineSeparator());
-        line = br.readLine();
-      }
-      content = sb.toString();
+      content = br.lines().collect(Collectors.joining(System.lineSeparator()))+System.lineSeparator();
     }
     System.out.println(content);
   }
