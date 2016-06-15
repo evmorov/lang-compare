@@ -3,441 +3,547 @@ String:
     ruby: string_create.rb
     coffeescript: string-create.coffee
     java: StringCreate.java
+    python3: string_create.py
   Concatenation:
     ruby: string_concat.rb
     coffeescript: string-concat.coffee
     java: StringConcat.java
+    python3: string_concat.py
   Interpolation:
     ruby: string_interpolation.rb
     coffeescript: string-interpolation.coffee
     java: no.java
+    python3: string_interpolation.py
   Remove part:
     ruby: string_remove.rb
     coffeescript: string-remove.coffee
     java: StringRemove.java
+    python3: string_remove.py
   Replace:
     ruby: string_replace.rb
     coffeescript: string-replace.coffee
     java: StringReplace.java
+    python3: string_replace.py
   Split:
     ruby: string_split.rb
     coffeescript: string-split.coffee
     java: StringSplit.java
+    python3: string_split.py
   Remove leading and trailing whitespace:
     ruby: string_remove_whistespace.rb
     coffeescript: string-remove-whistespace.coffee
     java: StringRemoveWhitespace.java
+    python3: string_remove_whistespace.py
   Compare:
     ruby: string_compare.rb
     coffeescript: string-compare.coffee
     java: StringCompare.java
+    python3: string_compare.py
   Regex:
     ruby: string_regex.rb
     coffeescript: string-regex.coffee
     java: StringRegex.java
+    python3: string_regex.py
 Number:
   Increment:
     ruby: number_increment.rb
     coffeescript: number-increment.coffee
     java: NumberIncrement.java
+    python3: number_increment.py
   Compare:
     ruby: number_compare.rb
     coffeescript: number-compare.coffee
     java: NumberCompare.java
+    python3: number_compare.py
   Random:
     ruby: number_random.rb
     coffeescript: number-random.coffee
     java: NumberRandom.java
+    python3: number_random.py
   Float:
     ruby: number_float.rb
     coffeescript: number-float.coffee
     java: NumberFloat.java
+    python3: number_float.py
 Type:
   Get type of object:
     ruby: type_get_type.rb
     coffeescript: type-get-type.coffee
     java: TypeGetType.java
+    python3: type_get_type.py
   Int to Float:
     ruby: type_int_to_float.rb
     coffeescript: type-int-to-float.coffee
     java: TypeIntToFloat.java
+    python3: type_int_to_float.py
   Int to String:
     ruby: type_int_to_string.rb
     coffeescript: type-int-to-string.coffee
     java: TypeIntToString.java
+    python3: type_int_to_string.py
   String to Int:
     ruby: type_string_to_int.rb
     coffeescript: type-string-to-int.coffee
     java: TypeStringToInt.java
+    python3: type_string_to_int.py
   String?:
     ruby: type_is_string.rb
     coffeescript: type-is-string.coffee
     java: TypeIsString.java
+    python3: type_is_string.py
   Null/True/False?:
     ruby: type_null_true_false.rb
     coffeescript: type-null-true-false.coffee
     java: TypeNullTrueFalse.java
+    python3: type_null_true_false.py
 Array:
   Create populated:
     ruby: array_create_populated.rb
     coffeescript: array-create-populated.coffee
     java: ArrayCreatePopulated.java
+    python3: array_create_populated.py
   Add:
     ruby: array_add.rb
     coffeescript: array-add.coffee
     java: ArrayAdd.java
+    python3: array_add.py
   With different types:
     ruby: array_with_different_types.rb
     coffeescript: array-with-different-types.coffee
     java: ArrayDifferentTypes.java
+    python3: array_with_different_types.py
   Include?:
     ruby: array_is_include.rb
     coffeescript: array-is-include.coffee
     java: ArrayIsInclude.java
+    python3: array_is_include.py
   Iterate:
     ruby: array_iterate.rb
     coffeescript: array-iterate.coffee
     java: ArrayIterate.java
+    python3: array_iterate.py
   Iterate with index:
     ruby: array_iterate_with_index.rb
     coffeescript: array-iterate-with-index.coffee
     java: ArrayIterateWithIndex.java
+    python3: array_iterate_with_index.py
   Get first, last element:
     ruby: array_get_first_and_last.rb
     coffeescript: array-get-first-and-last.coffee
     java: ArrayGetFirstAndLast.java
+    python3: array_get_first_and_last.py
   Find first:
     ruby: array_find.rb
     coffeescript: array-find.coffee
     java: ArrayFind.java
+    python3: array_find.py
   Select (find all):
     ruby: array_select.rb
     coffeescript: array-select.coffee
     java: ArraySelect.java
+    python3: array_select.py
   Map (change all):
     ruby: array_map.rb
     coffeescript: array-map.coffee
     java: ArrayMap.java
+    python3: array_map.py
   Concatenation:
     ruby: array_concat.rb
     coffeescript: array-concat.coffee
     java: ArrayConcat.java
+    python3: array_concat.py
   Sort:
     ruby: array_sort.rb
     coffeescript: array-sort.coffee
     java: ArraySort.java
+    python3: array_sort.py
   Multidimensional:
     ruby: array_multi.rb
     coffeescript: array-multi.coffee
     java: ArrayMulti.java
+    python3: array_multi.py
   Size:
     ruby: array_size.rb
     coffeescript: array-size.coffee
     java: ArraySize.java
+    python3: array_size.py
   Count:
     ruby: array_count.rb
     coffeescript: array-count.coffee
     java: ArrayCount.java
+    python3: array_count.py
   Reduce:
     ruby: array_reduce.rb
     coffeescript: array-reduce.coffee
     java: ArrayReduce.java
+    python3: array_reduce.py
   Index of element:
     ruby: array_index_of_element.rb
     coffeescript: array-index-of-element.coffee
     java: ArrayIndexOfElement.java
+    python3: array_index_of_element.py
   Delete element:
     ruby: array_delete_element.rb
     coffeescript: array-delete-element.coffee
     java: ArrayDeleteElement.java
+    python3: array_delete_element.py
   Unique:
     ruby: array_unique.rb
     coffeescript: array-unique.coffee
     java: ArrayUnique.java
+    python3: array_unique.py
 Hash (map):
   Create populated:
     ruby: hash_create_populated.rb
     coffeescript: hash-create-populated.coffee
     java: HashCreatePopulated.java
+    python3: hash_create_populated.py
   Add:
     ruby: hash_add.rb
     coffeescript: hash-add.coffee
     java: HashAdd.java
+    python3: hash_add.py
   Iterate:
     ruby: hash_iterate.rb
     coffeescript: hash-iterate.coffee
     java: HashIterate.java
+    python3: hash_iterate.py
   Include?:
     ruby: hash_is_include.rb
     coffeescript: hash-is-include.coffee
     java: HashIsInclude.java
+    python3: hash_is_include.py
   Get value:
     ruby: hash_get_value.rb
     coffeescript: hash-get-value.coffee
     java: HashGetValue.java
+    python3: hash_get_value.py
   Size:
     ruby: hash_size.rb
     coffeescript: hash-size.coffee
     java: HashSize.java
+    python3: hash_size.py
 Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
     coffeescript: other-structure-boolean.coffee
     java: OtherStructureBoolean.java
+    python3: other_structure_boolean.py
   Constant:
     ruby: other_structure_constant.rb
     coffeescript: other-structure-constant.coffee
     java: OtherStructureConstant.java
+    python3: no.py
   Constant list:
     ruby: other_structure_constant_list.rb
     coffeescript: other-structure-constant-list.coffee
     java: OtherStructureConstantList.java
+    python3: no.py
   Struct:
     ruby: other_structure_struct.rb
     coffeescript: no.coffee
     java: no.java
+    python3: other_structure_struct.py
 Conditional:
   If:
     ruby: conditional_if.rb
     coffeescript: conditional-if.coffee
     java: ConditionalIf.java
+    python3: conditional_if.py
   Unless:
     ruby: conditional_unless.rb
     coffeescript: conditional-unless.coffee
     java: ConditionalUnless.java
+    python3: conditional_unless.py
   If/else:
     ruby: conditional_if_else.rb
     coffeescript: conditional-if-else.coffee
     java: ConditionalIfElse.java
+    python3: conditional_if_else.py
   And/Or:
     ruby: conditional_and_or.rb
     coffeescript: conditional-and-or.coffee
     java: ConditionalAndOr.java
+    python3: conditional_and_or.py
   Switch:
     ruby: conditional_switch.rb
     coffeescript: conditional-switch.coffee
     java: ConditionalSwitch.java
+    python3: conditional_switch.py
   Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     coffeescript: conditional-switch-as-else-if.coffee
     java: no.java
+    python3: conditional_switch_as_else_if.py
   Ternary:
     ruby: conditional_ternary.rb
     coffeescript: conditional-ternary.coffee
     java: ConditionalTernary.java
+    python3: conditional_ternary.py
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
     java: no.java
+    python3: conditional_if_assign.py
 Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
     java: LoopFor.java
+    python3: loop_for.py
   For with a step:
     ruby: loop_for_with_step.rb
     coffeescript: loop-for-with-step.coffee
     java: LoopForWithStep.java
+    python3: loop_for_with_step.py
   Times:
     ruby: loop_times.rb
     coffeescript: loop-times.coffee
     java: LoopTimes.java
+    python3: loop_times.py
   While:
     ruby: loop_while.rb
     coffeescript: loop-while.coffee
     java: LoopWhile.java
+    python3: loop_while.py
   Until:
     ruby: loop_until.rb
     coffeescript: loop-until.coffee
     java: LoopUntil.java
+    python3: loop_until.py
   Return array:
     ruby: loop_return_array.rb
     coffeescript: loop-return-array.coffee
     java: no.java
+    python3: loop_return_array.py
   Break:
     ruby: loop_break.rb
     coffeescript: loop-break.coffee
     java: LoopBreak.java
+    python3: loop_break.py
   Next/Continue:
     ruby: loop_next.rb
     coffeescript: loop-next.coffee
     java: LoopNext.java
+    python3: loop_next.py
 Math:
   Max/Min:
     ruby: math_max_min.rb
     coffeescript: math-max-min.coffee
     java: MathMaxMin.java
+    python3: math_max_min.py
   Sqrt:
     ruby: math_sqrt.rb
     coffeescript: math-sqrt.coffee
     java: MathSqrt.java
+    python3: math_sqrt.py
 Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
     coffeescript: error-try-catch.coffee
     java: ErrorTryCatch.java
+    python3: error_try_catch.py
   With a message:
     ruby: error_with_a_message.rb
     coffeescript: error-with-a-message.coffee
     java: ErrorWithAMessage.java
+    python3: error_with_a_message.py
   Method:
     ruby: error_method.rb
     coffeescript: no.coffee
     java: no.java
+    python3: error_method.py
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
     java: ErrorThrow.java
+    python3: error_throw.py
 File:
   Read:
     ruby: file_read.rb
     coffeescript: file-read.coffee
     java: FileRead.java
+    python3: file_read.py
   Write:
     ruby: file_write.rb
     coffeescript: file-write.coffee
     java: FileWrite.java
+    python3: file_write.py
   Get working dir path:
     ruby: file_get_working_dir.rb
     coffeescript: file-get-working-dir.coffee
     java: FileGetWorkingDir.java
+    python3: file_get_working_dir.py
   File path:
     ruby: file_path.rb
     coffeescript: file-path.coffee
     java: FilePath.java
+    python3: file_path.py
   Dir path:
     ruby: file_dir_path.rb
     coffeescript: file-dir-path.coffee
     java: FileDirPath.java
+    python3: file_dir_path.py
   Parent dir path:
     ruby: file_parent_dir_path.rb
     coffeescript: file-parent-dir-path.coffee
     java: FileParentDirPath.java
+    python3: file_parent_dir_path.py
   Sister dir path:
     ruby: file_sister_dir_path.rb
     coffeescript: file-sister-dir-path.coffee
     java: FileSisterDirPath.java
+    python3: file_sister_dir_path.py
 Method:
   Declare:
     ruby: method_declare.rb
     coffeescript: method-declare.coffee
     java: MethodDeclare.java
+    python3: method_declare.py
   Multiple arguments:
     ruby: method_multi_arg.rb
     coffeescript: method-multi-arg.coffee
     java: MethodMultiArg.java
+    python3: method_multi_arg.py
   Default value for argument:
     ruby: method_default_value.rb
     coffeescript: method-default-value.coffee
     java: no.java
+    python3: method_default_value.py
   Return:
     ruby: method_return.rb
     coffeescript: method-return.coffee
     java: MethodReturn.java
+    python3: method_return.py
   Closure:
     ruby: method_closure.rb
     coffeescript: method-closure.coffee
     java: no.java
+    python3: method_closure.py
   Block passing:
     ruby: method_block_passing.rb
     coffeescript: method-block-passing.coffee
     java: no.java
+    python3: method_block_passing.py
   Block binding:
     ruby: method_block_binding.rb
     coffeescript: method-block-binding.coffee
     java: no.java
+    python3: method_block_binding.py
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     coffeescript: method-init-in-runtime.coffee
     java: no.java
+    python3: method_init_in_runtime.py
   Alias:
     ruby: method_alias.rb
     coffeescript: method-alias.coffee
     java: no.java
+    python3: method_alias.py
 Class:
   Declare:
     ruby: class_declare.rb
     coffeescript: class-declare.coffee
     java: ClassDeclare.java
+    python3: class_declare.py
   Constructor:
     ruby: class_constructor.rb
     coffeescript: class-constructor.coffee
     java: ClassConstructor.java
+    python3: class_constructor.py
   Method call:
     ruby: class_method_call.rb
     coffeescript: class-method-call.coffee
     java: ClassMethodCall.java
+    python3: class_method_call.py
   Class method:
     ruby: class_class_method.rb
     coffeescript: class-class-method.coffee
     java: ClassClassMethod.java
+    python3: class_class_method.py
   Private method:
     ruby: class_private_method.rb
     coffeescript: class-private-method.coffee
     java: ClassPrivateMethod.java
+    python3: class_private_method.py
   Private method, access instance variable:
     ruby: class_private_method_access_instance_var.rb
     coffeescript: no.coffee
     java: ClassPrivateMethodAccessInstance.java
+    python3: class_private_method_access_instance_var.py
   Field:
     ruby: class_field.rb
     coffeescript: class-field.coffee
     java: ClassField.java
+    python3: class_field.py
   Get/set:
     ruby: class_get_set.rb
     coffeescript: class-get-set.coffee
     java: ClassGetSet.java
+    python3: class_get_set.py
   Inheritance:
     ruby: class_inheritance.rb
     coffeescript: class-inheritance.coffee
     java: ClassInheritance.java
+    python3: class_inheritance.py
   Mixin:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
     java: no.java
+    python3: class_mixin.py
   Has method?:
     ruby: class_has_method.rb
     coffeescript: class-has-method.coffee
     java: ClassHasMethod.java
+    python3: class_has_method.py
 Other:
   Comment:
     ruby: other_comment.rb
     coffeescript: other-comment.coffee
     java: OtherComment.java
+    python3: other_comment.py
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
     java: no.java
+    python3: other_assign_value_if_not_exist.py
   Safe navigation:
     ruby: no.rb
     coffeescript: other-safe-navigation.coffee
     java: no.java
+    python3: other_safe_navigation.py
   Import another file:
     ruby: other_import_file.rb
     coffeescript: other-import-file.coffee
     java: OtherImportFile.java
+    python3: other_import_file.py
   Destructuring assignment:
     ruby: other_destructing_assignment.rb
     coffeescript: other-destructing-assignment.coffee
     java: no.java
+    python3: other_destructing_assignment.py
   Date:
     ruby: other_date.rb
     coffeescript: other-date.coffee
     java: OtherDate.java
+    python3: other_date.py
   Time:
     ruby: other_time.rb
     coffeescript: other-time.coffee
     java: OtherTime.java
+    python3: other_time.py
   Not:
     ruby: other_not.rb
     coffeescript: other-not.coffee
     java: OtherNot.java
+    python3: other_not.py
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
     java: no.java
+    python3: conditional_assign_this_or_that.py
   Run command:
     ruby: other_run_command.rb
     coffeescript: other-run-command.coffee
     java: OtherRunCommand.java
-
+    python3: other_run_command.py
