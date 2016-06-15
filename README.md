@@ -8,7 +8,7 @@ Created with:
 * [Middleman](https://middlemanapp.com)
 * [Bootstrap](http://getbootstrap.com)
 
-## Decisions
+## Notes
 
 All languages:
 * It's possible to achieve anything with any language (especially with a library). However when a solution is really long and difficult to read it's better to not provide it
@@ -39,18 +39,19 @@ Run the app in localhost (http://localhost:4567):
 
 To generate outputs below the examples:
 
-    $ rake
+1. Install all interpreters/compilers
+2. `$ rake`
+
+To add a language:
+
+1. Modify `lang_list` variable in `config.rb`
+2. Add extension -> language mapping to `helpers/custom_helpers.rb` (`CODE_EXTENSION` contstant)
+3. Add an example
 
 To add an example:
 
 1. Modify `data/code.yml`
 2. Add files to `code/` folder
-
-To add a language:
-
-1. Add extension -> language mapping to `helpers/custom_helpers.rb` (`CODE_EXTENSION` contstant)
-2. Modify `data/code.yml`
-3. Add files to `code/` folder
 
 ## Contributing
 
