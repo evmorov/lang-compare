@@ -42,10 +42,12 @@ To generate outputs below the examples:
     $ rake
 
 To add an example:
+
 1. Modify `data/code.yml`
 2. Add files to `code/` folder
 
 To add a language:
+
 1. Add extension -> language mapping to `helpers/custom_helpers.rb` (`CODE_EXTENSION` contstant)
 2. Modify `data/code.yml`
 3. Add files to `code/` folder
