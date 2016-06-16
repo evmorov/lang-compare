@@ -3,7 +3,7 @@ module CustomHelpers
     'coffee' => 'coffeescript',
     'rb' => 'ruby',
     'java' => 'java',
-    'py' => 'python3'
+    'py' => 'python'
   }.freeze
 
   def code_from_file(filename)
