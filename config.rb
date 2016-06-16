@@ -25,21 +25,22 @@ def template_proxy(url, lang1, lang2, lang_list)
 end
 
 lang_list = [
-  %w(Ruby CoffeeScript),
-  %w(Ruby Java),
-  %w(Ruby Python3),
-  %w(CoffeeScript Ruby),
-  %w(CoffeeScript Java),
-  %w(CoffeeScript Python3),
-  %w(Java Ruby),
-  %w(Java CoffeeScript),
-  %w(Java Python3),
-  %w(Python3 Ruby),
-  %w(Python3 CoffeeScript),
-  %w(Python3 Java)
+  ['Ruby', 'CoffeeScript'],
+  ['Ruby', 'Java'],
+  ['Ruby', 'Python 3'],
+  ['CoffeeScript', 'Ruby'],
+  ['CoffeeScript', 'Java'],
+  ['CoffeeScript', 'Python 3'],
+  ['Java', 'Ruby'],
+  ['Java', 'CoffeeScript'],
+  ['Java', 'Python 3'],
+  ['Python 3', 'Ruby'],
+  ['Python 3', 'CoffeeScript'],
+  ['Python 3', 'Java']
 ]
 lang_list.each do |lang_pair|
-  url = "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"
+  url = "#{lang_pair[0].delete(' ').downcase}-#{lang_pair[1].delete(' ').downcase}.html"
   template_proxy url, lang_pair[0], lang_pair[1], lang_list
 end
 template_proxy 'index.html', 'Ruby', 'CoffeeScript', lang_list
+

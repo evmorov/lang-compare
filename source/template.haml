@@ -9,7 +9,7 @@
     %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
       - lang_list.each do |lang_pair|
         %li
-          = link_to "#{lang_pair[0]} <> #{lang_pair[1]}", "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"
+          = link_to "#{lang_pair[0]} <> #{lang_pair[1]}", "#{lang_pair[0].delete(' ').downcase}-#{lang_pair[1].delete(' ').downcase}.html"
 
   .row
     .col-md-6
@@ -27,8 +27,8 @@
     - next if section_empty?(section, lang1, lang2)
     %h3.compare-header3{id: sanitize(section.first)}= section.first
     - section.last.each do |header, filenames|
-      - filename1 = filenames[lang1.downcase]
-      - filename2 = filenames[lang2.downcase]
+      - filename1 = filenames[lang1.delete(' ').downcase]
+      - filename2 = filenames[lang2.delete(' ').downcase]
       - next if no_files?(filename1, filename2)
       - code1 = code_from_file(filename1)
       - code2 = code_from_file(filename2)
