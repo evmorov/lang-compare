@@ -27,10 +27,16 @@ end
 lang_list = [
   %w(Ruby CoffeeScript),
   %w(Ruby Java),
+  %w(Ruby Python3),
   %w(CoffeeScript Ruby),
   %w(CoffeeScript Java),
+  %w(CoffeeScript Python3),
   %w(Java Ruby),
-  %w(Java CoffeeScript)
+  %w(Java CoffeeScript),
+  %w(Java Python3),
+  %w(Python3 Ruby),
+  %w(Python3 CoffeeScript),
+  %w(Python3 Java)
 ]
 lang_list.each do |lang_pair|
   url = "#{lang_pair[0].downcase}-#{lang_pair[1].downcase}.html"

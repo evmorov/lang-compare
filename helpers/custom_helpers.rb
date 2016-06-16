@@ -2,7 +2,8 @@ module CustomHelpers
   CODE_EXTENSION = {
     'coffee' => 'coffeescript',
     'rb' => 'ruby',
-    'java' => 'java'
+    'java' => 'java',
+    'py' => 'python'
   }.freeze
 
   def code_from_file(filename)

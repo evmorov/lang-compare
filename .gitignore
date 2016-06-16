@@ -8,3 +8,4 @@
 /code/*.out
 /tags
 *.swp
+*.pyc
