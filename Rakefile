@@ -31,7 +31,7 @@ end
 
 task :execute_python do
   puts 'Execute python files'
-  execute_scripts('python', 'py')
+  execute_scripts('python3', 'py')
   puts "\n"
 end
 
