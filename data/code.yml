@@ -547,3 +547,4 @@ Other:
     coffeescript: other-run-command.coffee
     java: OtherRunCommand.java
     python3: other_run_command.py
+
