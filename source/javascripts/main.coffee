@@ -12,3 +12,19 @@ scroll = (element, toTop = false) ->
 
 scroll('a.scrollTop', true)
 scroll('a.scroll')
+
+$('.lang-item').click (e) ->
+  langUrl1 = $(@).data('lang-url')
+  side1 = $(@).parent().parent().data('lang-side')
+  side2 = if side1 is 1 then 2 else 1
+  langUrl2 = $("div[data-lang-side='#{side2}']").find('span.lang-selected').data('lang-url')
+
+  targetUrl =
+  if side1 is 1
+    "#{langUrl1}-#{langUrl2}"
+  else
+    "#{langUrl2}-#{langUrl1}"
+
+  window.location.href = "/#{targetUrl}"
+  e.preventDefault()
+  return

@@ -23,9 +23,13 @@ module CustomHelpers
     str.tr(' /,', '_').tr('()?', '').downcase
   end
 
+  def urlized(str)
+    str.delete(' ').downcase
+  end
+
   def section_empty?(section, lang1, lang2)
     section.last.each do |_header, filenames|
-      return false unless no_files?(filenames[lang1.downcase], filenames[lang2.downcase])
+      return false unless no_files?(filenames[lang1], filenames[lang2])
     end
     true
   end

@@ -2,14 +2,17 @@
   %h1.page-header1
     = link_to 'Language compare', config[:site_url]
 
-  .dropdown
-    %button.btn.btn-link.btn-lg.language-list.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
-      #{lang1} <> #{lang2}
-      %span.caret
-    %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-      - lang_list.each do |lang_pair|
-        %li
-          = link_to "#{lang_pair[0]} <> #{lang_pair[1]}", "#{lang_pair[0].delete(' ').downcase}-#{lang_pair[1].delete(' ').downcase}.html"
+  .row
+    - [lang1, lang2].each_with_index do |lang_selected, index|
+      .col-md-6
+        .dropdown{"data-lang-side" => index + 1}
+          %button.btn.btn-link.btn-lg.language-list.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+            %span.lang-selected{"data-lang-url" => urlized(lang_selected)} #{lang_selected}
+            %span.caret
+          %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+            - langs.each do |lang|
+              %li.lang-item{"data-lang-url" => urlized(lang)}
+                = link_to lang
 
   .row
     .col-md-6
@@ -24,11 +27,11 @@
       %h2.compare-header2 #{lang2}
 
   - data.code.each do |section|
-    - next if section_empty?(section, lang1, lang2)
+    - next if section_empty?(section, urlized(lang1), urlized(lang2))
     %h3.compare-header3{id: sanitize(section.first)}= section.first
     - section.last.each do |header, filenames|
-      - filename1 = filenames[lang1.delete(' ').downcase]
-      - filename2 = filenames[lang2.delete(' ').downcase]
+      - filename1 = filenames[urlized(lang1)]
+      - filename2 = filenames[urlized(lang2)]
       - next if no_files?(filename1, filename2)
       - code1 = code_from_file(filename1)
       - code2 = code_from_file(filename2)

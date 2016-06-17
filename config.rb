@@ -20,27 +20,16 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-def template_proxy(url, lang1, lang2, lang_list)
-  proxy(url, 'template', locals: { lang1: lang1, lang2: lang2, lang_list: lang_list }, ignore: true)
+def template_proxy(url, lang1, lang2, langs)
+  proxy(url, 'template', locals: { lang1: lang1, lang2: lang2, langs: langs }, ignore: true)
 end
 
-lang_list = [
-  ['Ruby', 'CoffeeScript'],
-  ['Ruby', 'Java'],
-  ['Ruby', 'Python 3'],
-  ['CoffeeScript', 'Ruby'],
-  ['CoffeeScript', 'Java'],
-  ['CoffeeScript', 'Python 3'],
-  ['Java', 'Ruby'],
-  ['Java', 'CoffeeScript'],
-  ['Java', 'Python 3'],
-  ['Python 3', 'Ruby'],
-  ['Python 3', 'CoffeeScript'],
-  ['Python 3', 'Java']
-]
-lang_list.each do |lang_pair|
-  url = "#{lang_pair[0].delete(' ').downcase}-#{lang_pair[1].delete(' ').downcase}.html"
-  template_proxy url, lang_pair[0], lang_pair[1], lang_list
+langs = ['Ruby', 'CoffeeScript', 'Java', 'Python 3']
+langs.each do |lang1|
+  langs.each do |lang2|
+    url = "#{lang1.delete(' ').downcase}-#{lang2.delete(' ').downcase}.html"
+    template_proxy url, lang1, lang2, langs
+  end
 end
-template_proxy 'index.html', 'Ruby', 'CoffeeScript', lang_list
+template_proxy 'index.html', 'Ruby', 'Python 3', langs
 
