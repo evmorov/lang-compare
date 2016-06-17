@@ -8,6 +8,7 @@
 
   %body
     #top
+    %span#site-url{:hidden => ""} #{config[:site_url]}
     %a{href: 'https://github.com/evmorov/lang-compare'}
       %img{alt: 'Fork me on GitHub',
           'data-canonical-src': 'https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png',

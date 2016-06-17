@@ -20,11 +20,12 @@ $('.lang-item').click (e) ->
   langUrl2 = $("div[data-lang-side='#{side2}']").find('span.lang-selected').data('lang-url')
 
   targetUrl =
-  if side1 is 1
-    "#{langUrl1}-#{langUrl2}"
-  else
-    "#{langUrl2}-#{langUrl1}"
-
+    if side1 is 1
+      "#{langUrl1}-#{langUrl2}"
+    else
+      "#{langUrl2}-#{langUrl1}"
+  siteUrl = $('#site-url').html()
+  targetUrl = "#{siteUrl}/#{targetUrl}" unless siteUrl is '/'
   window.location.href = "/#{targetUrl}"
   e.preventDefault()
   return
