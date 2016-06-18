@@ -1,2 +1,2 @@
-puts 'apple' =~ /^b/
-puts 'apple' =~ /^a/
+p 'apple' =~ /^b/
+p 'apple' =~ /^a/
