@@ -9,11 +9,11 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
-  config[:site_url] = '/lang-compare'
+  config[:root_url] = '/lang-compare'
 end
 
 configure :development do
-  config[:site_url] = '/'
+  config[:root_url] = '/'
 end
 
 activate :deploy do |deploy|

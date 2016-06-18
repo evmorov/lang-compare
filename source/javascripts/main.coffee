@@ -21,11 +21,11 @@ $('.lang-item').click (e) ->
 
   targetUrl =
     if side1 is 1
-      "#{langUrl1}-#{langUrl2}"
+      "/#{langUrl1}-#{langUrl2}"
     else
-      "#{langUrl2}-#{langUrl1}"
-  siteUrl = $('#site-url').html()
-  targetUrl = "#{siteUrl}/#{targetUrl}" unless siteUrl is '/'
-  window.location.href = "/#{targetUrl}"
+      "/#{langUrl2}-#{langUrl1}"
+  rootUrl = $('#root-url').html()
+  targetUrl = "#{rootUrl}#{targetUrl}" unless rootUrl is '/'
+  window.location.href = targetUrl
   e.preventDefault()
   return
