@@ -1,2 +1,3 @@
-// it's a comment
+<?php
 
+// it's a comment

@@ -16,6 +16,4 @@ class AnimalJ
     }
 }
 
-
 new AnimalJ("Kelya");
-

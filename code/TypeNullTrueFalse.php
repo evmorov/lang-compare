@@ -8,4 +8,3 @@ var_dump($shouldBeNull == null);
 
 $arr = [];
 var_dump(empty($arr));
-

@@ -15,8 +15,6 @@ class AnimalE
     }
 }
 
-
 $animal = new AnimalE();
 $animal->setName("Kelya");
 echo $animal->getName();
-

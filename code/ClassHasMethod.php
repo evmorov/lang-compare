@@ -11,4 +11,3 @@ class AnimalF
 $animal = new AnimalF();
 $hasMethod = method_exists($animal, "walk");
 var_dump($hasMethod);
-

@@ -11,4 +11,3 @@ switch ($s) {
     default:
         break;
 }
-

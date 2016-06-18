@@ -14,6 +14,4 @@ class AnimalI
     }
 }
 
-
 (new AnimalI())->eat("meat");
-

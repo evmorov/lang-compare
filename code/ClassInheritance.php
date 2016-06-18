@@ -18,4 +18,3 @@ class Dog extends AnimalG
 
 $dog = new Dog();
 $dog->walk();
-

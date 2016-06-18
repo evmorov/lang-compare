@@ -16,7 +16,6 @@ class AnimalD
     }
 }
 
-
 $animal = new AnimalD();
 $animal->take("a ball");
 $animal->play();

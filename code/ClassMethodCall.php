@@ -20,6 +20,4 @@ class AnimalH
     }
 }
 
-
 (new AnimalH())->walk();
-
