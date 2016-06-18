@@ -20,4 +20,5 @@ group :development do
   gem 'middleman-pry'
   gem 'god'
   gem 'guard'
+  gem 'rake'
 end
