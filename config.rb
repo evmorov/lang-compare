@@ -24,7 +24,7 @@ def template_proxy(url, lang1, lang2, langs)
   proxy(url, 'template', locals: { lang1: lang1, lang2: lang2, langs: langs }, ignore: true)
 end
 
-langs = ['Ruby', 'CoffeeScript', 'Java', 'Python 3']
+langs = ['Ruby', 'CoffeeScript', 'Java', 'Python 3', 'PHP']
 langs.each do |lang1|
   langs.each do |lang2|
     url = "#{lang1.delete(' ').downcase}-#{lang2.delete(' ').downcase}.html"
