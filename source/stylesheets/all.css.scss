@@ -49,3 +49,16 @@ li.content {
   color: inherit;
   text-decoration: inherit;
 }
+
+pre.unstyled {
+  border: 0;
+  background-color: transparent;
+}
+
+.output {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.9em;
+}
