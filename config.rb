@@ -31,5 +31,5 @@ langs.each do |lang1|
     template_proxy url, lang1, lang2, langs
   end
 end
-template_proxy 'index.html', 'Ruby', 'Python 3', langs
+template_proxy 'index.html', 'Ruby', 'Python 3', langs # languages by default
 
