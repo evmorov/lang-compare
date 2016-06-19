@@ -1,12 +1,8 @@
 score = 76
-if score < 60:
-    grade = 'F'
-elif score < 70:
-    grade = 'D'
-elif score < 80:
-    grade = 'C'
-elif score < 90:
-    grade = 'B'
-else:
-    grade = 'A'
-print(grade)
+grades = [
+    (60, 'F'),
+    (70, 'D'),
+    (80, 'C'),
+    (90, 'B'),
+]
+print(next((g for x, g in grades if score < x), 'A'))
