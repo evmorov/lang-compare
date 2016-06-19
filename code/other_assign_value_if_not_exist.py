@@ -1,6 +1,3 @@
 speed = 0
-try:
-  speed
-except NameError:
-  speed = 15
+speed = 15 if speed is None else speed
 print(speed)

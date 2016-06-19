@@ -279,13 +279,13 @@ Other structure:
     coffeescript: other-structure-constant.coffee
     java: OtherStructureConstant.java
     php: OtherStructureConstant.php
-    python3: no.py
+    python3: other_structure_constant.py
   Constant list:
     ruby: other_structure_constant_list.rb
     coffeescript: other-structure-constant-list.coffee
     java: OtherStructureConstantList.java
     php: OtherStructureConstantList.php
-    python3: no.py
+    python3: other_structure_constant_list.py
   Struct:
     ruby: other_structure_struct.rb
     coffeescript: no.coffee
