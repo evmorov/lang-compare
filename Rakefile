@@ -7,38 +7,38 @@ task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript, :exe
 end
 
 task :execute_java do
-  puts 'Execute java files'
+  puts 'Executing java files'
   `javac #{CODE_DIR}/*.java`
   Dir.glob File.join(CODE_DIR, '*.java') do |filepath|
     print '.'
     class_name = File.basename(filepath).gsub('.java', '')
     execute_file("java -cp #{CODE_DIR} #{class_name}", "#{filepath}.out")
   end
-  puts "\n"
+  puts "\n\n"
 end
 
 task :execute_ruby do
-  puts 'Execute ruby files'
+  puts 'Executing ruby files'
   execute_scripts('ruby', 'rb')
-  puts "\n"
+  puts "\n\n"
 end
 
 task :execute_coffeescript do
-  puts 'Execute coffee files'
+  puts 'Executing coffee files'
   execute_scripts('coffee', 'coffee')
-  puts "\n"
+  puts "\n\n"
 end
 
 task :execute_python do
-  puts 'Execute python files'
+  puts 'Executing python files'
   execute_scripts('python3', 'py')
-  puts "\n"
+  puts "\n\n"
 end
 
 task :execute_php do
-  puts 'Execute php files'
+  puts 'Executing php files'
   execute_scripts('php', 'php')
-  puts "\n"
+  puts "\n\n"
 end
 
 def execute_scripts(command, ext)
