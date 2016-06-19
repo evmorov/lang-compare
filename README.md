@@ -28,8 +28,9 @@ Java:
 Add more languages: Kotlin, JavaScript, TypeScript (and any more)!
 
 * Java - Kotlin
+* Java - C#
 * JavaScript - CoffeeScript
-* CoffeeScript - TypeScript
+* JavaScript - TypeScript
 
 It would be nice to modify the existing examples to make them funnier.
 
