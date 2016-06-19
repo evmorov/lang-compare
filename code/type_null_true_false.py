@@ -1,35 +1,15 @@
-def if_value(values):
-  print('"if value":')
-  for k, v in values:
-    print("%s - %s" % (k, 'true' if v else 'false'))
-  print()
+def check(label, fn, values):
+    print(label)
+    for value in values:
+        try:
+            result = 'true' if fn(value) else 'false'
+        except TypeError as e:
+            result = 'error: %s' % e
+        print("  %-9r - %s" % (value, result))
+    print()
 
-def nil_value(values):
-  print('"if value is None":')
-  for k, v in values:
-    print("%s - %s" % (k, 'true' if v is None else 'false'))
-  print()
+values = ['string', '', [1, 2, 3], [], 5, 0, True, False, None]
 
-def empty_value(values):
-  print('"if len(value)":')
-  for k, v in values:
-    try:
-        print("%s - %s" % (k, 'true' if len(v) else 'false'))
-    except TypeError as e:
-        print("%s - %s" % (k, e))
-
-values = [
-  ("'string'", 'string'),
-  ("''", ''),
-  ('[1, 2, 3]', [1, 2, 3]),
-  ('[]', []),
-  ('5', 5),
-  ('0', 0),
-  (True, True),
-  (False, False),
-  (None, None),
-]
-
-if_value(values)
-nil_value(values)
-empty_value(values)
+check('if value:', lambda v: v, values)
+check('if value is None:', lambda v: v is None, values)
+check('if len(value):', lambda v: len(v), values)
