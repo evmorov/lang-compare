@@ -1,2 +1,3 @@
 COST = 100
+COST = 50
 puts COST
