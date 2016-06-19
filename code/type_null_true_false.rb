@@ -1,34 +1,18 @@
-def if_value(values)
-  puts '"if value":'
-  values.each { |k, v| puts "#{k} - #{v ? 'true' : 'false'}" }
-  puts ''
-end
-
-def nil_value(values)
-  puts '"if value.nil?":'
-  values.each { |k, v| puts "#{k} - #{v.nil? ? 'true' : 'false'}" }
-  puts ''
-end
-
-def empty_value(values)
-  puts '"if value.empty?":'
-  values.each do |k, v|
-    puts "#{k} - #{v.empty? ? 'true' : 'false'}" if v.respond_to? :empty?
+def check(label, fn, values)
+  puts label
+  values.each do |value|
+    begin
+      result = fn.call(value) ? 'true' : 'false'
+    rescue => e
+      result = "error: #{e}"
+    end
+    printf("  %-9p - %s\n", value, result)
   end
+  puts ''
 end
 
-values = {
-  "'string'": 'string',
-  "''": '',
-  '[1, 2, 3]': [1, 2, 3],
-  '[]': [],
-  '5': 5,
-  '0': 0,
-  true: true,
-  false: false,
-  nil: nil
-}
+values = ['string', '', [1, 2, 3], [], 5, 0, true, false, nil]
 
-if_value(values)
-nil_value(values)
-empty_value(values)
+check('if value:', -> (v) { v }, values)
+check('if value.nil?:', -> (v) { v.nil? }, values)
+check('if value.empty?:', -> (v) { v.empty? }, values)
