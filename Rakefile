@@ -7,9 +7,9 @@ task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript, :exe
 
 task :execute_java do
   puts 'Executing java files'
-  `javac #{CODE_DIR}/*.java`
   Dir.glob File.join(CODE_DIR, '*.java') do |filepath|
-    print '.'
+    result = execute_file("javac #{filepath}", "#{filepath}.out")
+    next unless result.to_i.zero?
     class_name = File.basename(filepath).gsub('.java', '')
     execute_file("java -cp #{CODE_DIR} #{class_name}", "#{filepath}.out")
   end
