@@ -3,8 +3,7 @@ require 'open3'
 CODE_DIR = File.join(File.dirname(__FILE__), 'code')
 
 task :default => [:execute]
-task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript, :execute_python, :execute_php] do
-end
+task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript, :execute_python, :execute_php]
 
 task :execute_java do
   puts 'Executing java files'
