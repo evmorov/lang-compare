@@ -3,10 +3,10 @@ def check(label, fn, values)
   values.each do |value|
     begin
       result = fn.call(value) ? 'true' : 'false'
-    rescue => e
+    rescue NoMethodError => e
       result = "error: #{e}"
     end
-    printf("  %-9p - %s\n", value, result)
+    puts format("  %-9p - %s", value, result)
   end
   puts ''
 end
