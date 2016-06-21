@@ -1,4 +1,4 @@
-class AnimalD {
+class Animal {
   private String toy;
 
   public void take(String toy) {
@@ -12,7 +12,7 @@ class AnimalD {
 
 class ClassField {
   public static void main(String[] args) {
-    AnimalD animal = new AnimalD();
+    Animal animal = new Animal();
     animal.take("a ball");
     animal.play();
   }

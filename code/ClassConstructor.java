@@ -1,7 +1,7 @@
-class AnimalB {
+class Animal {
   private String name;
 
-  public AnimalB(String name) {
+  public Animal(String name) {
     this.name = name;
   }
 
@@ -12,6 +12,6 @@ class AnimalB {
 
 class ClassConstructor {
   public static void main(String[] args) {
-    new AnimalB("Kelya").walk();
+    new Animal("Kelya").walk();
   }
 }

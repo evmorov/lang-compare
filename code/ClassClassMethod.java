@@ -1,4 +1,4 @@
-class AnimalA {
+class Animal {
   public static void feed() {
     System.out.println("Om nom nom");
   }
@@ -6,6 +6,6 @@ class AnimalA {
 
 class ClassClassMethod {
   public static void main(String[] args) {
-    AnimalA.feed();
+    Animal.feed();
   }
 }

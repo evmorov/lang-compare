@@ -1,7 +1,7 @@
-class AnimalJ {
+class Animal {
   private String name;
 
-  public AnimalJ(String name) {
+  public Animal(String name) {
     this.name = name;
     greet();
   }
@@ -13,6 +13,6 @@ class AnimalJ {
 
 class ClassPrivateMethodAccessInstance {
   public static void main(String[] args) {
-    new AnimalJ("Kelya");
+    new Animal("Kelya");
   }
 }

@@ -1,4 +1,4 @@
-class AnimalI {
+class Animal {
   public void eat(String food) {
     if (isMeat(food))
       System.out.println("Om nom nom");
@@ -11,6 +11,6 @@ class AnimalI {
 
 class ClassPrivateMethod {
   public static void main(String[] args) {
-    new AnimalI().eat("meat");
+    new Animal().eat("meat");
   }
 }

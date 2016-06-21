@@ -1,4 +1,4 @@
-class AnimalC {
+class Animal {
   public void walk() {
     System.out.println("I'm walking");
   }
@@ -6,6 +6,6 @@ class AnimalC {
 
 class ClassDeclare {
   public static void main(String[] args) {
-    new AnimalC().walk();
+    new Animal().walk();
   }
 }
