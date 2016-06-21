@@ -8,8 +8,8 @@ task execute: [:clean, :execute_java, :execute_ruby, :execute_coffeescript, :exe
 task :execute_java do
   puts 'Executing java files'
   Dir.glob File.join(CODE_DIR, '*.java') do |filepath|
-    result = execute_file("javac #{filepath}", "#{filepath}.out")
-    next unless result.to_i.zero?
+    result = execute_file("javac -cp #{CODE_DIR} #{filepath}", "#{filepath}.out")
+    next unless result.to_i.zero? # error occurred while compiling
     class_name = File.basename(filepath).gsub('.java', '')
     execute_file("java -cp #{CODE_DIR} #{class_name}", "#{filepath}.out")
   end
