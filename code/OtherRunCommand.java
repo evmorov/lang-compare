@@ -1,17 +1,16 @@
 import java.io.*;
+import java.util.stream.Collectors;
 
 class OtherRunCommand {
   public static void main(String[] args) throws IOException, InterruptedException {
-    String result = "";
+    final String result;
     ProcessBuilder ps = new ProcessBuilder("java", "-version");
     ps.redirectErrorStream(true);
     Process pr = ps.start();
-    BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-    String line;
-    while ((line = in.readLine()) != null)
-      result += line + "\n";
-    pr.waitFor();
-    in.close();
+    try (BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()))) {
+      result = in.lines().collect(Collectors.joining("\n"));
+      pr.waitFor();
+    }
     System.out.println(result);
   }
 }
