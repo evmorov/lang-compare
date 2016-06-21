@@ -2,13 +2,13 @@ import java.util.*;
 
 class TypeNullTrueFalse {
   public static void main(String[] args) {
-    String notEmpty = "Not empty";
-    System.out.println(notEmpty.isEmpty());
+    List<String> emptyArray = new ArrayList<String>();
+    System.out.println(emptyArray.isEmpty());
 
-    String shouldBeNull = null;
-    System.out.println(shouldBeNull == null);
+    String emptyString = "";
+    System.out.println(emptyString.isEmpty());
 
-    List<String> arr = new ArrayList<String>();
-    System.out.println(arr.isEmpty());
+    String nullVar = null;
+    System.out.println(nullVar == null);
   }
 }
