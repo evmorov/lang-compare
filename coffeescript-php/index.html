@@ -1,0 +1,3876 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>Language compare</title>
+<link href="../stylesheets/all-55fa2a80.css" rel="stylesheet" /><link href="../stylesheets/syntax-d739a89d.css" rel="stylesheet" />
+</head>
+<body>
+<div id='top'></div>
+<span hidden='' id='root-url'>/lang-compare</span>
+<a href='https://github.com/evmorov/lang-compare'>
+<img alt='Fork me on GitHub' data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png' src='https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67' style='position: absolute; top: 0; right: 0; border: 0;'>
+</a>
+<div class='container-fluid'>
+<h1 class='page-header1'>
+<a href="/lang-compare">Language compare</a>
+</h1>
+<div class='row'>
+<div class='col-md-6'>
+<div class='dropdown' data-lang-side='1'>
+<button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
+<span class='lang-selected' data-lang-url='coffeescript'>CoffeeScript</span>
+<span class='caret'></span>
+</button>
+<ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
+<li class='lang-item' data-lang-url='ruby'>
+<a href="#">Ruby</a>
+</li>
+<li class='lang-item' data-lang-url='coffeescript'>
+<a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='java'>
+<a href="#">Java</a>
+</li>
+<li class='lang-item' data-lang-url='python3'>
+<a href="#">Python 3</a>
+</li>
+<li class='lang-item' data-lang-url='php'>
+<a href="#">PHP</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='col-md-6'>
+<div class='dropdown' data-lang-side='2'>
+<button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
+<span class='lang-selected' data-lang-url='php'>PHP</span>
+<span class='caret'></span>
+</button>
+<ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
+<li class='lang-item' data-lang-url='ruby'>
+<a href="#">Ruby</a>
+</li>
+<li class='lang-item' data-lang-url='coffeescript'>
+<a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='java'>
+<a href="#">Java</a>
+</li>
+<li class='lang-item' data-lang-url='python3'>
+<a href="#">Python 3</a>
+</li>
+<li class='lang-item' data-lang-url='php'>
+<a href="#">PHP</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-6'>
+<ul class='list-unstyled'>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#string' title='String'>String</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#string_create' title='Create'>Create</a>
+</li>
+<li>
+<a class='scroll' href='#string_concatenation' title='Concatenation'>Concatenation</a>
+</li>
+<li>
+<a class='scroll' href='#string_interpolation' title='Interpolation'>Interpolation</a>
+</li>
+<li>
+<a class='scroll' href='#string_remove_part' title='Remove part'>Remove part</a>
+</li>
+<li>
+<a class='scroll' href='#string_replace' title='Replace'>Replace</a>
+</li>
+<li>
+<a class='scroll' href='#string_split' title='Split'>Split</a>
+</li>
+<li>
+<a class='scroll' href='#string_remove_leading_and_trailing_whitespace' title='Remove leading and trailing whitespace'>Remove leading and trailing whitespace</a>
+</li>
+<li>
+<a class='scroll' href='#string_compare' title='Compare'>Compare</a>
+</li>
+<li>
+<a class='scroll' href='#string_regex' title='Regex'>Regex</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#number' title='Number'>Number</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#number_increment' title='Increment'>Increment</a>
+</li>
+<li>
+<a class='scroll' href='#number_compare' title='Compare'>Compare</a>
+</li>
+<li>
+<a class='scroll' href='#number_random' title='Random'>Random</a>
+</li>
+<li>
+<a class='scroll' href='#number_float' title='Float'>Float</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#type' title='Type'>Type</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#type_get_type_of_object' title='Get type of object'>Get type of object</a>
+</li>
+<li>
+<a class='scroll' href='#type_int_to_float' title='Int to Float'>Int to Float</a>
+</li>
+<li>
+<a class='scroll' href='#type_int_to_string' title='Int to String'>Int to String</a>
+</li>
+<li>
+<a class='scroll' href='#type_string_to_int' title='String to Int'>String to Int</a>
+</li>
+<li>
+<a class='scroll' href='#type_string' title='String?'>String?</a>
+</li>
+<li>
+<a class='scroll' href='#type_null_true_false' title='Null/True/False?'>Null/True/False?</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#array' title='Array'>Array</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#array_create_populated' title='Create populated'>Create populated</a>
+</li>
+<li>
+<a class='scroll' href='#array_add' title='Add'>Add</a>
+</li>
+<li>
+<a class='scroll' href='#array_with_different_types' title='With different types'>With different types</a>
+</li>
+<li>
+<a class='scroll' href='#array_include' title='Include?'>Include?</a>
+</li>
+<li>
+<a class='scroll' href='#array_iterate' title='Iterate'>Iterate</a>
+</li>
+<li>
+<a class='scroll' href='#array_iterate_with_index' title='Iterate with index'>Iterate with index</a>
+</li>
+<li>
+<a class='scroll' href='#array_get_first__last_element' title='Get first, last element'>Get first, last element</a>
+</li>
+<li>
+<a class='scroll' href='#array_find_first' title='Find first'>Find first</a>
+</li>
+<li>
+<a class='scroll' href='#array_select_find_all' title='Select (find all)'>Select (find all)</a>
+</li>
+<li>
+<a class='scroll' href='#array_map_change_all' title='Map (change all)'>Map (change all)</a>
+</li>
+<li>
+<a class='scroll' href='#array_concatenation' title='Concatenation'>Concatenation</a>
+</li>
+<li>
+<a class='scroll' href='#array_sort' title='Sort'>Sort</a>
+</li>
+<li>
+<a class='scroll' href='#array_multidimensional' title='Multidimensional'>Multidimensional</a>
+</li>
+<li>
+<a class='scroll' href='#array_size' title='Size'>Size</a>
+</li>
+<li>
+<a class='scroll' href='#array_count' title='Count'>Count</a>
+</li>
+<li>
+<a class='scroll' href='#array_reduce' title='Reduce'>Reduce</a>
+</li>
+<li>
+<a class='scroll' href='#array_index_of_element' title='Index of element'>Index of element</a>
+</li>
+<li>
+<a class='scroll' href='#array_delete_element' title='Delete element'>Delete element</a>
+</li>
+<li>
+<a class='scroll' href='#array_unique' title='Unique'>Unique</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#hash_map' title='Hash (map)'>Hash (map)</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#hash_map_create_populated' title='Create populated'>Create populated</a>
+</li>
+<li>
+<a class='scroll' href='#hash_map_add' title='Add'>Add</a>
+</li>
+<li>
+<a class='scroll' href='#hash_map_iterate' title='Iterate'>Iterate</a>
+</li>
+<li>
+<a class='scroll' href='#hash_map_include' title='Include?'>Include?</a>
+</li>
+<li>
+<a class='scroll' href='#hash_map_get_value' title='Get value'>Get value</a>
+</li>
+<li>
+<a class='scroll' href='#hash_map_size' title='Size'>Size</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#other_structure' title='Other structure'>Other structure</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#other_structure_boolean' title='Boolean'>Boolean</a>
+</li>
+<li>
+<a class='scroll' href='#other_structure_constant' title='Constant'>Constant</a>
+</li>
+<li>
+<a class='scroll' href='#other_structure_constant_list' title='Constant list'>Constant list</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#conditional' title='Conditional'>Conditional</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#conditional_if' title='If'>If</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_unless' title='Unless'>Unless</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_if_else' title='If/else'>If/else</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_and_or' title='And/Or'>And/Or</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_switch' title='Switch'>Switch</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_switch_as_else_if' title='Switch as else if'>Switch as else if</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_ternary' title='Ternary'>Ternary</a>
+</li>
+<li>
+<a class='scroll' href='#conditional_if_assign' title='If assign'>If assign</a>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<div class='col-md-6'>
+<ul class='list-unstyled'>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#loop' title='Loop'>Loop</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#loop_for' title='For'>For</a>
+</li>
+<li>
+<a class='scroll' href='#loop_for_with_a_step' title='For with a step'>For with a step</a>
+</li>
+<li>
+<a class='scroll' href='#loop_times' title='Times'>Times</a>
+</li>
+<li>
+<a class='scroll' href='#loop_while' title='While'>While</a>
+</li>
+<li>
+<a class='scroll' href='#loop_until' title='Until'>Until</a>
+</li>
+<li>
+<a class='scroll' href='#loop_return_array' title='Return array'>Return array</a>
+</li>
+<li>
+<a class='scroll' href='#loop_break' title='Break'>Break</a>
+</li>
+<li>
+<a class='scroll' href='#loop_next_continue' title='Next/Continue'>Next/Continue</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#math' title='Math'>Math</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#math_max_min' title='Max/Min'>Max/Min</a>
+</li>
+<li>
+<a class='scroll' href='#math_sqrt' title='Sqrt'>Sqrt</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#error_handling' title='Error handling'>Error handling</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#error_handling_try_catch_finally' title='Try/catch/finally'>Try/catch/finally</a>
+</li>
+<li>
+<a class='scroll' href='#error_handling_with_a_message' title='With a message'>With a message</a>
+</li>
+<li>
+<a class='scroll' href='#error_handling_throw_exception' title='Throw exception'>Throw exception</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#file' title='File'>File</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#file_read' title='Read'>Read</a>
+</li>
+<li>
+<a class='scroll' href='#file_write' title='Write'>Write</a>
+</li>
+<li>
+<a class='scroll' href='#file_get_working_dir_path' title='Get working dir path'>Get working dir path</a>
+</li>
+<li>
+<a class='scroll' href='#file_file_path' title='File path'>File path</a>
+</li>
+<li>
+<a class='scroll' href='#file_dir_path' title='Dir path'>Dir path</a>
+</li>
+<li>
+<a class='scroll' href='#file_parent_dir_path' title='Parent dir path'>Parent dir path</a>
+</li>
+<li>
+<a class='scroll' href='#file_sister_dir_path' title='Sister dir path'>Sister dir path</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#method' title='Method'>Method</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#method_declare' title='Declare'>Declare</a>
+</li>
+<li>
+<a class='scroll' href='#method_multiple_arguments' title='Multiple arguments'>Multiple arguments</a>
+</li>
+<li>
+<a class='scroll' href='#method_default_value_for_argument' title='Default value for argument'>Default value for argument</a>
+</li>
+<li>
+<a class='scroll' href='#method_return' title='Return'>Return</a>
+</li>
+<li>
+<a class='scroll' href='#method_closure' title='Closure'>Closure</a>
+</li>
+<li>
+<a class='scroll' href='#method_block_passing' title='Block passing'>Block passing</a>
+</li>
+<li>
+<a class='scroll' href='#method_block_binding' title='Block binding'>Block binding</a>
+</li>
+<li>
+<a class='scroll' href='#method_initialize_in_runtime' title='Initialize in runtime'>Initialize in runtime</a>
+</li>
+<li>
+<a class='scroll' href='#method_alias' title='Alias'>Alias</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#class' title='Class'>Class</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#class_declare' title='Declare'>Declare</a>
+</li>
+<li>
+<a class='scroll' href='#class_constructor' title='Constructor'>Constructor</a>
+</li>
+<li>
+<a class='scroll' href='#class_method_call' title='Method call'>Method call</a>
+</li>
+<li>
+<a class='scroll' href='#class_class_method' title='Class method'>Class method</a>
+</li>
+<li>
+<a class='scroll' href='#class_private_method' title='Private method'>Private method</a>
+</li>
+<li>
+<a class='scroll' href='#class_private_method__access_instance_variable' title='Private method, access instance variable'>Private method, access instance variable</a>
+</li>
+<li>
+<a class='scroll' href='#class_field' title='Field'>Field</a>
+</li>
+<li>
+<a class='scroll' href='#class_get_set' title='Get/set'>Get/set</a>
+</li>
+<li>
+<a class='scroll' href='#class_inheritance' title='Inheritance'>Inheritance</a>
+</li>
+<li>
+<a class='scroll' href='#class_mixin' title='Mixin'>Mixin</a>
+</li>
+<li>
+<a class='scroll' href='#class_has_method' title='Has method?'>Has method?</a>
+</li>
+</ul>
+</li>
+<li class='content'>
+<strong>
+<a class='scroll section' href='#other' title='Other'>Other</a>
+</strong>
+<ul>
+<li>
+<a class='scroll' href='#other_comment' title='Comment'>Comment</a>
+</li>
+<li>
+<a class='scroll' href='#other_assign_value_if_not_exist' title='Assign value if not exist'>Assign value if not exist</a>
+</li>
+<li>
+<a class='scroll' href='#other_safe_navigation' title='Safe navigation'>Safe navigation</a>
+</li>
+<li>
+<a class='scroll' href='#other_import_another_file' title='Import another file'>Import another file</a>
+</li>
+<li>
+<a class='scroll' href='#other_destructuring_assignment' title='Destructuring assignment'>Destructuring assignment</a>
+</li>
+<li>
+<a class='scroll' href='#other_date' title='Date'>Date</a>
+</li>
+<li>
+<a class='scroll' href='#other_time' title='Time'>Time</a>
+</li>
+<li>
+<a class='scroll' href='#other_not' title='Not'>Not</a>
+</li>
+<li>
+<a class='scroll' href='#other_assign_this_or_that' title='Assign this or that'>Assign this or that</a>
+</li>
+<li>
+<a class='scroll' href='#other_run_command' title='Run command'>Run command</a>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+<div class='row'>
+<div class='col-md-6'>
+<h2 class='compare-header2'>CoffeeScript</h2>
+</div>
+<div class='col-md-6'>
+<h2 class='compare-header2'>PHP</h2>
+</div>
+</div>
+<h3 class='compare-header3' id='string'>String</h3>
+<h4 class='compare-header4'>
+Create
+<small>
+<a class='link-unstyled' href='#string_create' id='string_create'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greeting</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello World!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$greeting</span> <span class="o">=</span> <span class="s2">"Hello World!"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$greeting</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello World!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Concatenation
+<small>
+<a class='link-unstyled' href='#string_concatenation' id='string_concatenation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="s2">"Don't worry,"</span> <span class="o">.</span> <span class="s2">" be happy"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Interpolation
+<small>
+<a class='link-unstyled' href='#string_interpolation' id='string_interpolation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
+<span class="nx">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">first</span><span class="si">}</span><span class="s"> </span><span class="si">#{</span><span class="nx">second</span><span class="si">}</span><span class="s">"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
+<span class="nv">$second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
+<span class="k">echo</span> <span class="s2">"</span><span class="nv">$first</span><span class="s2"> </span><span class="nv">$second</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Remove part
+<small>
+<a class='link-unstyled' href='#string_remove_part' id='string_remove_part'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>This is funny! I am like him!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"This is not funny! I am not like him!"</span><span class="p">;</span>
+<span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"not "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>This is funny! I am like him!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Replace
+<small>
+<a class='link-unstyled' href='#string_replace' id='string_replace'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'You should work'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>You should rest
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"You should work"</span><span class="p">;</span>
+<span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"rest"</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>You should rest</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Split
+<small>
+<a class='link-unstyled' href='#string_split' id='string_split'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'I like beer'</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"I like beer"</span><span class="p">;</span>
+<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
+<span class="nb">var_export</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>array (
+  0 =&gt; &#x27;I&#x27;,
+  1 =&gt; &#x27;like&#x27;,
+  2 =&gt; &#x27;beer&#x27;,
+)</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Remove leading and trailing whitespace
+<small>
+<a class='link-unstyled' href='#string_remove_leading_and_trailing_whitespace' id='string_remove_leading_and_trailing_whitespace'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">' eh? '</span><span class="p">.</span><span class="na">trim</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>eh?
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">trim</span><span class="p">(</span><span class="s2">" eh? "</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>eh?</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Compare
+<small>
+<a class='link-unstyled' href='#string_compare' id='string_compare'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">is</span> <span class="s">'string'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">isnt</span> <span class="s">'string'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+false
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">strcmp</span><span class="p">(</span><span class="s2">"string"</span><span class="p">,</span> <span class="s2">"string"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Regex
+<small>
+<a class='link-unstyled' href='#string_regex' id='string_regex'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^b/</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^a/</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>null
+[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^b/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^a/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(false)
+bool(true)
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='number'>Number</h3>
+<h4 class='compare-header4'>
+Increment
+<small>
+<a class='link-unstyled' href='#number_increment' id='number_increment'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="nx">i</span><span class="o">++</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Compare
+<small>
+<a class='link-unstyled' href='#number_compare' id='number_compare'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">is</span> <span class="mi">5</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">isnt</span> <span class="mi">5</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+true
+false
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+bool(true)
+bool(false)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Random
+<small>
+<a class='link-unstyled' href='#number_random' id='number_random'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>1</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Float
+<small>
+<a class='link-unstyled' href='#number_float' id='number_float'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>4.5
+4.5
+4
+5
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>float(4.5)
+float(4.5)
+float(4)
+float(5)
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='type'>Type</h3>
+<h4 class='compare-header4'>
+Get type of object
+<small>
+<a class='link-unstyled' href='#type_get_type_of_object' id='type_get_type_of_object'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'hi'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="mi">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'hi'</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>string
+number
+String
+Number
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">get_class</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>string
+object
+DateTime
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Int to Float
+<small>
+<a class='link-unstyled' href='#type_int_to_float' id='type_int_to_float'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span> <span class="o">+</span> <span class="mf">0.1</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10.1
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">((</span><span class="nx">float</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>float(10)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Int to String
+<small>
+<a class='link-unstyled' href='#type_int_to_string' id='type_int_to_string'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">((</span><span class="nx">string</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>string(2) &quot;10&quot;
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+String to Int
+<small>
+<a class='link-unstyled' href='#type_string_to_int' id='type_string_to_int'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>5
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="s2">"10"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>int(10)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+String?
+<small>
+<a class='link-unstyled' href='#type_string' id='type_string'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'10'</span> <span class="o">is</span> <span class="s">'string'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">is_string</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">));</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">()</span> <span class="nx">instanceof</span> <span class="nx">DateTime</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+bool(true)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Null/True/False?
+<small>
+<a class='link-unstyled' href='#type_null_true_false' id='type_null_true_false'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">check</span> <span class="o">=</span> <span class="p">(</span><span class="nx">label</span><span class="p">,</span> <span class="nx">fn</span><span class="p">,</span> <span class="nx">values</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">label</span>
+  <span class="k">for</span> <span class="nx">value</span> <span class="k">in</span> <span class="nx">values</span>
+    <span class="k">try</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="k">if</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="k">then</span> <span class="s">'true'</span> <span class="k">else</span> <span class="s">'false'</span>
+    <span class="k">catch</span> <span class="nx">e</span>
+      <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">TypeError</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="s">"error: </span><span class="si">#{</span><span class="nx">e</span><span class="si">}</span><span class="s">"</span>
+      <span class="k">else</span>
+        <span class="k">throw</span> <span class="nx">e</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s">"[</span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s">]"</span> <span class="k">if</span> <span class="nx">value</span><span class="o">?</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span> <span class="o">is</span> <span class="s">'Array'</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s">"''"</span> <span class="k">if</span> <span class="nx">value</span> <span class="o">is</span> <span class="s">''</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"  </span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s"> - </span><span class="si">#{</span><span class="nx">result</span><span class="si">}</span><span class="s">"</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">''</span>
+
+<span class="nx">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="no">true</span><span class="p">,</span> <span class="no">false</span><span class="p">,</span> <span class="no">null</span><span class="p">,</span> <span class="no">undefined</span><span class="p">]</span>
+
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value?:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="o">?</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value.length:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">.</span><span class="na">length</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>if value:
+  string - true
+  &#x27;&#x27; - false
+  1,2,3 - true
+  [] - true
+  5 - true
+  0 - false
+  true - true
+  false - false
+  null - false
+  undefined - false
+
+if value?:
+  string - true
+  &#x27;&#x27; - true
+  1,2,3 - true
+  [] - true
+  5 - true
+  0 - true
+  true - true
+  false - true
+  null - false
+  undefined - false
+
+if value.length:
+  string - true
+  &#x27;&#x27; - false
+  1,2,3 - true
+  [] - false
+  5 - false
+  0 - false
+  true - false
+  false - false
+  null - error: TypeError: Cannot read property &#x27;length&#x27; of null
+  undefined - error: TypeError: Cannot read property &#x27;length&#x27; of undefined
+
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$notEmpty</span> <span class="o">=</span> <span class="s2">"Not empty"</span><span class="p">;</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$notEmpty</span><span class="p">));</span>
+
+<span class="nv">$shouldBeNull</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$shouldBeNull</span> <span class="o">==</span> <span class="kc">null</span><span class="p">);</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(false)
+bool(true)
+bool(true)
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='array'>Array</h3>
+<h4 class='compare-header4'>
+Create populated
+<small>
+<a class='link-unstyled' href='#array_create_populated' id='array_create_populated'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"first"</span><span class="p">,</span> <span class="s2">"second"</span><span class="p">];</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; first
+    [1] =&gt; second
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Add
+<small>
+<a class='link-unstyled' href='#array_add' id='array_add'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'first'</span>
+<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'second'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$myArr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"first"</span><span class="p">;</span>
+<span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"second"</span><span class="p">;</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$myArr</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; first
+    [1] =&gt; second
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+With different types
+<small>
+<a class='link-unstyled' href='#array_with_different_types' id='array_with_different_types'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">print_r</span><span class="p">([</span><span class="s2">"first"</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; first
+    [1] =&gt; 1
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Include?
+<small>
+<a class='link-unstyled' href='#array_include' id='array_include'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]));</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Iterate
+<small>
+<a class='link-unstyled' href='#array_iterate' id='array_iterate'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1
+2
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">foreach</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$num</span><span class="p">);</span>
+<span class="p">}</span></code></pre>
+
+<pre class='unstyled output text-muted'>int(1)
+int(2)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Iterate with index
+<small>
+<a class='link-unstyled' href='#array_iterate_with_index' id='array_iterate_with_index'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>one
+0
+two
+1
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+
+<pre class='unstyled output text-muted'>fontSize
+10
+fontFamily
+Arial
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Get first, last element
+<small>
+<a class='link-unstyled' href='#array_get_first__last_element' id='array_get_first__last_element'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">last</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">first</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">last</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>one
+two
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"one"</span><span class="p">,</span> <span class="s2">"two"</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span></code></pre>
+
+<pre class='unstyled output text-muted'>string(3) &quot;one&quot;
+string(3) &quot;two&quot;
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Find first
+<small>
+<a class='link-unstyled' href='#array_find_first' id='array_find_first'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nv">$first</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$first</span> <span class="o">=</span> <span class="nv">$n</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$first</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>int(10)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Select (find all)
+<small>
+<a class='link-unstyled' href='#array_select_find_all' id='array_select_find_all'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 10, 20 ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nv">$filtered</span> <span class="o">=</span> <span class="nb">array_filter</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$filtered</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [2] =&gt; 10
+    [3] =&gt; 20
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Map (change all)
+<small>
+<a class='link-unstyled' href='#array_map_change_all' id='array_map_change_all'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nv">$mapped</span> <span class="o">=</span> <span class="nb">array_map</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">},</span> <span class="nv">$arr</span><span class="p">);</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$mapped</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; 2
+    [1] =&gt; 10
+    [2] =&gt; 20
+    [3] =&gt; 40
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Concatenation
+<small>
+<a class='link-unstyled' href='#array_concatenation' id='array_concatenation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="na">concat</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="nv">$arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
+<span class="nv">$concated</span> <span class="o">=</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$arr1</span><span class="p">,</span> <span class="nv">$arr2</span><span class="p">);</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$concated</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; 1
+    [1] =&gt; 2
+    [2] =&gt; 3
+    [3] =&gt; 4
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Sort
+<small>
+<a class='link-unstyled' href='#array_sort' id='array_sort'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="na">sort</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">];</span>
+<span class="nb">sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; 1
+    [1] =&gt; 2
+    [2] =&gt; 3
+    [3] =&gt; 4
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Multidimensional
+<small>
+<a class='link-unstyled' href='#array_multidimensional' id='array_multidimensional'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>forth
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span></code></pre>
+
+<pre class='unstyled output text-muted'>string(5) &quot;forth&quot;
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Size
+<small>
+<a class='link-unstyled' href='#array_size' id='array_size'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">length</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span></code></pre>
+
+<pre class='unstyled output text-muted'>int(3)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Count
+<small>
+<a class='link-unstyled' href='#array_count' id='array_count'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="na">length</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
+<span class="nv">$count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$n</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="nv">$count</span><span class="o">++</span><span class="p">;</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$count</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>int(2)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Reduce
+<small>
+<a class='link-unstyled' href='#array_reduce' id='array_reduce'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">reduce</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>6
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nv">$reduced</span> <span class="o">=</span> <span class="nb">array_reduce</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$carry</span><span class="p">,</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$carry</span> <span class="o">+</span> <span class="nv">$item</span><span class="p">;</span>
+<span class="p">});</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$reduced</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>6</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Index of element
+<small>
+<a class='link-unstyled' href='#array_index_of_element' id='array_index_of_element'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">].</span><span class="na">indexOf</span><span class="p">(</span><span class="s">'c'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">array_search</span><span class="p">(</span><span class="s2">"c"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">));</span></code></pre>
+
+<pre class='unstyled output text-muted'>int(2)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Delete element
+<small>
+<a class='link-unstyled' href='#array_delete_element' id='array_delete_element'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span> <span class="k">for</span> <span class="nx">e</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">e</span> <span class="o">isnt</span> <span class="s">'b'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">newArr</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
+<span class="nv">$key</span> <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">);</span>
+<span class="nb">unset</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$key</span><span class="p">]);</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; a
+    [2] =&gt; c
+)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Unique
+<small>
+<a class='link-unstyled' href='#array_unique' id='array_unique'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]</span>
+<span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="na">filter</span> <span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">is</span> <span class="nx">index</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">unique</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">];</span>
+<span class="nv">$unique</span> <span class="o">=</span> <span class="nb">array_unique</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<span class="nb">print_r</span><span class="p">(</span><span class="nv">$unique</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>Array
+(
+    [0] =&gt; a
+    [1] =&gt; b
+)
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='hash_map'>Hash (map)</h3>
+<h4 class='compare-header4'>
+Create populated
+<small>
+<a class='link-unstyled' href='#hash_map_create_populated' id='hash_map_create_populated'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>array(2) {
+  [&quot;fontSize&quot;]=&gt;
+  string(2) &quot;10&quot;
+  [&quot;fontFamily&quot;]=&gt;
+  string(5) &quot;Arial&quot;
+}
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Add
+<small>
+<a class='link-unstyled' href='#hash_map_add' id='hash_map_add'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nx">options</span><span class="p">.</span><span class="na">font_size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nx">options</span><span class="p">.</span><span class="na">font_family</span> <span class="o">=</span> <span class="s">'Arial'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"10"</span><span class="p">;</span>
+<span class="nv">$options</span><span class="p">[</span><span class="s2">"fontFamily"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Arial"</span><span class="p">;</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>array(2) {
+  [&quot;fontSize&quot;]=&gt;
+  string(2) &quot;10&quot;
+  [&quot;fontFamily&quot;]=&gt;
+  string(5) &quot;Arial&quot;
+}
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Iterate
+<small>
+<a class='link-unstyled' href='#hash_map_iterate' id='hash_map_iterate'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>font_size 10
+font_family Arial
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span></code></pre>
+
+<pre class='unstyled output text-muted'>fontSize
+10
+fontFamily
+Arial
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Include?
+<small>
+<a class='link-unstyled' href='#hash_map_include' id='hash_map_include'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'font_size'</span> <span class="k">of</span> <span class="nx">options</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nb">key_exists</span><span class="p">(</span><span class="s2">"fontSize"</span><span class="p">,</span> <span class="nv">$options</span><span class="p">));</span></code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Get value
+<small>
+<a class='link-unstyled' href='#hash_map_get_value' id='hash_map_get_value'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>10
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]);</span></code></pre>
+
+<pre class='unstyled output text-muted'>string(2) &quot;10&quot;
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Size
+<small>
+<a class='link-unstyled' href='#hash_map_size' id='hash_map_size'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Object</span><span class="p">.</span><span class="na">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="na">length</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>2</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='other_structure'>Other structure</h3>
+<h4 class='compare-header4'>
+Boolean
+<small>
+<a class='link-unstyled' href='#other_structure_boolean' id='other_structure_boolean'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">try_it</span> <span class="o">=</span> <span class="no">true</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="nx">try_it</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Garlic gum is not funny
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$tryIt</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nv">$tryIt</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"Garlic gum is not funny"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Garlic gum is not funny</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Constant
+<small>
+<a class='link-unstyled' href='#other_structure_constant' id='other_structure_constant'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">constants</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span><span class="na">COST</span><span class="o">:</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nx">constants</span><span class="p">.</span><span class="na">COST</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">constants</span><span class="p">.</span><span class="na">COST</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>100
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">COST</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>PHP Notice:  Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;OtherStructureConstant.php on line 4
+
+Notice: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;OtherStructureConstant.php on line 4
+100</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Constant list
+<small>
+<a class='link-unstyled' href='#other_structure_constant_list' id='other_structure_constant_list'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span>
+  <span class="na">RED</span><span class="o">:</span> <span class="s">'#FF0000'</span>
+  <span class="na">GREEN</span><span class="o">:</span> <span class="s">'#00FF00'</span>
+<span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">Colors</span><span class="p">.</span><span class="na">GREEN</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>#00FF00
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h3 class='compare-header3' id='conditional'>Conditional</h3>
+<h4 class='compare-header4'>
+If
+<small>
+<a class='link-unstyled' href='#conditional_if' id='conditional_if'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello'</span> <span class="k">if</span> <span class="no">true</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"Hello"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Unless
+<small>
+<a class='link-unstyled' href='#conditional_unless' id='conditional_unless'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="nx">unless</span> <span class="nx">angry</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>smile!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>smile!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+If/else
+<small>
+<a class='link-unstyled' href='#conditional_if_else' id='conditional_if_else'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">if</span> <span class="no">true</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'work'</span>
+<span class="k">else</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'sleep'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>work
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"work"</span><span class="p">;</span>
+<span class="k">else</span>
+    <span class="k">echo</span> <span class="s2">"sleep"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>work</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+And/Or
+<small>
+<a class='link-unstyled' href='#conditional_and_or' id='conditional_and_or'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'no'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">and</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'yes'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">or</span> <span class="no">false</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>yes
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"no"</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"yes"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>yes</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Switch
+<small>
+<a class='link-unstyled' href='#conditional_switch' id='conditional_switch'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
+<span class="k">switch</span> <span class="nx">foo</span>
+  <span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'10 or 20'</span>
+  <span class="k">when</span> <span class="s">'And'</span> <span class="k">then</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'case in one line'</span>
+  <span class="k">else</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"You gave me '</span><span class="si">#{</span><span class="nx">foo</span><span class="si">}</span><span class="s">'"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"Hello!"</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nv">$s</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="s2">"Bye!"</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s2">"wrong"</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="s2">"Hello!"</span><span class="o">:</span>
+        <span class="k">echo</span> <span class="s2">"right"</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+        <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>right</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Switch as else if
+<small>
+<a class='link-unstyled' href='#conditional_switch_as_else_if' id='conditional_switch_as_else_if'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">score</span> <span class="o">=</span> <span class="mi">76</span>
+<span class="nx">grade</span> <span class="o">=</span> <span class="k">switch</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s">'F'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s">'D'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">80</span> <span class="k">then</span> <span class="s">'C'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="k">then</span> <span class="s">'B'</span>
+  <span class="k">else</span> <span class="s">'A'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">grade</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>C
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Ternary
+<small>
+<a class='link-unstyled' href='#conditional_ternary' id='conditional_ternary'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="no">false</span> <span class="k">then</span> <span class="s">'no'</span> <span class="k">else</span> <span class="s">'yes'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>yes
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$s</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">?</span> <span class="s2">"no"</span> <span class="o">:</span> <span class="s2">"yes"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$s</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>yes</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+If assign
+<small>
+<a class='link-unstyled' href='#conditional_if_assign' id='conditional_if_assign'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">result</span> <span class="o">=</span>
+<span class="k">if</span> <span class="no">true</span>
+  <span class="s">'a'</span>
+<span class="k">else</span>
+  <span class="s">'b'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">result</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>a
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h3 class='compare-header3' id='loop'>Loop</h3>
+<h4 class='compare-header4'>
+For
+<small>
+<a class='link-unstyled' href='#loop_for' id='loop_for'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">i</span><span class="si">}</span><span class="s">. Hi"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+2. Hi
+3. Hi
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+2. Hi
+3. Hi
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+For with a step
+<small>
+<a class='link-unstyled' href='#loop_for_with_a_step' id='loop_for_with_a_step'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">4</span><span class="p">]</span> <span class="k">by</span> <span class="mi">2</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>0
+2
+4
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>0
+2
+4
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Times
+<small>
+<a class='link-unstyled' href='#loop_times' id='loop_times'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hi'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hi
+Hi
+Hi
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hi
+Hi
+Hi
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+While
+<small>
+<a class='link-unstyled' href='#loop_while' id='loop_while'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
+  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Until
+<small>
+<a class='link-unstyled' href='#loop_until' id='loop_until'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="nx">until</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Return array
+<small>
+<a class='link-unstyled' href='#loop_return_array' id='loop_return_array'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">greetings</span> <span class="o">=</span> <span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
+  <span class="s">"</span><span class="si">#{</span><span class="nx">time</span><span class="si">}</span><span class="s">. Hello!"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greetings</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Break
+<small>
+<a class='link-unstyled' href='#loop_break' id='loop_break'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
+  <span class="k">break</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+2. Hi
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+2. Hi
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Next/Continue
+<small>
+<a class='link-unstyled' href='#loop_next_continue' id='loop_next_continue'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="k">continue</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+3. Hi
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">continue</span><span class="p">;</span>
+    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1. Hi
+3. Hi
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='math'>Math</h3>
+<h4 class='compare-header4'>
+Max/Min
+<small>
+<a class='link-unstyled' href='#math_max_min' id='math_max_min'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">min</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">max</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1
+3
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="k">echo</span> <span class="nb">min</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">max</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span></code></pre>
+
+<pre class='unstyled output text-muted'>1
+3
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Sqrt
+<small>
+<a class='link-unstyled' href='#math_sqrt' id='math_sqrt'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>3</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='error_handling'>Error handling</h3>
+<h4 class='compare-header4'>
+Try/catch/finally
+<small>
+<a class='link-unstyled' href='#error_handling_try_catch_finally' id='error_handling_try_catch_finally'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+<span class="k">catch</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't divide"</span>
+<span class="k">finally</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"But that's ok"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Can&#x27;t divide
+But that&#x27;s ok
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">try</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"Can't divide</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span> <span class="nx">finally</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"But that's ok</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Can&#x27;t divide
+But that&#x27;s ok
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+With a message
+<small>
+<a class='link-unstyled' href='#error_handling_with_a_message' id='error_handling_with_a_message'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+<span class="k">catch</span> <span class="nx">error</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">error</span><span class="p">.</span><span class="na">message</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>divided by 0
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">try</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>An error!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Throw exception
+<small>
+<a class='link-unstyled' href='#error_handling_throw_exception' id='error_handling_throw_exception'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
+<span class="k">catch</span> <span class="nx">e</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">e</span><span class="p">.</span><span class="na">message</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>An error!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">try</span> <span class="p">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>An error!</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='file'>File</h3>
+<h4 class='compare-header4'>
+Read
+<small>
+<a class='link-unstyled' href='#file_read' id='file_read'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
+<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readFileSync</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'utf8'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello
+World
+
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$filePath</span> <span class="o">=</span> <span class="nb">getcwd</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"/code/file.txt"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello
+World
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Write
+<small>
+<a class='link-unstyled' href='#file_write' id='file_write'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
+<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'output.txt'</span><span class="p">)</span>
+<span class="nx">fs</span><span class="p">.</span><span class="na">writeFile</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'Some glorious content'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'></pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nb">file_put_contents</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/output.txt"</span><span class="p">,</span> <span class="s2">"Some glorious content"</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Get working dir path
+<small>
+<a class='link-unstyled' href='#file_get_working_dir_path' id='file_get_working_dir_path'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">getcwd</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+File path
+<small>
+<a class='link-unstyled' href='#file_file_path' id='file_file_path'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__filename</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file-path.coffee
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="k">__FILE__</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;FilePath.php</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Dir path
+<small>
+<a class='link-unstyled' href='#file_dir_path' id='file_dir_path'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__dirname</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nx">__DIR__</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Parent dir path
+<small>
+<a class='link-unstyled' href='#file_parent_dir_path' id='file_parent_dir_path'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/code"</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Sister dir path
+<small>
+<a class='link-unstyled' href='#file_sister_dir_path' id='file_sister_dir_path'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'data'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/../data"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='method'>Method</h3>
+<h4 class='compare-header4'>
+Declare
+<small>
+<a class='link-unstyled' href='#method_declare' id='method_declare'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">hey</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
+<span class="nx">hey</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>How are you?
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">hey</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">echo</span> <span class="s2">"How are you?"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">hey</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>How are you?</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Multiple arguments
+<small>
+<a class='link-unstyled' href='#method_multiple_arguments' id='method_multiple_arguments'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">sweets</span> <span class="o">=</span> <span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="nx">brands</span><span class="p">...)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">brands</span> <span class="k">if</span> <span class="nx">buy</span>
+<span class="nx">sweets</span> <span class="no">true</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">sweets</span><span class="p">(</span><span class="nx">bool</span> <span class="nv">$buy</span><span class="p">,</span> <span class="nx">string</span><span class="o">...</span> <span class="nv">$brands</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$buy</span><span class="p">)</span>
+        <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$brands</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s2">"snickers"</span><span class="p">,</span> <span class="s2">"twix"</span><span class="p">,</span> <span class="s2">"bounty"</span><span class="p">);</span></code></pre>
+
+<pre class='unstyled output text-muted'>array(3) {
+  [0]=&gt;
+  string(8) &quot;snickers&quot;
+  [1]=&gt;
+  string(4) &quot;twix&quot;
+  [2]=&gt;
+  string(6) &quot;bounty&quot;
+}
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Default value for argument
+<small>
+<a class='link-unstyled' href='#method_default_value_for_argument' id='method_default_value_for_argument'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">send</span> <span class="o">=</span> <span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="no">false</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="nx">abroad</span> <span class="k">then</span> <span class="s">'Send abroad'</span> <span class="k">else</span> <span class="s">'Send locally'</span>
+<span class="nx">send</span><span class="p">()</span>
+<span class="nx">send</span> <span class="no">true</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Send locally
+Send abroad
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Return
+<small>
+<a class='link-unstyled' href='#method_return' id='method_return'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nx">divide</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="nx">a</span> <span class="o">==</span> <span class="mi">0</span>
+  <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">divide</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span>
+
+<span class="nx">defaultValue</span> <span class="o">=</span> <span class="o">-&gt;</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">defaultValue</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>6
+0
+undefined
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">function</span> <span class="nf">divide</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$a</span><span class="p">,</span> <span class="nx">int</span> <span class="nv">$b</span><span class="p">)</span> <span class="o">:</span> <span class="nx">float</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>0
+2
+0.5
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Closure
+<small>
+<a class='link-unstyled' href='#method_closure' id='method_closure'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">square</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="nx">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello World!'</span>
+<span class="nx">greeting</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 4, 9 ]
+Hello World!
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Block passing
+<small>
+<a class='link-unstyled' href='#method_block_passing' id='method_block_passing'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">my_select</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">selected</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="nx">a</span> <span class="k">in</span> <span class="nx">arr</span>
+    <span class="nx">selected</span><span class="p">.</span><span class="na">push</span> <span class="nx">a</span> <span class="k">if</span> <span class="nx">filter</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+  <span class="nx">selected</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 1, 5 ]
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Block binding
+<small>
+<a class='link-unstyled' href='#method_block_binding' id='method_block_binding'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Action</span>
+  <span class="vi">@</span><span class="na">say</span><span class="o">:</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">sentence</span><span class="p">()</span>
+
+<span class="k">class</span> <span class="nx">Person</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
+
+  <span class="na">greet</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">-&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
+    
+    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">=&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
+    
+
+<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="na">greet</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>My name is undefined!
+My name is Alex!
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Initialize in runtime
+<small>
+<a class='link-unstyled' href='#method_initialize_in_runtime' id='method_initialize_in_runtime'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">ProccessElements</span>
+  <span class="vi">@</span><span class="na">element</span><span class="o">:</span> <span class="p">(</span><span class="nx">el_name</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">do</span> <span class="o">=&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">el_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="o">-&gt;</span>
+      <span class="s">"&lt;</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;</span><span class="si">#{</span><span class="nx">content</span><span class="si">}</span><span class="s">&lt;/</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;"</span>
+
+<span class="k">class</span> <span class="nx">HtmlELements</span> <span class="k">extends</span> <span class="nx">ProccessElements</span>
+  <span class="vi">@</span><span class="na">element</span> <span class="s">'div'</span>
+  <span class="vi">@</span><span class="na">element</span> <span class="s">'span'</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">).</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Alias
+<small>
+<a class='link-unstyled' href='#method_alias' id='method_alias'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Greetings</span>
+  <span class="na">hey</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
+  <span class="na">hi</span><span class="o">:</span> <span class="err">@</span><span class="o">::</span><span class="nx">hey</span>
+
+<span class="p">(</span><span class="k">new</span> <span class="nx">Greetings</span><span class="p">).</span><span class="na">hi</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>How are you?
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h3 class='compare-header3' id='class'>Class</h3>
+<h4 class='compare-header4'>
+Declare
+<small>
+<a class='link-unstyled' href='#class_declare' id='class_declare'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m walking
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalC</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalC</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m walking</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Constructor
+<small>
+<a class='link-unstyled' href='#class_constructor' id='class_constructor'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
+
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s"> and I'm walking"</span>
+
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">).</span><span class="na">walk</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalB</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"My name is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="si">}</span><span class="s2"> and I'm walking"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalB</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
+
+<pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Method call
+<small>
+<a class='link-unstyled' href='#class_method_call' id='class_method_call'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="vi">@</span><span class="na">bark</span><span class="p">()</span>
+    <span class="nx">guard</span><span class="p">()</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+
+  <span class="na">bark</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Wuf!'</span>
+
+  <span class="nx">guard</span> <span class="o">=</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'WUUUF!'</span>
+
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Wuf!
+WUUUF!
+I&#x27;m walking
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalH</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">bark</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">guard</span><span class="p">();</span>
+        <span class="k">echo</span> <span class="s2">"I'm walking</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">bark</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"Wuf!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">guard</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"WUUUF!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalH</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Wuf!
+WUUUF!
+I&#x27;m walking
+</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Class method
+<small>
+<a class='link-unstyled' href='#class_class_method' id='class_class_method'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="vi">@</span><span class="na">feed</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span>
+
+<span class="nx">Animal</span><span class="p">.</span><span class="na">feed</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Om nom nom
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalA</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">feed</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">AnimalA</span><span class="o">::</span><span class="na">feed</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Om nom nom</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Private method
+<small>
+<a class='link-unstyled' href='#class_private_method' id='class_private_method'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">eat</span><span class="o">:</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span> <span class="k">if</span> <span class="nx">isMeat</span><span class="p">(</span><span class="nx">food</span><span class="p">)</span>
+
+  <span class="nx">isMeat</span> <span class="o">=</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">food</span> <span class="o">is</span> <span class="s">'meat'</span>
+
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Om nom nom
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalI</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">eat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">isMeat</span><span class="p">(</span><span class="nv">$food</span><span class="p">))</span>
+            <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">isMeat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span> <span class="o">:</span> <span class="nx">bool</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nb">strcmp</span><span class="p">(</span><span class="nv">$food</span><span class="p">,</span> <span class="s2">"meat"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalI</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">eat</span><span class="p">(</span><span class="s2">"meat"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Om nom nom</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Private method, access instance variable
+<small>
+<a class='link-unstyled' href='#class_private_method__access_instance_variable' id='class_private_method__access_instance_variable'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalJ</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">greet</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">greet</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"Hello! My name is "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">new</span> <span class="nx">AnimalJ</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello! My name is Kelya</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Field
+<small>
+<a class='link-unstyled' href='#class_field' id='class_field'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">take</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">toy</span><span class="p">)</span> <span class="o">-&gt;</span>
+
+  <span class="na">play</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm playing with </span><span class="si">#{</span><span class="vi">@</span><span class="na">toy</span><span class="si">}</span><span class="s">"</span>
+
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">play</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m playing with a ball
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalD</span>
+<span class="p">{</span>
+
+    <span class="k">private</span> <span class="nv">$toy</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">take</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$toy</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span> <span class="o">=</span> <span class="nv">$toy</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">play</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"I'm playing with "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalD</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">take</span><span class="p">(</span><span class="s2">"a ball"</span><span class="p">);</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">play</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m playing with a ball</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Get/set
+<small>
+<a class='link-unstyled' href='#class_get_set' id='class_get_set'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">name</span><span class="o">:</span> <span class="s">'Kelya'</span>
+
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">animal</span><span class="p">.</span><span class="na">name</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Kelya
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalE</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">setName</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span> <span class="o">:</span> <span class="nx">string</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalE</span><span class="p">();</span>
+<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Kelya</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Inheritance
+<small>
+<a class='link-unstyled' href='#class_inheritance' id='class_inheritance'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+
+<span class="k">class</span> <span class="nx">Dog</span> <span class="k">extends</span> <span class="nx">Animal</span>
+  <span class="na">sing</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Bark!'</span>
+
+<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m walking
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalG</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">Dog</span> <span class="k">extends</span> <span class="nx">AnimalG</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">sing</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"Bark!"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dog</span><span class="p">();</span>
+<span class="nv">$dog</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I&#x27;m walking</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Mixin
+<small>
+<a class='link-unstyled' href='#class_mixin' id='class_mixin'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Module</span>
+  <span class="vi">@</span><span class="na">include</span><span class="o">:</span> <span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span> <span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">obj</span>
+
+<span class="k">class</span> <span class="nx">Actions</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is walking"</span>
+
+<span class="k">class</span> <span class="nx">Interacting</span>
+  <span class="na">talk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is talking"</span>
+
+<span class="k">class</span> <span class="nx">Human</span> <span class="k">extends</span> <span class="nx">Module</span>
+  <span class="vi">@</span><span class="na">include</span> <span class="na">Actions</span><span class="o">::</span>
+  <span class="vi">@</span><span class="na">include</span> <span class="na">Interacting</span><span class="o">::</span>
+
+<span class="nx">human</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Human</span>
+<span class="nx">human</span><span class="p">.</span><span class="na">walk</span><span class="p">()</span>
+<span class="nx">human</span><span class="p">.</span><span class="na">talk</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Human is walking
+Human is talking
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Has method?
+<small>
+<a class='link-unstyled' href='#class_has_method' id='class_has_method'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'walk'</span> <span class="k">of</span> <span class="nx">animal</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>true
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">AnimalF</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalF</span><span class="p">();</span>
+<span class="nv">$hasMethod</span> <span class="o">=</span> <span class="nb">method_exists</span><span class="p">(</span><span class="nv">$animal</span><span class="p">,</span> <span class="s2">"walk"</span><span class="p">);</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$hasMethod</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bool(true)
+</pre>
+</div>
+</div>
+<h3 class='compare-header3' id='other'>Other</h3>
+<h4 class='compare-header4'>
+Comment
+<small>
+<a class='link-unstyled' href='#other_comment' id='other_comment'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="c1"># it's a comment
+</span></code></pre>
+
+<pre class='unstyled output text-muted'></pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// it's a comment
+</span></code></pre>
+
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Assign value if not exist
+<small>
+<a class='link-unstyled' href='#other_assign_value_if_not_exist' id='other_assign_value_if_not_exist'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">speed</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nx">speed</span> <span class="o">?=</span> <span class="mi">15</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">speed</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>0
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Safe navigation
+<small>
+<a class='link-unstyled' href='#other_safe_navigation' id='other_safe_navigation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Winner</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="c1"># @address = new Address
+</span>
+<span class="k">class</span> <span class="nx">Address</span>
+  <span class="na">zipcode</span><span class="o">:</span> <span class="mi">192187</span>
+
+<span class="nx">zip</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Winner</span><span class="p">).</span><span class="na">address</span><span class="o">?</span><span class="p">.</span><span class="na">zipcode</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"We can't send the prize to a winner"</span> <span class="nx">unless</span> <span class="nx">zip</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>We can&#x27;t send the prize to a winner
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Import another file
+<small>
+<a class='link-unstyled' href='#other_import_another_file' id='other_import_another_file'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="c1"># other-file-to-import.coffee
+# module.exports =
+# class Import
+#   constructor: -&gt;
+#     console.log 'I am imported!'
+</span>
+<span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'./other-file-to-import'</span>
+<span class="k">new</span> <span class="nx">Import</span><span class="p">()</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I am imported!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// OtherFileToImport.php
+// &lt;?php
+// echo "I am imported!";
+</span>
+<span class="k">include</span> <span class="s2">"OtherFileToImport.php"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>I am imported!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Destructuring assignment
+<small>
+<a class='link-unstyled' href='#other_destructuring_assignment' id='other_destructuring_assignment'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">one</span><span class="p">,</span> <span class="nx">two</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1 2
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Date
+<small>
+<a class='link-unstyled' href='#other_date' id='other_date'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span>
+<span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getDate</span><span class="p">()</span>
+<span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getFullYear</span><span class="p">()</span>
+<span class="nx">date</span> <span class="o">=</span>  <span class="s">"</span><span class="si">#{</span><span class="nx">year</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">month</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">day</span><span class="si">}</span><span class="s">"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2016-6-21
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>2016-06-19</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Time
+<small>
+<a class='link-unstyled' href='#other_time' id='other_time'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Tue Jun 21 2016 00:33:25 GMT+0300 (MSK)
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>06&#x2F;19&#x2F;16 01:44 PM</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Not
+<small>
+<a class='link-unstyled' href='#other_not' id='other_not'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="k">if</span> <span class="o">not</span> <span class="nx">angry</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>smile!
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
+    <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>smile!</pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Assign this or that
+<small>
+<a class='link-unstyled' href='#other_assign_this_or_that' id='other_assign_this_or_that'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">yeti</span> <span class="o">=</span> <span class="no">null</span>
+<span class="nx">footprints</span> <span class="o">=</span> <span class="nx">yeti</span> <span class="o">?</span> <span class="s">"bear"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">footprints</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>bear
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+<pre class='unstyled output text-muted'></pre>
+</div>
+</div>
+<h4 class='compare-header4'>
+Run command
+<small>
+<a class='link-unstyled' href='#other_run_command' id='other_run_command'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<pre class="highlight coffeescript"><code><span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">'child_process'</span><span class="p">).</span><span class="na">exec</span>
+<span class="nx">exec</span> <span class="s">'coffee -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">stdout</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>CoffeeScript version 1.10.0
+
+</pre>
+</div>
+<div class='col-md-6'>
+<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$output</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nb">exec</span><span class="p">(</span><span class="s2">"php --version"</span><span class="p">,</span> <span class="nv">$output</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$output</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span></code></pre>
+
+<pre class='unstyled output text-muted'>PHP 7.0.7 (cli) (built: May 27 2016 11:13:44) ( NTS )</pre>
+</div>
+</div>
+</div>
+<span id='top-link-block'>
+<a class='scrollTop well well-sm' href='#top'>
+<i class='glyphicon glyphicon-chevron-up'></i>
+</a>
+</span>
+
+<div id='footer'></div>
+<script src="../javascripts/all-091923e6.js"></script>
+</body>
+</html>
