@@ -8,7 +8,7 @@ check = (label, fn, values) ->
         result = "error: #{e}"
       else
         throw e
-    value = '[]' if value?.constructor.name is 'Array' and value.length is 0
+    value = "[#{value}]" if value?.constructor.name is 'Array'
     value = "''" if value is ''
     console.log "  #{value} - #{result}"
   console.log ''

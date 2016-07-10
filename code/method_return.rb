@@ -11,4 +11,4 @@ puts divide 0, 10
 
 def default_value
 end
-puts default_value
+p default_value
