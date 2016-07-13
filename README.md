@@ -4,6 +4,8 @@ The web app provides side-by-side examples of syntax differences between program
 
 All examples are executable. You can copy and launch them without changes. It helps to understand what the code is doing easily.
 
+View web app [here](http://evmorov.github.io/lang-compare).
+
 Created with:
 
 * [Middleman](https://middlemanapp.com)
@@ -75,4 +77,3 @@ Feel free to add or modify any examples.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
