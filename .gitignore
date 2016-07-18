@@ -3,9 +3,10 @@
 /.sass-cache
 /.cache
 .DS_Store
-/code/*.class
+*.class
+*.out
+output.txt
 /middleman.log
-/code/*.out
-/tags
+tags
 *.swp
 *.pyc

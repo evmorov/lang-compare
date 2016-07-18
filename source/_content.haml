@@ -1,13 +1,14 @@
 %ul.list-unstyled
   - data.code.each_with_index do |section, index|
-    - next if section_empty?(section, urlized(lang1), urlized(lang2))
+    - next if section_empty?(section, lang1, lang2)
     - next unless filter.call(index, data.code.size / 2)
+
     %li.content
       %strong
         %a.scroll.section{href: sanitize("##{section.first}"), title: section.first}= section.first
       %ul
-        - section.last.each do |header, filenames|
-          - next if no_files?(filenames[urlized(lang1)], filenames[urlized(lang2)])
+        - section.last.each do |header, lang_to_filenames|
+          - next if no_files?(lang1, lang_to_filenames[lang1]) && no_files?(lang2, lang_to_filenames[lang2])
           %li
             %a.scroll{href: sanitize("##{section.first}_#{header}"), title: header}= header
 

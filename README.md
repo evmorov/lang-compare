@@ -60,8 +60,8 @@ To generate outputs below the examples:
 
 To add a new language:
 
-1. Add the language to `langs` variable in `config.rb`
-2. Add extension -> language mapping to `helpers/custom_helpers.rb` (`CODE_EXTENSION` contstant) to enable syntax highlighting
+1. Add the language to `langs` variable to `config.rb`
+2. Add a rake task to `Rakefile` to run all the examples to produce output files that are included to the final html
 3. Add examples
 
 To add an example:
