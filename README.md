@@ -29,6 +29,8 @@ Java:
 
 Add more languages: Kotlin, JavaScript, TypeScript (and any more)!
 
+* Ruby - Elixir
+* Ruby - Crystal
 * Java - Kotlin
 * Java - C#
 * JavaScript - CoffeeScript
