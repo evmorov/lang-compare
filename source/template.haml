@@ -1,3 +1,6 @@
+- lang1_urlized = urlize(lang1)
+- lang2_urlized = urlize(lang2)
+
 .container-fluid
   %h1.page-header1
     = link_to 'Language compare', config[:root_url]
@@ -7,18 +10,18 @@
       .col-md-6
         .dropdown{"data-lang-side" => index + 1}
           %button.btn.btn-link.btn-lg.language-list.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
-            %span.lang-selected{"data-lang-url" => urlized(lang_selected)} #{lang_selected}
+            %span.lang-selected{"data-lang-url" => urlize(lang_selected)} #{lang_selected}
             %span.caret
           %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
             - langs.each do |lang|
-              %li.lang-item{"data-lang-url" => urlized(lang)}
+              %li.lang-item{"data-lang-url" => urlize(lang)}
                 = link_to lang
 
   .row
     .col-md-6
-      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index < hash_size }, lang1: lang1, lang2: lang2 })
+      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index < hash_size }, lang1: lang1_urlized, lang2: lang2_urlized })
     .col-md-6
-      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index >= hash_size }, lang1: lang1, lang2: lang2 })
+      = partial(:content, locals: {filter: -> (hash_index, hash_size) { hash_index >= hash_size }, lang1: lang1_urlized, lang2: lang2_urlized })
 
   .row
     .col-md-6
@@ -27,14 +30,12 @@
       %h2.compare-header2 #{lang2}
 
   - data.code.each do |section|
-    - next if section_empty?(section, urlized(lang1), urlized(lang2))
+    - next if section_empty?(section, lang1_urlized, lang2_urlized)
+
     %h3.compare-header3{id: sanitize(section.first)}= section.first
-    - section.last.each do |header, filenames|
-      - filename1 = filenames[urlized(lang1)]
-      - filename2 = filenames[urlized(lang2)]
-      - next if no_files?(filename1, filename2)
-      - code1 = code_from_file(filename1)
-      - code2 = code_from_file(filename2)
+    - section.last.each do |header, langs_to_filenames|
+      - next if no_files?(lang1_urlized, langs_to_filenames[lang1_urlized]) && no_files?(lang2_urlized, langs_to_filenames[lang2_urlized])
+
       %h4.compare-header4
         = header
         %small
@@ -42,13 +43,15 @@
           %a.link-unstyled{href: "##{bookmark}", id: bookmark}
             %i.glyphicon.glyphicon-link
       .row
-        - no_message = 'No easy way to do that'
-        .col-md-6
-          = code1 || no_message
-          %pre.unstyled.output.text-muted= escape_html(output_file(filename1))
-        .col-md-6
-          = code2 || no_message
-          %pre.unstyled.output.text-muted= escape_html(output_file(filename2))
+        - [lang1_urlized, lang2_urlized].each do |lang|
+          .col-md-6
+            - examples = examples(lang, langs_to_filenames[lang])
+            - if examples.any?
+              - examples.each do |example|
+                = example.code
+                %pre.unstyled.output.text-muted= escape_html(example.output)
+            - else
+              = 'No easy way to do that'
 
 %span#top-link-block
   %a.scrollTop.well.well-sm{href: '#top'}
