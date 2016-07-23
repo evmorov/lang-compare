@@ -20,7 +20,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='1'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='coffeescript'>CoffeeScript</span>
+<span class='lang-selected' data-lang-url='ruby'>Ruby</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -45,7 +45,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python3'>Python 3</span>
+<span class='lang-selected' data-lang-url='python'>Python</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -501,10 +501,10 @@
 </div>
 <div class='row'>
 <div class='col-md-6'>
-<h2 class='compare-header2'>CoffeeScript</h2>
+<h2 class='compare-header2'>Ruby</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python 3</h2>
+<h2 class='compare-header2'>Python</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -518,8 +518,8 @@ Create
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greeting</span>
+<pre class="highlight ruby"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span>
+<span class="nb">puts</span> <span class="n">greeting</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello World!
@@ -544,7 +544,7 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s2">"Don't worry,"</span> <span class="o">+</span> <span class="s1">' be happy'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
@@ -568,9 +568,9 @@ Interpolation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
-<span class="nx">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">first</span><span class="si">}</span><span class="s"> </span><span class="si">#{</span><span class="nx">second</span><span class="si">}</span><span class="s">"</span>
+<pre class="highlight ruby"><code><span class="n">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span>
+<span class="n">second</span> <span class="o">=</span> <span class="s1">'be happy'</span>
+<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">first</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">second</span><span class="si">}</span><span class="s2">"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
@@ -580,11 +580,14 @@ Interpolation
 <pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
 <span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
 <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-<span class="c"># print(f'{first} {second}')  # since python 3.6</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
+<span class='small'>[ 3.6 ]</span><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{first} {second}'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'></pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -597,7 +600,7 @@ Remove part
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'not '</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>This is funny! I am like him!
@@ -621,7 +624,7 @@ Replace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'You should work'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'You should work'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'work'</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>You should rest
@@ -645,10 +648,12 @@ Split
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'I like beer'</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'I like beer'</span><span class="p">.</span><span class="nf">split</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
+<pre class='unstyled output text-muted'>I
+like
+beer
 </pre>
 </div>
 <div class='col-md-6'>
@@ -669,7 +674,7 @@ Remove leading and trailing whitespace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">' eh? '</span><span class="p">.</span><span class="na">trim</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">' eh? '</span><span class="p">.</span><span class="nf">strip</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>eh?
@@ -693,8 +698,8 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">is</span> <span class="s">'string'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">isnt</span> <span class="s">'string'</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">==</span> <span class="s1">'string'</span>
+<span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">!=</span> <span class="s1">'string'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -721,12 +726,12 @@ Regex
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^b/</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^a/</span>
+<pre class="highlight ruby"><code><span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^b/</span>
+<span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^a/</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>null
-[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
+<pre class='unstyled output text-muted'>nil
+0
 </pre>
 </div>
 <div class='col-md-6'>
@@ -752,9 +757,9 @@ Increment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="nx">i</span><span class="o">++</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">puts</span> <span class="n">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -780,9 +785,9 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">is</span> <span class="mi">5</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">isnt</span> <span class="mi">5</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="nb">puts</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="nb">puts</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -812,7 +817,7 @@ Random
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">2</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -838,13 +843,13 @@ Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">floor</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">round</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>4.5
+<pre class='unstyled output text-muted'>4
 4.5
 4
 5
@@ -877,16 +882,12 @@ Get type of object
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'hi'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="mi">1</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'hi'</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'hi'</span><span class="p">.</span><span class="nf">class</span>
+<span class="nb">puts</span> <span class="mi">1</span><span class="p">.</span><span class="nf">class</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>string
-number
-String
-Number
+<pre class='unstyled output text-muted'>String
+Fixnum
 </pre>
 </div>
 <div class='col-md-6'>
@@ -909,10 +910,10 @@ Int to Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span> <span class="o">+</span> <span class="mf">0.1</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_f</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>10.1
+<pre class='unstyled output text-muted'>10.0
 </pre>
 </div>
 <div class='col-md-6'>
@@ -933,7 +934,7 @@ Int to String
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_s</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -957,7 +958,7 @@ String to Int
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'5'</span><span class="p">.</span><span class="nf">to_i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>5
@@ -981,7 +982,7 @@ String?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'10'</span> <span class="o">is</span> <span class="s">'string'</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'10'</span><span class="p">.</span><span class="nf">is_a?</span> <span class="no">String</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1005,63 +1006,58 @@ Null/True/False?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">check</span> <span class="o">=</span> <span class="p">(</span><span class="nx">label</span><span class="p">,</span> <span class="nx">fn</span><span class="p">,</span> <span class="nx">values</span><span class="p">)</span> <span class="o">-&gt;</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">label</span>
-  <span class="k">for</span> <span class="nx">value</span> <span class="k">in</span> <span class="nx">values</span>
-    <span class="k">try</span>
-      <span class="nx">result</span> <span class="o">=</span> <span class="k">if</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="k">then</span> <span class="s">'true'</span> <span class="k">else</span> <span class="s">'false'</span>
-    <span class="k">catch</span> <span class="nx">e</span>
-      <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">TypeError</span>
-        <span class="nx">result</span> <span class="o">=</span> <span class="s">"error: </span><span class="si">#{</span><span class="nx">e</span><span class="si">}</span><span class="s">"</span>
-      <span class="k">else</span>
-        <span class="k">throw</span> <span class="nx">e</span>
-    <span class="nx">value</span> <span class="o">=</span> <span class="s">"[</span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s">]"</span> <span class="k">if</span> <span class="nx">value</span><span class="o">?</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span> <span class="o">is</span> <span class="s">'Array'</span>
-    <span class="nx">value</span> <span class="o">=</span> <span class="s">"''"</span> <span class="k">if</span> <span class="nx">value</span> <span class="o">is</span> <span class="s">''</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"  </span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s"> - </span><span class="si">#{</span><span class="nx">result</span><span class="si">}</span><span class="s">"</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">''</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">label</span>
+  <span class="n">values</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">value</span><span class="o">|</span>
+    <span class="k">begin</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">fn</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">?</span> <span class="s1">'true'</span> <span class="p">:</span> <span class="s1">'false'</span>
+    <span class="k">rescue</span> <span class="no">NoMethodError</span> <span class="o">=&gt;</span> <span class="n">e</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="s2">"error: </span><span class="si">#{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">end</span>
+    <span class="nb">puts</span> <span class="nb">format</span><span class="p">(</span><span class="s2">"  %-9p - %s"</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="nb">puts</span> <span class="s1">''</span>
+<span class="k">end</span>
 
-<span class="nx">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="no">true</span><span class="p">,</span> <span class="no">false</span><span class="p">,</span> <span class="no">null</span><span class="p">,</span> <span class="no">undefined</span><span class="p">]</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kp">true</span><span class="p">,</span> <span class="kp">false</span><span class="p">,</span> <span class="kp">nil</span><span class="p">]</span>
 
-<span class="nx">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
-<span class="nx">check</span><span class="p">(</span><span class="s">'if value?:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="o">?</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
-<span class="nx">check</span><span class="p">(</span><span class="s">'if value.length:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">.</span><span class="na">length</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+<span class="n">check</span><span class="p">(</span><span class="s1">'if value:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
+<span class="n">check</span><span class="p">(</span><span class="s1">'if value.nil?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">nil?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
+<span class="n">check</span><span class="p">(</span><span class="s1">'if value.empty?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">empty?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>if value:
-  string - true
-  &#x27;&#x27; - false
-  1,2,3 - true
-  [] - true
-  5 - true
-  0 - false
-  true - true
-  false - false
-  null - false
-  undefined - false
+  &quot;string&quot;  - true
+  &quot;&quot;        - true
+  [1, 2, 3] - true
+  []        - true
+  5         - true
+  0         - true
+  true      - true
+  false     - false
+  nil       - false
 
-if value?:
-  string - true
-  &#x27;&#x27; - true
-  1,2,3 - true
-  [] - true
-  5 - true
-  0 - true
-  true - true
-  false - true
-  null - false
-  undefined - false
+if value.nil?:
+  &quot;string&quot;  - false
+  &quot;&quot;        - false
+  [1, 2, 3] - false
+  []        - false
+  5         - false
+  0         - false
+  true      - false
+  false     - false
+  nil       - true
 
-if value.length:
-  string - true
-  &#x27;&#x27; - false
-  1,2,3 - true
-  [] - false
-  5 - false
-  0 - false
-  true - false
-  false - false
-  null - error: TypeError: Cannot read property &#x27;length&#x27; of null
-  undefined - error: TypeError: Cannot read property &#x27;length&#x27; of undefined
+if value.empty?:
+  &quot;string&quot;  - false
+  &quot;&quot;        - true
+  [1, 2, 3] - false
+  []        - true
+  5         - error: undefined method `empty?&#x27; for 5:Fixnum
+  0         - error: undefined method `empty?&#x27; for 0:Fixnum
+  true      - error: undefined method `empty?&#x27; for true:TrueClass
+  false     - error: undefined method `empty?&#x27; for false:FalseClass
+  nil       - error: undefined method `empty?&#x27; for nil:NilClass
 
 </pre>
 </div>
@@ -1130,11 +1126,12 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(first second)</span>
+<span class="nb">puts</span> <span class="n">arr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
+<pre class='unstyled output text-muted'>first
+second
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1156,13 +1153,14 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'first'</span>
-<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'second'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'first'</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'second'</span>
+<span class="nb">puts</span> <span class="n">arr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
+<pre class='unstyled output text-muted'>first
+second
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1186,10 +1184,11 @@ With different types
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
+<pre class='unstyled output text-muted'>first
+1
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1210,7 +1209,7 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">include?</span> <span class="mi">1</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1234,8 +1233,9 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
+<pre class="highlight ruby"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">num</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -1262,9 +1262,10 @@ Iterate with index
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+<pre class="highlight ruby"><code><span class="sx">%w(one two)</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">num</span>
+  <span class="nb">puts</span> <span class="n">i</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1296,10 +1297,9 @@ Get first, last element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
-<span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">last</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">first</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">last</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(one two)</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">first</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">last</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1327,8 +1327,8 @@ Find first
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1353,11 +1353,12 @@ Select (find all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 10, 20 ]
+<pre class='unstyled output text-muted'>10
+20
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1379,11 +1380,14 @@ Map (change all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
+<pre class='unstyled output text-muted'>2
+10
+20
+40
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1405,10 +1409,13 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="na">concat</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
+<pre class='unstyled output text-muted'>1
+2
+3
+4
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1429,10 +1436,13 @@ Sort
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="na">sort</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nf">sort</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
+<pre class='unstyled output text-muted'>1
+2
+3
+4
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1453,8 +1463,8 @@ Multidimensional
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[</span><span class="sx">%w(first second)</span><span class="p">,</span> <span class="sx">%w(third forth)</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>forth
@@ -1479,7 +1489,7 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">length</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">size</span> 
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -1503,8 +1513,8 @@ Count
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="na">length</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1529,7 +1539,7 @@ Reduce
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">reduce</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">+</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
@@ -1557,7 +1567,7 @@ Index of element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">].</span><span class="na">indexOf</span><span class="p">(</span><span class="s">'c'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="s1">'c'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1581,12 +1591,13 @@ Delete element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
-<span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span> <span class="k">for</span> <span class="nx">e</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">e</span> <span class="o">isnt</span> <span class="s">'b'</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">newArr</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(a b c)</span>
+<span class="n">arr</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">arr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
+<pre class='unstyled output text-muted'>a
+c
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1609,12 +1620,11 @@ Unique
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]</span>
-<span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="na">filter</span> <span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">is</span> <span class="nx">index</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">unique</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sx">%w(a b a)</span><span class="p">.</span><span class="nf">uniq</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
+<pre class='unstyled output text-muted'>a
+b
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1636,11 +1646,11 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
+<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">options</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
+<pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1662,13 +1672,13 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="nx">options</span><span class="p">.</span><span class="na">font_size</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="nx">options</span><span class="p">.</span><span class="na">font_family</span> <span class="o">=</span> <span class="s">'Arial'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
+<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">options</span><span class="p">[</span><span class="ss">:font_family</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Arial'</span>
+<span class="nb">puts</span> <span class="n">options</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
+<pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1692,12 +1702,15 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span>
+<pre class="highlight ruby"><code><span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span>
+<span class="k">end</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_size
+10
+font_family
+Arial
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1705,8 +1718,8 @@ font_family Arial
   <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_family Arial
+font_size 10
 </pre>
 </div>
 </div>
@@ -1720,8 +1733,8 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'font_size'</span> <span class="k">of</span> <span class="nx">options</span>
+<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">include?</span> <span class="ss">:font_size</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1746,8 +1759,8 @@ Get value
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span>
+<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1772,8 +1785,8 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Object</span><span class="p">.</span><span class="na">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="na">length</span>
+<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">size</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1799,8 +1812,8 @@ Boolean
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">try_it</span> <span class="o">=</span> <span class="no">true</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="nx">try_it</span>
+<pre class="highlight ruby"><code><span class="n">try_it</span> <span class="o">=</span> <span class="kp">true</span>
+<span class="nb">puts</span> <span class="s1">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="n">try_it</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Garlic gum is not funny
@@ -1826,12 +1839,14 @@ Constant
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">constants</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span><span class="na">COST</span><span class="o">:</span> <span class="mi">100</span><span class="p">)</span>
-<span class="nx">constants</span><span class="p">.</span><span class="na">COST</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">constants</span><span class="p">.</span><span class="na">COST</span>
+<pre class="highlight ruby"><code><span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="nb">puts</span> <span class="no">COST</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>100
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
+&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
+50
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1854,11 +1869,11 @@ Constant list
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span>
-  <span class="na">RED</span><span class="o">:</span> <span class="s">'#FF0000'</span>
-  <span class="na">GREEN</span><span class="o">:</span> <span class="s">'#00FF00'</span>
-<span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">Colors</span><span class="p">.</span><span class="na">GREEN</span>
+<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Colors</span>
+  <span class="no">RED</span> <span class="o">=</span> <span class="s1">'#FF0000'</span>
+  <span class="no">GREEN</span> <span class="o">=</span> <span class="s1">'#00FF00'</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="no">Colors</span><span class="o">::</span><span class="no">GREEN</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>#00FF00
@@ -1886,8 +1901,17 @@ Struct
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-No easy way to do that
-<pre class='unstyled output text-muted'></pre>
+<pre class="highlight ruby"><code><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">greeting</span>
+    <span class="s2">"Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="no">Customer</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Dave'</span><span class="p">,</span> <span class="s1">'123 Main'</span><span class="p">).</span><span class="nf">greeting</span>
+
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello Dave!
+</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">collections</span>
@@ -1914,7 +1938,7 @@ If
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello'</span> <span class="k">if</span> <span class="no">true</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'Hello'</span> <span class="k">if</span> <span class="kp">true</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -1939,8 +1963,8 @@ Unless
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="nx">unless</span> <span class="nx">angry</span>
+<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">unless</span> <span class="n">angry</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -1966,10 +1990,11 @@ If/else
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">if</span> <span class="no">true</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'work'</span>
+<pre class="highlight ruby"><code><span class="k">if</span> <span class="kp">true</span>
+  <span class="nb">puts</span> <span class="s1">'work'</span>
 <span class="k">else</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'sleep'</span>
+  <span class="nb">puts</span> <span class="s1">'sleep'</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>work
@@ -1996,8 +2021,8 @@ And/Or
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'no'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">and</span> <span class="no">false</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'yes'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">or</span> <span class="no">false</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'no'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">false</span>
+<span class="nb">puts</span> <span class="s1">'yes'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">||</span> <span class="kp">false</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2024,16 +2049,21 @@ Switch
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
-<span class="k">switch</span> <span class="nx">foo</span>
-  <span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'10 or 20'</span>
-  <span class="k">when</span> <span class="s">'And'</span> <span class="k">then</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'case in one line'</span>
-  <span class="k">else</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"You gave me '</span><span class="si">#{</span><span class="nx">foo</span><span class="si">}</span><span class="s">'"</span>
+<pre class="highlight ruby"><code><span class="n">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span>
+<span class="k">case</span> <span class="n">foo</span>
+<span class="k">when</span> <span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">5</span>
+  <span class="nb">puts</span> <span class="s2">"It's between 1 and 5"</span>
+<span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
+  <span class="nb">puts</span> <span class="s1">'10 or 20'</span>
+<span class="k">when</span> <span class="s1">'And'</span> <span class="k">then</span> <span class="nb">puts</span> <span class="s1">'case in one line'</span>
+<span class="k">when</span> <span class="no">String</span>
+  <span class="nb">puts</span> <span class="s2">"You passed a string '</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">'"</span>
+<span class="k">else</span>
+  <span class="nb">puts</span> <span class="s2">"You gave me '</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">'"</span>
+<span class="k">end</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
+<pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2064,14 +2094,15 @@ Switch as else if
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">score</span> <span class="o">=</span> <span class="mi">76</span>
-<span class="nx">grade</span> <span class="o">=</span> <span class="k">switch</span>
-  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s">'F'</span>
-  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s">'D'</span>
-  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">80</span> <span class="k">then</span> <span class="s">'C'</span>
-  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="k">then</span> <span class="s">'B'</span>
-  <span class="k">else</span> <span class="s">'A'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">grade</span>
+<pre class="highlight ruby"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
+<span class="n">grade</span> <span class="o">=</span> <span class="k">case</span>
+        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s1">'F'</span>
+        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s1">'D'</span>
+        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">80</span> <span class="k">then</span> <span class="s1">'C'</span>
+        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="k">then</span> <span class="s1">'B'</span>
+        <span class="k">else</span> <span class="s1">'A'</span>
+        <span class="k">end</span>
+<span class="nb">puts</span> <span class="n">grade</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>C
@@ -2102,7 +2133,7 @@ Ternary
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="no">false</span> <span class="k">then</span> <span class="s">'no'</span> <span class="k">else</span> <span class="s">'yes'</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2126,12 +2157,14 @@ If assign
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">result</span> <span class="o">=</span>
-<span class="k">if</span> <span class="no">true</span>
-  <span class="s">'a'</span>
+<pre class="highlight ruby"><code><span class="n">result</span> <span class="o">=</span>
+<span class="k">if</span> <span class="kp">true</span>
+  <span class="s1">'a'</span>
 <span class="k">else</span>
-  <span class="s">'b'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">result</span>
+  <span class="s1">'b'</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">result</span>
+
 </code></pre>
 
 <pre class='unstyled output text-muted'>a
@@ -2157,8 +2190,9 @@ For
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">i</span><span class="si">}</span><span class="s">. Hi"</span>
+<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">3</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">. Hi"</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2187,8 +2221,9 @@ For with a step
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">4</span><span class="p">]</span> <span class="k">by</span> <span class="mi">2</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="nf">.</span><span class="mi">4</span><span class="p">).</span><span class="nf">step</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">i</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -2217,8 +2252,9 @@ Times
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hi'</span>
+<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
+  <span class="nb">puts</span> <span class="s1">'Hi'</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hi
@@ -2247,10 +2283,11 @@ While
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
-  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
+  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2277,9 +2314,9 @@ Until
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="nx">until</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">3</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
+<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">until</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="nb">puts</span> <span class="n">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2306,12 +2343,15 @@ Return array
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">greetings</span> <span class="o">=</span> <span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
-  <span class="s">"</span><span class="si">#{</span><span class="nx">time</span><span class="si">}</span><span class="s">. Hello!"</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greetings</span>
+<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="nf">times</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
+  <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">greetings</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
+<pre class='unstyled output text-muted'>1. Hello!
+2. Hello!
+3. Hello!
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2333,9 +2373,10 @@ Break
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
-  <span class="k">break</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
+<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
+  <span class="k">break</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2364,9 +2405,10 @@ Next/Continue
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
-  <span class="k">continue</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
+<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
+  <span class="k">next</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
+  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2396,9 +2438,9 @@ Max/Min
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">min</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">max</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">min</span>
+<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">max</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -2426,10 +2468,10 @@ Sqrt
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3
+<pre class='unstyled output text-muted'>3.0
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2453,16 +2495,20 @@ Try/catch/finally
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
-<span class="k">catch</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't divide"</span>
-<span class="k">finally</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"But that's ok"</span>
+<pre class="highlight ruby"><code><span class="k">begin</span>
+  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">rescue</span>
+  <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
+<span class="k">ensure</span>
+  <span class="nb">puts</span> <span class="s2">"But that's ok"</span>
+<span class="k">end</span>
+
+<span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span> <span class="k">rescue</span> <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Can&#x27;t divide
 But that&#x27;s ok
+Can&#x27;t divide
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2489,10 +2535,11 @@ With a message
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
-<span class="k">catch</span> <span class="nx">error</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">error</span><span class="p">.</span><span class="na">message</span>
+<pre class="highlight ruby"><code><span class="k">begin</span>
+  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
+  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>divided by 0
@@ -2519,8 +2566,16 @@ Method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-No easy way to do that
-<pre class='unstyled output text-muted'></pre>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+  <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
+<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
+  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
+<span class="k">end</span>
+<span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>divided by 0
+</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
@@ -2545,10 +2600,11 @@ Throw exception
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
-<span class="k">catch</span> <span class="nx">e</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">e</span><span class="p">.</span><span class="na">message</span>
+<pre class="highlight ruby"><code><span class="k">begin</span>
+  <span class="nb">fail</span> <span class="s1">'An error!'</span>
+<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
+  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
+<span class="k">end</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>An error!
@@ -2576,21 +2632,18 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
-<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readFileSync</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'utf8'</span>
+<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
 World
-
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
+<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'file.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">()</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre>
 
@@ -2610,10 +2663,8 @@ Write
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
-<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'output.txt'</span><span class="p">)</span>
-<span class="nx">fs</span><span class="p">.</span><span class="na">writeFile</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'Some glorious content'</span>
+<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'output.txt'</span><span class="p">)</span>
+<span class="no">File</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -2638,7 +2689,7 @@ Get working dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
@@ -2664,17 +2715,17 @@ File path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__filename</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file-path.coffee
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;file_path.rb
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
 </pre>
 </div>
 </div>
@@ -2688,10 +2739,10 @@ Dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__dirname</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2700,7 +2751,7 @@ Dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -2714,11 +2765,10 @@ Parent dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2727,7 +2777,7 @@ Parent dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -2741,20 +2791,20 @@ Sister dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'data'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
+
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 </div>
@@ -2769,8 +2819,10 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">hey</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
-<span class="nx">hey</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">hey</span>
+  <span class="nb">puts</span> <span class="s1">'How are you?'</span>
+<span class="k">end</span>
+<span class="n">hey</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -2796,12 +2848,15 @@ Multiple arguments
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">sweets</span> <span class="o">=</span> <span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="nx">brands</span><span class="p">...)</span> <span class="o">-&gt;</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">brands</span> <span class="k">if</span> <span class="nx">buy</span>
-<span class="nx">sweets</span> <span class="no">true</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">brands</span> <span class="k">if</span> <span class="n">buy</span>
+<span class="k">end</span>
+<span class="n">sweets</span> <span class="kp">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
+<pre class='unstyled output text-muted'>snickers
+twix
+bounty
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2825,10 +2880,11 @@ Default value for argument
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">send</span> <span class="o">=</span> <span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="no">false</span><span class="p">)</span> <span class="o">-&gt;</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="nx">abroad</span> <span class="k">then</span> <span class="s">'Send abroad'</span> <span class="k">else</span> <span class="s">'Send locally'</span>
-<span class="nx">send</span><span class="p">()</span>
-<span class="nx">send</span> <span class="no">true</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span> <span class="o">=</span> <span class="kp">false</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span>
+<span class="k">end</span>
+<span class="nb">send</span>
+<span class="nb">send</span> <span class="kp">true</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Send locally
@@ -2857,22 +2913,25 @@ Return
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
-  <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">multiple</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+  <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
-<span class="nx">divide</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
-  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="nx">a</span> <span class="o">==</span> <span class="mi">0</span>
-  <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">divide</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span>
+<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span>
+  <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">divide</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span>
 
-<span class="nx">defaultValue</span> <span class="o">=</span> <span class="o">-&gt;</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">defaultValue</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">default_value</span>
+<span class="k">end</span>
+<span class="nb">p</span> <span class="n">default_value</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
 0
-undefined
+nil
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2906,14 +2965,15 @@ Closure
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">square</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<pre class="highlight ruby"><code><span class="n">square</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="n">square</span><span class="p">)</span>
 
-<span class="nx">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello World!'</span>
-<span class="nx">greeting</span><span class="p">()</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s1">'Hello World!'</span> <span class="p">}</span>
+<span class="n">greeting</span><span class="p">.</span><span class="nf">call</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 4, 9 ]
+<pre class='unstyled output text-muted'>4
+9
 Hello World!
 </pre>
 </div>
@@ -2940,15 +3000,30 @@ Block passing
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">my_select</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="o">-&gt;</span>
-  <span class="nx">selected</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="k">for</span> <span class="nx">a</span> <span class="k">in</span> <span class="nx">arr</span>
-    <span class="nx">selected</span><span class="p">.</span><span class="na">push</span> <span class="nx">a</span> <span class="k">if</span> <span class="nx">filter</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
-  <span class="nx">selected</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+  <span class="n">selected</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">arr</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span>
+    <span class="n">selected</span><span class="p">.</span><span class="nf">push</span> <span class="n">a</span> <span class="k">if</span> <span class="k">yield</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="n">selected</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="p">}</span>
+
+
+<span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">filter</span><span class="p">)</span>
+  <span class="n">selected</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">arr</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span>
+    <span class="n">selected</span><span class="p">.</span><span class="nf">push</span> <span class="n">a</span> <span class="k">if</span> <span class="n">filter</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="n">selected</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[ 1, 5 ]
+<pre class='unstyled output text-muted'>1
+5
+1
+5
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2979,24 +3054,27 @@ Block binding
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Action</span>
-  <span class="vi">@</span><span class="na">say</span><span class="o">:</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">sentence</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Action</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">say</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sentence</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'Ann'</span>
+    <span class="nb">puts</span> <span class="n">sentence</span><span class="p">.</span><span class="nf">call</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">Person</span>
-  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
+<span class="k">class</span> <span class="nc">Person</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+  <span class="k">end</span>
 
-  <span class="na">greet</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">-&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
-    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">=&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
+  <span class="k">def</span> <span class="nf">greet</span>
+    <span class="no">Action</span><span class="p">.</span><span class="nf">say</span> <span class="p">{</span> <span class="s2">"My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">!"</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="na">greet</span><span class="p">()</span>
+<span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nf">greet</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>My name is undefined!
-My name is Alex!
+<pre class='unstyled output text-muted'>My name is Alex!
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3033,16 +3111,20 @@ Initialize in runtime
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">ProccessElements</span>
-  <span class="vi">@</span><span class="na">element</span><span class="o">:</span> <span class="p">(</span><span class="nx">el_name</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="nx">do</span> <span class="o">=&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">el_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="o">-&gt;</span>
-      <span class="s">"&lt;</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;</span><span class="si">#{</span><span class="nx">content</span><span class="si">}</span><span class="s">&lt;/</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;"</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">ProccessElements</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">)</span>
+    <span class="n">define_method</span> <span class="s2">"</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">_element"</span> <span class="k">do</span> <span class="o">|</span><span class="n">content</span><span class="o">|</span>
+      <span class="s2">"&lt;</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;</span><span class="si">#{</span><span class="n">content</span><span class="si">}</span><span class="s2">&lt;/</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;"</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">HtmlELements</span> <span class="k">extends</span> <span class="nx">ProccessElements</span>
-  <span class="vi">@</span><span class="na">element</span> <span class="s">'div'</span>
-  <span class="vi">@</span><span class="na">element</span> <span class="s">'span'</span>
+<span class="k">class</span> <span class="nc">HtmlELements</span> <span class="o">&lt;</span> <span class="no">ProccessElements</span>
+  <span class="n">element</span> <span class="ss">:div</span>
+  <span class="n">element</span> <span class="ss">:span</span>
+<span class="k">end</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">).</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">HtmlELements</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">div_element</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
@@ -3080,12 +3162,14 @@ Alias
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Greetings</span>
-  <span class="na">hey</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
-  <span class="na">hi</span><span class="o">:</span> <span class="err">@</span><span class="o">::</span><span class="nx">hey</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Greetings</span>
+  <span class="k">def</span> <span class="nf">hey</span>
+    <span class="nb">puts</span> <span class="s1">'How are you?'</span>
+  <span class="k">end</span>
+  <span class="kp">alias_method</span> <span class="ss">:hi</span><span class="p">,</span> <span class="ss">:hey</span>
+<span class="k">end</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">Greetings</span><span class="p">).</span><span class="na">hi</span><span class="p">()</span>
+<span class="no">Greetings</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">hi</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3115,11 +3199,13 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3147,13 +3233,17 @@ Constructor
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+  <span class="k">end</span>
 
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s"> and I'm walking"</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="nb">puts</span> <span class="s2">"My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2"> and I'm walking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">new</span> <span class="nx">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">).</span><span class="na">walk</span><span class="p">()</span>
+<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">).</span><span class="nf">walk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
@@ -3184,19 +3274,25 @@ Method call
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="vi">@</span><span class="na">bark</span><span class="p">()</span>
-    <span class="nx">guard</span><span class="p">()</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="n">bark</span>
+    <span class="n">guard</span>
+    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
+  <span class="k">end</span>
 
-  <span class="na">bark</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Wuf!'</span>
+  <span class="k">def</span> <span class="nf">bark</span>
+    <span class="nb">puts</span> <span class="s1">'Wuf!'</span>
+  <span class="k">end</span>
 
-  <span class="nx">guard</span> <span class="o">=</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'WUUUF!'</span>
+  <span class="kp">private</span>
 
-<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+  <span class="k">def</span> <span class="nf">guard</span>
+    <span class="nb">puts</span> <span class="s1">'WUUUF!'</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Wuf!
@@ -3237,11 +3333,13 @@ Class method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="vi">@</span><span class="na">feed</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">feed</span>
+    <span class="nb">puts</span> <span class="s1">'Om nom nom'</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="nx">Animal</span><span class="p">.</span><span class="na">feed</span><span class="p">()</span>
+<span class="no">Animal</span><span class="p">.</span><span class="nf">feed</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3270,14 +3368,19 @@ Private method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">eat</span><span class="o">:</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span> <span class="k">if</span> <span class="nx">isMeat</span><span class="p">(</span><span class="nx">food</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="s1">'Om nom nom'</span> <span class="k">if</span> <span class="n">meat?</span> <span class="n">food</span>
+  <span class="k">end</span>
 
-  <span class="nx">isMeat</span> <span class="o">=</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
-    <span class="nx">food</span> <span class="o">is</span> <span class="s">'meat'</span>
+  <span class="kp">private</span>
 
-<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
+  <span class="k">def</span> <span class="nf">meat?</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
+    <span class="n">food</span> <span class="o">==</span> <span class="s1">'meat'</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">eat</span><span class="p">(</span><span class="s1">'meat'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3309,8 +3412,24 @@ Private method, access instance variable
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-No easy way to do that
-<pre class='unstyled output text-muted'></pre>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+    <span class="n">greet</span>
+  <span class="k">end</span>
+
+  <span class="kp">private</span>
+
+  <span class="k">def</span> <span class="nf">greet</span>
+    <span class="nb">puts</span> <span class="s2">"Hello! My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Hello! My name is Kelya
+</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
@@ -3338,15 +3457,19 @@ Field
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">take</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">toy</span><span class="p">)</span> <span class="o">-&gt;</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
+    <span class="vi">@toy</span> <span class="o">=</span> <span class="n">toy</span>
+  <span class="k">end</span>
 
-  <span class="na">play</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm playing with </span><span class="si">#{</span><span class="vi">@</span><span class="na">toy</span><span class="si">}</span><span class="s">"</span>
+  <span class="k">def</span> <span class="nf">play</span>
+    <span class="nb">puts</span> <span class="s2">"I'm playing with </span><span class="si">#{</span><span class="vi">@toy</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
-<span class="nx">animal</span><span class="p">.</span><span class="na">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
-<span class="nx">animal</span><span class="p">.</span><span class="na">play</span><span class="p">()</span>
+<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">animal</span><span class="p">.</span><span class="nf">take</span><span class="p">(</span><span class="s1">'a ball'</span><span class="p">)</span>
+<span class="n">animal</span><span class="p">.</span><span class="nf">play</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
@@ -3379,12 +3502,13 @@ Get/set
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">name</span><span class="o">:</span> <span class="s">'Kelya'</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+<span class="k">end</span>
 
-<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
-<span class="nx">animal</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">animal</span><span class="p">.</span><span class="na">name</span>
+<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">animal</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span>
+<span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">name</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Kelya
@@ -3413,15 +3537,19 @@ Inheritance
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">Dog</span> <span class="k">extends</span> <span class="nx">Animal</span>
-  <span class="na">sing</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Bark!'</span>
+<span class="k">class</span> <span class="nc">Dog</span> <span class="o">&lt;</span> <span class="no">Animal</span>
+  <span class="k">def</span> <span class="nf">sing</span>
+    <span class="nb">puts</span> <span class="s1">'Bark!'</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
+<span class="no">Dog</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3453,24 +3581,26 @@ Mixin
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Module</span>
-  <span class="vi">@</span><span class="na">include</span><span class="o">:</span> <span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span> <span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">obj</span>
+<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Moving</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2"> is walking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">Actions</span>
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is walking"</span>
+<span class="k">module</span> <span class="nn">Interacting</span>
+  <span class="k">def</span> <span class="nf">talk</span>
+    <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2"> is talking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">Interacting</span>
-  <span class="na">talk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is talking"</span>
+<span class="k">class</span> <span class="nc">Human</span>
+  <span class="kp">include</span> <span class="no">Moving</span>
+  <span class="kp">include</span> <span class="no">Interacting</span>
+<span class="k">end</span>
 
-<span class="k">class</span> <span class="nx">Human</span> <span class="k">extends</span> <span class="nx">Module</span>
-  <span class="vi">@</span><span class="na">include</span> <span class="na">Actions</span><span class="o">::</span>
-  <span class="vi">@</span><span class="na">include</span> <span class="na">Interacting</span><span class="o">::</span>
-
-<span class="nx">human</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Human</span>
-<span class="nx">human</span><span class="p">.</span><span class="na">walk</span><span class="p">()</span>
-<span class="nx">human</span><span class="p">.</span><span class="na">talk</span><span class="p">()</span>
+<span class="n">human</span> <span class="o">=</span> <span class="no">Human</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">human</span><span class="p">.</span><span class="nf">walk</span>
+<span class="n">human</span><span class="p">.</span><span class="nf">talk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Human is walking
@@ -3509,12 +3639,14 @@ Has method?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
-  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
+  <span class="k">def</span> <span class="nf">walk</span>
+    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
 
-<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'walk'</span> <span class="k">of</span> <span class="nx">animal</span>
+<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
+<span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">respond_to?</span> <span class="ss">:walk</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -3544,8 +3676,8 @@ Comment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="c1"># it's a comment
-</span></code></pre>
+<pre class="highlight ruby"><code><span class="c1"># it's a comment</span>
+</code></pre>
 
 <pre class='unstyled output text-muted'></pre>
 </div>
@@ -3566,9 +3698,9 @@ Assign value if not exist
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">speed</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nx">speed</span> <span class="o">?=</span> <span class="mi">15</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">speed</span>
+<pre class="highlight ruby"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">speed</span> <span class="o">||=</span> <span class="mi">15</span>
+<span class="nb">puts</span> <span class="n">speed</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -3594,19 +3726,7 @@ Safe navigation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Winner</span>
-  <span class="na">constructor</span><span class="o">:</span> <span class="o">-&gt;</span>
-    <span class="c1"># @address = new Address
-</span>
-<span class="k">class</span> <span class="nx">Address</span>
-  <span class="na">zipcode</span><span class="o">:</span> <span class="mi">192187</span>
-
-<span class="nx">zip</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Winner</span><span class="p">).</span><span class="na">address</span><span class="o">?</span><span class="p">.</span><span class="na">zipcode</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"We can't send the prize to a winner"</span> <span class="nx">unless</span> <span class="nx">zip</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>We can&#x27;t send the prize to a winner
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Winner</span><span class="p">:</span>
@@ -3637,14 +3757,15 @@ Import another file
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="c1"># other-file-to-import.coffee
-# module.exports =
-# class Import
-#   constructor: -&gt;
-#     console.log 'I am imported!'
-</span>
-<span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'./other-file-to-import'</span>
-<span class="k">new</span> <span class="nx">Import</span><span class="p">()</span>
+<pre class="highlight ruby"><code><span class="c1"># other_file_to_import.rb</span>
+<span class="c1"># class Import</span>
+<span class="c1">#   def initialize</span>
+<span class="c1">#     puts 'I am imported!'</span>
+<span class="c1">#   end</span>
+<span class="c1"># end</span>
+
+<span class="nb">require_relative</span> <span class="s1">'other_file_to_import'</span>
+<span class="no">Import</span><span class="p">.</span><span class="nf">new</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I am imported!
@@ -3674,11 +3795,12 @@ Destructuring assignment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">one</span><span class="p">,</span> <span class="nx">two</span>
+<pre class="highlight ruby"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">puts</span> <span class="n">one</span><span class="p">,</span> <span class="n">two</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1 2
+<pre class='unstyled output text-muted'>1
+2
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3700,15 +3822,11 @@ Date
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span>
-<span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getDate</span><span class="p">()</span>
-<span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getFullYear</span><span class="p">()</span>
-<span class="nx">date</span> <span class="o">=</span>  <span class="s">"</span><span class="si">#{</span><span class="nx">year</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">month</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">day</span><span class="si">}</span><span class="s">"</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
+<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'date'</span>
+<span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-6-21
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3716,7 +3834,7 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 </div>
@@ -3730,10 +3848,10 @@ Time
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Tue Jun 21 2016 00:33:25 GMT+0300 (MSK)
+<pre class='unstyled output text-muted'>2016-07-23 16:57:17 +0300
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3741,7 +3859,7 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:02:09.778306
+<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
 </pre>
 </div>
 </div>
@@ -3755,8 +3873,8 @@ Not
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="k">if</span> <span class="o">not</span> <span class="nx">angry</span>
+<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
+<span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">if</span> <span class="o">!</span><span class="n">angry</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -3782,9 +3900,9 @@ Assign this or that
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">yeti</span> <span class="o">=</span> <span class="no">null</span>
-<span class="nx">footprints</span> <span class="o">=</span> <span class="nx">yeti</span> <span class="o">?</span> <span class="s">"bear"</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">footprints</span>
+<pre class="highlight ruby"><code><span class="n">yeti</span> <span class="o">=</span> <span class="kp">nil</span>
+<span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="o">||</span> <span class="s1">'bear'</span>
+<span class="nb">puts</span> <span class="n">footprints</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>bear
@@ -3810,12 +3928,10 @@ Run command
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight coffeescript"><code><span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">'child_process'</span><span class="p">).</span><span class="na">exec</span>
-<span class="nx">exec</span> <span class="s">'coffee -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">stdout</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sb">`ruby -v`</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>CoffeeScript version 1.10.0
-
+<pre class='unstyled output text-muted'>ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
 </pre>
 </div>
 <div class='col-md-6'>

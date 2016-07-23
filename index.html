@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -45,7 +45,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python3'>Python 3</span>
+<span class='lang-selected' data-lang-url='python'>Python</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -504,7 +504,7 @@
 <h2 class='compare-header2'>Ruby</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python 3</h2>
+<h2 class='compare-header2'>Python</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -580,11 +580,14 @@ Interpolation
 <pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
 <span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
 <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-<span class="c"># print(f'{first} {second}')  # since python 3.6</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
+<span class='small'>[ 3.6 ]</span><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{first} {second}'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'></pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -1715,8 +1718,8 @@ Arial
   <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_family Arial
+font_size 10
 </pre>
 </div>
 </div>
@@ -1841,8 +1844,8 @@ Constant
 <span class="nb">puts</span> <span class="no">COST</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
-&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
+&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
 50
 </pre>
 </div>
@@ -2629,7 +2632,7 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'file.txt'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
 </code></pre>
 
@@ -2638,9 +2641,9 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
+<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'file.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">()</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre>
 
@@ -2715,14 +2718,14 @@ File path
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.rb
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;file_path.rb
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
 </pre>
 </div>
 </div>
@@ -2739,7 +2742,7 @@ Dir path
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2748,7 +2751,7 @@ Dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -2765,7 +2768,7 @@ Parent dir path
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2774,7 +2777,7 @@ Parent dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -2788,20 +2791,20 @@ Sister dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'data'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
 
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 </div>
@@ -3724,7 +3727,6 @@ Safe navigation
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Winner</span><span class="p">:</span>
@@ -3824,7 +3826,7 @@ Date
 <span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3832,7 +3834,7 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 </div>
@@ -3849,7 +3851,7 @@ Time
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:01:57 +0300
+<pre class='unstyled output text-muted'>2016-07-23 16:57:17 +0300
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3857,7 +3859,7 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:02:09.778306
+<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
 </pre>
 </div>
 </div>

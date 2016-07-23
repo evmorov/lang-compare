@@ -20,7 +20,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='1'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python3'>Python 3</span>
+<span class='lang-selected' data-lang-url='python'>Python</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -45,7 +45,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python3'>Python 3</span>
+<span class='lang-selected' data-lang-url='coffeescript'>CoffeeScript</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -501,10 +501,10 @@
 </div>
 <div class='row'>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python 3</h2>
+<h2 class='compare-header2'>Python</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python 3</h2>
+<h2 class='compare-header2'>CoffeeScript</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -526,8 +526,8 @@ Create
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greeting</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello World!
@@ -551,7 +551,7 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
@@ -571,17 +571,19 @@ Interpolation
 <pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
 <span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
 <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-<span class="c"># print(f'{first} {second}')  # since python 3.6</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
+<span class='small'>[ 3.6 ]</span><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{first} {second}'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
-<span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-<span class="c"># print(f'{first} {second}')  # since python 3.6</span>
+<pre class="highlight coffeescript"><code><span class="nx">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
+<span class="nx">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">first</span><span class="si">}</span><span class="s"> </span><span class="si">#{</span><span class="nx">second</span><span class="si">}</span><span class="s">"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
@@ -605,7 +607,7 @@ Remove part
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'This is not funny! I am not like him!'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'not '</span><span class="p">,</span> <span class="s">''</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>This is funny! I am like him!
@@ -629,7 +631,7 @@ Replace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'You should work'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'work'</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'You should work'</span><span class="p">.</span><span class="na">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>You should rest
@@ -653,10 +655,10 @@ Split
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'I like beer'</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'I like beer'</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">' '</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
 </pre>
 </div>
 </div>
@@ -677,7 +679,7 @@ Remove leading and trailing whitespace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">' eh? '</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">' eh? '</span><span class="p">.</span><span class="na">trim</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>eh?
@@ -703,12 +705,12 @@ False
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">==</span> <span class="s">'string'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">!=</span> <span class="s">'string'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">is</span> <span class="s">'string'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'string'</span> <span class="o">isnt</span> <span class="s">'string'</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
-False
+<pre class='unstyled output text-muted'>true
+false
 </pre>
 </div>
 </div>
@@ -733,14 +735,12 @@ Regex
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">re</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^b'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^a'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^b/</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'apple'</span><span class="p">.</span><span class="na">match</span> <span class="sr">/^a/</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>None
-&lt;_sre.SRE_Match object; span=(0, 1), match=&#x27;a&#x27;&gt;
+<pre class='unstyled output text-muted'>null
+[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
 </pre>
 </div>
 </div>
@@ -764,9 +764,9 @@ Increment
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="nx">i</span><span class="o">++</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -794,14 +794,14 @@ False
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">is</span> <span class="mi">5</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">5</span> <span class="o">isnt</span> <span class="mi">5</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
-True
-False
+<pre class='unstyled output text-muted'>true
+true
+false
 </pre>
 </div>
 </div>
@@ -824,12 +824,10 @@ Random
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 </div>
@@ -858,18 +856,16 @@ Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>  <span class="c"># rounds half to even</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>4
+<pre class='unstyled output text-muted'>4.5
 4.5
 4
-4
+5
 </pre>
 </div>
 </div>
@@ -893,12 +889,16 @@ Get type of object
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s">'hi'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'hi'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="mi">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'hi'</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&lt;class &#x27;str&#x27;&gt;
-&lt;class &#x27;int&#x27;&gt;
+<pre class='unstyled output text-muted'>string
+number
+String
+Number
 </pre>
 </div>
 </div>
@@ -919,10 +919,10 @@ Int to Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span> <span class="o">+</span> <span class="mf">0.1</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>10.0
+<pre class='unstyled output text-muted'>10.1
 </pre>
 </div>
 </div>
@@ -943,7 +943,7 @@ Int to String
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">10</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -967,7 +967,7 @@ String to Int
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s">'5'</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">parseInt</span><span class="p">(</span><span class="s">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>5
@@ -991,10 +991,10 @@ String?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="s">'10'</span><span class="p">,</span> <span class="nb">str</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">typeof</span> <span class="s">'10'</span> <span class="o">is</span> <span class="s">'string'</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1061,55 +1061,63 @@ if len(value):
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'true'</span> <span class="k">if</span> <span class="n">fn</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">else</span> <span class="s">'false'</span>
-        <span class="k">except</span> <span class="nb">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'error: </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">e</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"  </span><span class="si">%-9</span><span class="s">r - </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span>
-    <span class="k">print</span><span class="p">()</span>
+<pre class="highlight coffeescript"><code><span class="nx">check</span> <span class="o">=</span> <span class="p">(</span><span class="nx">label</span><span class="p">,</span> <span class="nx">fn</span><span class="p">,</span> <span class="nx">values</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">label</span>
+  <span class="k">for</span> <span class="nx">value</span> <span class="k">in</span> <span class="nx">values</span>
+    <span class="k">try</span>
+      <span class="nx">result</span> <span class="o">=</span> <span class="k">if</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="k">then</span> <span class="s">'true'</span> <span class="k">else</span> <span class="s">'false'</span>
+    <span class="k">catch</span> <span class="nx">e</span>
+      <span class="k">if</span> <span class="nx">e</span> <span class="k">instanceof</span> <span class="nx">TypeError</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="s">"error: </span><span class="si">#{</span><span class="nx">e</span><span class="si">}</span><span class="s">"</span>
+      <span class="k">else</span>
+        <span class="k">throw</span> <span class="nx">e</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s">"[</span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s">]"</span> <span class="k">if</span> <span class="nx">value</span><span class="o">?</span><span class="p">.</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span> <span class="o">is</span> <span class="s">'Array'</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s">"''"</span> <span class="k">if</span> <span class="nx">value</span> <span class="o">is</span> <span class="s">''</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"  </span><span class="si">#{</span><span class="nx">value</span><span class="si">}</span><span class="s"> - </span><span class="si">#{</span><span class="nx">result</span><span class="si">}</span><span class="s">"</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">''</span>
 
-<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
+<span class="nx">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="no">true</span><span class="p">,</span> <span class="no">false</span><span class="p">,</span> <span class="no">null</span><span class="p">,</span> <span class="no">undefined</span><span class="p">]</span>
 
-<span class="n">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if value is None:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if len(value):'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">values</span><span class="p">)</span>
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value?:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="o">?</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
+<span class="nx">check</span><span class="p">(</span><span class="s">'if value.length:'</span><span class="p">,</span> <span class="p">((</span><span class="nx">v</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">v</span><span class="p">.</span><span class="na">length</span><span class="p">),</span> <span class="nx">values</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>if value:
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - true
-  0         - false
-  True      - true
-  False     - false
-  None      - false
+  string - true
+  &#x27;&#x27; - false
+  [1,2,3] - true
+  [] - true
+  5 - true
+  0 - false
+  true - true
+  false - false
+  null - false
+  undefined - false
 
-if value is None:
-  &#x27;string&#x27;  - false
-  &#x27;&#x27;        - false
-  [1, 2, 3] - false
-  []        - false
-  5         - false
-  0         - false
-  True      - false
-  False     - false
-  None      - true
+if value?:
+  string - true
+  &#x27;&#x27; - true
+  [1,2,3] - true
+  [] - true
+  5 - true
+  0 - true
+  true - true
+  false - true
+  null - false
+  undefined - false
 
-if len(value):
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - error: object of type &#x27;int&#x27; has no len()
-  0         - error: object of type &#x27;int&#x27; has no len()
-  True      - error: object of type &#x27;bool&#x27; has no len()
-  False     - error: object of type &#x27;bool&#x27; has no len()
-  None      - error: object of type &#x27;NoneType&#x27; has no len()
+if value.length:
+  string - true
+  &#x27;&#x27; - false
+  [1,2,3] - true
+  [] - false
+  5 - false
+  0 - false
+  true - false
+  false - false
+  null - error: TypeError: Cannot read property &#x27;length&#x27; of null
+  undefined - error: TypeError: Cannot read property &#x27;length&#x27; of undefined
 
 </pre>
 </div>
@@ -1133,11 +1141,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1161,13 +1169,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'first'</span><span class="p">)</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'second'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'first'</span>
+<span class="nx">arr</span><span class="p">.</span><span class="na">push</span> <span class="s">'second'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">arr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1188,10 +1196,10 @@ With different types
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, 1]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
 </pre>
 </div>
 </div>
@@ -1212,10 +1220,10 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="mi">1</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1238,8 +1246,8 @@ Iterate
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -1269,9 +1277,9 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">num</span><span class="p">,</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">num</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1301,9 +1309,10 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
+<span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">last</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">first</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">last</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1329,8 +1338,8 @@ Find first
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1355,11 +1364,11 @@ Select (find all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">is</span> <span class="mi">0</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[10, 20]
+<pre class='unstyled output text-muted'>[ 10, 20 ]
 </pre>
 </div>
 </div>
@@ -1381,11 +1390,11 @@ Map (change all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="nx">arr</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[2, 10, 20, 40]
+<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
 </pre>
 </div>
 </div>
@@ -1406,10 +1415,10 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="na">concat</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[1, 2, 3, 4]
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1430,10 +1439,10 @@ Sort
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="na">sort</span><span class="p">()</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[1, 2, 3, 4]
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1455,8 +1464,8 @@ Multidimensional
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>forth
@@ -1480,7 +1489,7 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">length</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -1505,8 +1514,8 @@ Count
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">i</span> <span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="na">length</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1534,14 +1543,10 @@ Reduce
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">functools</span><span class="o">,</span> <span class="nn">operator</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">functools</span><span class="o">.</span><span class="nb">reduce</span><span class="p">(</span><span class="n">operator</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c"># a more Pythonic example</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="na">reduce</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
-6
 </pre>
 </div>
 </div>
@@ -1562,7 +1567,7 @@ Index of element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s">'c'</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">].</span><span class="na">indexOf</span><span class="p">(</span><span class="s">'c'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1588,12 +1593,12 @@ Delete element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'b'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">e</span> <span class="k">for</span> <span class="nx">e</span> <span class="k">in</span> <span class="nx">arr</span> <span class="k">when</span> <span class="nx">e</span> <span class="o">isnt</span> <span class="s">'b'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">newArr</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;a&#x27;, &#x27;c&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
 </pre>
 </div>
 </div>
@@ -1614,10 +1619,12 @@ Unique
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]))</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]</span>
+<span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="na">filter</span> <span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">is</span> <span class="nx">index</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">unique</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;b&#x27;, &#x27;a&#x27;}
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
 </pre>
 </div>
 </div>
@@ -1640,11 +1647,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1668,13 +1675,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_family'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'Arial'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nx">options</span><span class="p">.</span><span class="na">font_size</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nx">options</span><span class="p">.</span><span class="na">font_family</span> <span class="o">=</span> <span class="s">'Arial'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1692,13 +1699,13 @@ Iterate
   <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_family Arial
+font_size 10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>font_size 10
@@ -1724,11 +1731,11 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'font_size'</span> <span class="ow">in</span> <span class="n">options</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'font_size'</span> <span class="k">of</span> <span class="nx">options</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1750,8 +1757,8 @@ Get value
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1776,8 +1783,8 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Object</span><span class="p">.</span><span class="na">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="na">length</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1804,9 +1811,8 @@ Boolean
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">try_it</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="k">if</span> <span class="n">try_it</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Garlic gum is not funny'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">try_it</span> <span class="o">=</span> <span class="no">true</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="nx">try_it</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Garlic gum is not funny
@@ -1832,12 +1838,12 @@ Constant
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">COST</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">COST</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">print</span><span class="p">(</span><span class="n">COST</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">constants</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span><span class="na">COST</span><span class="o">:</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nx">constants</span><span class="p">.</span><span class="na">COST</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">constants</span><span class="p">.</span><span class="na">COST</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>50
+<pre class='unstyled output text-muted'>100
 </pre>
 </div>
 </div>
@@ -1862,11 +1868,11 @@ Constant list
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Colors</span><span class="p">:</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="s">'#FF0000'</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="s">'#00FF00'</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Colors</span><span class="o">.</span><span class="n">GREEN</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="na">freeze</span><span class="p">(</span>
+  <span class="na">RED</span><span class="o">:</span> <span class="s">'#FF0000'</span>
+  <span class="na">GREEN</span><span class="o">:</span> <span class="s">'#00FF00'</span>
+<span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">Colors</span><span class="p">.</span><span class="na">GREEN</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>#00FF00
@@ -1896,17 +1902,7 @@ Struct
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">collections</span>
-
-<span class="k">class</span> <span class="nc">Customer</span><span class="p">(</span><span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s">'Customer'</span><span class="p">,</span> <span class="s">'name address'</span><span class="p">)):</span>
-    <span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">"Hello </span><span class="si">%</span><span class="s">s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Customer</span><span class="p">(</span><span class="s">'Dave'</span><span class="p">,</span> <span class="s">'123 Main'</span><span class="p">)</span><span class="o">.</span><span class="n">greeting</span><span class="p">())</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello Dave!
-</pre>
+No easy way to do that
 </div>
 </div>
 <h3 class='compare-header3' id='conditional'>Conditional</h3>
@@ -1928,8 +1924,7 @@ If
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Hello'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello'</span> <span class="k">if</span> <span class="no">true</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -1955,9 +1950,8 @@ Unless
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="nx">unless</span> <span class="nx">angry</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -1984,10 +1978,10 @@ If/else
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'work'</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'sleep'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">if</span> <span class="no">true</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'work'</span>
+<span class="k">else</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'sleep'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>work
@@ -2014,10 +2008,8 @@ And/Or
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'no'</span><span class="p">)</span>
-<span class="k">if</span> <span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'yes'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'no'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">and</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'yes'</span> <span class="k">if</span> <span class="no">true</span> <span class="o">or</span> <span class="no">false</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2051,20 +2043,16 @@ Switch
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
-<span class="k">if</span> <span class="n">foo</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"It's between 1 and 5"</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'10 or 20'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="o">==</span> <span class="s">'And'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'case in one line'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You passed a string </span><span class="si">%</span><span class="s">r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You gave me </span><span class="si">%</span><span class="s">r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
+<span class="k">switch</span> <span class="nx">foo</span>
+  <span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'10 or 20'</span>
+  <span class="k">when</span> <span class="s">'And'</span> <span class="k">then</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'case in one line'</span>
+  <span class="k">else</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"You gave me '</span><span class="si">#{</span><span class="nx">foo</span><span class="si">}</span><span class="s">'"</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
+<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
 </pre>
 </div>
 </div>
@@ -2092,14 +2080,14 @@ Switch as else if
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="s">'F'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="s">'D'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="s">'C'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="s">'B'</span><span class="p">),</span>
-<span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">((</span><span class="n">g</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grades</span> <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">),</span> <span class="s">'A'</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">score</span> <span class="o">=</span> <span class="mi">76</span>
+<span class="nx">grade</span> <span class="o">=</span> <span class="k">switch</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s">'F'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s">'D'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">80</span> <span class="k">then</span> <span class="s">'C'</span>
+  <span class="k">when</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="k">then</span> <span class="s">'B'</span>
+  <span class="k">else</span> <span class="s">'A'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">grade</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>C
@@ -2123,7 +2111,7 @@ Ternary
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'no'</span> <span class="k">if</span> <span class="bp">False</span> <span class="k">else</span> <span class="s">'yes'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="no">false</span> <span class="k">then</span> <span class="s">'no'</span> <span class="k">else</span> <span class="s">'yes'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2148,8 +2136,12 @@ If assign
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">result</span> <span class="o">=</span> <span class="s">'a'</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">'b'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">result</span> <span class="o">=</span>
+<span class="k">if</span> <span class="no">true</span>
+  <span class="s">'a'</span>
+<span class="k">else</span>
+  <span class="s">'b'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">result</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>a
@@ -2177,8 +2169,8 @@ For
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d. Hi'</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">i</span><span class="si">}</span><span class="s">. Hi"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2207,8 +2199,8 @@ For with a step
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">4</span><span class="p">]</span> <span class="k">by</span> <span class="mi">2</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -2237,8 +2229,8 @@ Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Hi'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hi'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hi
@@ -2267,10 +2259,10 @@ While
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
-  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
+  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2297,10 +2289,9 @@ Until
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="nx">until</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">3</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">i</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2325,11 +2316,12 @@ Return array
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hello!"</span> <span class="o">%</span> <span class="n">time</span> <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greetings</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">greetings</span> <span class="o">=</span> <span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">3</span><span class="p">]</span>
+  <span class="s">"</span><span class="si">#{</span><span class="nx">time</span><span class="si">}</span><span class="s">. Hello!"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">greetings</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
 </pre>
 </div>
 </div>
@@ -2354,10 +2346,9 @@ Break
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="k">break</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
+  <span class="k">break</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2386,10 +2377,9 @@ Next/Continue
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-      <span class="k">continue</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">for</span> <span class="nx">time</span> <span class="k">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">..</span><span class="mi">2</span><span class="p">]</span>
+  <span class="k">continue</span> <span class="k">if</span> <span class="nx">time</span> <span class="o">==</span> <span class="mi">1</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="nx">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s">. Hi"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2418,9 +2408,9 @@ Max/Min
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">min</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">max</span><span class="p">.</span><span class="na">apply</span><span class="p">(</span><span class="err">@</span><span class="p">,</span> <span class="nx">arr</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -2447,12 +2437,10 @@ Sqrt
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3.0
+<pre class='unstyled output text-muted'>3
 </pre>
 </div>
 </div>
@@ -2480,12 +2468,12 @@ But that&#x27;s ok
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"Can't divide"</span><span class="p">)</span>
-<span class="k">finally</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"But that's ok"</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+<span class="k">catch</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't divide"</span>
+<span class="k">finally</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"But that's ok"</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Can&#x27;t divide
@@ -2513,13 +2501,13 @@ With a message
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+<span class="k">catch</span> <span class="nx">error</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">error</span><span class="p">.</span><span class="na">message</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>division by zero
+<pre class='unstyled output text-muted'>divided by 0
 </pre>
 </div>
 </div>
@@ -2545,16 +2533,7 @@ Method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-  <span class="k">try</span><span class="p">:</span>
-    <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
-  <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-<span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>division by zero
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2577,10 +2556,10 @@ Throw exception
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="k">raise</span> <span class="nb">Exception</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">try</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
+<span class="k">catch</span> <span class="nx">e</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">e</span><span class="p">.</span><span class="na">message</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>An error!
@@ -2598,9 +2577,9 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
+<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'file.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">()</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre>
 
@@ -2610,10 +2589,10 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'file.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">()</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
+<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readFileSync</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'utf8'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -2641,10 +2620,10 @@ Write
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'output.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'Some glorious content'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
+<span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'output.txt'</span><span class="p">)</span>
+<span class="nx">fs</span><span class="p">.</span><span class="na">writeFile</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'Some glorious content'</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -2669,9 +2648,7 @@ Get working dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
@@ -2691,14 +2668,14 @@ File path
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__filename</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript&#x2F;file-path.coffee
 </pre>
 </div>
 </div>
@@ -2717,16 +2694,14 @@ Dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__dirname</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript
 </pre>
 </div>
 </div>
@@ -2745,16 +2720,15 @@ Parent dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -2770,19 +2744,18 @@ Sister dir path
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'data'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'python'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -2806,9 +2779,8 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">hey</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-<span class="n">hey</span><span class="p">()</span>
+<pre class="highlight coffeescript"><code><span class="nx">hey</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
+<span class="nx">hey</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -2835,13 +2807,12 @@ Multiple arguments
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">buy</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">brands</span><span class="p">)</span>
-<span class="n">sweets</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">sweets</span> <span class="o">=</span> <span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="nx">brands</span><span class="p">...)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">brands</span> <span class="k">if</span> <span class="nx">buy</span>
+<span class="nx">sweets</span> <span class="no">true</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>(&#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27;)
+<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
 </pre>
 </div>
 </div>
@@ -2866,10 +2837,10 @@ Send abroad
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Send abroad'</span> <span class="k">if</span> <span class="n">abroad</span> <span class="k">else</span> <span class="s">'Send locally'</span><span class="p">)</span>
-<span class="n">send</span><span class="p">()</span>
-<span class="n">send</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">send</span> <span class="o">=</span> <span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="no">false</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="nx">abroad</span> <span class="k">then</span> <span class="s">'Send abroad'</span> <span class="k">else</span> <span class="s">'Send locally'</span>
+<span class="nx">send</span><span class="p">()</span>
+<span class="nx">send</span> <span class="no">true</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Send locally
@@ -2907,23 +2878,22 @@ None
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<pre class="highlight coffeescript"><code><span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="nx">divide</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="nx">a</span> <span class="o">==</span> <span class="mi">0</span>
+  <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">divide</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span>
 
-<span class="k">def</span> <span class="nf">default_value</span><span class="p">():</span>
-    <span class="k">pass</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">default_value</span><span class="p">())</span>
+<span class="nx">defaultValue</span> <span class="o">=</span> <span class="o">-&gt;</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">defaultValue</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
 0
-None
+undefined
 </pre>
 </div>
 </div>
@@ -2949,14 +2919,14 @@ Hello World!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])))</span>
+<pre class="highlight coffeescript"><code><span class="nx">square</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="k">for</span> <span class="nx">num</span> <span class="k">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">'Hello World!'</span><span class="p">)</span>
-<span class="n">greeting</span><span class="p">()</span>
+<span class="nx">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Hello World!'</span>
+<span class="nx">greeting</span><span class="p">()</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[4, 9]
+<pre class='unstyled output text-muted'>[ 4, 9 ]
 Hello World!
 </pre>
 </div>
@@ -2988,20 +2958,15 @@ Block passing
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-    <span class="k">yield</span> <span class="kn">from</span> <span class="nn">arr</span><span class="err">
+<pre class="highlight coffeescript"><code><span class="nx">my_select</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="o">-&gt;</span>
+  <span class="nx">selected</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="nx">a</span> <span class="k">in</span> <span class="nx">arr</span>
+    <span class="nx">selected</span><span class="p">.</span><span class="na">push</span> <span class="nx">a</span> <span class="k">if</span> <span class="nx">filter</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+  <span class="nx">selected</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span>
+</code></pre>
 
-</span><span class="nn">def</span> <span class="nn">select_filter</span><span class="err">(</span><span class="nn">arr</span><span class="err">,</span> <span class="nn">filter</span><span class="err">):
-</span>    <span class="nn">for</span> <span class="nn">a</span> <span class="nn">in</span> <span class="nn">arr</span><span class="err">:
-</span>        <span class="nn">if</span> <span class="nn">filter</span><span class="err">(</span><span class="nn">a</span><span class="err">):
-</span>            <span class="nn">yield</span> <span class="nn">a</span><span class="err">
-
-</span><span class="nn">print</span><span class="err">([</span><span class="nn">x</span> <span class="nn">for</span> <span class="nn">x</span> <span class="nn">in</span> <span class="nn">select</span><span class="err">([1,</span> <span class="err">5,</span> <span class="err">10])</span> <span class="nn">if</span> <span class="nn">x</span> <span class="err">&lt;</span> <span class="err">6])
-</span><span class="nn">print</span><span class="err">(</span><span class="nn">list</span><span class="err">(</span><span class="nn">select_filter</span><span class="err">([1,</span> <span class="err">5,</span> <span class="err">10],</span> <span class="nn">lambda</span> <span class="nn">x</span><span class="err">:</span> <span class="nn">x</span> <span class="err">&lt;</span> <span class="err">6)))
-</span></code></pre>
-
-<pre class='unstyled output text-muted'>[1, 5]
-[1, 5]
+<pre class='unstyled output text-muted'>[ 1, 5 ]
 </pre>
 </div>
 </div>
@@ -3038,26 +3003,24 @@ Block binding
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Action</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="s">'Ann'</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Action</span>
+  <span class="vi">@</span><span class="na">say</span><span class="o">:</span> <span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">sentence</span><span class="p">()</span>
 
-  <span class="nd">@staticmethod</span>
-  <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">sentence</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">())</span>
+<span class="k">class</span> <span class="nx">Person</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
 
+  <span class="na">greet</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">-&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
+    
+    <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">=&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
+    
 
-<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-
-  <span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">Action</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="s">"My name is </span><span class="si">%</span><span class="s">s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-
-
-<span class="n">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">)</span><span class="o">.</span><span class="n">greet</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="na">greet</span><span class="p">()</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>My name is Alex!
+<pre class='unstyled output text-muted'>My name is undefined!
+My name is Alex!
 </pre>
 </div>
 </div>
@@ -3092,21 +3055,16 @@ Initialize in runtime
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">ProccessElements</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">):</span>
-      <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">'&lt;{0}&gt;{1}&lt;/{0}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el_name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-      <span class="k">return</span> <span class="n">render</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">ProccessElements</span>
+  <span class="vi">@</span><span class="na">element</span><span class="o">:</span> <span class="p">(</span><span class="nx">el_name</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">do</span> <span class="o">=&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">el_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="o">-&gt;</span>
+      <span class="s">"&lt;</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;</span><span class="si">#{</span><span class="nx">content</span><span class="si">}</span><span class="s">&lt;/</span><span class="si">#{</span><span class="nx">el_name</span><span class="si">}</span><span class="s">&gt;"</span>
 
-    <span class="k">for</span> <span class="n">el_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">elements</span><span class="p">:</span>
-      <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">el_name</span><span class="p">,</span> <span class="n">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">))</span>
+<span class="k">class</span> <span class="nx">HtmlELements</span> <span class="k">extends</span> <span class="nx">ProccessElements</span>
+  <span class="vi">@</span><span class="na">element</span> <span class="s">'div'</span>
+  <span class="vi">@</span><span class="na">element</span> <span class="s">'span'</span>
 
-
-<span class="k">class</span> <span class="nc">HtmlELements</span><span class="p">(</span><span class="n">ProccessElements</span><span class="p">):</span>
-  <span class="n">elements</span> <span class="o">=</span> <span class="p">(</span><span class="s">'div'</span><span class="p">,</span> <span class="s">'span'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">HtmlELements</span><span class="p">()</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">))</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">).</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
@@ -3135,12 +3093,12 @@ Alias
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Greetings</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">hey</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-  <span class="n">hi</span> <span class="o">=</span> <span class="n">hey</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Greetings</span>
+  <span class="na">hey</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
+  <span class="na">hi</span><span class="o">:</span> <span class="err">@</span><span class="o">::</span><span class="nx">hey</span>
 
-<span class="n">Greetings</span><span class="p">()</span><span class="o">.</span><span class="n">hi</span><span class="p">()</span>
+<span class="p">(</span><span class="k">new</span> <span class="nx">Greetings</span><span class="p">).</span><span class="na">hi</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3169,11 +3127,11 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
 
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3204,14 +3162,13 @@ Constructor
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">name</span><span class="p">)</span> <span class="o">-&gt;</span>
 
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"My name is </span><span class="si">%</span><span class="s">s and I'm walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s"> and I'm walking"</span>
 
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">)</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">).</span><span class="na">walk</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
@@ -3250,20 +3207,19 @@ I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">bark</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_guard</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="vi">@</span><span class="na">bark</span><span class="p">()</span>
+    <span class="nx">guard</span><span class="p">()</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
 
-  <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Wuf!'</span><span class="p">)</span>
+  <span class="na">bark</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Wuf!'</span>
 
-  <span class="c"># Private by convention</span>
-  <span class="k">def</span> <span class="nf">_guard</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'WUUUF!'</span><span class="p">)</span>
+  <span class="nx">guard</span> <span class="o">=</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'WUUUF!'</span>
 
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Wuf!
@@ -3294,12 +3250,11 @@ Class method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="nd">@classmethod</span>
-  <span class="k">def</span> <span class="nf">feed</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="vi">@</span><span class="na">feed</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span>
 
-<span class="n">Animal</span><span class="o">.</span><span class="n">feed</span><span class="p">()</span>
+<span class="nx">Animal</span><span class="p">.</span><span class="na">feed</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3331,15 +3286,14 @@ Private method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_meat</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
-      <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">eat</span><span class="o">:</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Om nom nom'</span> <span class="k">if</span> <span class="nx">isMeat</span><span class="p">(</span><span class="nx">food</span><span class="p">)</span>
 
-  <span class="k">def</span> <span class="nf">_is_meat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">food</span> <span class="o">==</span> <span class="s">'meat'</span>
+  <span class="nx">isMeat</span> <span class="o">=</span> <span class="p">(</span><span class="nx">food</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="nx">food</span> <span class="o">is</span> <span class="s">'meat'</span>
 
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="na">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3371,19 +3325,7 @@ Private method, access instance variable
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_greet</span><span class="p">()</span>
-
-  <span class="k">def</span> <span class="nf">_greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hello! My name is </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello! My name is Kelya
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3412,16 +3354,15 @@ Field
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">toy</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">toy</span> <span class="o">=</span> <span class="n">toy</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">take</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">toy</span><span class="p">)</span> <span class="o">-&gt;</span>
 
-  <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm playing with </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">toy</span><span class="p">)</span>
+  <span class="na">play</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm playing with </span><span class="si">#{</span><span class="vi">@</span><span class="na">toy</span><span class="si">}</span><span class="s">"</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">play</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
@@ -3450,12 +3391,12 @@ Get/set
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="bp">None</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">name</span><span class="o">:</span> <span class="s">'Kelya'</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">animal</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">animal</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">animal</span><span class="p">.</span><span class="na">name</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Kelya
@@ -3487,15 +3428,15 @@ Inheritance
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
 
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-  <span class="k">def</span> <span class="nf">sing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Bark!'</span><span class="p">)</span>
+<span class="k">class</span> <span class="nx">Dog</span> <span class="k">extends</span> <span class="nx">Animal</span>
+  <span class="na">sing</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'Bark!'</span>
 
-<span class="n">Dog</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="na">walk</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3533,20 +3474,24 @@ Human is talking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Moving</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">s is walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Module</span>
+  <span class="vi">@</span><span class="na">include</span><span class="o">:</span> <span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="err">@</span><span class="o">::</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">value</span> <span class="k">for</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span> <span class="k">of</span> <span class="nx">obj</span>
 
-<span class="k">class</span> <span class="nc">Interacting</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">s is talking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
+<span class="k">class</span> <span class="nx">Actions</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is walking"</span>
 
-<span class="k">class</span> <span class="nc">Human</span><span class="p">(</span><span class="n">Moving</span><span class="p">,</span> <span class="n">Interacting</span><span class="p">):</span>
-    <span class="k">pass</span>
+<span class="k">class</span> <span class="nx">Interacting</span>
+  <span class="na">talk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"</span><span class="si">#{</span><span class="vi">@</span><span class="na">constructor</span><span class="p">.</span><span class="na">name</span><span class="si">}</span><span class="s"> is talking"</span>
 
-<span class="n">human</span> <span class="o">=</span> <span class="n">Human</span><span class="p">()</span>
-<span class="n">human</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
-<span class="n">human</span><span class="o">.</span><span class="n">talk</span><span class="p">()</span>
+<span class="k">class</span> <span class="nx">Human</span> <span class="k">extends</span> <span class="nx">Module</span>
+  <span class="vi">@</span><span class="na">include</span> <span class="na">Actions</span><span class="o">::</span>
+  <span class="vi">@</span><span class="na">include</span> <span class="na">Interacting</span><span class="o">::</span>
+
+<span class="nx">human</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Human</span>
+<span class="nx">human</span><span class="p">.</span><span class="na">walk</span><span class="p">()</span>
+<span class="nx">human</span><span class="p">.</span><span class="na">talk</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Human is walking
@@ -3576,15 +3521,15 @@ Has method?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Animal</span>
+  <span class="na">walk</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"I'm walking"</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="s">'walk'</span><span class="p">))</span>
+<span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'walk'</span> <span class="k">of</span> <span class="nx">animal</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -3605,8 +3550,8 @@ Comment
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="c"># it's a comment</span>
-</code></pre>
+<pre class="highlight coffeescript"><code><span class="c1"># it's a comment
+</span></code></pre>
 
 <pre class='unstyled output text-muted'></pre>
 </div>
@@ -3630,9 +3575,9 @@ Assign value if not exist
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">speed</span> <span class="o">=</span> <span class="mi">15</span> <span class="k">if</span> <span class="n">speed</span> <span class="ow">is</span> <span class="bp">None</span> <span class="k">else</span> <span class="n">speed</span>
-<span class="k">print</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">speed</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nx">speed</span> <span class="o">?=</span> <span class="mi">15</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">speed</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -3667,18 +3612,15 @@ Safe navigation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Winner</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c"># self.address = Address()</span>
-    <span class="k">pass</span>
+<pre class="highlight coffeescript"><code><span class="k">class</span> <span class="nx">Winner</span>
+  <span class="na">constructor</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="c1"># @address = new Address
+</span>
+<span class="k">class</span> <span class="nx">Address</span>
+  <span class="na">zipcode</span><span class="o">:</span> <span class="mi">192187</span>
 
-<span class="k">class</span> <span class="nc">Address</span><span class="p">:</span>
-  <span class="n">zipcode</span> <span class="o">=</span>  <span class="mi">192187</span>
-
-<span class="k">try</span><span class="p">:</span>
-  <span class="nb">zip</span> <span class="o">=</span> <span class="n">Winner</span><span class="p">()</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">zipcode</span>
-<span class="k">except</span> <span class="nb">AttributeError</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"We can't send the prize to a winner"</span><span class="p">)</span>
+<span class="nx">zip</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Winner</span><span class="p">).</span><span class="na">address</span><span class="o">?</span><span class="p">.</span><span class="na">zipcode</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"We can't send the prize to a winner"</span> <span class="nx">unless</span> <span class="nx">zip</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>We can&#x27;t send the prize to a winner
@@ -3708,13 +3650,14 @@ Import another file
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="c"># other_file_to_import.py</span>
-<span class="c"># class Import:</span>
-<span class="c">#   def __init__(self):</span>
-<span class="c">#     print('I am imported!')</span>
-
-<span class="kn">import</span> <span class="nn">other_file_to_import</span>
-<span class="n">other_file_to_import</span><span class="o">.</span><span class="n">Import</span><span class="p">()</span>
+<pre class="highlight coffeescript"><code><span class="c1"># other-file-to-import.coffee
+# module.exports =
+# class Import
+#   constructor: -&gt;
+#     console.log 'I am imported!'
+</span>
+<span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'./other-file-to-import'</span>
+<span class="k">new</span> <span class="nx">Import</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I am imported!
@@ -3739,8 +3682,8 @@ Destructuring assignment
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
-<span class="k">print</span><span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">one</span><span class="p">,</span> <span class="nx">two</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1 2
@@ -3761,15 +3704,19 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span>
+<span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getDate</span><span class="p">()</span>
+<span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="na">getFullYear</span><span class="p">()</span>
+<span class="nx">date</span> <span class="o">=</span>  <span class="s">"</span><span class="si">#{</span><span class="nx">year</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">month</span><span class="si">}</span><span class="s">-</span><span class="si">#{</span><span class="nx">day</span><span class="si">}</span><span class="s">"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-7-23
 </pre>
 </div>
 </div>
@@ -3787,15 +3734,14 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:02:09.778306
+<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:02:09.778306
+<pre class='unstyled output text-muted'>2016-07-23T19:51:30.517Z
 </pre>
 </div>
 </div>
@@ -3818,9 +3764,8 @@ Not
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">angry</span> <span class="o">=</span> <span class="no">false</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'smile!'</span> <span class="k">if</span> <span class="o">not</span> <span class="nx">angry</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -3846,9 +3791,9 @@ Assign this or that
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">yeti</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="ow">or</span> <span class="s">'bear'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">footprints</span><span class="p">)</span>
+<pre class="highlight coffeescript"><code><span class="nx">yeti</span> <span class="o">=</span> <span class="no">null</span>
+<span class="nx">footprints</span> <span class="o">=</span> <span class="nx">yeti</span> <span class="o">?</span> <span class="s">"bear"</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">footprints</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>bear
@@ -3873,11 +3818,12 @@ Run command
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">'python3'</span><span class="p">,</span> <span class="s">'--version'</span><span class="p">])</span>
+<pre class="highlight coffeescript"><code><span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">'child_process'</span><span class="p">).</span><span class="na">exec</span>
+<span class="nx">exec</span> <span class="s">'coffee -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">stdout</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Python 3.5.1
+<pre class='unstyled output text-muted'>CoffeeScript version 1.10.0
+
 </pre>
 </div>
 </div>

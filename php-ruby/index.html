@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -1951,9 +1951,9 @@ Constant
 <span class="k">echo</span> <span class="nx">COST</span><span class="p">;</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>PHP Notice:  Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;OtherStructureConstant.php on line 4
+<pre class='unstyled output text-muted'>PHP Notice:  Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
 
-Notice: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;OtherStructureConstant.php on line 4
+Notice: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
 100</pre>
 </div>
 <div class='col-md-6'>
@@ -1962,8 +1962,8 @@ Notice: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&
 <span class="nb">puts</span> <span class="no">COST</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
-&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
+&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
 50
 </pre>
 </div>
@@ -1979,7 +1979,6 @@ Constant list
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Colors</span>
@@ -2004,7 +2003,6 @@ Struct
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
@@ -2193,7 +2191,6 @@ Switch as else if
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
@@ -2248,7 +2245,6 @@ If assign
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">result</span> <span class="o">=</span>
@@ -2438,7 +2434,6 @@ Return array
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="nf">times</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
@@ -2668,7 +2663,6 @@ Method
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
@@ -2738,7 +2732,7 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'file.txt'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
 </code></pre>
 
@@ -2811,13 +2805,13 @@ File path
 <span class="k">echo</span> <span class="k">__FILE__</span><span class="p">;</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;FilePath.php</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;FilePath.php</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.rb
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;file_path.rb
 </pre>
 </div>
 </div>
@@ -2836,13 +2830,13 @@ Dir path
 <span class="k">echo</span> <span class="nx">__DIR__</span><span class="p">;</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 </div>
@@ -2858,15 +2852,16 @@ Parent dir path
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/code"</span><span class="p">);</span></code></pre>
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span><span class="p">);</span>
+</code></pre>
 
-<pre class='unstyled output text-muted'></pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -2882,17 +2877,17 @@ Sister dir path
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
 
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/../data"</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span> <span class="o">.</span> <span class="s2">"/ruby"</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby</pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'data'</span><span class="p">)</span>
+<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
 
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php
 </pre>
 </div>
 </div>
@@ -2984,7 +2979,6 @@ Default value for argument
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span> <span class="o">=</span> <span class="kp">false</span><span class="p">)</span>
@@ -3062,7 +3056,6 @@ Closure
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">square</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="p">}</span>
@@ -3089,7 +3082,6 @@ Block passing
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
@@ -3130,7 +3122,6 @@ Block binding
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Action</span>
@@ -3168,7 +3159,6 @@ Initialize in runtime
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">ProccessElements</span>
@@ -3202,7 +3192,6 @@ Alias
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Greetings</span>
@@ -3689,7 +3678,6 @@ Mixin
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Moving</span>
@@ -3798,7 +3786,6 @@ Assign value if not exist
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3858,7 +3845,6 @@ Destructuring assignment
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
@@ -3885,14 +3871,14 @@ Date
 <span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-06-19</pre>
+<pre class='unstyled output text-muted'>2016-07-23</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'date'</span>
 <span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 </div>
@@ -3911,13 +3897,13 @@ Time
 <span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>06&#x2F;19&#x2F;16 01:44 PM</pre>
+<pre class='unstyled output text-muted'>07&#x2F;23&#x2F;16 01:57 PM</pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:01:57 +0300
+<pre class='unstyled output text-muted'>2016-07-23 16:57:17 +0300
 </pre>
 </div>
 </div>
@@ -3960,7 +3946,6 @@ Assign this or that
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="n">yeti</span> <span class="o">=</span> <span class="kp">nil</span>

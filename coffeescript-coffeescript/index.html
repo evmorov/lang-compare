@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -803,14 +803,14 @@ Random
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 </div>
@@ -1018,7 +1018,7 @@ Null/True/False?
 <pre class='unstyled output text-muted'>if value:
   string - true
   &#x27;&#x27; - false
-  1,2,3 - true
+  [1,2,3] - true
   [] - true
   5 - true
   0 - false
@@ -1030,7 +1030,7 @@ Null/True/False?
 if value?:
   string - true
   &#x27;&#x27; - true
-  1,2,3 - true
+  [1,2,3] - true
   [] - true
   5 - true
   0 - true
@@ -1042,7 +1042,7 @@ if value?:
 if value.length:
   string - true
   &#x27;&#x27; - false
-  1,2,3 - true
+  [1,2,3] - true
   [] - false
   5 - false
   0 - false
@@ -1079,7 +1079,7 @@ if value.length:
 <pre class='unstyled output text-muted'>if value:
   string - true
   &#x27;&#x27; - false
-  1,2,3 - true
+  [1,2,3] - true
   [] - true
   5 - true
   0 - false
@@ -1091,7 +1091,7 @@ if value.length:
 if value?:
   string - true
   &#x27;&#x27; - true
-  1,2,3 - true
+  [1,2,3] - true
   [] - true
   5 - true
   0 - true
@@ -1103,7 +1103,7 @@ if value?:
 if value.length:
   string - true
   &#x27;&#x27; - false
-  1,2,3 - true
+  [1,2,3] - true
   [] - false
   5 - false
   0 - false
@@ -2511,7 +2511,7 @@ Read
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
 <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readFileSync</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'utf8'</span>
 </code></pre>
 
@@ -2523,7 +2523,7 @@ World
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'fs'</span>
 <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
+<span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="na">cwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">)</span>
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readFileSync</span> <span class="nx">file_path</span><span class="p">,</span> <span class="s">'utf8'</span>
 </code></pre>
 
@@ -2598,14 +2598,14 @@ File path
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__filename</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file-path.coffee
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript&#x2F;file-path.coffee
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__filename</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file-path.coffee
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript&#x2F;file-path.coffee
 </pre>
 </div>
 </div>
@@ -2622,14 +2622,14 @@ Dir path
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__dirname</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">__dirname</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript
 </pre>
 </div>
 </div>
@@ -2647,7 +2647,7 @@ Parent dir path
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2655,7 +2655,7 @@ Parent dir path
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -2670,18 +2670,18 @@ Sister dir path
 <div class='row'>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'python'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">'path'</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s">'..'</span><span class="p">,</span> <span class="s">'python'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -3588,7 +3588,7 @@ Date
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-6-21
+<pre class='unstyled output text-muted'>2016-7-23
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3600,7 +3600,7 @@ Date
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-6-21
+<pre class='unstyled output text-muted'>2016-7-23
 </pre>
 </div>
 </div>
@@ -3617,14 +3617,14 @@ Time
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Tue Jun 21 2016 00:33:25 GMT+0300 (MSK)
+<pre class='unstyled output text-muted'>2016-07-23T19:51:30.517Z
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Tue Jun 21 2016 00:33:25 GMT+0300 (MSK)
+<pre class='unstyled output text-muted'>2016-07-23T19:51:30.517Z
 </pre>
 </div>
 </div>

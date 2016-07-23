@@ -33,8 +33,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -45,7 +45,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python3'>Python 3</span>
+<span class='lang-selected' data-lang-url='python'>Python</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -58,8 +58,8 @@
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
-<li class='lang-item' data-lang-url='python3'>
-<a href="#">Python 3</a>
+<li class='lang-item' data-lang-url='python'>
+<a href="#">Python</a>
 </li>
 <li class='lang-item' data-lang-url='php'>
 <a href="#">PHP</a>
@@ -504,7 +504,7 @@
 <h2 class='compare-header2'>Java</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python 3</h2>
+<h2 class='compare-header2'>Python</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -577,17 +577,19 @@ Interpolation
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
 <span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
 <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
-<span class="c"># print(f'{first} {second}')  # since python 3.6</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
+<span class='small'>[ 3.6 ]</span><pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{first} {second}'</span><span class="p">)</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'></pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -1915,8 +1917,8 @@ fontSize
   <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size 10
-font_family Arial
+<pre class='unstyled output text-muted'>font_family Arial
+font_size 10
 </pre>
 </div>
 </div>
@@ -2077,7 +2079,7 @@ Constant
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;OtherStructureConstant.java:4: error: cannot assign a value to final variable COST
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;java&#x2F;OtherStructureConstant.java:4: error: cannot assign a value to final variable COST
     COST = 50;
     ^
 1 error
@@ -2151,7 +2153,6 @@ Struct
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">collections</span>
@@ -2356,7 +2357,6 @@ Switch as else if
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
@@ -2413,7 +2413,6 @@ If assign
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">result</span> <span class="o">=</span> <span class="s">'a'</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">'b'</span>
@@ -2606,7 +2605,6 @@ Return array
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hello!"</span> <span class="o">%</span> <span class="n">time</span> <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
@@ -2846,7 +2844,6 @@ Method
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
@@ -2934,9 +2931,9 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
+<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'file.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">()</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </code></pre>
 
@@ -3031,14 +3028,14 @@ File path
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;FilePath.class
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;java&#x2F;FilePath.class
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
 </pre>
 </div>
 </div>
@@ -3062,7 +3059,7 @@ Dir path
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;java&#x2F;
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3071,7 +3068,7 @@ Dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -3097,7 +3094,7 @@ Parent dir path
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3106,7 +3103,7 @@ Parent dir path
 <span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
 </pre>
 </div>
 </div>
@@ -3126,22 +3123,22 @@ Sister dir path
 <span class="kd">class</span> <span class="nc">FileSisterDirPath</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span> <span class="o">{</span>
     <span class="n">URL</span> <span class="n">location</span> <span class="o">=</span> <span class="n">FileSisterDirPath</span><span class="o">.</span><span class="na">class</span><span class="o">.</span><span class="na">getProtectionDomain</span><span class="o">().</span><span class="na">getCodeSource</span><span class="o">().</span><span class="na">getLocation</span><span class="o">();</span>
-    <span class="n">String</span> <span class="n">parentPath</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="n">location</span><span class="o">.</span><span class="na">getFile</span><span class="o">()</span> <span class="o">+</span> <span class="s">"../data"</span><span class="o">).</span><span class="na">getCanonicalPath</span><span class="o">();</span>
+    <span class="n">String</span> <span class="n">parentPath</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="n">location</span><span class="o">.</span><span class="na">getFile</span><span class="o">()</span> <span class="o">+</span> <span class="s">".."</span> <span class="o">+</span> <span class="s">"/coffeescript"</span><span class="o">).</span><span class="na">getCanonicalPath</span><span class="o">();</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">parentPath</span><span class="o">);</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;coffeescript
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
 
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'data'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;data
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
 </pre>
 </div>
 </div>
@@ -3229,7 +3226,6 @@ Default value for argument
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
@@ -3304,7 +3300,6 @@ Closure
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
@@ -3330,7 +3325,6 @@ Block passing
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
@@ -3361,7 +3355,6 @@ Block binding
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Action</span><span class="p">:</span>
@@ -3398,7 +3391,6 @@ Initialize in runtime
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">ProccessElements</span><span class="p">:</span>
@@ -3433,7 +3425,6 @@ Alias
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Greetings</span><span class="p">:</span>
@@ -3887,7 +3878,6 @@ Mixin
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Moving</span><span class="p">:</span>
@@ -3998,7 +3988,6 @@ Assign value if not exist
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4021,7 +4010,6 @@ Safe navigation
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">class</span> <span class="nc">Winner</span><span class="p">:</span>
@@ -4094,7 +4082,6 @@ Destructuring assignment
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
@@ -4126,7 +4113,7 @@ Date
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-06-21
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 <div class='col-md-6'>
@@ -4134,7 +4121,7 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11
+<pre class='unstyled output text-muted'>2016-07-23
 </pre>
 </div>
 </div>
@@ -4159,7 +4146,7 @@ Time
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>6&#x2F;21&#x2F;16 11:34 PM
+<pre class='unstyled output text-muted'>7&#x2F;23&#x2F;16 10:48 PM
 </pre>
 </div>
 <div class='col-md-6'>
@@ -4167,7 +4154,7 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-11 00:02:09.778306
+<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
 </pre>
 </div>
 </div>
@@ -4214,7 +4201,6 @@ Assign this or that
 <div class='row'>
 <div class='col-md-6'>
 No easy way to do that
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="n">yeti</span> <span class="o">=</span> <span class="bp">None</span>
