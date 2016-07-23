@@ -609,11 +609,12 @@ Other:
     php: no.php
     python: other_assign_value_if_not_exist.py
   Safe navigation:
-    ruby: no.rb
+    ruby:
+      '2.3': other_safe_navigation.rb
     coffeescript: other-safe-navigation.coffee
     java: no.java
     php: no.php
-    python: other_safe_navigation.py
+    python: no.py
   Import another file:
     ruby: other_import_file.rb
     coffeescript: other-import-file.coffee

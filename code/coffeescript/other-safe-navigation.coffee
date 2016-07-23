@@ -6,4 +6,4 @@ class Address
   zipcode: 192187
 
 zip = (new Winner).address?.zipcode
-console.log "We can't send the prize to a winner" unless zip
+console.log if zip then "Zipcode is #{zip}" else "No prize without zipcode"
