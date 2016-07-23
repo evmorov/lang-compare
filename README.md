@@ -69,6 +69,44 @@ To add an example:
 1. Modify `data/code.yml`
 2. Add files to `code/` folder
 
+### Example for a specific version
+
+Where can I provide a version?
+
+- Python 2 vs Python 3
+- Java 7 vs Java 8
+- ES5 vs ES6
+- New features that are not standard de-facto yet
+
+#### Examples
+
+Interpolation in Python is:
+
+```python
+first = "Don't worry,"
+second = 'be happy'
+print('%s %s' % (first, second))
+```
+
+Since 3.6 you can use:
+
+```python
+first = "Don't worry,"
+second = 'be happy'
+print(f'{first} {second}')
+```
+
+To achieve it:
+
+1. Change `data/code.yml`
+```yaml
+python:
+  .: string_interpolation.py
+  '3.6': string_interpolation.py
+```
+2. Add the first example to `code/python/`
+3. Add the second example to `code/python/3.6`
+
 
 ## Contributing
 
