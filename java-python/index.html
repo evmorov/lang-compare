@@ -470,9 +470,6 @@
 <a class='scroll' href='#other_assign_value_if_not_exist' title='Assign value if not exist'>Assign value if not exist</a>
 </li>
 <li>
-<a class='scroll' href='#other_safe_navigation' title='Safe navigation'>Safe navigation</a>
-</li>
-<li>
 <a class='scroll' href='#other_import_another_file' title='Import another file'>Import another file</a>
 </li>
 <li>
@@ -3996,37 +3993,6 @@ No easy way to do that
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
-</pre>
-</div>
-</div>
-<h4 class='compare-header4'>
-Safe navigation
-<small>
-<a class='link-unstyled' href='#other_safe_navigation' id='other_safe_navigation'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Winner</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c"># self.address = Address()</span>
-    <span class="k">pass</span>
-
-<span class="k">class</span> <span class="nc">Address</span><span class="p">:</span>
-  <span class="n">zipcode</span> <span class="o">=</span>  <span class="mi">192187</span>
-
-<span class="k">try</span><span class="p">:</span>
-  <span class="nb">zip</span> <span class="o">=</span> <span class="n">Winner</span><span class="p">()</span><span class="o">.</span><span class="n">address</span><span class="o">.</span><span class="n">zipcode</span>
-<span class="k">except</span> <span class="nb">AttributeError</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"We can't send the prize to a winner"</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>We can&#x27;t send the prize to a winner
 </pre>
 </div>
 </div>

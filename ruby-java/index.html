@@ -470,6 +470,9 @@
 <a class='scroll' href='#other_assign_value_if_not_exist' title='Assign value if not exist'>Assign value if not exist</a>
 </li>
 <li>
+<a class='scroll' href='#other_safe_navigation' title='Safe navigation'>Safe navigation</a>
+</li>
+<li>
 <a class='scroll' href='#other_import_another_file' title='Import another file'>Import another file</a>
 </li>
 <li>
@@ -853,7 +856,7 @@ Random
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">2</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 <div class='col-md-6'>
@@ -4068,6 +4071,43 @@ No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
+Safe navigation
+<small>
+<a class='link-unstyled' href='#other_safe_navigation' id='other_safe_navigation'>
+<i class='glyphicon glyphicon-link'></i>
+</a>
+</small>
+</h4>
+<div class='row'>
+<div class='col-md-6'>
+<span class='small'>[ 2.3 ]</span><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Winner</span>
+  <span class="kp">attr_reader</span> <span class="ss">:address</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span>
+    <span class="c1"># @address = Address.new</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Address</span>
+  <span class="kp">attr_reader</span> <span class="ss">:zipcode</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span>
+    <span class="vi">@zipcode</span> <span class="o">=</span> <span class="mi">192187</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">zip</span> <span class="o">=</span> <span class="no">Winner</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">address</span><span class="o">&amp;</span><span class="p">.</span><span class="nf">zipcode</span>
+<span class="nb">puts</span> <span class="n">zip</span> <span class="p">?</span> <span class="s2">"Zipcode is </span><span class="si">#{</span><span class="n">zip</span><span class="si">}</span><span class="s2">"</span> <span class="p">:</span> <span class="s2">"No prize without zipcode"</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>No prize without zipcode
+</pre>
+</div>
+<div class='col-md-6'>
+No easy way to do that
+</div>
+</div>
+<h4 class='compare-header4'>
 Import another file
 <small>
 <a class='link-unstyled' href='#other_import_another_file' id='other_import_another_file'>
@@ -4178,7 +4218,7 @@ Time
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23 16:57:17 +0300
+<pre class='unstyled output text-muted'>2016-07-23 23:29:26 +0300
 </pre>
 </div>
 <div class='col-md-6'>
@@ -4263,7 +4303,7 @@ Run command
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sb">`ruby -v`</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
+<pre class='unstyled output text-muted'>ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
 </pre>
 </div>
 <div class='col-md-6'>

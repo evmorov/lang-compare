@@ -826,7 +826,7 @@ Random
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nb">Math</span><span class="p">.</span><span class="na">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
+<pre class='unstyled output text-muted'>2
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3648,10 +3648,10 @@ Safe navigation
   <span class="na">zipcode</span><span class="o">:</span> <span class="mi">192187</span>
 
 <span class="nx">zip</span> <span class="o">=</span> <span class="p">(</span><span class="k">new</span> <span class="nx">Winner</span><span class="p">).</span><span class="na">address</span><span class="o">?</span><span class="p">.</span><span class="na">zipcode</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"We can't send the prize to a winner"</span> <span class="nx">unless</span> <span class="nx">zip</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">if</span> <span class="nx">zip</span> <span class="k">then</span> <span class="s">"Zipcode is </span><span class="si">#{</span><span class="nx">zip</span><span class="si">}</span><span class="s">"</span> <span class="k">else</span> <span class="s">"No prize without zipcode"</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>We can&#x27;t send the prize to a winner
+<pre class='unstyled output text-muted'>No prize without zipcode
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3758,7 +3758,7 @@ Time
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23T19:51:30.517Z
+<pre class='unstyled output text-muted'>2016-07-23T20:28:43.930Z
 </pre>
 </div>
 <div class='col-md-6'>
