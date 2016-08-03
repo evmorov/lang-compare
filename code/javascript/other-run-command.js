@@ -1,2 +1,2 @@
-import { exec } from 'child_process';
-exec('coffee -v', (error, stdout, stderr) => console.log(stdout));
+const exec = require('child_process').exec;
+exec('node -v', (error, stdout, stderr) => console.log(stdout));

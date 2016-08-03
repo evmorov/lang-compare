@@ -1,6 +1,6 @@
-let currentDate = new Date();
-let day = currentDate.getDate();
-let month = currentDate.getMonth() + 1;
-let year = currentDate.getFullYear();
-let date =  `${year}-${month}-${day}`;
+const currentDate = new Date();
+const day = currentDate.getDate();
+const month = currentDate.getMonth() + 1;
+const year = currentDate.getFullYear();
+const date =  `${year}-${month}-${day}`;
 console.log(date);

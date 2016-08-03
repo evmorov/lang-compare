@@ -1,4 +1,4 @@
-let arr = [];
+const arr = [];
 arr.push('first');
 arr.push('second');
 console.log(arr);

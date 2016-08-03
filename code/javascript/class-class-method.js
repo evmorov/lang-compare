@@ -1,6 +1,6 @@
 class Animal {
   static feed() {
-    return console.log('Om nom nom');
+    console.log('Om nom nom');
   }
 }
 

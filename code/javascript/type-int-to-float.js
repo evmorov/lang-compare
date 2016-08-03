@@ -1,1 +1,1 @@
-console.log(10 + 0.1);
+console.log((10).toFixed(1));

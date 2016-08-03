@@ -30,7 +30,7 @@ end
 
 task :run_javascript do
   puts 'Executing js files'
-  run_scripts('node', 'js')
+  run_scripts('node --use_strict', 'js')
   puts "\n\n"
 end
 

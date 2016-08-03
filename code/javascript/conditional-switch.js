@@ -1,4 +1,4 @@
-let foo = 'Hello!';
+const foo = 'Hello!';
 switch (foo) {
   case 10: case 20:
     console.log('10 or 20');

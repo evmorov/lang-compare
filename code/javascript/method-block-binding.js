@@ -1,6 +1,6 @@
 class Action {
   static say(sentence) {
-    return console.log(sentence());
+    console.log(sentence());
   }
 }
 
@@ -10,11 +10,13 @@ class Person {
   }
 
   greet() {
-    Action.say(function() { return `My name is ${this.name}!`; });
-    
-    return Action.say(() => `My name is ${this.name}!`);
+    try {
+      Action.say(function() { `My name is ${this.name}!`; });
+    } catch (err) {
+      console.log(err.message);
+    }
+    Action.say(() => `My name is ${this.name}!`);
   }
 }
-    
 
 new Person('Alex').greet();

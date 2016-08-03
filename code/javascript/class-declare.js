@@ -1,6 +1,6 @@
 class Animal {
   walk() {
-    return console.log("I'm walking");
+    console.log("I'm walking");
   }
 }
 

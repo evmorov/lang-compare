@@ -7,4 +7,4 @@ class HtmlELements extends ProccessElements
   @element 'div'
   @element 'span'
 
-console.log (new HtmlELements).div('hello')
+console.log new HtmlELements().div('hello')

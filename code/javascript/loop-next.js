@@ -1,6 +1,4 @@
-let iterable = [0, 1, 2];
-for (let i = 0; i < iterable.length; i++) {
-  let time = iterable[i];
-  if (time === 1) { continue; }
-  console.log(`${time + 1}. Hi`);
+for (let i = 0; i < 3; i++) {
+  if (i === 1) continue;
+  console.log(`${i + 1}. Hi`);
 }

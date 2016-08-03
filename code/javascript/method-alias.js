@@ -1,8 +1,11 @@
 class Greetings {
-  hey() {
-    return console.log('How are you?');
+  constructor() {
+    this.hi = this.hey.bind(this, true);
   }
-  hi = this.prototype.hey;
+
+  hey() {
+    console.log('How are you?');
+  }
 }
 
-(new Greetings()).hi();
+new Greetings().hi();

@@ -1,8 +1,10 @@
-// other-file-to-import.coffee
+// other-file-to-import.js
 // module.exports =
-// class Import
-//   constructor: ->
-//     console.log 'I am imported!'
+// class Import {
+//   constructor() {
+//     console.log('I am imported!');
+//   }
+// }
 
-import Import from './other-file-to-import';
+const Import = require('./other-file-to-import');
 new Import();

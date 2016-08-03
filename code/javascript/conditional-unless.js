@@ -1,2 +1,2 @@
-let angry = false;
-if (!angry) { console.log('smile!'); }
+const angry = false;
+if (!angry) console.log('smile!');

@@ -1,3 +1,3 @@
-let constants = Object.freeze({COST: 100});
-constants.COST = 50;
-console.log(constants.COST);
+const COST = 100;
+COST = 50;
+console.log(COST);

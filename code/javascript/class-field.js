@@ -4,10 +4,10 @@ class Animal {
   }
 
   play() {
-    return console.log(`I'm playing with ${this.toy}`);
+    console.log(`I'm playing with ${this.toy}`);
   }
 }
 
-let animal = new Animal();
+const animal = new Animal();
 animal.take('a ball');
 animal.play();

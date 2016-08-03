@@ -1,8 +1,7 @@
 try {
-  throw new Error('divided by 0');
+  age++;
 } catch (error) {
-  console.log("Can't divide");
-}
-finally {
+  console.log("Can't change undefined variable");
+} finally {
   console.log("But that's ok");
 }

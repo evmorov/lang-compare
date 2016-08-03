@@ -1,2 +1,2 @@
-let arr = ['first', 'second'];
+const arr = ['first', 'second'];
 console.log(arr);

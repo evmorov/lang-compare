@@ -1,16 +1,11 @@
 class Animal {
   walk() {
     this.bark();
-    guard();
-    return console.log("I'm walking");
+    console.log("I'm walking");
   }
 
   bark() {
-    return console.log('Wuf!');
-  }
-
-  guard() {
-    return console.log('WUUUF!');
+    console.log('Wuf!');
   }
 }
 

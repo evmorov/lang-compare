@@ -1,2 +1,4 @@
-let hey = () => console.log('How are you?');
+function hey() {
+  console.log('How are you?');
+}
 hey();

@@ -1,5 +1,2 @@
-let iterable = [1, 2, 3];
-for (let j = 0; j < iterable.length; j++) {
-  let i = iterable[j];
+for (let i = 1; i < 4; i++)
   console.log(`${i}. Hi`);
-}

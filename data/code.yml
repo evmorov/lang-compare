@@ -381,7 +381,7 @@ Conditional:
   Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     coffeescript: conditional-switch-as-else-if.coffee
-    javascript: conditional-switch-as-else-if.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: conditional_switch_as_else_if.py
@@ -603,7 +603,7 @@ Method:
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     coffeescript: method-init-in-runtime.coffee
-    javascript: method-init-in-runtime.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: method_init_in_runtime.py
@@ -646,7 +646,7 @@ Class:
   Private method:
     ruby: class_private_method.rb
     coffeescript: class-private-method.coffee
-    javascript: class-private-method.js
+    javascript: no.js
     java: ClassPrivateMethod.java
     php: ClassPrivateMethod.php
     python: class_private_method.py
@@ -681,7 +681,7 @@ Class:
   Mixin:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
-    javascript: class-mixin.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: class_mixin.py
@@ -703,7 +703,7 @@ Other:
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
-    javascript: other-assign-value-if-not-exists.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: other_assign_value_if_not_exist.py
@@ -711,7 +711,7 @@ Other:
     ruby:
       '2.3': other_safe_navigation.rb
     coffeescript: other-safe-navigation.coffee
-    javascript: other-safe-navigation.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: no.py
@@ -753,7 +753,7 @@ Other:
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
-    javascript: conditional-assign-this-or-that.js
+    javascript: no.js
     java: no.java
     php: no.php
     python: conditional_assign_this_or_that.py

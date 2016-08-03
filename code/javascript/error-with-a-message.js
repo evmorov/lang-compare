@@ -1,5 +1,5 @@
 try {
-  throw new Error('divided by 0');
+  age++;
 } catch (error) {
   console.log(error.message);
 }

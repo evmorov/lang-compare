@@ -1,3 +1,3 @@
-let first = "Don't worry,";
-let second = 'be happy';
+const first = "Don't worry,";
+const second = 'be happy';
 console.log(`${first} ${second}`);

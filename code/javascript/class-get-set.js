@@ -1,7 +1,13 @@
 class Animal {
-  name = 'Kelya';
+  setName(name) {
+    this.name = name;
+  }
+
+  getName() {
+    return this.name;
+  }
 }
 
-let animal = new Animal();
+const animal = new Animal();
 animal.name = 'Kelya';
 console.log(animal.name);

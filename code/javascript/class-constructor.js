@@ -4,7 +4,7 @@ class Animal {
   }
 
   walk() {
-    return console.log(`My name is ${this.name} and I'm walking`);
+    console.log(`My name is ${this.name} and I'm walking`);
   }
 }
 
