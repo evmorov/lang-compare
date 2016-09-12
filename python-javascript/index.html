@@ -48,7 +48,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='php'>PHP</span>
+<span class='lang-selected' data-lang-url='javascript'>JavaScript</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -507,7 +507,7 @@
 <h2 class='compare-header2'>Python</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>PHP</h2>
+<h2 class='compare-header2'>JavaScript</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -529,13 +529,12 @@ Create
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$greeting</span> <span class="o">=</span> <span class="s2">"Hello World!"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nv">$greeting</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Hello World!</pre>
+<pre class='unstyled output text-muted'>Hello World!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -555,12 +554,11 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="s2">"Don't worry,"</span> <span class="o">.</span> <span class="s2">" be happy"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Don't worry"</span> <span class="o">+</span> <span class="s1">' be happy'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
+<pre class='unstyled output text-muted'>Don&#x27;t worry be happy
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -588,14 +586,13 @@ Interpolation
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
-<span class="nv">$second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
-<span class="k">echo</span> <span class="s2">"</span><span class="nv">$first</span><span class="s2"> </span><span class="nv">$second</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">first</span><span class="p">}</span> <span class="nx">$</span><span class="p">{</span><span class="nx">second</span><span class="p">}</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy</pre>
+<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -615,14 +612,11 @@ Remove part
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"This is not funny! I am not like him!"</span><span class="p">;</span>
-<span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"not "</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>This is funny! I am like him!</pre>
+<pre class='unstyled output text-muted'>This is funny! I am like him!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -642,14 +636,11 @@ Replace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"You should work"</span><span class="p">;</span>
-<span class="nv">$replaced</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="s2">"work"</span><span class="p">,</span> <span class="s2">"rest"</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$replaced</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You should work'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>You should rest</pre>
+<pre class='unstyled output text-muted'>You should rest
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -669,18 +660,11 @@ Split
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"I like beer"</span><span class="p">;</span>
-<span class="nv">$arr</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span> <span class="nv">$s</span><span class="p">);</span>
-<span class="nb">var_export</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'I like beer'</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>array (
-  0 =&gt; &#x27;I&#x27;,
-  1 =&gt; &#x27;like&#x27;,
-  2 =&gt; &#x27;beer&#x27;,
-)</pre>
+<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -700,11 +684,11 @@ Remove leading and trailing whitespace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">' eh? '</span><span class="p">.</span><span class="nx">trim</span><span class="p">());</span>
+</code></pre>
 
-<span class="k">echo</span> <span class="nb">trim</span><span class="p">(</span><span class="s2">" eh? "</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>eh?</pre>
+<pre class='unstyled output text-muted'>eh?
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -726,11 +710,12 @@ False
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">!==</span> <span class="s1">'string'</span><span class="p">);</span>
+</code></pre>
 
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">strcmp</span><span class="p">(</span><span class="s2">"string"</span><span class="p">,</span> <span class="s2">"string"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>bool(true)
+<pre class='unstyled output text-muted'>true
+false
 </pre>
 </div>
 </div>
@@ -755,14 +740,12 @@ Regex
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^b/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">preg_match</span><span class="p">(</span><span class="s2">"/^a/"</span><span class="p">,</span> <span class="s2">"apple"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^b/</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^a/</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>bool(false)
-bool(true)
+<pre class='unstyled output text-muted'>null
+[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
 </pre>
 </div>
 </div>
@@ -786,14 +769,13 @@ Increment
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
-<span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>10</pre>
+<pre class='unstyled output text-muted'>10
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -817,16 +799,14 @@ False
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">===</span> <span class="mi">5</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">!==</span> <span class="mi">5</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>bool(true)
-bool(true)
-bool(false)
+<pre class='unstyled output text-muted'>true
+true
+false
 </pre>
 </div>
 </div>
@@ -849,11 +829,13 @@ Random
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">min</span><span class="p">);</span>
+</code></pre>
 
-<span class="k">echo</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>2</pre>
+<pre class='unstyled output text-muted'>2
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -881,18 +863,16 @@ Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>float(4.5)
-float(4.5)
-float(4)
-float(5)
+<pre class='unstyled output text-muted'>4.5
+4.5
+4
+5
 </pre>
 </div>
 </div>
@@ -916,16 +896,16 @@ Get type of object
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="s2">"hi"</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">gettype</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">get_class</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'hi'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">1</span><span class="p">).</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>string
-object
-DateTime
+number
+String
+Number
 </pre>
 </div>
 </div>
@@ -946,12 +926,10 @@ Int to Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">float</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>float(10)
+<pre class='unstyled output text-muted'>10.0
 </pre>
 </div>
 </div>
@@ -972,12 +950,10 @@ Int to String
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">string</span><span class="p">)</span><span class="mi">10</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toString</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>string(2) &quot;10&quot;
+<pre class='unstyled output text-muted'>10
 </pre>
 </div>
 </div>
@@ -998,12 +974,10 @@ String to Int
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="s2">"10"</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>int(10)
+<pre class='unstyled output text-muted'>5
 </pre>
 </div>
 </div>
@@ -1024,14 +998,10 @@ String?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">is_string</span><span class="p">(</span><span class="s2">"Hi"</span><span class="p">));</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">()</span> <span class="nx">instanceof</span> <span class="nx">DateTime</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'10'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>bool(true)
-bool(true)
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1098,22 +1068,7 @@ if len(value):
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$notEmpty</span> <span class="o">=</span> <span class="s2">"Not empty"</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$notEmpty</span><span class="p">));</span>
-
-<span class="nv">$shouldBeNull</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$shouldBeNull</span> <span class="o">==</span> <span class="kc">null</span><span class="p">);</span>
-
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="k">empty</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>bool(false)
-bool(true)
-bool(true)
-</pre>
+No easy way to do that
 </div>
 </div>
 <h3 class='compare-header3' id='array'>Array</h3>
@@ -1135,16 +1090,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"first"</span><span class="p">,</span> <span class="s2">"second"</span><span class="p">];</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; first
-    [1] =&gt; second
-)
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1168,19 +1118,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$myArr</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"first"</span><span class="p">;</span>
-<span class="nv">$myArr</span><span class="p">[]</span> <span class="o">=</span> <span class="s2">"second"</span><span class="p">;</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$myArr</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'first'</span><span class="p">);</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'second'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; first
-    [1] =&gt; second
-)
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1201,16 +1145,10 @@ With different types
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">print_r</span><span class="p">([</span><span class="s2">"first"</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; first
-    [1] =&gt; 1
-)
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
 </pre>
 </div>
 </div>
@@ -1231,12 +1169,10 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">in_array</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]));</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>bool(true)
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1259,14 +1195,11 @@ Iterate
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">));</span>
+</code></pre>
 
-<span class="k">foreach</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="k">as</span> <span class="nv">$num</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$num</span><span class="p">);</span>
-<span class="p">}</span></code></pre>
-
-<pre class='unstyled output text-muted'>int(1)
-int(2)
+<pre class='unstyled output text-muted'>1
+2
 </pre>
 </div>
 </div>
@@ -1292,18 +1225,16 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">num</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span></code></pre>
-
-<pre class='unstyled output text-muted'>fontSize
-10
-fontFamily
-Arial
+<pre class='unstyled output text-muted'>one
+0
+two
+1
 </pre>
 </div>
 </div>
@@ -1327,14 +1258,15 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">last</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"one"</span><span class="p">,</span> <span class="s2">"two"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]);</span></code></pre>
-
-<pre class='unstyled output text-muted'>string(3) &quot;one&quot;
-string(3) &quot;two&quot;
+<pre class='unstyled output text-muted'>one
+two
 </pre>
 </div>
 </div>
@@ -1356,19 +1288,11 @@ Find first
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
-<span class="nv">$first</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nv">$first</span> <span class="o">=</span> <span class="nv">$n</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$first</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>int(10)
+<pre class='unstyled output text-muted'>10
 </pre>
 </div>
 </div>
@@ -1390,20 +1314,11 @@ Select (find all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
-<span class="nv">$filtered</span> <span class="o">=</span> <span class="nb">array_filter</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nv">$n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">});</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$filtered</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Array
-(
-    [2] =&gt; 10
-    [3] =&gt; 20
-)
+<pre class='unstyled output text-muted'>[ 10, 20 ]
 </pre>
 </div>
 </div>
@@ -1425,21 +1340,11 @@ Map (change all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">));</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
-<span class="nv">$mapped</span> <span class="o">=</span> <span class="nb">array_map</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nv">$n</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nv">$n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
-<span class="p">},</span> <span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$mapped</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; 2
-    [1] =&gt; 10
-    [2] =&gt; 20
-    [3] =&gt; 40
-)
+<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
 </pre>
 </div>
 </div>
@@ -1460,21 +1365,10 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
-<span class="nv">$arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
-<span class="nv">$concated</span> <span class="o">=</span> <span class="nb">array_merge</span><span class="p">(</span><span class="nv">$arr1</span><span class="p">,</span> <span class="nv">$arr2</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$concated</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">concat</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; 1
-    [1] =&gt; 2
-    [2] =&gt; 3
-    [3] =&gt; 4
-)
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1495,19 +1389,10 @@ Sort
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nx">sort</span><span class="p">());</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">];</span>
-<span class="nb">sort</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; 1
-    [1] =&gt; 2
-    [2] =&gt; 3
-    [3] =&gt; 4
-)
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1529,12 +1414,11 @@ Multidimensional
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span></code></pre>
-
-<pre class='unstyled output text-muted'>string(5) &quot;forth&quot;
+<pre class='unstyled output text-muted'>forth
 </pre>
 </div>
 </div>
@@ -1555,12 +1439,10 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">length</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$arr</span><span class="p">));</span></code></pre>
-
-<pre class='unstyled output text-muted'>int(3)
+<pre class='unstyled output text-muted'>3
 </pre>
 </div>
 </div>
@@ -1582,16 +1464,11 @@ Count
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
-<span class="nv">$count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="nv">$arr</span> <span class="k">as</span> <span class="nv">$n</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$n</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
-        <span class="nv">$count</span><span class="o">++</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$count</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>int(2)
+<pre class='unstyled output text-muted'>2
 </pre>
 </div>
 </div>
@@ -1616,15 +1493,11 @@ Reduce
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">));</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="nv">$reduced</span> <span class="o">=</span> <span class="nb">array_reduce</span><span class="p">(</span><span class="nv">$arr</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$carry</span><span class="p">,</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nv">$carry</span> <span class="o">+</span> <span class="nv">$item</span><span class="p">;</span>
-<span class="p">});</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$reduced</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>6</pre>
+<pre class='unstyled output text-muted'>6
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -1644,12 +1517,10 @@ Index of element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'c'</span><span class="p">));</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">array_search</span><span class="p">(</span><span class="s2">"c"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">));</span></code></pre>
-
-<pre class='unstyled output text-muted'>int(2)
+<pre class='unstyled output text-muted'>2
 </pre>
 </div>
 </div>
@@ -1672,19 +1543,12 @@ Delete element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">];</span>
-<span class="nv">$key</span> <span class="o">=</span> <span class="nb">array_search</span><span class="p">(</span><span class="s2">"b"</span><span class="p">,</span> <span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">unset</span><span class="p">(</span><span class="nv">$arr</span><span class="p">[</span><span class="nv">$key</span><span class="p">]);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">e</span> <span class="o">!==</span> <span class="s1">'b'</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; a
-    [2] =&gt; c
-)
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
 </pre>
 </div>
 </div>
@@ -1705,17 +1569,12 @@ Unique
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">===</span> <span class="nx">index</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">];</span>
-<span class="nv">$unique</span> <span class="o">=</span> <span class="nb">array_unique</span><span class="p">(</span><span class="nv">$arr</span><span class="p">);</span>
-<span class="nb">print_r</span><span class="p">(</span><span class="nv">$unique</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>Array
-(
-    [0] =&gt; a
-    [1] =&gt; b
-)
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
 </pre>
 </div>
 </div>
@@ -1738,17 +1597,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>array(2) {
-  [&quot;fontSize&quot;]=&gt;
-  string(2) &quot;10&quot;
-  [&quot;fontFamily&quot;]=&gt;
-  string(5) &quot;Arial&quot;
-}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1772,19 +1625,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_family</span> <span class="o">=</span> <span class="s1">'Arial'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"10"</span><span class="p">;</span>
-<span class="nv">$options</span><span class="p">[</span><span class="s2">"fontFamily"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Arial"</span><span class="p">;</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>array(2) {
-  [&quot;fontSize&quot;]=&gt;
-  string(2) &quot;10&quot;
-  [&quot;fontFamily&quot;]=&gt;
-  string(5) &quot;Arial&quot;
-}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1807,18 +1654,15 @@ font_size 10
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">hsh</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">hsh</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">hsh</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="nv">$options</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$key</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="s2">"</span><span class="nv">$value</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span></code></pre>
-
-<pre class='unstyled output text-muted'>fontSize
-10
-fontFamily
-Arial
+<pre class='unstyled output text-muted'>font_size 10
+font_family Arial
 </pre>
 </div>
 </div>
@@ -1840,12 +1684,11 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'font_size'</span> <span class="k">in</span> <span class="nx">options</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nb">key_exists</span><span class="p">(</span><span class="s2">"fontSize"</span><span class="p">,</span> <span class="nv">$options</span><span class="p">));</span></code></pre>
-
-<pre class='unstyled output text-muted'>bool(true)
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -1867,12 +1710,11 @@ Get value
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$options</span><span class="p">[</span><span class="s2">"fontSize"</span><span class="p">]);</span></code></pre>
-
-<pre class='unstyled output text-muted'>string(2) &quot;10&quot;
+<pre class='unstyled output text-muted'>10
 </pre>
 </div>
 </div>
@@ -1894,12 +1736,12 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
+</code></pre>
 
-<span class="nv">$options</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"fontSize"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"fontFamily"</span> <span class="o">=&gt;</span> <span class="s2">"Arial"</span><span class="p">];</span>
-<span class="k">echo</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$options</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>2</pre>
+<pre class='unstyled output text-muted'>2
+</pre>
 </div>
 </div>
 <h3 class='compare-header3' id='other_structure'>Other structure</h3>
@@ -1922,14 +1764,12 @@ Boolean
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$tryIt</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="nv">$tryIt</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"Garlic gum is not funny"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">try_it</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">try_it</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Garlic gum is not funny'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Garlic gum is not funny</pre>
+<pre class='unstyled output text-muted'>Garlic gum is not funny
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -1951,17 +1791,27 @@ Constant
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-<span class="k">const</span> <span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">COST</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">COST</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>PHP Notice:  Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2
+COST = 50;
+     ^
 
-Notice: Constant COST already defined in &#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;OtherStructureConstant.php on line 4
-100</pre>
+TypeError: Assignment to constant variable.
+    at Object.&lt;anonymous&gt; (&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2:6)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.runMain (module.js:590:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -1985,7 +1835,15 @@ Constant list
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({</span>
+  <span class="na">RED</span><span class="p">:</span> <span class="s1">'#FF0000'</span><span class="p">,</span>
+  <span class="na">GREEN</span><span class="p">:</span> <span class="s1">'#00FF00'</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Colors</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>#00FF00
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2033,13 +1891,11 @@ If
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"Hello"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Hello</pre>
+<pre class='unstyled output text-muted'>Hello
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2061,14 +1917,12 @@ Unless
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>smile!</pre>
+<pre class='unstyled output text-muted'>smile!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2091,15 +1945,15 @@ If/else
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"work"</span><span class="p">;</span>
-<span class="k">else</span>
-    <span class="k">echo</span> <span class="s2">"sleep"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'work'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'sleep'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>work</pre>
+<pre class='unstyled output text-muted'>work
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2122,15 +1976,12 @@ And/Or
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"no"</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"yes"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'no'</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>yes</pre>
+<pre class='unstyled output text-muted'>yes
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2160,22 +2011,19 @@ Switch
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$s</span> <span class="o">=</span> <span class="s2">"Hello!"</span><span class="p">;</span>
-<span class="k">switch</span> <span class="p">(</span><span class="nv">$s</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="s2">"Bye!"</span><span class="o">:</span>
-        <span class="k">echo</span> <span class="s2">"wrong"</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="s2">"Hello!"</span><span class="o">:</span>
-        <span class="k">echo</span> <span class="s2">"right"</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">default</span><span class="o">:</span>
-        <span class="k">break</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nx">foo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="mi">10</span><span class="err">:</span> <span class="k">case</span> <span class="mi">20</span><span class="err">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'10 or 20'</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">'And'</span><span class="err">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'case in one line'</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+  <span class="nl">default</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">You</span> <span class="nx">gave</span> <span class="nx">me</span> <span class="s1">'${foo}'</span><span class="err">`</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>right</pre>
+<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2222,13 +2070,11 @@ Ternary
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$s</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">?</span> <span class="s2">"no"</span> <span class="o">:</span> <span class="s2">"yes"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nv">$s</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>yes</pre>
+<pre class='unstyled output text-muted'>yes
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2273,10 +2119,8 @@ For
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2305,10 +2149,9 @@ For with a step
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="nv">$i</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -2337,10 +2180,9 @@ Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="nx">of</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">keys</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hi'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hi
@@ -2369,15 +2211,14 @@ While
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
-    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3</pre>
+<pre class='unstyled output text-muted'>3
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2400,15 +2241,13 @@ Until
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">while</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">)</span>
-    <span class="nv">$i</span><span class="o">++</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nv">$i</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">!==</span> <span class="mi">3</span><span class="p">)</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3</pre>
+<pre class='unstyled output text-muted'>3
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2429,7 +2268,12 @@ Return array
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greetings</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">fill</span><span class="p">().</span><span class="nx">map</span><span class="p">((</span><span class="nx">_</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hello</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2453,12 +2297,9 @@ Break
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">break</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -2488,12 +2329,9 @@ Next/Continue
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="k">continue</span><span class="p">;</span>
-    <span class="k">echo</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">.</span> <span class="s2">". Hi</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
 
@@ -2523,11 +2361,10 @@ Max/Min
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="k">echo</span> <span class="nb">min</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">max</span><span class="p">(</span><span class="nv">$arr</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span></code></pre>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
+</code></pre>
 
 <pre class='unstyled output text-muted'>1
 3
@@ -2553,12 +2390,11 @@ Sqrt
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nb">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3</pre>
+<pre class='unstyled output text-muted'>3
+</pre>
 </div>
 </div>
 <h3 class='compare-header3' id='error_handling'>Error handling</h3>
@@ -2585,18 +2421,16 @@ But that&#x27;s ok
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">();</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"Can't divide</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="p">}</span> <span class="nx">finally</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"But that's ok</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Can't change undefined variable"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"But that's ok"</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Can&#x27;t divide
+<pre class='unstyled output text-muted'>Can&#x27;t change undefined variable
 But that&#x27;s ok
 </pre>
 </div>
@@ -2621,16 +2455,15 @@ With a message
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>An error!</pre>
+<pre class='unstyled output text-muted'>age is not defined
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2678,16 +2511,15 @@ Throw exception
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">try</span> <span class="p">{</span>
-    <span class="k">throw</span> <span class="k">new</span> <span class="nx">Exception</span><span class="p">(</span><span class="s2">"An error!"</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">echo</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">();</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'An error!'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>An error!</pre>
+<pre class='unstyled output text-muted'>An error!
+</pre>
 </div>
 </div>
 <h3 class='compare-header3' id='file'>File</h3>
@@ -2713,14 +2545,15 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$filePath</span> <span class="o">=</span> <span class="nb">getcwd</span><span class="p">()</span> <span class="o">.</span> <span class="s2">"/code/file.txt"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">(),</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'utf8'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
 World
+
 </pre>
 </div>
 </div>
@@ -2743,9 +2576,11 @@ Write
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nb">file_put_contents</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/output.txt"</span><span class="p">,</span> <span class="s2">"Some glorious content"</span><span class="p">);</span></code></pre>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'output.txt'</span><span class="p">);</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">);</span>
+</code></pre>
 
 <pre class='unstyled output text-muted'></pre>
 </div>
@@ -2769,12 +2604,11 @@ Get working dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nb">getcwd</span><span class="p">();</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2794,12 +2628,11 @@ File path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="k">__FILE__</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php&#x2F;FilePath.php</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;file-path.js
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2821,12 +2654,11 @@ Dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nx">__DIR__</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2848,12 +2680,12 @@ Parent dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2875,12 +2707,12 @@ Sister dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="nb">realpath</span><span class="p">(</span><span class="nx">__DIR__</span> <span class="o">.</span> <span class="s2">"/.."</span> <span class="o">.</span> <span class="s2">"/ruby"</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'python'</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby</pre>
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
+</pre>
 </div>
 </div>
 <h3 class='compare-header3' id='method'>Method</h3>
@@ -2903,17 +2735,14 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">function</span> <span class="nf">hey</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">echo</span> <span class="s2">"How are you?"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
 <span class="p">}</span>
-
 <span class="nx">hey</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>How are you?</pre>
+<pre class='unstyled output text-muted'>How are you?
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2936,24 +2765,13 @@ Multiple arguments
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">function</span> <span class="nf">sweets</span><span class="p">(</span><span class="nx">bool</span> <span class="nv">$buy</span><span class="p">,</span> <span class="nx">string</span><span class="o">...</span> <span class="nv">$brands</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$buy</span><span class="p">)</span>
-        <span class="nb">var_dump</span><span class="p">(</span><span class="nv">$brands</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">sweets</span><span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="p">...</span><span class="nx">brands</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">buy</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">brands</span><span class="p">);</span>
 <span class="p">}</span>
+<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span><span class="p">);</span>
+</code></pre>
 
-<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s2">"snickers"</span><span class="p">,</span> <span class="s2">"twix"</span><span class="p">,</span> <span class="s2">"bounty"</span><span class="p">);</span></code></pre>
-
-<pre class='unstyled output text-muted'>array(3) {
-  [0]=&gt;
-  string(8) &quot;snickers&quot;
-  [1]=&gt;
-  string(4) &quot;twix&quot;
-  [2]=&gt;
-  string(6) &quot;bounty&quot;
-}
+<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
 </pre>
 </div>
 </div>
@@ -2978,7 +2796,16 @@ Send abroad
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">send</span><span class="p">();</span>
+<span class="nx">send</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Send locally
+Send abroad
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3011,23 +2838,22 @@ None
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
 
-<span class="k">function</span> <span class="nf">divide</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$a</span><span class="p">,</span> <span class="nx">int</span> <span class="nv">$b</span><span class="p">)</span> <span class="o">:</span> <span class="nx">float</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nv">$a</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">return</span> <span class="nv">$a</span> <span class="o">/</span> <span class="nv">$b</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">divide</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span><span class="p">;</span>
 <span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-<span class="k">echo</span> <span class="nx">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">.</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">defaultValue</span><span class="p">()</span> <span class="p">{}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">defaultValue</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>0
-2
-0.5
+<pre class='unstyled output text-muted'>6
+0
+undefined
 </pre>
 </div>
 </div>
@@ -3053,7 +2879,16 @@ Hello World!
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">square</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)));</span>
+
+<span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">);</span>
+<span class="nx">greeting</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 4, 9 ]
+Hello World!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3083,7 +2918,18 @@ Block passing
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">mySelect</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">selected</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span> <span class="nx">selected</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="k">return</span> <span class="nx">selected</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mySelect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">));</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>[ 1, 5 ]
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3119,7 +2965,33 @@ Block binding
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Action</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">say</span><span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sentence</span><span class="p">());</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">;</span> <span class="p">});</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nx">greet</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>Cannot read property &#x27;name&#x27; of undefined
+My name is Alex!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3178,7 +3050,21 @@ Alias
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Greetings</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">hi</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">hey</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">new</span> <span class="nx">Greetings</span><span class="p">().</span><span class="nx">hi</span><span class="p">();</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>How are you?
+</pre>
 </div>
 </div>
 <h3 class='compare-header3' id='class'>Class</h3>
@@ -3203,20 +3089,17 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalC</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
-    <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalC</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
+</code></pre>
 
-<pre class='unstyled output text-muted'>I&#x27;m walking</pre>
+<pre class='unstyled output text-muted'>I&#x27;m walking
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3243,27 +3126,21 @@ Constructor
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">AnimalB</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span> <span class="nx">and</span> <span class="nx">I</span><span class="s1">'m walking`);
+  }
+}
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-    <span class="p">}</span>
+new Animal('</span><span class="nx">Kelya</span><span class="err">'</span><span class="p">).</span><span class="nx">walk</span><span class="p">();</span>
+</code></pre>
 
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"My name is </span><span class="si">{</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="si">}</span><span class="s2"> and I'm walking"</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalB</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span></code></pre>
-
-<pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking</pre>
+<pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3298,33 +3175,21 @@ I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">bark</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">AnimalH</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">bark</span><span class="p">();</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">guard</span><span class="p">();</span>
-        <span class="k">echo</span> <span class="s2">"I'm walking</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">bark</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"Wuf!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">guard</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"WUUUF!</span><span class="se">\n</span><span class="s2">"</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="nx">bark</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Wuf!'</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalH</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Wuf!
-WUUUF!
 I&#x27;m walking
 </pre>
 </div>
@@ -3351,20 +3216,17 @@ Class method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalA</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">feed</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
-    <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">feed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Om nom nom'</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">AnimalA</span><span class="o">::</span><span class="na">feed</span><span class="p">();</span>
+<span class="nx">Animal</span><span class="p">.</span><span class="nx">feed</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Om nom nom</pre>
+<pre class='unstyled output text-muted'>Om nom nom
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3392,26 +3254,7 @@ Private method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalI</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">eat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">isMeat</span><span class="p">(</span><span class="nv">$food</span><span class="p">))</span>
-            <span class="k">echo</span> <span class="s2">"Om nom nom"</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">isMeat</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$food</span><span class="p">)</span> <span class="o">:</span> <span class="nx">bool</span>
-    <span class="p">{</span>
-        <span class="k">return</span> <span class="nb">strcmp</span><span class="p">(</span><span class="nv">$food</span><span class="p">,</span> <span class="s2">"meat"</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="p">(</span><span class="k">new</span> <span class="nx">AnimalI</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">eat</span><span class="p">(</span><span class="s2">"meat"</span><span class="p">);</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Om nom nom</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3439,28 +3282,7 @@ Private method, access instance variable
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalJ</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">greet</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">function</span> <span class="nf">greet</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"Hello! My name is "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">new</span> <span class="nx">AnimalJ</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello! My name is Kelya</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3489,30 +3311,23 @@ Field
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">take</span><span class="p">(</span><span class="nx">toy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toy</span> <span class="o">=</span> <span class="nx">toy</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">AnimalD</span>
-<span class="p">{</span>
+  <span class="nx">play</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">I</span><span class="s1">'m playing with ${this.toy}`);
+  }
+}
 
-    <span class="k">private</span> <span class="nv">$toy</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">take</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$toy</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span> <span class="o">=</span> <span class="nv">$toy</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">play</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"I'm playing with "</span> <span class="o">.</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">toy</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalD</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">take</span><span class="p">(</span><span class="s2">"a ball"</span><span class="p">);</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">play</span><span class="p">();</span>
+const animal = new Animal();
+animal.take('</span><span class="nx">a</span> <span class="nx">ball</span><span class="err">'</span><span class="p">);</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>I&#x27;m playing with a ball</pre>
+<pre class='unstyled output text-muted'>I&#x27;m playing with a ball
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3537,29 +3352,23 @@ Get/set
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">AnimalE</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="nv">$name</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">setName</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$name</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">=</span> <span class="nv">$name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">getName</span><span class="p">()</span> <span class="o">:</span> <span class="nx">string</span>
-    <span class="p">{</span>
-        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">name</span><span class="p">;</span>
-    <span class="p">}</span>
+  <span class="nx">getName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalE</span><span class="p">();</span>
-<span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">setName</span><span class="p">(</span><span class="s2">"Kelya"</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$animal</span><span class="o">-&gt;</span><span class="na">getName</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animal</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Kelya</pre>
+<pre class='unstyled output text-muted'>Kelya
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3587,29 +3396,23 @@ Inheritance
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalG</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
-    <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Dog</span> <span class="k">extends</span> <span class="nx">AnimalG</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">sing</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"Bark!"</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="kr">class</span> <span class="nx">Dog</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">sing</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Bark!'</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$dog</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Dog</span><span class="p">();</span>
-<span class="nv">$dog</span><span class="o">-&gt;</span><span class="na">walk</span><span class="p">();</span>
+<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>I&#x27;m walking</pre>
+<pre class='unstyled output text-muted'>I&#x27;m walking
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3668,22 +3471,17 @@ Has method?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">class</span> <span class="nc">AnimalF</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">walk</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="s2">"I'm walking"</span><span class="p">;</span>
-    <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nv">$animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnimalF</span><span class="p">();</span>
-<span class="nv">$hasMethod</span> <span class="o">=</span> <span class="nb">method_exists</span><span class="p">(</span><span class="nv">$animal</span><span class="p">,</span> <span class="s2">"walk"</span><span class="p">);</span>
-<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$hasMethod</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'walk'</span> <span class="k">in</span> <span class="nx">animal</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>bool(true)
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 </div>
@@ -3704,10 +3502,8 @@ Comment
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="c1">// it's a comment
-</span></code></pre>
+<pre class="highlight javascript"><code><span class="c1">// it's a comment</span>
+</code></pre>
 
 <pre class='unstyled output text-muted'></pre>
 </div>
@@ -3757,16 +3553,20 @@ Import another file
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="c1">// other-file-to-import.js</span>
+<span class="c1">// module.exports =</span>
+<span class="c1">// class Import {</span>
+<span class="c1">//   constructor() {</span>
+<span class="c1">//     console.log('I am imported!');</span>
+<span class="c1">//   }</span>
+<span class="c1">// }</span>
 
-<span class="c1">// OtherFileToImport.php
-// &lt;?php
-// echo "I am imported!";
-</span>
-<span class="k">include</span> <span class="s2">"OtherFileToImport.php"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./other-file-to-import'</span><span class="p">);</span>
+<span class="k">new</span> <span class="nx">Import</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>I am imported!</pre>
+<pre class='unstyled output text-muted'>I am imported!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3787,7 +3587,12 @@ Destructuring assignment
 </pre>
 </div>
 <div class='col-md-6'>
-No easy way to do that
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">);</span>
+</code></pre>
+
+<pre class='unstyled output text-muted'>1 2
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3808,12 +3613,16 @@ Date
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">date</span> <span class="o">=</span>  <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">year</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">month</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">day</span><span class="p">}</span><span class="err">`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-09-12</pre>
+<pre class='unstyled output text-muted'>2016-9-12
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3834,12 +3643,11 @@ Time
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>09&#x2F;12&#x2F;16 07:51 PM</pre>
+<pre class='unstyled output text-muted'>2016-09-12T19:51:11.448Z
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3861,14 +3669,12 @@ Not
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
-
-<span class="nv">$angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$angry</span><span class="p">)</span>
-    <span class="k">echo</span> <span class="s2">"smile!"</span><span class="p">;</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>smile!</pre>
+<pre class='unstyled output text-muted'>smile!
+</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3911,13 +3717,13 @@ Run command
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight php"><code><span class="cp">&lt;?php</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'child_process'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+<span class="nx">exec</span><span class="p">(</span><span class="s1">'node -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stdout</span><span class="p">));</span>
+</code></pre>
 
-<span class="nv">$output</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="nb">exec</span><span class="p">(</span><span class="s2">"php --version"</span><span class="p">,</span> <span class="nv">$output</span><span class="p">);</span>
-<span class="k">echo</span> <span class="nv">$output</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span></code></pre>
+<pre class='unstyled output text-muted'>v6.4.0
 
-<pre class='unstyled output text-muted'>PHP 7.0.10 (cli) (built: Aug 21 2016 19:14:33) ( NTS )</pre>
+</pre>
 </div>
 </div>
 </div>

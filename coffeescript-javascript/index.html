@@ -48,7 +48,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='2'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='ruby'>Ruby</span>
+<span class='lang-selected' data-lang-url='javascript'>JavaScript</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -258,9 +258,6 @@
 <li>
 <a class='scroll' href='#other_structure_constant_list' title='Constant list'>Constant list</a>
 </li>
-<li>
-<a class='scroll' href='#other_structure_struct' title='Struct'>Struct</a>
-</li>
 </ul>
 </li>
 <li class='content'>
@@ -355,9 +352,6 @@
 <a class='scroll' href='#error_handling_with_a_message' title='With a message'>With a message</a>
 </li>
 <li>
-<a class='scroll' href='#error_handling_method' title='Method'>Method</a>
-</li>
-<li>
 <a class='scroll' href='#error_handling_throw_exception' title='Throw exception'>Throw exception</a>
 </li>
 </ul>
@@ -445,9 +439,6 @@
 <a class='scroll' href='#class_private_method' title='Private method'>Private method</a>
 </li>
 <li>
-<a class='scroll' href='#class_private_method__access_instance_variable' title='Private method, access instance variable'>Private method, access instance variable</a>
-</li>
-<li>
 <a class='scroll' href='#class_field' title='Field'>Field</a>
 </li>
 <li>
@@ -510,7 +501,7 @@
 <h2 class='compare-header2'>CoffeeScript</h2>
 </div>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Ruby</h2>
+<h2 class='compare-header2'>JavaScript</h2>
 </div>
 </div>
 <h3 class='compare-header3' id='string'>String</h3>
@@ -532,8 +523,8 @@ Create
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span>
-<span class="nb">puts</span> <span class="n">greeting</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello World!
@@ -557,10 +548,10 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s2">"Don't worry,"</span> <span class="o">+</span> <span class="s1">' be happy'</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Don't worry"</span> <span class="o">+</span> <span class="s1">' be happy'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
+<pre class='unstyled output text-muted'>Don&#x27;t worry be happy
 </pre>
 </div>
 </div>
@@ -583,9 +574,9 @@ Interpolation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span>
-<span class="n">second</span> <span class="o">=</span> <span class="s1">'be happy'</span>
-<span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">first</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">second</span><span class="si">}</span><span class="s2">"</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">first</span><span class="p">}</span> <span class="nx">$</span><span class="p">{</span><span class="nx">second</span><span class="p">}</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
@@ -609,7 +600,7 @@ Remove part
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'not '</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>This is funny! I am like him!
@@ -633,7 +624,7 @@ Replace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'You should work'</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s1">'work'</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You should work'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>You should rest
@@ -657,12 +648,10 @@ Split
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'I like beer'</span><span class="p">.</span><span class="nf">split</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'I like beer'</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>I
-like
-beer
+<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
 </pre>
 </div>
 </div>
@@ -683,7 +672,7 @@ Remove leading and trailing whitespace
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">' eh? '</span><span class="p">.</span><span class="nf">strip</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">' eh? '</span><span class="p">.</span><span class="nx">trim</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>eh?
@@ -709,8 +698,8 @@ false
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">==</span> <span class="s1">'string'</span>
-<span class="nb">puts</span> <span class="s1">'string'</span> <span class="o">!=</span> <span class="s1">'string'</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">!==</span> <span class="s1">'string'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -737,12 +726,12 @@ Regex
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^b/</span>
-<span class="nb">p</span> <span class="s1">'apple'</span> <span class="o">=~</span> <span class="sr">/^a/</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^b/</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^a/</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>nil
-0
+<pre class='unstyled output text-muted'>null
+[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
 </pre>
 </div>
 </div>
@@ -766,9 +755,9 @@ Increment
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nb">puts</span> <span class="n">i</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -796,9 +785,9 @@ false
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
-<span class="nb">puts</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span>
-<span class="nb">puts</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">===</span> <span class="mi">5</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">!==</span> <span class="mi">5</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -824,10 +813,12 @@ Random
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">2</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">min</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
+<pre class='unstyled output text-muted'>2
 </pre>
 </div>
 </div>
@@ -854,13 +845,13 @@ Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="nb">puts</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">floor</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="p">).</span><span class="nf">round</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>4
+<pre class='unstyled output text-muted'>4.5
 4.5
 4
 5
@@ -891,12 +882,16 @@ Number
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'hi'</span><span class="p">.</span><span class="nf">class</span>
-<span class="nb">puts</span> <span class="mi">1</span><span class="p">.</span><span class="nf">class</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'hi'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">1</span><span class="p">).</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>String
-Fixnum
+<pre class='unstyled output text-muted'>string
+number
+String
+Number
 </pre>
 </div>
 </div>
@@ -917,7 +912,7 @@ Int to Float
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_f</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10.0
@@ -941,7 +936,7 @@ Int to String
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="mi">10</span><span class="p">.</span><span class="nf">to_s</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toString</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -965,7 +960,7 @@ String to Int
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'5'</span><span class="p">.</span><span class="nf">to_i</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>5
@@ -989,7 +984,7 @@ String?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'10'</span><span class="p">.</span><span class="nf">is_a?</span> <span class="no">String</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'10'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1067,60 +1062,7 @@ if value.length:
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="n">label</span>
-  <span class="n">values</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">value</span><span class="o">|</span>
-    <span class="k">begin</span>
-      <span class="n">result</span> <span class="o">=</span> <span class="n">fn</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="p">?</span> <span class="s1">'true'</span> <span class="p">:</span> <span class="s1">'false'</span>
-    <span class="k">rescue</span> <span class="no">NoMethodError</span> <span class="o">=&gt;</span> <span class="n">e</span>
-      <span class="n">result</span> <span class="o">=</span> <span class="s2">"error: </span><span class="si">#{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span>
-    <span class="k">end</span>
-    <span class="nb">puts</span> <span class="nb">format</span><span class="p">(</span><span class="s2">"  %-9p - %s"</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
-  <span class="k">end</span>
-  <span class="nb">puts</span> <span class="s1">''</span>
-<span class="k">end</span>
-
-<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'string'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kp">true</span><span class="p">,</span> <span class="kp">false</span><span class="p">,</span> <span class="kp">nil</span><span class="p">]</span>
-
-<span class="n">check</span><span class="p">(</span><span class="s1">'if value:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s1">'if value.nil?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">nil?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s1">'if value.empty?:'</span><span class="p">,</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">{</span> <span class="n">v</span><span class="p">.</span><span class="nf">empty?</span> <span class="p">},</span> <span class="n">values</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>if value:
-  &quot;string&quot;  - true
-  &quot;&quot;        - true
-  [1, 2, 3] - true
-  []        - true
-  5         - true
-  0         - true
-  true      - true
-  false     - false
-  nil       - false
-
-if value.nil?:
-  &quot;string&quot;  - false
-  &quot;&quot;        - false
-  [1, 2, 3] - false
-  []        - false
-  5         - false
-  0         - false
-  true      - false
-  false     - false
-  nil       - true
-
-if value.empty?:
-  &quot;string&quot;  - false
-  &quot;&quot;        - true
-  [1, 2, 3] - false
-  []        - true
-  5         - error: undefined method `empty?&#x27; for 5:Fixnum
-  0         - error: undefined method `empty?&#x27; for 0:Fixnum
-  true      - error: undefined method `empty?&#x27; for true:TrueClass
-  false     - error: undefined method `empty?&#x27; for false:FalseClass
-  nil       - error: undefined method `empty?&#x27; for nil:NilClass
-
-</pre>
+No easy way to do that
 </div>
 </div>
 <h3 class='compare-header3' id='array'>Array</h3>
@@ -1142,12 +1084,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(first second)</span>
-<span class="nb">puts</span> <span class="n">arr</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>first
-second
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1171,14 +1112,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'first'</span>
-<span class="n">arr</span><span class="p">.</span><span class="nf">push</span> <span class="s1">'second'</span>
-<span class="nb">puts</span> <span class="n">arr</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'first'</span><span class="p">);</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'second'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>first
-second
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 </div>
@@ -1199,11 +1139,10 @@ With different types
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>first
-1
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
 </pre>
 </div>
 </div>
@@ -1224,7 +1163,7 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">include?</span> <span class="mi">1</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1250,9 +1189,7 @@ Iterate
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="n">num</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -1282,10 +1219,10 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="sx">%w(one two)</span><span class="p">.</span><span class="nf">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="n">num</span>
-  <span class="nb">puts</span> <span class="n">i</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">num</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1316,9 +1253,11 @@ two
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(one two)</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">first</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">last</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">last</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1344,8 +1283,8 @@ Find first
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1370,12 +1309,11 @@ Select (find all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:even?</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>10
-20
+<pre class='unstyled output text-muted'>[ 10, 20 ]
 </pre>
 </div>
 </div>
@@ -1397,14 +1335,11 @@ Map (change all)
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">num</span><span class="o">|</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
-10
-20
-40
+<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
 </pre>
 </div>
 </div>
@@ -1425,13 +1360,10 @@ Concatenation
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">concat</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
-2
-3
-4
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1452,13 +1384,10 @@ Sort
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nf">sort</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nx">sort</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
-2
-3
-4
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 </div>
@@ -1480,8 +1409,8 @@ Multidimensional
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[</span><span class="sx">%w(first second)</span><span class="p">,</span> <span class="sx">%w(third forth)</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>forth
@@ -1505,7 +1434,7 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">size</span> 
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -1530,8 +1459,8 @@ Count
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">count</span> <span class="p">{</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1555,7 +1484,7 @@ Reduce
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">reduce</span><span class="p">(:</span><span class="o">+</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
@@ -1579,7 +1508,7 @@ Index of element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nf">index</span><span class="p">(</span><span class="s1">'c'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'c'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1605,13 +1534,12 @@ Delete element
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="sx">%w(a b c)</span>
-<span class="n">arr</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">arr</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">e</span> <span class="o">!==</span> <span class="s1">'b'</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>a
-c
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
 </pre>
 </div>
 </div>
@@ -1634,11 +1562,12 @@ Unique
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sx">%w(a b a)</span><span class="p">.</span><span class="nf">uniq</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">===</span> <span class="nx">index</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>a
-b
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
 </pre>
 </div>
 </div>
@@ -1661,11 +1590,11 @@ Create populated
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">options</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1689,13 +1618,13 @@ Add
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">options</span><span class="p">[</span><span class="ss">:font_family</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'Arial'</span>
-<span class="nb">puts</span> <span class="n">options</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_family</span> <span class="o">=</span> <span class="s1">'Arial'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{:font_size=&gt;10, :font_family=&gt;&quot;Arial&quot;}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 </div>
@@ -1718,15 +1647,15 @@ font_family Arial
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">hsh</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">hsh</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">hsh</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_size
-10
-font_family
-Arial
+<pre class='unstyled output text-muted'>font_size 10
+font_family Arial
 </pre>
 </div>
 </div>
@@ -1748,8 +1677,8 @@ Include?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">include?</span> <span class="ss">:font_size</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'font_size'</span> <span class="k">in</span> <span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -1774,8 +1703,8 @@ Get value
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">options</span><span class="p">[</span><span class="ss">:font_size</span><span class="p">]</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1800,8 +1729,8 @@ Size
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">font_size: </span><span class="mi">10</span><span class="p">,</span> <span class="ss">font_family: </span><span class="s1">'Arial'</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">options</span><span class="p">.</span><span class="nf">size</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1827,8 +1756,8 @@ Boolean
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">try_it</span> <span class="o">=</span> <span class="kp">true</span>
-<span class="nb">puts</span> <span class="s1">'Garlic gum is not funny'</span> <span class="k">if</span> <span class="n">try_it</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">try_it</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">try_it</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Garlic gum is not funny'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Garlic gum is not funny
@@ -1854,14 +1783,26 @@ Constant
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="no">COST</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="no">COST</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="nb">puts</span> <span class="no">COST</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">COST</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:2: warning: already initialized constant COST
-&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;other_structure_constant.rb:1: warning: previous definition of COST was here
-50
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2
+COST = 50;
+     ^
+
+TypeError: Assignment to constant variable.
+    at Object.&lt;anonymous&gt; (&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2:6)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.runMain (module.js:590:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
 </pre>
 </div>
 </div>
@@ -1886,40 +1827,14 @@ Constant list
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Colors</span>
-  <span class="no">RED</span> <span class="o">=</span> <span class="s1">'#FF0000'</span>
-  <span class="no">GREEN</span> <span class="o">=</span> <span class="s1">'#00FF00'</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="no">Colors</span><span class="o">::</span><span class="no">GREEN</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({</span>
+  <span class="na">RED</span><span class="p">:</span> <span class="s1">'#FF0000'</span><span class="p">,</span>
+  <span class="na">GREEN</span><span class="p">:</span> <span class="s1">'#00FF00'</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Colors</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>#00FF00
-</pre>
-</div>
-</div>
-<h4 class='compare-header4'>
-Struct
-<small>
-<a class='link-unstyled' href='#other_structure_struct' id='other_structure_struct'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-<div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
-  <span class="k">def</span> <span class="nf">greeting</span>
-    <span class="s2">"Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="no">Customer</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Dave'</span><span class="p">,</span> <span class="s1">'123 Main'</span><span class="p">).</span><span class="nf">greeting</span>
-
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello Dave!
 </pre>
 </div>
 </div>
@@ -1941,7 +1856,7 @@ If
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'Hello'</span> <span class="k">if</span> <span class="kp">true</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -1966,8 +1881,8 @@ Unless
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
-<span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">unless</span> <span class="n">angry</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -1994,11 +1909,11 @@ If/else
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">if</span> <span class="kp">true</span>
-  <span class="nb">puts</span> <span class="s1">'work'</span>
-<span class="k">else</span>
-  <span class="nb">puts</span> <span class="s1">'sleep'</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'work'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'sleep'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>work
@@ -2023,8 +1938,8 @@ And/Or
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="s1">'no'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">false</span>
-<span class="nb">puts</span> <span class="s1">'yes'</span> <span class="k">if</span> <span class="kp">true</span> <span class="o">||</span> <span class="kp">false</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'no'</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2054,21 +1969,18 @@ Switch
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span>
-<span class="k">case</span> <span class="n">foo</span>
-<span class="k">when</span> <span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">5</span>
-  <span class="nb">puts</span> <span class="s2">"It's between 1 and 5"</span>
-<span class="k">when</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
-  <span class="nb">puts</span> <span class="s1">'10 or 20'</span>
-<span class="k">when</span> <span class="s1">'And'</span> <span class="k">then</span> <span class="nb">puts</span> <span class="s1">'case in one line'</span>
-<span class="k">when</span> <span class="no">String</span>
-  <span class="nb">puts</span> <span class="s2">"You passed a string '</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">'"</span>
-<span class="k">else</span>
-  <span class="nb">puts</span> <span class="s2">"You gave me '</span><span class="si">#{</span><span class="n">foo</span><span class="si">}</span><span class="s2">'"</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nx">foo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="mi">10</span><span class="err">:</span> <span class="k">case</span> <span class="mi">20</span><span class="err">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'10 or 20'</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">'And'</span><span class="err">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'case in one line'</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+  <span class="nl">default</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">You</span> <span class="nx">gave</span> <span class="nx">me</span> <span class="s1">'${foo}'</span><span class="err">`</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
+<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
 </pre>
 </div>
 </div>
@@ -2096,19 +2008,7 @@ Switch as else if
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
-<span class="n">grade</span> <span class="o">=</span> <span class="k">case</span>
-        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="k">then</span> <span class="s1">'F'</span>
-        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">70</span> <span class="k">then</span> <span class="s1">'D'</span>
-        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">80</span> <span class="k">then</span> <span class="s1">'C'</span>
-        <span class="k">when</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="mi">90</span> <span class="k">then</span> <span class="s1">'B'</span>
-        <span class="k">else</span> <span class="s1">'A'</span>
-        <span class="k">end</span>
-<span class="nb">puts</span> <span class="n">grade</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>C
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2128,7 +2028,7 @@ Ternary
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2157,18 +2057,7 @@ If assign
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">result</span> <span class="o">=</span>
-<span class="k">if</span> <span class="kp">true</span>
-  <span class="s1">'a'</span>
-<span class="k">else</span>
-  <span class="s1">'b'</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">result</span>
-
-</code></pre>
-
-<pre class='unstyled output text-muted'>a
-</pre>
+No easy way to do that
 </div>
 </div>
 <h3 class='compare-header3' id='loop'>Loop</h3>
@@ -2192,9 +2081,8 @@ For
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="nf">.</span><span class="mi">3</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">. Hi"</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2223,9 +2111,9 @@ For with a step
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="nf">.</span><span class="mi">4</span><span class="p">).</span><span class="nf">step</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="n">i</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -2254,9 +2142,9 @@ Hi
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>
-  <span class="nb">puts</span> <span class="s1">'Hi'</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="nx">of</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">keys</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hi'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hi
@@ -2285,11 +2173,10 @@ While
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span>
-  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">i</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2315,9 +2202,9 @@ Until
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="k">until</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span>
-<span class="nb">puts</span> <span class="n">i</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">!==</span> <span class="mi">3</span><span class="p">)</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2343,15 +2230,11 @@ Return array
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-  <span class="s2">"</span><span class="si">#{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">greetings</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greetings</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">fill</span><span class="p">().</span><span class="nx">map</span><span class="p">((</span><span class="nx">_</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hello</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1. Hello!
-2. Hello!
-3. Hello!
+<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
 </pre>
 </div>
 </div>
@@ -2375,10 +2258,10 @@ Break
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
-  <span class="k">break</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2406,10 +2289,10 @@ Next/Continue
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="mi">3</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
-  <span class="k">next</span> <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">1</span>
-  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hi"</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2438,9 +2321,9 @@ Max/Min
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">min</span>
-<span class="nb">puts</span> <span class="n">arr</span><span class="p">.</span><span class="nf">max</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -2465,10 +2348,10 @@ Sqrt
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3.0
+<pre class='unstyled output text-muted'>3
 </pre>
 </div>
 </div>
@@ -2496,20 +2379,17 @@ But that&#x27;s ok
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">rescue</span>
-  <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
-<span class="k">ensure</span>
-  <span class="nb">puts</span> <span class="s2">"But that's ok"</span>
-<span class="k">end</span>
-
-<span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span> <span class="k">rescue</span> <span class="nb">puts</span> <span class="s2">"Can't divide"</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Can't change undefined variable"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"But that's ok"</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Can&#x27;t divide
+<pre class='unstyled output text-muted'>Can&#x27;t change undefined variable
 But that&#x27;s ok
-Can&#x27;t divide
 </pre>
 </div>
 </div>
@@ -2533,39 +2413,14 @@ With a message
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
-  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>divided by 0
-</pre>
-</div>
-</div>
-<h4 class='compare-header4'>
-Method
-<small>
-<a class='link-unstyled' href='#error_handling_method' id='error_handling_method'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-<div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
-  <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
-<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
-  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
-<span class="k">end</span>
-<span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>divided by 0
+<pre class='unstyled output text-muted'>age is not defined
 </pre>
 </div>
 </div>
@@ -2589,11 +2444,11 @@ Throw exception
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">begin</span>
-  <span class="nb">fail</span> <span class="s1">'An error!'</span>
-<span class="k">rescue</span> <span class="o">=&gt;</span> <span class="n">e</span>
-  <span class="nb">puts</span> <span class="n">e</span><span class="p">.</span><span class="nf">message</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'An error!'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>An error!
@@ -2623,12 +2478,15 @@ World
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span><span class="p">,</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">(),</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'utf8'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
 World
+
 </pre>
 </div>
 </div>
@@ -2651,8 +2509,10 @@ Write
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">file_path</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">),</span> <span class="s1">'output.txt'</span><span class="p">)</span>
-<span class="no">File</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'output.txt'</span><span class="p">);</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -2675,7 +2535,7 @@ Get working dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Dir</span><span class="p">.</span><span class="nf">getwd</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
@@ -2699,10 +2559,10 @@ File path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="kp">__FILE__</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby&#x2F;file_path.rb
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;file-path.js
 </pre>
 </div>
 </div>
@@ -2723,10 +2583,10 @@ Dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript
 </pre>
 </div>
 </div>
@@ -2748,7 +2608,8 @@ Parent dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
@@ -2773,11 +2634,11 @@ Sister dir path
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">File</span><span class="p">.</span><span class="nf">expand_path</span> <span class="no">File</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'php'</span><span class="p">)</span>
-
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'python'</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;php
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 </div>
@@ -2800,10 +2661,10 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">hey</span>
-  <span class="nb">puts</span> <span class="s1">'How are you?'</span>
-<span class="k">end</span>
-<span class="n">hey</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">hey</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -2829,15 +2690,13 @@ Multiple arguments
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="n">brands</span> <span class="k">if</span> <span class="n">buy</span>
-<span class="k">end</span>
-<span class="n">sweets</span> <span class="kp">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">sweets</span><span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="p">...</span><span class="nx">brands</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">buy</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">brands</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>snickers
-twix
-bounty
+<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
 </pre>
 </div>
 </div>
@@ -2862,11 +2721,11 @@ Send abroad
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span> <span class="o">=</span> <span class="kp">false</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="n">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span>
-<span class="k">end</span>
-<span class="nb">send</span>
-<span class="nb">send</span> <span class="kp">true</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">send</span><span class="p">();</span>
+<span class="nx">send</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Send locally
@@ -2903,25 +2762,22 @@ undefined
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">multiple</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-  <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
 
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span>
-  <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">divide</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span>
+<span class="kd">function</span> <span class="nx">divide</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 
-<span class="k">def</span> <span class="nf">default_value</span>
-<span class="k">end</span>
-<span class="nb">p</span> <span class="n">default_value</span>
+<span class="kd">function</span> <span class="nx">defaultValue</span><span class="p">()</span> <span class="p">{}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">defaultValue</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
 0
-nil
+undefined
 </pre>
 </div>
 </div>
@@ -2947,15 +2803,14 @@ Hello World!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">square</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="n">square</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">square</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)));</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s1">'Hello World!'</span> <span class="p">}</span>
-<span class="n">greeting</span><span class="p">.</span><span class="nf">call</span>
+<span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">);</span>
+<span class="nx">greeting</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>4
-9
+<pre class='unstyled output text-muted'>[ 4, 9 ]
 Hello World!
 </pre>
 </div>
@@ -2982,30 +2837,17 @@ Block passing
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-  <span class="n">selected</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="n">arr</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span>
-    <span class="n">selected</span><span class="p">.</span><span class="nf">push</span> <span class="n">a</span> <span class="k">if</span> <span class="k">yield</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-  <span class="k">end</span>
-  <span class="n">selected</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="p">}</span>
-
-
-<span class="k">def</span> <span class="nf">my_select</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">filter</span><span class="p">)</span>
-  <span class="n">selected</span> <span class="o">=</span> <span class="p">[]</span>
-  <span class="n">arr</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">a</span><span class="o">|</span>
-    <span class="n">selected</span><span class="p">.</span><span class="nf">push</span> <span class="n">a</span> <span class="k">if</span> <span class="n">filter</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-  <span class="k">end</span>
-  <span class="n">selected</span>
-<span class="k">end</span>
-<span class="nb">puts</span> <span class="n">my_select</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="p">{</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">6</span> <span class="p">}</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">mySelect</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">selected</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span> <span class="nx">selected</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="k">return</span> <span class="nx">selected</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mySelect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
-5
-1
-5
+<pre class='unstyled output text-muted'>[ 1, 5 ]
 </pre>
 </div>
 </div>
@@ -3038,27 +2880,32 @@ My name is Alex!
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Action</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">say</span><span class="p">(</span><span class="o">&amp;</span><span class="n">sentence</span><span class="p">)</span>
-    <span class="vi">@name</span> <span class="o">=</span> <span class="s1">'Ann'</span>
-    <span class="nb">puts</span> <span class="n">sentence</span><span class="p">.</span><span class="nf">call</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Action</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">say</span><span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sentence</span><span class="p">());</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Person</span>
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
-  <span class="k">end</span>
+<span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">greet</span>
-    <span class="no">Action</span><span class="p">.</span><span class="nf">say</span> <span class="p">{</span> <span class="s2">"My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">!"</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+  <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">;</span> <span class="p">});</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nf">greet</span>
+<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nx">greet</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>My name is Alex!
+<pre class='unstyled output text-muted'>Cannot read property &#x27;name&#x27; of undefined
+My name is Alex!
 </pre>
 </div>
 </div>
@@ -3088,24 +2935,7 @@ Initialize in runtime
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">ProccessElements</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">)</span>
-    <span class="n">define_method</span> <span class="s2">"</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">_element"</span> <span class="k">do</span> <span class="o">|</span><span class="n">content</span><span class="o">|</span>
-      <span class="s2">"&lt;</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;</span><span class="si">#{</span><span class="n">content</span><span class="si">}</span><span class="s2">&lt;/</span><span class="si">#{</span><span class="n">el_name</span><span class="si">}</span><span class="s2">&gt;"</span>
-    <span class="k">end</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="k">class</span> <span class="nc">HtmlELements</span> <span class="o">&lt;</span> <span class="no">ProccessElements</span>
-  <span class="n">element</span> <span class="ss">:div</span>
-  <span class="n">element</span> <span class="ss">:span</span>
-<span class="k">end</span>
-
-<span class="nb">puts</span> <span class="no">HtmlELements</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">div_element</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3130,14 +2960,17 @@ Alias
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Greetings</span>
-  <span class="k">def</span> <span class="nf">hey</span>
-    <span class="nb">puts</span> <span class="s1">'How are you?'</span>
-  <span class="k">end</span>
-  <span class="kp">alias_method</span> <span class="ss">:hi</span><span class="p">,</span> <span class="ss">:hey</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Greetings</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">hi</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">hey</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span>
 
-<span class="no">Greetings</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">hi</span>
+  <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">new</span> <span class="nx">Greetings</span><span class="p">().</span><span class="nx">hi</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3166,13 +2999,13 @@ Declare
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3202,17 +3035,17 @@ Constructor
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
-  <span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="nb">puts</span> <span class="s2">"My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2"> and I'm walking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span> <span class="nx">and</span> <span class="nx">I</span><span class="s1">'m walking`);
+  }
+}
 
-<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">).</span><span class="nf">walk</span>
+new Animal('</span><span class="nx">Kelya</span><span class="err">'</span><span class="p">).</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
@@ -3250,29 +3083,21 @@ I&#x27;m walking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="n">bark</span>
-    <span class="n">guard</span>
-    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
-  <span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">bark</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">bark</span>
-    <span class="nb">puts</span> <span class="s1">'Wuf!'</span>
-  <span class="k">end</span>
+  <span class="nx">bark</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Wuf!'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  <span class="kp">private</span>
-
-  <span class="k">def</span> <span class="nf">guard</span>
-    <span class="nb">puts</span> <span class="s1">'WUUUF!'</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Wuf!
-WUUUF!
 I&#x27;m walking
 </pre>
 </div>
@@ -3298,13 +3123,13 @@ Class method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">feed</span>
-    <span class="nb">puts</span> <span class="s1">'Om nom nom'</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">feed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Om nom nom'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="no">Animal</span><span class="p">.</span><span class="nf">feed</span>
+<span class="nx">Animal</span><span class="p">.</span><span class="nx">feed</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3335,56 +3160,7 @@ Private method
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="s1">'Om nom nom'</span> <span class="k">if</span> <span class="n">meat?</span> <span class="n">food</span>
-  <span class="k">end</span>
-
-  <span class="kp">private</span>
-
-  <span class="k">def</span> <span class="nf">meat?</span><span class="p">(</span><span class="n">food</span><span class="p">)</span>
-    <span class="n">food</span> <span class="o">==</span> <span class="s1">'meat'</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">eat</span><span class="p">(</span><span class="s1">'meat'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Om nom nom
-</pre>
-</div>
-</div>
-<h4 class='compare-header4'>
-Private method, access instance variable
-<small>
-<a class='link-unstyled' href='#class_private_method__access_instance_variable' id='class_private_method__access_instance_variable'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
 No easy way to do that
-</div>
-<div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
-    <span class="n">greet</span>
-  <span class="k">end</span>
-
-  <span class="kp">private</span>
-
-  <span class="k">def</span> <span class="nf">greet</span>
-    <span class="nb">puts</span> <span class="s2">"Hello! My name is </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="no">Animal</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'Kelya'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello! My name is Kelya
-</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3412,19 +3188,19 @@ Field
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="n">toy</span><span class="p">)</span>
-    <span class="vi">@toy</span> <span class="o">=</span> <span class="n">toy</span>
-  <span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">take</span><span class="p">(</span><span class="nx">toy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toy</span> <span class="o">=</span> <span class="nx">toy</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">play</span>
-    <span class="nb">puts</span> <span class="s2">"I'm playing with </span><span class="si">#{</span><span class="vi">@toy</span><span class="si">}</span><span class="s2">"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+  <span class="nx">play</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">I</span><span class="s1">'m playing with ${this.toy}`);
+  }
+}
 
-<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
-<span class="n">animal</span><span class="p">.</span><span class="nf">take</span><span class="p">(</span><span class="s1">'a ball'</span><span class="p">)</span>
-<span class="n">animal</span><span class="p">.</span><span class="nf">play</span>
+const animal = new Animal();
+animal.take('</span><span class="nx">a</span> <span class="nx">ball</span><span class="err">'</span><span class="p">);</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
@@ -3453,13 +3229,19 @@ Get/set
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
-<span class="n">animal</span><span class="p">.</span><span class="nf">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span>
-<span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">name</span>
+  <span class="nx">getName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animal</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Kelya
@@ -3491,19 +3273,19 @@ Inheritance
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Dog</span> <span class="o">&lt;</span> <span class="no">Animal</span>
-  <span class="k">def</span> <span class="nf">sing</span>
-    <span class="nb">puts</span> <span class="s1">'Bark!'</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<span class="kr">class</span> <span class="nx">Dog</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">sing</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Bark!'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="no">Dog</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">walk</span>
+<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3545,31 +3327,7 @@ Human is talking
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Moving</span>
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2"> is walking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="k">module</span> <span class="nn">Interacting</span>
-  <span class="k">def</span> <span class="nf">talk</span>
-    <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="nb">self</span><span class="p">.</span><span class="nf">class</span><span class="p">.</span><span class="nf">name</span><span class="si">}</span><span class="s2"> is talking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="k">class</span> <span class="nc">Human</span>
-  <span class="kp">include</span> <span class="no">Moving</span>
-  <span class="kp">include</span> <span class="no">Interacting</span>
-<span class="k">end</span>
-
-<span class="n">human</span> <span class="o">=</span> <span class="no">Human</span><span class="p">.</span><span class="nf">new</span>
-<span class="n">human</span><span class="p">.</span><span class="nf">walk</span>
-<span class="n">human</span><span class="p">.</span><span class="nf">talk</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Human is walking
-Human is talking
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3594,14 +3352,14 @@ Has method?
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Animal</span>
-  <span class="k">def</span> <span class="nf">walk</span>
-    <span class="nb">puts</span> <span class="s2">"I'm walking"</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="no">Animal</span><span class="p">.</span><span class="nf">new</span>
-<span class="nb">puts</span> <span class="n">animal</span><span class="p">.</span><span class="nf">respond_to?</span> <span class="ss">:walk</span>
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'walk'</span> <span class="k">in</span> <span class="nx">animal</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>true
@@ -3625,7 +3383,7 @@ Comment
 <pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="c1"># it's a comment</span>
+<pre class="highlight javascript"><code><span class="c1">// it's a comment</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -3650,13 +3408,7 @@ Assign value if not exist
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">speed</span> <span class="o">||=</span> <span class="mi">15</span>
-<span class="nb">puts</span> <span class="n">speed</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>0
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3684,28 +3436,7 @@ Safe navigation
 </pre>
 </div>
 <div class='col-md-6'>
-<span class='small'>[ 2.3 ]</span><pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Winner</span>
-  <span class="kp">attr_reader</span> <span class="ss">:address</span>
-
-  <span class="k">def</span> <span class="nf">initialize</span>
-    <span class="c1"># @address = Address.new</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="k">class</span> <span class="nc">Address</span>
-  <span class="kp">attr_reader</span> <span class="ss">:zipcode</span>
-
-  <span class="k">def</span> <span class="nf">initialize</span>
-    <span class="vi">@zipcode</span> <span class="o">=</span> <span class="mi">192187</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="n">zip</span> <span class="o">=</span> <span class="no">Winner</span><span class="p">.</span><span class="nf">new</span><span class="p">.</span><span class="nf">address</span><span class="o">&amp;</span><span class="p">.</span><span class="nf">zipcode</span>
-<span class="nb">puts</span> <span class="n">zip</span> <span class="p">?</span> <span class="s2">"Zipcode is </span><span class="si">#{</span><span class="n">zip</span><span class="si">}</span><span class="s2">"</span> <span class="p">:</span> <span class="s2">"No prize without zipcode"</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>No prize without zipcode
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3732,15 +3463,16 @@ Import another file
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="c1"># other_file_to_import.rb</span>
-<span class="c1"># class Import</span>
-<span class="c1">#   def initialize</span>
-<span class="c1">#     puts 'I am imported!'</span>
-<span class="c1">#   end</span>
-<span class="c1"># end</span>
+<pre class="highlight javascript"><code><span class="c1">// other-file-to-import.js</span>
+<span class="c1">// module.exports =</span>
+<span class="c1">// class Import {</span>
+<span class="c1">//   constructor() {</span>
+<span class="c1">//     console.log('I am imported!');</span>
+<span class="c1">//   }</span>
+<span class="c1">// }</span>
 
-<span class="nb">require_relative</span> <span class="s1">'other_file_to_import'</span>
-<span class="no">Import</span><span class="p">.</span><span class="nf">new</span>
+<span class="kr">const</span> <span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./other-file-to-import'</span><span class="p">);</span>
+<span class="k">new</span> <span class="nx">Import</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I am imported!
@@ -3765,12 +3497,11 @@ Destructuring assignment
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="nb">puts</span> <span class="n">one</span><span class="p">,</span> <span class="n">two</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
-2
+<pre class='unstyled output text-muted'>1 2
 </pre>
 </div>
 </div>
@@ -3796,11 +3527,15 @@ Date
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'date'</span>
-<span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">date</span> <span class="o">=</span>  <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">year</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">month</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">day</span><span class="p">}</span><span class="err">`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-09-12
+<pre class='unstyled output text-muted'>2016-9-12
 </pre>
 </div>
 </div>
@@ -3821,10 +3556,10 @@ Time
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-09-12 22:51:17 +0300
+<pre class='unstyled output text-muted'>2016-09-12T19:51:11.448Z
 </pre>
 </div>
 </div>
@@ -3846,8 +3581,8 @@ Not
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">angry</span> <span class="o">=</span> <span class="kp">false</span>
-<span class="nb">puts</span> <span class="s1">'smile!'</span> <span class="k">if</span> <span class="o">!</span><span class="n">angry</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -3873,13 +3608,7 @@ Assign this or that
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">yeti</span> <span class="o">=</span> <span class="kp">nil</span>
-<span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="o">||</span> <span class="s1">'bear'</span>
-<span class="nb">puts</span> <span class="n">footprints</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>bear
-</pre>
+No easy way to do that
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3901,10 +3630,12 @@ Run command
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="nb">puts</span> <span class="sb">`ruby -v`</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'child_process'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+<span class="nx">exec</span><span class="p">(</span><span class="s1">'node -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stdout</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
+<pre class='unstyled output text-muted'>v6.4.0
+
 </pre>
 </div>
 </div>

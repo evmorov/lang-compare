@@ -30,6 +30,9 @@
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
 </li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
+</li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
@@ -54,6 +57,9 @@
 </li>
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
 </li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
@@ -827,7 +833,7 @@ Random
 <span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 <div class='col-md-6'>
@@ -836,7 +842,7 @@ Random
 <span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2
+<pre class='unstyled output text-muted'>1
 </pre>
 </div>
 </div>
@@ -1617,14 +1623,14 @@ Unique
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]))</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;b&#x27;, &#x27;a&#x27;}
+<pre class='unstyled output text-muted'>{&#x27;a&#x27;, &#x27;b&#x27;}
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]))</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;b&#x27;, &#x27;a&#x27;}
+<pre class='unstyled output text-muted'>{&#x27;a&#x27;, &#x27;b&#x27;}
 </pre>
 </div>
 </div>
@@ -1671,7 +1677,7 @@ Add
 <span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<pre class='unstyled output text-muted'>{&#x27;font_family&#x27;: &#x27;Arial&#x27;, &#x27;font_size&#x27;: 10}
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1681,7 +1687,7 @@ Add
 <span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<pre class='unstyled output text-muted'>{&#x27;font_family&#x27;: &#x27;Arial&#x27;, &#x27;font_size&#x27;: 10}
 </pre>
 </div>
 </div>
@@ -3722,7 +3728,7 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23
+<pre class='unstyled output text-muted'>2016-09-12
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3730,7 +3736,7 @@ Date
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23
+<pre class='unstyled output text-muted'>2016-09-12
 </pre>
 </div>
 </div>
@@ -3748,7 +3754,7 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
+<pre class='unstyled output text-muted'>2016-09-12 22:51:37.384449
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3756,7 +3762,7 @@ Time
 <span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23 16:57:37.437226
+<pre class='unstyled output text-muted'>2016-09-12 22:51:37.384449
 </pre>
 </div>
 </div>
@@ -3830,7 +3836,7 @@ Run command
 <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">'python3'</span><span class="p">,</span> <span class="s">'--version'</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Python 3.5.1
+<pre class='unstyled output text-muted'>Python 3.5.2
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3838,7 +3844,7 @@ Run command
 <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">'python3'</span><span class="p">,</span> <span class="s">'--version'</span><span class="p">])</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Python 3.5.1
+<pre class='unstyled output text-muted'>Python 3.5.2
 </pre>
 </div>
 </div>

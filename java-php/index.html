@@ -30,6 +30,9 @@
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
 </li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
+</li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
@@ -54,6 +57,9 @@
 </li>
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
 </li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
@@ -840,7 +846,7 @@ Random
 
 <span class="k">echo</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span></code></pre>
 
-<pre class='unstyled output text-muted'>1</pre>
+<pre class='unstyled output text-muted'>2</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -2033,12 +2039,12 @@ Get value
       <span class="n">put</span><span class="o">(</span><span class="s">"fontSize"</span><span class="o">,</span> <span class="s">"10"</span><span class="o">);</span>
       <span class="n">put</span><span class="o">(</span><span class="s">"fontFamily"</span><span class="o">,</span> <span class="s">"Arial"</span><span class="o">);</span>
     <span class="o">}};</span>
-    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">options</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"fontSize"</span><span class="o">));</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">options</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"fonSize"</span><span class="o">));</span>
   <span class="o">}</span>
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>10
+<pre class='unstyled output text-muted'>null
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3888,7 +3894,7 @@ Date
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23
+<pre class='unstyled output text-muted'>2016-09-12
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3897,7 +3903,7 @@ Date
 <span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"Y-m-d"</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23</pre>
+<pre class='unstyled output text-muted'>2016-09-12</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -3921,7 +3927,7 @@ Time
 <span class="o">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>7&#x2F;23&#x2F;16 10:48 PM
+<pre class='unstyled output text-muted'>9&#x2F;12&#x2F;16 10:50 PM
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3930,7 +3936,7 @@ Time
 <span class="k">echo</span> <span class="p">(</span><span class="k">new</span> <span class="nx">DateTime</span><span class="p">())</span><span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="s2">"m/d/y h:i A"</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>07&#x2F;23&#x2F;16 01:57 PM</pre>
+<pre class='unstyled output text-muted'>09&#x2F;12&#x2F;16 07:51 PM</pre>
 </div>
 </div>
 <h4 class='compare-header4'>
@@ -4008,7 +4014,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
 <span class="nb">exec</span><span class="p">(</span><span class="s2">"php --version"</span><span class="p">,</span> <span class="nv">$output</span><span class="p">);</span>
 <span class="k">echo</span> <span class="nv">$output</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span></code></pre>
 
-<pre class='unstyled output text-muted'>PHP 7.0.7 (cli) (built: May 27 2016 11:13:44) ( NTS )</pre>
+<pre class='unstyled output text-muted'>PHP 7.0.10 (cli) (built: Aug 21 2016 19:14:33) ( NTS )</pre>
 </div>
 </div>
 </div>

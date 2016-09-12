@@ -30,6 +30,9 @@
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
 </li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
+</li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
@@ -54,6 +57,9 @@
 </li>
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
 </li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
@@ -1742,7 +1748,7 @@ Get value
 <div class='row'>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">.</span><span class="na">font_size</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1750,7 +1756,7 @@ Get value
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="o">:</span> <span class="s">'Arial'</span> <span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">options</span><span class="p">.</span><span class="na">font_size</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -2413,27 +2419,27 @@ Try/catch/finally
 <div class='row'>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+  <span class="nx">person</span><span class="p">.</span><span class="na">age</span><span class="p">()</span>
 <span class="k">catch</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't divide"</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't call method on undefined variable"</span>
 <span class="k">finally</span>
   <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"But that's ok"</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Can&#x27;t divide
+<pre class='unstyled output text-muted'>Can&#x27;t call method on undefined variable
 But that&#x27;s ok
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+  <span class="nx">person</span><span class="p">.</span><span class="na">age</span><span class="p">()</span>
 <span class="k">catch</span>
-  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't divide"</span>
+  <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"Can't call method on undefined variable"</span>
 <span class="k">finally</span>
   <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">"But that's ok"</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Can&#x27;t divide
+<pre class='unstyled output text-muted'>Can&#x27;t call method on undefined variable
 But that&#x27;s ok
 </pre>
 </div>
@@ -2449,22 +2455,22 @@ With a message
 <div class='row'>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+  <span class="nx">person</span><span class="p">.</span><span class="na">age</span><span class="p">()</span>
 <span class="k">catch</span> <span class="nx">error</span>
   <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">error</span><span class="p">.</span><span class="na">message</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>divided by 0
+<pre class='unstyled output text-muted'>person is not defined
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="k">try</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s">'divided by 0'</span><span class="p">)</span>
+  <span class="nx">person</span><span class="p">.</span><span class="na">age</span><span class="p">()</span>
 <span class="k">catch</span> <span class="nx">error</span>
   <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">error</span><span class="p">.</span><span class="na">message</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>divided by 0
+<pre class='unstyled output text-muted'>person is not defined
 </pre>
 </div>
 </div>
@@ -2907,9 +2913,7 @@ Block binding
 
   <span class="na">greet</span><span class="o">:</span> <span class="o">-&gt;</span>
     <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">-&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
     <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">=&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
 
 <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="na">greet</span><span class="p">()</span>
 </code></pre>
@@ -2928,9 +2932,7 @@ My name is Alex!
 
   <span class="na">greet</span><span class="o">:</span> <span class="o">-&gt;</span>
     <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">-&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
     <span class="nx">Action</span><span class="p">.</span><span class="na">say</span> <span class="o">=&gt;</span> <span class="s">"My name is </span><span class="si">#{</span><span class="vi">@</span><span class="na">name</span><span class="si">}</span><span class="s">!"</span>
-    
 
 <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">).</span><span class="na">greet</span><span class="p">()</span>
 </code></pre>
@@ -2959,7 +2961,7 @@ Initialize in runtime
   <span class="vi">@</span><span class="na">element</span> <span class="s">'div'</span>
   <span class="vi">@</span><span class="na">element</span> <span class="s">'span'</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">).</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">().</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
@@ -2975,7 +2977,7 @@ Initialize in runtime
   <span class="vi">@</span><span class="na">element</span> <span class="s">'div'</span>
   <span class="vi">@</span><span class="na">element</span> <span class="s">'span'</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="p">(</span><span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">).</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nx">HtmlELements</span><span class="p">().</span><span class="na">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">)</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
@@ -2997,7 +2999,7 @@ Alias
     <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
   <span class="na">hi</span><span class="o">:</span> <span class="err">@</span><span class="o">::</span><span class="nx">hey</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">Greetings</span><span class="p">).</span><span class="na">hi</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Greetings</span><span class="p">().</span><span class="na">hi</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3009,7 +3011,7 @@ Alias
     <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="s">'How are you?'</span>
   <span class="na">hi</span><span class="o">:</span> <span class="err">@</span><span class="o">::</span><span class="nx">hey</span>
 
-<span class="p">(</span><span class="k">new</span> <span class="nx">Greetings</span><span class="p">).</span><span class="na">hi</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Greetings</span><span class="p">().</span><span class="na">hi</span><span class="p">()</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3588,7 +3590,7 @@ Date
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-7-23
+<pre class='unstyled output text-muted'>2016-9-12
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3600,7 +3602,7 @@ Date
 <span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="nx">date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-7-23
+<pre class='unstyled output text-muted'>2016-9-12
 </pre>
 </div>
 </div>
@@ -3617,14 +3619,14 @@ Time
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23T20:28:43.930Z
+<pre class='unstyled output text-muted'>2016-09-12T19:51:31.995Z
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight coffeescript"><code><span class="nx">console</span><span class="p">.</span><span class="na">log</span> <span class="k">new</span> <span class="nb">Date</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23T20:28:43.930Z
+<pre class='unstyled output text-muted'>2016-09-12T19:51:31.995Z
 </pre>
 </div>
 </div>

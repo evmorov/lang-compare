@@ -30,6 +30,9 @@
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
 </li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
+</li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
 </li>
@@ -54,6 +57,9 @@
 </li>
 <li class='lang-item' data-lang-url='coffeescript'>
 <a href="#">CoffeeScript</a>
+</li>
+<li class='lang-item' data-lang-url='javascript'>
+<a href="#">JavaScript</a>
 </li>
 <li class='lang-item' data-lang-url='java'>
 <a href="#">Java</a>
@@ -2363,8 +2369,8 @@ Return array
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="nf">times</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
-  <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
+<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+  <span class="s2">"</span><span class="si">#{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">greetings</span>
 </code></pre>
@@ -2375,8 +2381,8 @@ Return array
 </pre>
 </div>
 <div class='col-md-6'>
-<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="nf">times</span><span class="p">.</span><span class="nf">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">time</span><span class="o">|</span>
-  <span class="s2">"</span><span class="si">#{</span><span class="n">time</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
+<pre class="highlight ruby"><code><span class="n">greetings</span> <span class="o">=</span> <span class="no">Array</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+  <span class="s2">"</span><span class="si">#{</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">. Hello!"</span>
 <span class="k">end</span>
 <span class="nb">puts</span> <span class="n">greetings</span>
 </code></pre>
@@ -3927,7 +3933,7 @@ Date
 <span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23
+<pre class='unstyled output text-muted'>2016-09-12
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3935,7 +3941,7 @@ Date
 <span class="nb">puts</span> <span class="no">Date</span><span class="p">.</span><span class="nf">today</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23
+<pre class='unstyled output text-muted'>2016-09-12
 </pre>
 </div>
 </div>
@@ -3952,14 +3958,14 @@ Time
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23 23:29:26 +0300
+<pre class='unstyled output text-muted'>2016-09-12 22:51:17 +0300
 </pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight ruby"><code><span class="nb">puts</span> <span class="no">Time</span><span class="p">.</span><span class="nf">now</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-07-23 23:29:26 +0300
+<pre class='unstyled output text-muted'>2016-09-12 22:51:17 +0300
 </pre>
 </div>
 </div>

@@ -20,7 +20,7 @@
 <div class='col-md-6'>
 <div class='dropdown' data-lang-side='1'>
 <button aria-expanded='true' aria-haspopup='true' class='btn btn-link btn-lg language-list dropdown-toggle' data-toggle='dropdown' type='button'>
-<span class='lang-selected' data-lang-url='python'>Python</span>
+<span class='lang-selected' data-lang-url='javascript'>JavaScript</span>
 <span class='caret'></span>
 </button>
 <ul aria-labelledby='dropdownMenu1' class='dropdown-menu'>
@@ -258,9 +258,6 @@
 <li>
 <a class='scroll' href='#other_structure_constant_list' title='Constant list'>Constant list</a>
 </li>
-<li>
-<a class='scroll' href='#other_structure_struct' title='Struct'>Struct</a>
-</li>
 </ul>
 </li>
 <li class='content'>
@@ -284,13 +281,7 @@
 <a class='scroll' href='#conditional_switch' title='Switch'>Switch</a>
 </li>
 <li>
-<a class='scroll' href='#conditional_switch_as_else_if' title='Switch as else if'>Switch as else if</a>
-</li>
-<li>
 <a class='scroll' href='#conditional_ternary' title='Ternary'>Ternary</a>
-</li>
-<li>
-<a class='scroll' href='#conditional_if_assign' title='If assign'>If assign</a>
 </li>
 </ul>
 </li>
@@ -355,9 +346,6 @@
 <a class='scroll' href='#error_handling_with_a_message' title='With a message'>With a message</a>
 </li>
 <li>
-<a class='scroll' href='#error_handling_method' title='Method'>Method</a>
-</li>
-<li>
 <a class='scroll' href='#error_handling_throw_exception' title='Throw exception'>Throw exception</a>
 </li>
 </ul>
@@ -417,9 +405,6 @@
 <a class='scroll' href='#method_block_binding' title='Block binding'>Block binding</a>
 </li>
 <li>
-<a class='scroll' href='#method_initialize_in_runtime' title='Initialize in runtime'>Initialize in runtime</a>
-</li>
-<li>
 <a class='scroll' href='#method_alias' title='Alias'>Alias</a>
 </li>
 </ul>
@@ -457,9 +442,6 @@
 <a class='scroll' href='#class_inheritance' title='Inheritance'>Inheritance</a>
 </li>
 <li>
-<a class='scroll' href='#class_mixin' title='Mixin'>Mixin</a>
-</li>
-<li>
 <a class='scroll' href='#class_has_method' title='Has method?'>Has method?</a>
 </li>
 </ul>
@@ -471,9 +453,6 @@
 <ul>
 <li>
 <a class='scroll' href='#other_comment' title='Comment'>Comment</a>
-</li>
-<li>
-<a class='scroll' href='#other_assign_value_if_not_exist' title='Assign value if not exist'>Assign value if not exist</a>
 </li>
 <li>
 <a class='scroll' href='#other_import_another_file' title='Import another file'>Import another file</a>
@@ -491,9 +470,6 @@
 <a class='scroll' href='#other_not' title='Not'>Not</a>
 </li>
 <li>
-<a class='scroll' href='#other_assign_this_or_that' title='Assign this or that'>Assign this or that</a>
-</li>
-<li>
 <a class='scroll' href='#other_run_command' title='Run command'>Run command</a>
 </li>
 </ul>
@@ -504,7 +480,7 @@
 </div>
 <div class='row'>
 <div class='col-md-6'>
-<h2 class='compare-header2'>Python</h2>
+<h2 class='compare-header2'>JavaScript</h2>
 </div>
 <div class='col-md-6'>
 <h2 class='compare-header2'>PHP</h2>
@@ -521,8 +497,8 @@ Create
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">greeting</span> <span class="o">=</span> <span class="s">'Hello World!'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greeting</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="s1">'Hello World!'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greeting</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello World!
@@ -548,10 +524,10 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">"Don't worry,"</span> <span class="o">+</span> <span class="s">' be happy'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Don't worry"</span> <span class="o">+</span> <span class="s1">' be happy'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
+<pre class='unstyled output text-muted'>Don&#x27;t worry be happy
 </pre>
 </div>
 <div class='col-md-6'>
@@ -573,19 +549,13 @@ Interpolation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
-<span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">s </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="s2">"Don't worry,"</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">second</span> <span class="o">=</span> <span class="s1">'be happy'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">first</span><span class="p">}</span> <span class="nx">$</span><span class="p">{</span><span class="nx">second</span><span class="p">}</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Don&#x27;t worry, be happy
 </pre>
-<span class='small'>[ 3.6 ]</span><pre class="highlight python"><code><span class="n">first</span> <span class="o">=</span> <span class="s">"Don't worry,"</span>
-<span class="n">second</span> <span class="o">=</span> <span class="s">'be happy'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'{first} {second}'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'></pre>
 </div>
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
@@ -608,7 +578,7 @@ Remove part
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'This is not funny! I am not like him!'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'not '</span><span class="p">,</span> <span class="s">''</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'This is not funny! I am not like him!'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/not /g</span><span class="p">,</span> <span class="s1">''</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>This is funny! I am like him!
@@ -635,7 +605,7 @@ Replace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'You should work'</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">'work'</span><span class="p">,</span> <span class="s">'rest'</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'You should work'</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/work/g</span><span class="p">,</span> <span class="s1">'rest'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>You should rest
@@ -662,10 +632,10 @@ Split
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'I like beer'</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'I like beer'</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">' '</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;I&#x27;, &#x27;like&#x27;, &#x27;beer&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -693,7 +663,7 @@ Remove leading and trailing whitespace
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">' eh? '</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">' eh? '</span><span class="p">.</span><span class="nx">trim</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>eh?
@@ -717,12 +687,12 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">==</span> <span class="s">'string'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'string'</span> <span class="o">!=</span> <span class="s">'string'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'string'</span> <span class="o">!==</span> <span class="s1">'string'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
-False
+<pre class='unstyled output text-muted'>true
+false
 </pre>
 </div>
 <div class='col-md-6'>
@@ -744,14 +714,12 @@ Regex
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">re</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^b'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'^a'</span><span class="p">,</span> <span class="s">'apple'</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^b/</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'apple'</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/^a/</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>None
-&lt;_sre.SRE_Match object; span=(0, 1), match=&#x27;a&#x27;&gt;
+<pre class='unstyled output text-muted'>null
+[ &#x27;a&#x27;, index: 0, input: &#x27;apple&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -777,9 +745,9 @@ Increment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+<span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -806,14 +774,14 @@ Compare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">===</span> <span class="mi">5</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">5</span> <span class="o">!==</span> <span class="mi">5</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
-True
-False
+<pre class='unstyled output text-muted'>true
+true
+false
 </pre>
 </div>
 <div class='col-md-6'>
@@ -840,12 +808,12 @@ Random
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">min</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>1
+<pre class='unstyled output text-muted'>2
 </pre>
 </div>
 <div class='col-md-6'>
@@ -866,18 +834,16 @@ Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))</span>  <span class="c"># rounds half to even</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>4
+<pre class='unstyled output text-muted'>4.5
 4.5
 4
-4
+5
 </pre>
 </div>
 <div class='col-md-6'>
@@ -907,12 +873,16 @@ Get type of object
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s">'hi'</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'hi'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">1</span><span class="p">).</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&lt;class &#x27;str&#x27;&gt;
-&lt;class &#x27;int&#x27;&gt;
+<pre class='unstyled output text-muted'>string
+number
+String
+Number
 </pre>
 </div>
 <div class='col-md-6'>
@@ -939,7 +909,7 @@ Int to Float
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10.0
@@ -965,7 +935,7 @@ Int to String
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">((</span><span class="mi">10</span><span class="p">).</span><span class="nx">toString</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -991,7 +961,7 @@ String to Int
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s">'5'</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">'5'</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>5
@@ -1017,10 +987,10 @@ String?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="s">'10'</span><span class="p">,</span> <span class="nb">str</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="s1">'10'</span> <span class="o">===</span> <span class="s1">'string'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1045,57 +1015,7 @@ Null/True/False?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">fn</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'true'</span> <span class="k">if</span> <span class="n">fn</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">else</span> <span class="s">'false'</span>
-        <span class="k">except</span> <span class="nb">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="n">result</span> <span class="o">=</span> <span class="s">'error: </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">e</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">"  </span><span class="si">%-9</span><span class="s">r - </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">result</span><span class="p">))</span>
-    <span class="k">print</span><span class="p">()</span>
-
-<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="s">'string'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[],</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span>
-
-<span class="n">check</span><span class="p">(</span><span class="s">'if value:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if value is None:'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">v</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
-<span class="n">check</span><span class="p">(</span><span class="s">'if len(value):'</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">values</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>if value:
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - true
-  0         - false
-  True      - true
-  False     - false
-  None      - false
-
-if value is None:
-  &#x27;string&#x27;  - false
-  &#x27;&#x27;        - false
-  [1, 2, 3] - false
-  []        - false
-  5         - false
-  0         - false
-  True      - false
-  False     - false
-  None      - true
-
-if len(value):
-  &#x27;string&#x27;  - true
-  &#x27;&#x27;        - false
-  [1, 2, 3] - true
-  []        - false
-  5         - error: object of type &#x27;int&#x27; has no len()
-  0         - error: object of type &#x27;int&#x27; has no len()
-  True      - error: object of type &#x27;bool&#x27; has no len()
-  False     - error: object of type &#x27;bool&#x27; has no len()
-  None      - error: object of type &#x27;NoneType&#x27; has no len()
-
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
@@ -1127,11 +1047,11 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1158,13 +1078,13 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'first'</span><span class="p">)</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'second'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'first'</span><span class="p">);</span>
+<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'second'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, &#x27;second&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, &#x27;second&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1194,10 +1114,10 @@ With different types
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'first'</span><span class="p">,</span> <span class="mi">1</span><span class="p">]);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;first&#x27;, 1]
+<pre class='unstyled output text-muted'>[ &#x27;first&#x27;, 1 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1224,10 +1144,10 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">includes</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1250,8 +1170,7 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -1280,9 +1199,10 @@ Iterate with index
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]):</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">].</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">num</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1317,9 +1237,11 @@ Get first, last element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'one'</span><span class="p">,</span> <span class="s">'two'</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'two'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">first</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">last</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>one
@@ -1348,8 +1270,8 @@ Find first
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1382,11 +1304,11 @@ Select (find all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">===</span> <span class="mi">0</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[10, 20]
+<pre class='unstyled output text-muted'>[ 10, 20 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1417,11 +1339,11 @@ Map (change all)
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
-<span class="k">print</span><span class="p">([</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[2, 10, 20, 40]
+<pre class='unstyled output text-muted'>[ 2, 10, 20, 40 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1453,10 +1375,10 @@ Concatenation
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">].</span><span class="nx">concat</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[1, 2, 3, 4]
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1488,10 +1410,10 @@ Sort
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">].</span><span class="nx">sort</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[1, 2, 3, 4]
+<pre class='unstyled output text-muted'>[ 1, 2, 3, 4 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1521,8 +1443,8 @@ Multidimensional
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'first'</span><span class="p">,</span> <span class="s">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s">'third'</span><span class="p">,</span> <span class="s">'forth'</span><span class="p">]]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multi</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'first'</span><span class="p">,</span> <span class="s1">'second'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'third'</span><span class="p">,</span> <span class="s1">'forth'</span><span class="p">]];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multi</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>forth
@@ -1548,7 +1470,7 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -1574,8 +1496,8 @@ Count
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">111</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span> <span class="o">=&gt;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1605,14 +1527,10 @@ Reduce
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">functools</span><span class="o">,</span> <span class="nn">operator</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">functools</span><span class="o">.</span><span class="nb">reduce</span><span class="p">(</span><span class="n">operator</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>  <span class="c"># a more Pythonic example</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
-6
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1637,7 +1555,7 @@ Index of element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s">'c'</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">].</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'c'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1663,12 +1581,12 @@ Delete element
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
-<span class="n">arr</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'b'</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'c'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">newArr</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">e</span> <span class="o">!==</span> <span class="s1">'b'</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">newArr</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;a&#x27;, &#x27;c&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;c&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1698,10 +1616,12 @@ Unique
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">]))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">];</span>
+<span class="kr">const</span> <span class="nx">unique</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">value</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">self</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">self</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="o">===</span> <span class="nx">index</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unique</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;a&#x27;, &#x27;b&#x27;}
+<pre class='unstyled output text-muted'>[ &#x27;a&#x27;, &#x27;b&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1730,11 +1650,11 @@ Create populated
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_size&#x27;: 10, &#x27;font_family&#x27;: &#x27;Arial&#x27;}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1762,13 +1682,13 @@ Add
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">options</span><span class="p">[</span><span class="s">'font_family'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'Arial'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="nx">options</span><span class="p">.</span><span class="nx">font_family</span> <span class="o">=</span> <span class="s1">'Arial'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>{&#x27;font_family&#x27;: &#x27;Arial&#x27;, &#x27;font_size&#x27;: 10}
+<pre class='unstyled output text-muted'>{ font_size: 10, font_family: &#x27;Arial&#x27; }
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1798,12 +1718,15 @@ Iterate
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">hsh</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">}</span>
+<span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">hsh</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">hsh</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>font_family Arial
-font_size 10
+<pre class='unstyled output text-muted'>font_size 10
+font_family Arial
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1832,11 +1755,11 @@ Include?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="s">'font_size'</span> <span class="ow">in</span> <span class="n">options</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'font_size'</span> <span class="k">in</span> <span class="nx">options</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1859,8 +1782,8 @@ Get value
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="n">options</span><span class="p">[</span><span class="s">'font_size'</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">options</span><span class="p">.</span><span class="nx">font_size</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>10
@@ -1886,8 +1809,8 @@ Size
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="s">'font_size'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">'font_family'</span><span class="p">:</span> <span class="s">'Arial'</span><span class="p">}</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span> <span class="na">font_size</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">font_family</span><span class="p">:</span> <span class="s1">'Arial'</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">options</span><span class="p">).</span><span class="nx">length</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>2
@@ -1913,9 +1836,8 @@ Boolean
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">try_it</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="k">if</span> <span class="n">try_it</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Garlic gum is not funny'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">try_it</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">try_it</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Garlic gum is not funny'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Garlic gum is not funny
@@ -1942,12 +1864,26 @@ Constant
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">COST</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">COST</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">print</span><span class="p">(</span><span class="n">COST</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">COST</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">COST</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">COST</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>50
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2
+COST = 50;
+     ^
+
+TypeError: Assignment to constant variable.
+    at Object.&lt;anonymous&gt; (&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;other-structure-constant.js:2:6)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.runMain (module.js:590:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
 </pre>
 </div>
 <div class='col-md-6'>
@@ -1974,40 +1910,14 @@ Constant list
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Colors</span><span class="p">:</span>
-    <span class="n">RED</span> <span class="o">=</span> <span class="s">'#FF0000'</span>
-    <span class="n">GREEN</span> <span class="o">=</span> <span class="s">'#00FF00'</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Colors</span><span class="o">.</span><span class="n">GREEN</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">Colors</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">freeze</span><span class="p">({</span>
+  <span class="na">RED</span><span class="p">:</span> <span class="s1">'#FF0000'</span><span class="p">,</span>
+  <span class="na">GREEN</span><span class="p">:</span> <span class="s1">'#00FF00'</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Colors</span><span class="p">.</span><span class="nx">GREEN</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>#00FF00
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
-Struct
-<small>
-<a class='link-unstyled' href='#other_structure_struct' id='other_structure_struct'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">collections</span>
-
-<span class="k">class</span> <span class="nc">Customer</span><span class="p">(</span><span class="n">collections</span><span class="o">.</span><span class="n">namedtuple</span><span class="p">(</span><span class="s">'Customer'</span><span class="p">,</span> <span class="s">'name address'</span><span class="p">)):</span>
-    <span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">"Hello </span><span class="si">%</span><span class="s">s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">Customer</span><span class="p">(</span><span class="s">'Dave'</span><span class="p">,</span> <span class="s">'123 Main'</span><span class="p">)</span><span class="o">.</span><span class="n">greeting</span><span class="p">())</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello Dave!
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2025,8 +1935,7 @@ If
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Hello'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -2052,9 +1961,8 @@ Unless
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -2081,10 +1989,11 @@ If/else
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'work'</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'sleep'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'work'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'sleep'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>work
@@ -2112,10 +2021,8 @@ And/Or
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">if</span> <span class="bp">True</span> <span class="ow">and</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'no'</span><span class="p">)</span>
-<span class="k">if</span> <span class="bp">True</span> <span class="ow">or</span> <span class="bp">False</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'yes'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'no'</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span> <span class="o">||</span> <span class="kc">false</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2143,20 +2050,18 @@ Switch
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">foo</span> <span class="o">=</span> <span class="s">'Hello!'</span>
-<span class="k">if</span> <span class="n">foo</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"It's between 1 and 5"</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'10 or 20'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">foo</span> <span class="o">==</span> <span class="s">'And'</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'case in one line'</span><span class="p">)</span>
-<span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You passed a string </span><span class="si">%</span><span class="s">r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"You gave me </span><span class="si">%</span><span class="s">r"</span> <span class="o">%</span> <span class="n">foo</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s1">'Hello!'</span><span class="p">;</span>
+<span class="k">switch</span> <span class="p">(</span><span class="nx">foo</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="mi">10</span><span class="err">:</span> <span class="k">case</span> <span class="mi">20</span><span class="err">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'10 or 20'</span><span class="p">);</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="k">case</span> <span class="s1">'And'</span><span class="err">:</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'case in one line'</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>
+  <span class="nl">default</span><span class="p">:</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">You</span> <span class="nx">gave</span> <span class="nx">me</span> <span class="s1">'${foo}'</span><span class="err">`</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>You passed a string &#x27;Hello!&#x27;
+<pre class='unstyled output text-muted'>You gave me &#x27;Hello!&#x27;
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2179,33 +2084,6 @@ Switch
 </div>
 </div>
 <h4 class='compare-header4'>
-Switch as else if
-<small>
-<a class='link-unstyled' href='#conditional_switch_as_else_if' id='conditional_switch_as_else_if'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">76</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="s">'F'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="s">'D'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="s">'C'</span><span class="p">),</span>
-    <span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="s">'B'</span><span class="p">),</span>
-<span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">((</span><span class="n">g</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">grades</span> <span class="k">if</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">),</span> <span class="s">'A'</span><span class="p">))</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>C
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Ternary
 <small>
 <a class='link-unstyled' href='#conditional_ternary' id='conditional_ternary'>
@@ -2215,7 +2093,7 @@ Ternary
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="s">'no'</span> <span class="k">if</span> <span class="bp">False</span> <span class="k">else</span> <span class="s">'yes'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">false</span> <span class="p">?</span> <span class="s1">'no'</span> <span class="p">:</span> <span class="s1">'yes'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>yes
@@ -2231,27 +2109,6 @@ Ternary
 <pre class='unstyled output text-muted'>yes</pre>
 </div>
 </div>
-<h4 class='compare-header4'>
-If assign
-<small>
-<a class='link-unstyled' href='#conditional_if_assign' id='conditional_if_assign'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">result</span> <span class="o">=</span> <span class="s">'a'</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">'b'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>a
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
 <h3 class='compare-header3' id='loop'>Loop</h3>
 <h4 class='compare-header4'>
 For
@@ -2263,8 +2120,8 @@ For
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d. Hi'</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2295,8 +2152,9 @@ For with a step
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>0
@@ -2327,8 +2185,9 @@ Times
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Hi'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="nx">of</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">keys</span><span class="p">())</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hi'</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hi
@@ -2359,10 +2218,10 @@ While
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
-  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span>
+  <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2390,10 +2249,9 @@ Until
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">!==</span> <span class="mi">3</span><span class="p">)</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>3
@@ -2421,11 +2279,11 @@ Return array
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">greetings</span> <span class="o">=</span> <span class="p">[</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hello!"</span> <span class="o">%</span> <span class="n">time</span> <span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">greetings</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">greetings</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">3</span><span class="p">).</span><span class="nx">fill</span><span class="p">().</span><span class="nx">map</span><span class="p">((</span><span class="nx">_</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hello</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">greetings</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[&#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27;]
+<pre class='unstyled output text-muted'>[ &#x27;1. Hello!&#x27;, &#x27;2. Hello!&#x27;, &#x27;3. Hello!&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2442,10 +2300,10 @@ Break
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-    <span class="k">break</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2477,10 +2335,10 @@ Next/Continue
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">for</span> <span class="n">time</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">time</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-      <span class="k">continue</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">d. Hi"</span> <span class="o">%</span> <span class="n">time</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">}.</span> <span class="nx">Hi</span><span class="err">`</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1. Hi
@@ -2513,9 +2371,9 @@ Max/Min
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arr</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1
@@ -2544,12 +2402,10 @@ Sqrt
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">math</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">sqrt</span><span class="p">(</span><span class="mi">9</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>3.0
+<pre class='unstyled output text-muted'>3
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2572,15 +2428,16 @@ Try/catch/finally
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"Can't divide"</span><span class="p">)</span>
-<span class="k">finally</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">"But that's ok"</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Can't change undefined variable"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">finally</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"But that's ok"</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Can&#x27;t divide
+<pre class='unstyled output text-muted'>Can&#x27;t change undefined variable
 But that&#x27;s ok
 </pre>
 </div>
@@ -2611,13 +2468,14 @@ With a message
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="nx">age</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>division by zero
+<pre class='unstyled output text-muted'>age is not defined
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2634,31 +2492,6 @@ With a message
 </div>
 </div>
 <h4 class='compare-header4'>
-Method
-<small>
-<a class='link-unstyled' href='#error_handling_method' id='error_handling_method'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-  <span class="k">try</span><span class="p">:</span>
-    <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
-  <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-<span class="n">divide</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>division by zero
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Throw exception
 <small>
 <a class='link-unstyled' href='#error_handling_throw_exception' id='error_handling_throw_exception'>
@@ -2668,10 +2501,11 @@ Throw exception
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">try</span><span class="p">:</span>
-  <span class="k">raise</span> <span class="nb">Exception</span><span class="p">(</span><span class="s">'An error!'</span><span class="p">)</span>
-<span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="k">try</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'An error!'</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>An error!
@@ -2701,10 +2535,10 @@ Read
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s">'code'</span><span class="p">,</span> <span class="s">'file.txt'</span><span class="p">))</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">(),</span> <span class="s1">'code'</span><span class="p">,</span> <span class="s1">'file.txt'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'utf8'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Hello
@@ -2734,10 +2568,10 @@ Write
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">with</span> <span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s">'output.txt'</span><span class="p">)</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'Some glorious content'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">file_path</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'output.txt'</span><span class="p">);</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="nx">file_path</span><span class="p">,</span> <span class="s1">'Some glorious content'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -2760,9 +2594,7 @@ Get working dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">cwd</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare
@@ -2787,10 +2619,10 @@ File path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">print</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__filename</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python&#x2F;file_path.py
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript&#x2F;file-path.js
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2812,12 +2644,10 @@ Dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;javascript
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2839,9 +2669,8 @@ Parent dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">));</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code
@@ -2866,12 +2695,11 @@ Sister dir path
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">pathlib</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parents</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="s">'ruby'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'path'</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'python'</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;ruby
+<pre class='unstyled output text-muted'>&#x2F;Users&#x2F;evmorov&#x2F;projects&#x2F;lang-compare&#x2F;code&#x2F;python
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2894,9 +2722,10 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">hey</span><span class="p">():</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-<span class="n">hey</span><span class="p">()</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">hey</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -2926,13 +2755,13 @@ Multiple arguments
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">sweets</span><span class="p">(</span><span class="n">buy</span><span class="p">,</span> <span class="o">*</span><span class="n">brands</span><span class="p">):</span>
-  <span class="k">if</span> <span class="n">buy</span><span class="p">:</span>
-      <span class="k">print</span><span class="p">(</span><span class="n">brands</span><span class="p">)</span>
-<span class="n">sweets</span><span class="p">(</span><span class="bp">True</span><span class="p">,</span> <span class="s">'snickers'</span><span class="p">,</span> <span class="s">'twix'</span><span class="p">,</span> <span class="s">'bounty'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">sweets</span><span class="p">(</span><span class="nx">buy</span><span class="p">,</span> <span class="p">...</span><span class="nx">brands</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">buy</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">brands</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">sweets</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="s1">'snickers'</span><span class="p">,</span> <span class="s1">'twix'</span><span class="p">,</span> <span class="s1">'bounty'</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>(&#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27;)
+<pre class='unstyled output text-muted'>[ &#x27;snickers&#x27;, &#x27;twix&#x27;, &#x27;bounty&#x27; ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -2967,10 +2796,11 @@ Default value for argument
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">send</span><span class="p">(</span><span class="n">abroad</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'Send abroad'</span> <span class="k">if</span> <span class="n">abroad</span> <span class="k">else</span> <span class="s">'Send locally'</span><span class="p">)</span>
-<span class="n">send</span><span class="p">()</span>
-<span class="n">send</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">abroad</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">abroad</span> <span class="p">?</span> <span class="s1">'Send abroad'</span> <span class="p">:</span> <span class="s1">'Send locally'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">send</span><span class="p">();</span>
+<span class="nx">send</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Send locally
@@ -2991,23 +2821,22 @@ Return
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">multiple</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">*</span> <span class="nx">b</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiple</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
 
-<span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<span class="kd">function</span> <span class="nx">divide</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">/</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">));</span>
 
-<span class="k">def</span> <span class="nf">default_value</span><span class="p">():</span>
-    <span class="k">pass</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-<span class="k">print</span><span class="p">(</span><span class="n">default_value</span><span class="p">())</span>
+<span class="kd">function</span> <span class="nx">defaultValue</span><span class="p">()</span> <span class="p">{}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">defaultValue</span><span class="p">());</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>6
 0
-None
+undefined
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3041,14 +2870,14 @@ Closure
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])))</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">square</span> <span class="o">=</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="nx">x</span> <span class="o">*</span> <span class="nx">x</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">square</span><span class="p">(</span><span class="nx">num</span><span class="p">)));</span>
 
-<span class="n">greeting</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="k">print</span><span class="p">(</span><span class="s">'Hello World!'</span><span class="p">)</span>
-<span class="n">greeting</span><span class="p">()</span>
+<span class="kr">const</span> <span class="nx">greeting</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">);</span>
+<span class="nx">greeting</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>[4, 9]
+<pre class='unstyled output text-muted'>[ 4, 9 ]
 Hello World!
 </pre>
 </div>
@@ -3066,20 +2895,17 @@ Block passing
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
-    <span class="k">yield</span> <span class="kn">from</span> <span class="nn">arr</span><span class="err">
+<pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">mySelect</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">filter</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">selected</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="nx">e</span><span class="p">))</span> <span class="nx">selected</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="k">return</span> <span class="nx">selected</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mySelect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">));</span>
+</code></pre>
 
-</span><span class="nn">def</span> <span class="nn">select_filter</span><span class="err">(</span><span class="nn">arr</span><span class="err">,</span> <span class="nn">filter</span><span class="err">):
-</span>    <span class="nn">for</span> <span class="nn">a</span> <span class="nn">in</span> <span class="nn">arr</span><span class="err">:
-</span>        <span class="nn">if</span> <span class="nn">filter</span><span class="err">(</span><span class="nn">a</span><span class="err">):
-</span>            <span class="nn">yield</span> <span class="nn">a</span><span class="err">
-
-</span><span class="nn">print</span><span class="err">([</span><span class="nn">x</span> <span class="nn">for</span> <span class="nn">x</span> <span class="nn">in</span> <span class="nn">select</span><span class="err">([1,</span> <span class="err">5,</span> <span class="err">10])</span> <span class="nn">if</span> <span class="nn">x</span> <span class="err">&lt;</span> <span class="err">6])
-</span><span class="nn">print</span><span class="err">(</span><span class="nn">list</span><span class="err">(</span><span class="nn">select_filter</span><span class="err">([1,</span> <span class="err">5,</span> <span class="err">10],</span> <span class="nn">lambda</span> <span class="nn">x</span><span class="err">:</span> <span class="nn">x</span> <span class="err">&lt;</span> <span class="err">6)))
-</span></code></pre>
-
-<pre class='unstyled output text-muted'>[1, 5]
-[1, 5]
+<pre class='unstyled output text-muted'>[ 1, 5 ]
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3096,60 +2922,32 @@ Block binding
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Action</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="s">'Ann'</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Action</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">say</span><span class="p">(</span><span class="nx">sentence</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sentence</span><span class="p">());</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  <span class="nd">@staticmethod</span>
-  <span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">sentence</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">())</span>
+<span class="kr">class</span> <span class="nx">Person</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
+  <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">;</span> <span class="p">});</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">Action</span><span class="p">.</span><span class="nx">say</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="err">`</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-
-  <span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">Action</span><span class="o">.</span><span class="n">say</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="s">"My name is </span><span class="si">%</span><span class="s">s!"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-
-
-<span class="n">Person</span><span class="p">(</span><span class="s">'Alex'</span><span class="p">)</span><span class="o">.</span><span class="n">greet</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'Alex'</span><span class="p">).</span><span class="nx">greet</span><span class="p">();</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>My name is Alex!
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
-Initialize in runtime
-<small>
-<a class='link-unstyled' href='#method_initialize_in_runtime' id='method_initialize_in_runtime'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">ProccessElements</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">):</span>
-      <span class="k">def</span> <span class="nf">render</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">'&lt;{0}&gt;{1}&lt;/{0}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">el_name</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-      <span class="k">return</span> <span class="n">render</span>
-
-    <span class="k">for</span> <span class="n">el_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">elements</span><span class="p">:</span>
-      <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">el_name</span><span class="p">,</span> <span class="n">element</span><span class="p">(</span><span class="n">el_name</span><span class="p">))</span>
-
-
-<span class="k">class</span> <span class="nc">HtmlELements</span><span class="p">(</span><span class="n">ProccessElements</span><span class="p">):</span>
-  <span class="n">elements</span> <span class="o">=</span> <span class="p">(</span><span class="s">'div'</span><span class="p">,</span> <span class="s">'span'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">HtmlELements</span><span class="p">()</span><span class="o">.</span><span class="n">div</span><span class="p">(</span><span class="s">'hello'</span><span class="p">))</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>&lt;div&gt;hello&lt;&#x2F;div&gt;
+<pre class='unstyled output text-muted'>Cannot read property &#x27;name&#x27; of undefined
+My name is Alex!
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3166,12 +2964,17 @@ Alias
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Greetings</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">hey</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'How are you?'</span><span class="p">)</span>
-  <span class="n">hi</span> <span class="o">=</span> <span class="n">hey</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Greetings</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">hi</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">hey</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span>
 
-<span class="n">Greetings</span><span class="p">()</span><span class="o">.</span><span class="n">hi</span><span class="p">()</span>
+  <span class="nx">hey</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'How are you?'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">new</span> <span class="nx">Greetings</span><span class="p">().</span><span class="nx">hi</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>How are you?
@@ -3192,11 +2995,13 @@ Declare
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3229,14 +3034,17 @@ Constructor
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"My name is </span><span class="si">%</span><span class="s">s and I'm walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">My</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span> <span class="nx">and</span> <span class="nx">I</span><span class="s1">'m walking`);
+  }
+}
 
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">)</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+new Animal('</span><span class="nx">Kelya</span><span class="err">'</span><span class="p">).</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>My name is Kelya and I&#x27;m walking
@@ -3276,24 +3084,21 @@ Method call
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">bark</span><span class="p">()</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_guard</span><span class="p">()</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">bark</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Wuf!'</span><span class="p">)</span>
+  <span class="nx">bark</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Wuf!'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-  <span class="c"># Private by convention</span>
-  <span class="k">def</span> <span class="nf">_guard</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'WUUUF!'</span><span class="p">)</span>
-
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Animal</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Wuf!
-WUUUF!
 I&#x27;m walking
 </pre>
 </div>
@@ -3339,12 +3144,13 @@ Class method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="nd">@classmethod</span>
-  <span class="k">def</span> <span class="nf">feed</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="kr">static</span> <span class="nx">feed</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Om nom nom'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Animal</span><span class="o">.</span><span class="n">feed</span><span class="p">()</span>
+<span class="nx">Animal</span><span class="p">.</span><span class="nx">feed</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Om nom nom
@@ -3377,19 +3183,7 @@ Private method
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">eat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_meat</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
-      <span class="k">print</span><span class="p">(</span><span class="s">'Om nom nom'</span><span class="p">)</span>
-
-  <span class="k">def</span> <span class="nf">_is_meat</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">food</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">food</span> <span class="o">==</span> <span class="s">'meat'</span>
-
-<span class="n">Animal</span><span class="p">()</span><span class="o">.</span><span class="n">eat</span><span class="p">(</span><span class="s">'meat'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Om nom nom
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
@@ -3424,19 +3218,7 @@ Private method, access instance variable
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_greet</span><span class="p">()</span>
-
-  <span class="k">def</span> <span class="nf">_greet</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hello! My name is </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-
-<span class="n">Animal</span><span class="p">(</span><span class="s">'Kelya'</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Hello! My name is Kelya
-</pre>
+No easy way to do that
 </div>
 <div class='col-md-6'>
 <pre class="highlight php"><code><span class="cp">&lt;?php</span>
@@ -3473,16 +3255,19 @@ Field
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">take</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">toy</span><span class="p">):</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">toy</span> <span class="o">=</span> <span class="n">toy</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">take</span><span class="p">(</span><span class="nx">toy</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">toy</span> <span class="o">=</span> <span class="nx">toy</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  <span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm playing with </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">toy</span><span class="p">)</span>
+  <span class="nx">play</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="err">`</span><span class="nx">I</span><span class="s1">'m playing with ${this.toy}`);
+  }
+}
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="s">'a ball'</span><span class="p">)</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">play</span><span class="p">()</span>
+const animal = new Animal();
+animal.take('</span><span class="nx">a</span> <span class="nx">ball</span><span class="err">'</span><span class="p">);</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m playing with a ball
@@ -3525,12 +3310,19 @@ Get/set
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="n">name</span> <span class="o">=</span> <span class="bp">None</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="n">animal</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">'Kelya'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">animal</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+  <span class="nx">getName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">animal</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s1">'Kelya'</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">animal</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>Kelya
@@ -3572,15 +3364,19 @@ Inheritance
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-  <span class="k">def</span> <span class="nf">sing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">'Bark!'</span><span class="p">)</span>
+<span class="kr">class</span> <span class="nx">Dog</span> <span class="kr">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">sing</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Bark!'</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">Dog</span><span class="p">()</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+<span class="k">new</span> <span class="nx">Dog</span><span class="p">().</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I&#x27;m walking
@@ -3613,40 +3409,6 @@ Inheritance
 </div>
 </div>
 <h4 class='compare-header4'>
-Mixin
-<small>
-<a class='link-unstyled' href='#class_mixin' id='class_mixin'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Moving</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">s is walking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Interacting</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%</span><span class="s">s is talking"</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Human</span><span class="p">(</span><span class="n">Moving</span><span class="p">,</span> <span class="n">Interacting</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="n">human</span> <span class="o">=</span> <span class="n">Human</span><span class="p">()</span>
-<span class="n">human</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
-<span class="n">human</span><span class="o">.</span><span class="n">talk</span><span class="p">()</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>Human is walking
-Human is talking
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Has method?
 <small>
 <a class='link-unstyled' href='#class_has_method' id='class_has_method'>
@@ -3656,15 +3418,17 @@ Has method?
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-  <span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"I'm walking"</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">class</span> <span class="nx">Animal</span> <span class="p">{</span>
+  <span class="nx">walk</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"I'm walking"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="n">animal</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">animal</span><span class="p">,</span> <span class="s">'walk'</span><span class="p">))</span>
+<span class="kr">const</span> <span class="nx">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Animal</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'walk'</span> <span class="k">in</span> <span class="nx">animal</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>True
+<pre class='unstyled output text-muted'>true
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3698,7 +3462,7 @@ Comment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="c"># it's a comment</span>
+<pre class="highlight javascript"><code><span class="c1">// it's a comment</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'></pre>
@@ -3713,28 +3477,6 @@ Comment
 </div>
 </div>
 <h4 class='compare-header4'>
-Assign value if not exist
-<small>
-<a class='link-unstyled' href='#other_assign_value_if_not_exist' id='other_assign_value_if_not_exist'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">speed</span> <span class="o">=</span> <span class="mi">15</span> <span class="k">if</span> <span class="n">speed</span> <span class="ow">is</span> <span class="bp">None</span> <span class="k">else</span> <span class="n">speed</span>
-<span class="k">print</span><span class="p">(</span><span class="n">speed</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>0
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Import another file
 <small>
 <a class='link-unstyled' href='#other_import_another_file' id='other_import_another_file'>
@@ -3744,13 +3486,16 @@ Import another file
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="c"># other_file_to_import.py</span>
-<span class="c"># class Import:</span>
-<span class="c">#   def __init__(self):</span>
-<span class="c">#     print('I am imported!')</span>
+<pre class="highlight javascript"><code><span class="c1">// other-file-to-import.js</span>
+<span class="c1">// module.exports =</span>
+<span class="c1">// class Import {</span>
+<span class="c1">//   constructor() {</span>
+<span class="c1">//     console.log('I am imported!');</span>
+<span class="c1">//   }</span>
+<span class="c1">// }</span>
 
-<span class="kn">import</span> <span class="nn">other_file_to_import</span>
-<span class="n">other_file_to_import</span><span class="o">.</span><span class="n">Import</span><span class="p">()</span>
+<span class="kr">const</span> <span class="nx">Import</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./other-file-to-import'</span><span class="p">);</span>
+<span class="k">new</span> <span class="nx">Import</span><span class="p">();</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>I am imported!
@@ -3779,8 +3524,8 @@ Destructuring assignment
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">one</span><span class="p">,</span> <span class="n">two</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
-<span class="k">print</span><span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="p">[</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>1 2
@@ -3800,11 +3545,15 @@ Date
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">day</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">month</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kr">const</span> <span class="nx">year</span> <span class="o">=</span> <span class="nx">currentDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">();</span>
+<span class="kr">const</span> <span class="nx">date</span> <span class="o">=</span>  <span class="err">`</span><span class="nx">$</span><span class="p">{</span><span class="nx">year</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">month</span><span class="p">}</span><span class="o">-</span><span class="nx">$</span><span class="p">{</span><span class="nx">day</span><span class="p">}</span><span class="err">`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">date</span><span class="p">);</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-09-12
+<pre class='unstyled output text-muted'>2016-9-12
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3826,11 +3575,10 @@ Time
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="k">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">());</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>2016-09-12 22:51:37.384449
+<pre class='unstyled output text-muted'>2016-09-12T19:51:11.448Z
 </pre>
 </div>
 <div class='col-md-6'>
@@ -3852,9 +3600,8 @@ Not
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">angry</span> <span class="o">=</span> <span class="bp">False</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">angry</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s">'smile!'</span><span class="p">)</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">angry</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">angry</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'smile!'</span><span class="p">);</span>
 </code></pre>
 
 <pre class='unstyled output text-muted'>smile!
@@ -3872,28 +3619,6 @@ Not
 </div>
 </div>
 <h4 class='compare-header4'>
-Assign this or that
-<small>
-<a class='link-unstyled' href='#other_assign_this_or_that' id='other_assign_this_or_that'>
-<i class='glyphicon glyphicon-link'></i>
-</a>
-</small>
-</h4>
-<div class='row'>
-<div class='col-md-6'>
-<pre class="highlight python"><code><span class="n">yeti</span> <span class="o">=</span> <span class="bp">None</span>
-<span class="n">footprints</span> <span class="o">=</span> <span class="n">yeti</span> <span class="ow">or</span> <span class="s">'bear'</span>
-<span class="k">print</span><span class="p">(</span><span class="n">footprints</span><span class="p">)</span>
-</code></pre>
-
-<pre class='unstyled output text-muted'>bear
-</pre>
-</div>
-<div class='col-md-6'>
-No easy way to do that
-</div>
-</div>
-<h4 class='compare-header4'>
 Run command
 <small>
 <a class='link-unstyled' href='#other_run_command' id='other_run_command'>
@@ -3903,11 +3628,12 @@ Run command
 </h4>
 <div class='row'>
 <div class='col-md-6'>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s">'python3'</span><span class="p">,</span> <span class="s">'--version'</span><span class="p">])</span>
+<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'child_process'</span><span class="p">).</span><span class="nx">exec</span><span class="p">;</span>
+<span class="nx">exec</span><span class="p">(</span><span class="s1">'node -v'</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">stdout</span><span class="p">));</span>
 </code></pre>
 
-<pre class='unstyled output text-muted'>Python 3.5.2
+<pre class='unstyled output text-muted'>v6.4.0
+
 </pre>
 </div>
 <div class='col-md-6'>
