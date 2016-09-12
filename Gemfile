@@ -18,7 +18,5 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 group :development do
   gem 'middleman-pry'
-  gem 'god'
-  gem 'guard'
   gem 'rake'
 end

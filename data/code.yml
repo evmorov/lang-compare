@@ -2,18 +2,21 @@ String:
   Create:
     ruby: string_create.rb
     coffeescript: string-create.coffee
+    javascript: string-create.js
     java: StringCreate.java
     php: StringCreate.php
     python: string_create.py
   Concatenation:
     ruby: string_concat.rb
     coffeescript: string-concat.coffee
+    javascript: string-concat.js
     java: StringConcat.java
     php: StringConcat.php
     python: string_concat.py
   Interpolation:
     ruby: string_interpolation.rb
     coffeescript: string-interpolation.coffee
+    javascript: string-interpolation.js
     java: no.java
     php: string_interpolation.php
     python:
@@ -22,36 +25,42 @@ String:
   Remove part:
     ruby: string_remove.rb
     coffeescript: string-remove.coffee
+    javascript: string-remove.js
     java: StringRemove.java
     php: StringRemove.php
     python: string_remove.py
   Replace:
     ruby: string_replace.rb
     coffeescript: string-replace.coffee
+    javascript: string-replace.js
     java: StringReplace.java
     php: StringReplace.php
     python: string_replace.py
   Split:
     ruby: string_split.rb
     coffeescript: string-split.coffee
+    javascript: string-split.js
     java: StringSplit.java
     php: StringSplit.php
     python: string_split.py
   Remove leading and trailing whitespace:
     ruby: string_remove_whistespace.rb
     coffeescript: string-remove-whistespace.coffee
+    javascript: string-remove-whistespace.js
     java: StringRemoveWhitespace.java
     php: StringRemoveWhitespace.php
     python: string_remove_whistespace.py
   Compare:
     ruby: string_compare.rb
     coffeescript: string-compare.coffee
+    javascript: string-compare.js
     java: StringCompare.java
     php: StringCompare.php
     python: string_compare.py
   Regex:
     ruby: string_regex.rb
     coffeescript: string-regex.coffee
+    javascript: string-regex.js
     java: StringRegex.java
     php: StringRegex.php
     python: string_regex.py
@@ -59,24 +68,28 @@ Number:
   Increment:
     ruby: number_increment.rb
     coffeescript: number-increment.coffee
+    javascript: number-increment.js
     java: NumberIncrement.java
     php: NumberIncrement.php
     python: number_increment.py
   Compare:
     ruby: number_compare.rb
     coffeescript: number-compare.coffee
+    javascript: number-compare.js
     java: NumberCompare.java
     php: NumberCompare.php
     python: number_compare.py
   Random:
     ruby: number_random.rb
     coffeescript: number-random.coffee
+    javascript: number-random.js
     java: NumberRandom.java
     php: NumberRandom.php
     python: number_random.py
   Float:
     ruby: number_float.rb
     coffeescript: number-float.coffee
+    javascript: number-float.js
     java: NumberFloat.java
     php: NumberFloat.php
     python: number_float.py
@@ -84,36 +97,42 @@ Type:
   Get type of object:
     ruby: type_get_type.rb
     coffeescript: type-get-type.coffee
+    javascript: type-get-type.js
     java: TypeGetType.java
     php: TypeGetType.php
     python: type_get_type.py
   Int to Float:
     ruby: type_int_to_float.rb
     coffeescript: type-int-to-float.coffee
+    javascript: type-int-to-float.js
     java: TypeIntToFloat.java
     php: TypeIntToFloat.php
     python: type_int_to_float.py
   Int to String:
     ruby: type_int_to_string.rb
     coffeescript: type-int-to-string.coffee
+    javascript: type-int-to-string.js
     java: TypeIntToString.java
     php: TypeIntToString.php
     python: type_int_to_string.py
   String to Int:
     ruby: type_string_to_int.rb
     coffeescript: type-string-to-int.coffee
+    javascript: type-string-to-int.js
     java: TypeStringToInt.java
     php: TypeStringToInt.php
     python: type_string_to_int.py
   String?:
     ruby: type_is_string.rb
     coffeescript: type-is-string.coffee
+    javascript: type-is-string.js
     java: TypeIsString.java
     php: TypeIsString.php
     python: type_is_string.py
   Null/True/False?:
     ruby: type_null_true_false.rb
     coffeescript: type-null-true-false.coffee
+    javascript: type-null-true-false.js
     java: TypeNullTrueFalse.java
     php: TypeNullTrueFalse.php
     python: type_null_true_false.py
@@ -121,114 +140,133 @@ Array:
   Create populated:
     ruby: array_create_populated.rb
     coffeescript: array-create-populated.coffee
+    javascript: array-create-populated.js
     java: ArrayCreatePopulated.java
     php: ArrayCreatePopulated.php
     python: array_create_populated.py
   Add:
     ruby: array_add.rb
     coffeescript: array-add.coffee
+    javascript: array-add.js
     java: ArrayAdd.java
     php: ArrayAdd.php
     python: array_add.py
   With different types:
     ruby: array_with_different_types.rb
     coffeescript: array-with-different-types.coffee
+    javascript: array-with-different-types.js
     java: ArrayDifferentTypes.java
     php: ArrayDifferentTypes.php
     python: array_with_different_types.py
   Include?:
     ruby: array_is_include.rb
     coffeescript: array-is-include.coffee
+    javascript: array-is-include.js
     java: ArrayIsInclude.java
     php: ArrayIsInclude.php
     python: array_is_include.py
   Iterate:
     ruby: array_iterate.rb
     coffeescript: array-iterate.coffee
+    javascript: array-iterate.js
     java: ArrayIterate.java
     php: ArrayIterate.php
     python: array_iterate.py
   Iterate with index:
     ruby: array_iterate_with_index.rb
     coffeescript: array-iterate-with-index.coffee
+    javascript: array-iterate-with-index.js
     java: ArrayIterateWithIndex.java
     php: ArrayIterateWithIndex.php
     python: array_iterate_with_index.py
   Get first, last element:
     ruby: array_get_first_and_last.rb
     coffeescript: array-get-first-and-last.coffee
+    javascript: array-get-first-and-last.js
     java: ArrayGetFirstAndLast.java
     php: ArrayGetFirstAndLast.php
     python: array_get_first_and_last.py
   Find first:
     ruby: array_find.rb
     coffeescript: array-find.coffee
+    javascript: array-find.js
     java: ArrayFind.java
     php: ArrayFind.php
     python: array_find.py
   Select (find all):
     ruby: array_select.rb
     coffeescript: array-select.coffee
+    javascript: array-select.js
     java: ArraySelect.java
     php: ArraySelect.php
     python: array_select.py
   Map (change all):
     ruby: array_map.rb
     coffeescript: array-map.coffee
+    javascript: array-map.js
     java: ArrayMap.java
     php: ArrayMap.php
     python: array_map.py
   Concatenation:
     ruby: array_concat.rb
     coffeescript: array-concat.coffee
+    javascript: array-concat.js
     java: ArrayConcat.java
     php: ArrayConcat.php
     python: array_concat.py
   Sort:
     ruby: array_sort.rb
     coffeescript: array-sort.coffee
+    javascript: array-sort.js
     java: ArraySort.java
     php: ArraySort.php
     python: array_sort.py
   Multidimensional:
     ruby: array_multi.rb
     coffeescript: array-multi.coffee
+    javascript: array-multi.js
     java: ArrayMulti.java
     php: ArrayMulti.php
     python: array_multi.py
   Size:
     ruby: array_size.rb
     coffeescript: array-size.coffee
+    javascript: array-size.js
     java: ArraySize.java
     php: ArraySize.php
     python: array_size.py
   Count:
     ruby: array_count.rb
     coffeescript: array-count.coffee
+    javascript: array-count.js
     java: ArrayCount.java
     php: ArrayCount.php
     python: array_count.py
   Reduce:
     ruby: array_reduce.rb
     coffeescript: array-reduce.coffee
+    javascript: array-reduce.js
     java: ArrayReduce.java
     php: ArrayReduce.php
     python: array_reduce.py
   Index of element:
     ruby: array_index_of_element.rb
     coffeescript: array-index-of-element.coffee
+    javascript: array-index-of-element.js
     java: ArrayIndexOfElement.java
     php: ArrayIndexOfElement.php
     python: array_index_of_element.py
   Delete element:
     ruby: array_delete_element.rb
     coffeescript: array-delete-element.coffee
+    javascript: array-delete-element.js
     java: ArrayDeleteElement.java
     php: ArrayDeleteElement.php
     python: array_delete_element.py
   Unique:
     ruby: array_unique.rb
     coffeescript: array-unique.coffee
+    javascript: array-unique.js
     java: ArrayUnique.java
     php: ArrayUnique.php
     python: array_unique.py
@@ -236,36 +274,42 @@ Hash (map):
   Create populated:
     ruby: hash_create_populated.rb
     coffeescript: hash-create-populated.coffee
+    javascript: hash-create-populated.js
     java: HashCreatePopulated.java
     php: HashCreatePopulated.php
     python: hash_create_populated.py
   Add:
     ruby: hash_add.rb
     coffeescript: hash-add.coffee
+    javascript: hash-add.js
     java: HashAdd.java
     php: HashAdd.php
     python: hash_add.py
   Iterate:
     ruby: hash_iterate.rb
     coffeescript: hash-iterate.coffee
+    javascript: hash-iterate.js
     java: HashIterate.java
     php: HashIterate.php
     python: hash_iterate.py
   Include?:
     ruby: hash_is_include.rb
     coffeescript: hash-is-include.coffee
+    javascript: hash-is-include.js
     java: HashIsInclude.java
     php: HashIsInclude.php
     python: hash_is_include.py
   Get value:
     ruby: hash_get_value.rb
     coffeescript: hash-get-value.coffee
+    javascript: hash-get-value.js
     java: HashGetValue.java
     php: HashGetValue.php
     python: hash_get_value.py
   Size:
     ruby: hash_size.rb
     coffeescript: hash-size.coffee
+    javascript: hash-size.js
     java: HashSize.java
     php: HashSize.php
     python: hash_size.py
@@ -273,24 +317,28 @@ Other structure:
   Boolean:
     ruby: other_structure_boolean.rb
     coffeescript: other-structure-boolean.coffee
+    javascript: other-structure-boolean.js
     java: OtherStructureBoolean.java
     php: OtherStructureBoolean.php
     python: other_structure_boolean.py
   Constant:
     ruby: other_structure_constant.rb
     coffeescript: other-structure-constant.coffee
+    javascript: other-structure-constant.js
     java: OtherStructureConstant.java
     php: OtherStructureConstant.php
     python: other_structure_constant.py
   Constant list:
     ruby: other_structure_constant_list.rb
     coffeescript: other-structure-constant-list.coffee
+    javascript: other-structure-constant-list.js
     java: OtherStructureConstantList.java
     php: OtherStructureConstantList.php
     python: other_structure_constant_list.py
   Struct:
     ruby: other_structure_struct.rb
     coffeescript: no.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: other_structure_struct.py
@@ -298,48 +346,56 @@ Conditional:
   If:
     ruby: conditional_if.rb
     coffeescript: conditional-if.coffee
+    javascript: conditional-if.js
     java: ConditionalIf.java
     php: ConditionalIf.php
     python: conditional_if.py
   Unless:
     ruby: conditional_unless.rb
     coffeescript: conditional-unless.coffee
+    javascript: conditional-unless.js
     java: ConditionalUnless.java
     php: ConditionalUnless.php
     python: conditional_unless.py
   If/else:
     ruby: conditional_if_else.rb
     coffeescript: conditional-if-else.coffee
+    javascript: conditional-if-else.js
     java: ConditionalIfElse.java
     php: ConditionalIfElse.php
     python: conditional_if_else.py
   And/Or:
     ruby: conditional_and_or.rb
     coffeescript: conditional-and-or.coffee
+    javascript: conditional-and-or.js
     java: ConditionalAndOr.java
     php: ConditionalAndOr.php
     python: conditional_and_or.py
   Switch:
     ruby: conditional_switch.rb
     coffeescript: conditional-switch.coffee
+    javascript: conditional-switch.js
     java: ConditionalSwitch.java
     php: ConditionalSwitch.php
     python: conditional_switch.py
   Switch as else if:
     ruby: conditional_switch_as_else_if.rb
     coffeescript: conditional-switch-as-else-if.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: conditional_switch_as_else_if.py
   Ternary:
     ruby: conditional_ternary.rb
     coffeescript: conditional-ternary.coffee
+    javascript: conditional-ternary.js
     java: ConditionalTernary.java
     php: ConditionalTernary.php
     python: conditional_ternary.py
   If assign:
     ruby: conditional_if_assign.rb
     coffeescript: conditional-if-assign.coffee
+    javascript: conditional-if-assign.js
     java: no.java
     php: no.php
     python: conditional_if_assign.py
@@ -347,48 +403,56 @@ Loop:
   For:
     ruby: loop_for.rb
     coffeescript: loop-for.coffee
+    javascript: loop-for.js
     java: LoopFor.java
     php: LoopFor.php
     python: loop_for.py
   For with a step:
     ruby: loop_for_with_step.rb
     coffeescript: loop-for-with-step.coffee
+    javascript: loop-for-with-step.js
     java: LoopForWithStep.java
     php: LoopForWithStep.php
     python: loop_for_with_step.py
   Times:
     ruby: loop_times.rb
     coffeescript: loop-times.coffee
+    javascript: loop-times.js
     java: LoopTimes.java
     php: LoopTimes.php
     python: loop_times.py
   While:
     ruby: loop_while.rb
     coffeescript: loop-while.coffee
+    javascript: loop-while.js
     java: LoopWhile.java
     php: LoopWhile.php
     python: loop_while.py
   Until:
     ruby: loop_until.rb
     coffeescript: loop-until.coffee
+    javascript: loop-until.js
     java: LoopUntil.java
     php: LoopUntil.php
     python: loop_until.py
   Return array:
     ruby: loop_return_array.rb
     coffeescript: loop-return-array.coffee
+    javascript: loop-return-array.js
     java: no.java
     php: no.php
     python: loop_return_array.py
   Break:
     ruby: loop_break.rb
     coffeescript: loop-break.coffee
+    javascript: loop-break.js
     java: LoopBreak.java
     php: LoopBreak.php
     python: loop_break.py
   Next/Continue:
     ruby: loop_next.rb
     coffeescript: loop-next.coffee
+    javascript: loop-next.js
     java: LoopNext.java
     php: LoopNext.php
     python: loop_next.py
@@ -396,12 +460,14 @@ Math:
   Max/Min:
     ruby: math_max_min.rb
     coffeescript: math-max-min.coffee
+    javascript: math-max-min.js
     java: MathMaxMin.java
     php: MathMaxMin.php
     python: math_max_min.py
   Sqrt:
     ruby: math_sqrt.rb
     coffeescript: math-sqrt.coffee
+    javascript: math-sqrt.js
     java: MathSqrt.java
     php: MathSqrt.php
     python: math_sqrt.py
@@ -409,24 +475,28 @@ Error handling:
   Try/catch/finally:
     ruby: error_try_catch.rb
     coffeescript: error-try-catch.coffee
+    javascript: error-try-catch.js
     java: ErrorTryCatch.java
     php: ErrorTryCatch.php
     python: error_try_catch.py
   With a message:
     ruby: error_with_a_message.rb
     coffeescript: error-with-a-message.coffee
+    javascript: error-with-a-message.js
     java: ErrorWithAMessage.java
     php: ErrorWithAMessage.php
     python: error_with_a_message.py
   Method:
     ruby: error_method.rb
     coffeescript: no.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: error_method.py
   Throw exception:
     ruby: error_throw.rb
     coffeescript: error-throw.coffee
+    javascript: error-throw.js
     java: ErrorThrow.java
     php: ErrorThrow.php
     python: error_throw.py
@@ -434,42 +504,49 @@ File:
   Read:
     ruby: file_read.rb
     coffeescript: file-read.coffee
+    javascript: file-read.js
     java: FileRead.java
     php: FileRead.php
     python: file_read.py
   Write:
     ruby: file_write.rb
     coffeescript: file-write.coffee
+    javascript: file-write.js
     java: FileWrite.java
     php: FileWrite.php
     python: file_write.py
   Get working dir path:
     ruby: file_get_working_dir.rb
     coffeescript: file-get-working-dir.coffee
+    javascript: file-get-working-dir.js
     java: FileGetWorkingDir.java
     php: FileGetWorkingDir.php
     python: file_get_working_dir.py
   File path:
     ruby: file_path.rb
     coffeescript: file-path.coffee
+    javascript: file-path.js
     java: FilePath.java
     php: FilePath.php
     python: file_path.py
   Dir path:
     ruby: file_dir_path.rb
     coffeescript: file-dir-path.coffee
+    javascript: file-dir-path.js
     java: FileDirPath.java
     php: FileDirPath.php
     python: file_dir_path.py
   Parent dir path:
     ruby: file_parent_dir_path.rb
     coffeescript: file-parent-dir-path.coffee
+    javascript: file-parent-dir-path.js
     java: FileParentDirPath.java
     php: FileParentDirPath.php
     python: file_parent_dir_path.py
   Sister dir path:
     ruby: file_sister_dir_path.rb
     coffeescript: file-sister-dir-path.coffee
+    javascript: file-sister-dir-path.js
     java: FileSisterDirPath.java
     php: FileSisterDirPath.php
     python: file_sister_dir_path.py
@@ -477,54 +554,63 @@ Method:
   Declare:
     ruby: method_declare.rb
     coffeescript: method-declare.coffee
+    javascript: method-declare.js
     java: MethodDeclare.java
     php: MethodDeclare.php
     python: method_declare.py
   Multiple arguments:
     ruby: method_multi_arg.rb
     coffeescript: method-multi-arg.coffee
+    javascript: method-multi-arg.js
     java: MethodMultiArg.java
     php: MethodMultiArg.php
     python: method_multi_arg.py
   Default value for argument:
     ruby: method_default_value.rb
     coffeescript: method-default-value.coffee
+    javascript: method-default-value.js
     java: no.java
     php: no.php
     python: method_default_value.py
   Return:
     ruby: method_return.rb
     coffeescript: method-return.coffee
+    javascript: method-return.js
     java: MethodReturn.java
     php: MethodReturn.php
     python: method_return.py
   Closure:
     ruby: method_closure.rb
     coffeescript: method-closure.coffee
+    javascript: method-closure.js
     java: no.java
     php: no.php
     python: method_closure.py
   Block passing:
     ruby: method_block_passing.rb
     coffeescript: method-block-passing.coffee
+    javascript: method-block-passing.js
     java: no.java
     php: no.php
     python: method_block_passing.py
   Block binding:
     ruby: method_block_binding.rb
     coffeescript: method-block-binding.coffee
+    javascript: method-block-binding.js
     java: no.java
     php: no.php
     python: method_block_binding.py
   Initialize in runtime:
     ruby: method_init_in_runtime.rb
     coffeescript: method-init-in-runtime.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: method_init_in_runtime.py
   Alias:
     ruby: method_alias.rb
     coffeescript: method-alias.coffee
+    javascript: method-alias.js
     java: no.java
     php: no.php
     python: method_alias.py
@@ -532,66 +618,77 @@ Class:
   Declare:
     ruby: class_declare.rb
     coffeescript: class-declare.coffee
+    javascript: class-declare.js
     java: ClassDeclare.java
     php: ClassDeclare.php
     python: class_declare.py
   Constructor:
     ruby: class_constructor.rb
     coffeescript: class-constructor.coffee
+    javascript: class-constructor.js
     java: ClassConstructor.java
     php: ClassConstructor.php
     python: class_constructor.py
   Method call:
     ruby: class_method_call.rb
     coffeescript: class-method-call.coffee
+    javascript: class-method-call.js
     java: ClassMethodCall.java
     php: ClassMethodCall.php
     python: class_method_call.py
   Class method:
     ruby: class_class_method.rb
     coffeescript: class-class-method.coffee
+    javascript: class-class-method.js
     java: ClassClassMethod.java
     php: ClassClassMethod.php
     python: class_class_method.py
   Private method:
     ruby: class_private_method.rb
     coffeescript: class-private-method.coffee
+    javascript: no.js
     java: ClassPrivateMethod.java
     php: ClassPrivateMethod.php
     python: class_private_method.py
   Private method, access instance variable:
     ruby: class_private_method_access_instance_var.rb
     coffeescript: no.coffee
+    javascript: no.js
     java: ClassPrivateMethodAccessInstance.java
     php: ClassPrivateMethodAccessInstance.php
     python: class_private_method_access_instance_var.py
   Field:
     ruby: class_field.rb
     coffeescript: class-field.coffee
+    javascript: class-field.js
     java: ClassField.java
     php: ClassField.php
     python: class_field.py
   Get/set:
     ruby: class_get_set.rb
     coffeescript: class-get-set.coffee
+    javascript: class-get-set.js
     java: ClassGetSet.java
     php: ClassGetSet.php
     python: class_get_set.py
   Inheritance:
     ruby: class_inheritance.rb
     coffeescript: class-inheritance.coffee
+    javascript: class-inheritance.js
     java: ClassInheritance.java
     php: ClassInheritance.php
     python: class_inheritance.py
   Mixin:
     ruby: class_mixin.rb
     coffeescript: class-mixin.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: class_mixin.py
   Has method?:
     ruby: class_has_method.rb
     coffeescript: class-has-method.coffee
+    javascript: class-has-method.js
     java: ClassHasMethod.java
     php: ClassHasMethod.php
     python: class_has_method.py
@@ -599,12 +696,14 @@ Other:
   Comment:
     ruby: other_comment.rb
     coffeescript: other-comment.coffee
+    javascript: other-comment.js
     java: OtherComment.java
     php: OtherComment.php
     python: other_comment.py
   Assign value if not exist:
     ruby: other_assign_value_if_not_exist.rb
     coffeescript: other-assign-value-if-not-exists.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: other_assign_value_if_not_exist.py
@@ -612,48 +711,56 @@ Other:
     ruby:
       '2.3': other_safe_navigation.rb
     coffeescript: other-safe-navigation.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: no.py
   Import another file:
     ruby: other_import_file.rb
     coffeescript: other-import-file.coffee
+    javascript: other-import-file.js
     java: OtherImportFile.java
     php: OtherImportFile.php
     python: other_import_file.py
   Destructuring assignment:
     ruby: other_destructing_assignment.rb
     coffeescript: other-destructing-assignment.coffee
+    javascript: other-destructing-assignment.js
     java: no.java
     php: no.php
     python: other_destructing_assignment.py
   Date:
     ruby: other_date.rb
     coffeescript: other-date.coffee
+    javascript: other-date.js
     java: OtherDate.java
     php: OtherDate.php
     python: other_date.py
   Time:
     ruby: other_time.rb
     coffeescript: other-time.coffee
+    javascript: other-time.js
     java: OtherTime.java
     php: OtherTime.php
     python: other_time.py
   Not:
     ruby: other_not.rb
     coffeescript: other-not.coffee
+    javascript: other-not.js
     java: OtherNot.java
     php: OtherNot.php
     python: other_not.py
   Assign this or that:
     ruby: conditional_assign_this_or_that.rb
     coffeescript: conditional-assign-this-or-that.coffee
+    javascript: no.js
     java: no.java
     php: no.php
     python: conditional_assign_this_or_that.py
   Run command:
     ruby: other_run_command.rb
     coffeescript: other-run-command.coffee
+    javascript: other-run-command.js
     java: OtherRunCommand.java
     php: OtherRunCommand.php
     python: other_run_command.py

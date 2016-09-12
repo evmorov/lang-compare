@@ -6,6 +6,6 @@ class HashGetValue {
       put("fontSize", "10");
       put("fontFamily", "Arial");
     }};
-    System.out.println(options.get("fontSize"));
+    System.out.println(options.get("fonSize"));
   }
 }

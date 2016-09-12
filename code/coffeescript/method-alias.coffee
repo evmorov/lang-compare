@@ -3,4 +3,4 @@ class Greetings
     console.log 'How are you?'
   hi: @::hey
 
-(new Greetings).hi()
+new Greetings().hi()

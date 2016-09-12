@@ -1,4 +1,4 @@
 try
-  throw new Error('divided by 0')
+  person.age()
 catch error
   console.log error.message

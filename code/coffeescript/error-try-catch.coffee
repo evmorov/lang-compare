@@ -1,6 +1,6 @@
 try
-  throw new Error('divided by 0')
+  person.age()
 catch
-  console.log "Can't divide"
+  console.log "Can't call method on undefined variable"
 finally
   console.log "But that's ok"
