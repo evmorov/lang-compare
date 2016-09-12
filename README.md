@@ -27,13 +27,12 @@ Java:
 
 ## What's next
 
-Add more languages: Kotlin, JavaScript, TypeScript (and any more)!
+Add more languages: Kotlin, TypeScript (and any more)!
 
 * Ruby - Elixir
 * Ruby - Crystal
 * Java - Kotlin
 * Java - C#
-* JavaScript - CoffeeScript
 * JavaScript - TypeScript
 
 It would be nice to modify the existing examples to make them funnier.
