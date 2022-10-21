@@ -4,7 +4,7 @@ The web app provides side-by-side examples of syntax differences between program
 
 All examples are executable. You can copy and launch them without changes. It helps to understand what the code is doing easily.
 
-View web app [here](http://evmorov.github.io/lang-compare).
+View web app [here](https://evmorov.github.io/lang-compare).
 
 Created with:
 
