@@ -1,10 +1,12 @@
 AllCops:
+  NewCops: enable
   Exclude:
     - 'vendor/**/*'
     - 'db/**/*'
     - 'config/**/*'
     - 'vagrant/**/*'
     - 'bin/**/*'
+    - 'code/ruby/**/*'
 
 Metrics/LineLength:
   Max: 100

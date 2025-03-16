@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 activate :directory_indexes
 activate :sprockets
 activate :syntax
@@ -24,7 +26,7 @@ def template_proxy(url, lang1, lang2, langs)
   proxy(url, 'template', locals: { lang1: lang1, lang2: lang2, langs: langs }, ignore: true)
 end
 
-langs = ['Ruby', 'JavaScript', 'Java', 'Python', 'PHP', 'Kotlin']
+langs = %w[Ruby JavaScript Java Python PHP Kotlin]
 langs.each do |lang1|
   langs.each do |lang2|
     url = "#{lang1.delete(' ').downcase}-#{lang2.delete(' ').downcase}.html"
@@ -32,4 +34,3 @@ langs.each do |lang1|
   end
 end
 template_proxy 'index.html', 'Ruby', 'Python', langs # languages by default
-

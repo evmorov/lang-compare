@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 module CustomHelpers
   Example = Struct.new(:code, :output)
 
   def examples(language, filenames)
     return [] unless filenames
+
     examples = []
     each_filename(filenames) do |filename, folder|
       file_content = File.read(code_file_path(language, filename, folder)) rescue next
@@ -23,7 +26,7 @@ module CustomHelpers
   end
 
   def section_empty?(section, lang1, lang2)
-    section.last.each do |_header, filenames|
+    section.last.each_value do |filenames|
       return false unless no_files?(lang1, filenames[lang1]) && no_files?(lang2, filenames[lang2])
     end
     true
@@ -31,6 +34,7 @@ module CustomHelpers
 
   def no_files?(lang, filenames)
     return true unless filenames
+
     each_filename(filenames) do |filename, folder|
       return false if File.exist? code_file_path(lang, filename, folder)
     end
@@ -56,4 +60,3 @@ module CustomHelpers
     File.join(Dir.pwd, 'code', language, folder, filename)
   end
 end
-

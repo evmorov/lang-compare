@@ -1,15 +1,18 @@
+# frozen_string_literal: true
+
 require 'open3'
 
 CODE_DIR = File.join(File.dirname(__FILE__), 'code')
 
 task default: [:run]
-task run: [:clean, :run_java, :run_javascript, :run_ruby, :run_python, :run_php]
+task run: %i[clean run_java run_javascript run_ruby run_python run_php]
 
 task :run_java do
   puts 'Executing java files'
   Dir.glob File.join(CODE_DIR, '**', '*.java') do |filepath|
     result = run_file("javac -cp #{CODE_DIR}/java #{filepath}", "#{filepath}.out")
     next unless result.to_i.zero? # error occurred while compiling
+
     class_name = File.basename(filepath).gsub('.java', '')
     run_file("java -cp #{CODE_DIR}/java #{class_name}", "#{filepath}.out")
   end
